@@ -1,0 +1,151 @@
+[
+    {
+        "id":"0264/194/",
+        "category1":"WOMAN",
+        "category2":"SHIRTS",
+        "name":"PRINTED ELBOW SLEEVE T-SHIRT",
+        "price": 990,
+        "description":"T-shirt made from 100% cotton. Features a round neckline and elbow-length sleeves. Contrast text and print detail.",
+        "detail":[
+            "100% cotton"
+        ],
+        "class":[
+            {
+                "color":"BLUE / WHITE",
+                "class_id":"679",
+                "color_num":"#",
+                "stock":[37, 142, 89, 196],
+                "img":[
+                    "/image/t-shirt/id-0264194/679/1.jpg",
+                    "/image/t-shirt/id-0264194/679/2.jpg",
+                    "/image/t-shirt/id-0264194/679/3.jpg",
+                    "/image/t-shirt/id-0264194/679/4.jpg",
+                    "/image/t-shirt/id-0264194/679/5.jpg",
+                    "/image/t-shirt/id-0264194/679/6.jpg",
+                    "/image/t-shirt/id-0264194/679/7.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Alice",
+                "rating": 5,
+                "comment": "Love this T-shirt! The 100% cotton fabric feels super soft and breathable. The print design is stylish and unique."
+            },
+            {
+                "reviewer": "Brian",
+                "rating": 4,
+                "comment": "Great quality and the elbow-length sleeves are a nice touch. Fits well and feels comfortable all day."
+            },
+            {
+                "reviewer": "Cindy",
+                "rating": 3,
+                "comment": "The shirt is okay. The material is good, but the print started to fade a little after a few washes."
+            },
+            {
+                "reviewer": "Daniel",
+                "rating": 5,
+                "comment": "Perfect casual tee! The round neckline and contrast print give it a clean, modern look. Would buy again."
+            },
+            {
+                "reviewer": "Emma",
+                "rating": 4,
+                "comment": "Soft cotton and great sleeve length. It’s breathable and ideal for warmer weather. Slightly loose fit, which I like."
+            }
+        ]
+
+    },
+    {
+        "id":"4174/151/",
+        "category1":"WOMAN",
+        "category2":"SHIRTS",
+        "name":"RIBBED SLEEVELESS T-SHIRT",
+        "price": 490,
+        "description":"Cotton blend T-shirt. Round neck and sleeveless.",
+        "detail":[
+            "95% cotton", 
+            "5% elastane"
+        ],
+        "class":[
+            {
+                "color":"CORAL",
+                "class_id":"679",
+                "color_num":"#F8B4A6",
+                "stock":[5, 178, 122, 34],
+                "img":[
+                    "/image/t-shirt/id-4174151/679/1.jpg",
+                    "/image/t-shirt/id-4174151/679/2.jpg",
+                    "/image/t-shirt/id-4174151/679/3.jpg",
+                    "/image/t-shirt/id-4174151/679/4.jpg",
+                    "/image/t-shirt/id-4174151/679/5.jpg"
+                ]
+            },
+            {
+                "color":"WINE",
+                "class_id":"660",
+                "color_num":"#3A1B25",
+                "stock":[81, 143, 27, 190],
+                "img":[
+                    "/image/t-shirt/id-4174151/660/1.jpg",
+                    "/image/t-shirt/id-4174151/660/2.jpg",
+                    "/image/t-shirt/id-4174151/660/3.jpg",
+                    "/image/t-shirt/id-4174151/660/4.jpg"
+                ]
+            },
+            {
+                "color":"CHARCOAL",
+                "class_id":"882",
+                "color_num":"#31312D",
+                "stock":[99, 12, 66, 158],
+                "img":[
+                    "/image/t-shirt/id-4174151/882/1.jpg",
+                    "/image/t-shirt/id-4174151/882/2.jpg",
+                    "/image/t-shirt/id-4174151/882/3.jpg",
+                    "/image/t-shirt/id-4174151/882/4.jpg"
+                ]
+            },
+            {
+                "color":"BLACK",
+                "class_id":"880",
+                "color_num":"#0A0A0A",
+                "stock":[41, 117, 135, 199],
+                "img":[
+                    "/image/t-shirt/id-4174151/880/1.jpg",
+                    "/image/t-shirt/id-4174151/880/2.jpg",
+                    "/image/t-shirt/id-4174151/880/3.jpg",
+                    "/image/t-shirt/id-4174151/880/4.jpg",
+                    "/image/t-shirt/id-4174151/880/5.jpg"
+                ]
+            },
+            {
+                "color":"WHITE",
+                "class_id":"250",
+                "color_num":"#F4F6FA",
+                "stock":[150, 48, 173, 3],
+                "img":[
+                    "/image/t-shirt/id-4174151/250/1.jpg",
+                    "/image/t-shirt/id-4174151/250/2.jpg",
+                    "/image/t-shirt/id-4174151/250/3.jpg",
+                    "/image/t-shirt/id-4174151/250/4.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Sophie",
+                "rating": 5,
+                "comment": "Absolutely love this sleeveless tee! The ribbed texture adds a nice detail and it’s perfect for layering or wearing on its own."
+            },
+            {
+                "reviewer": "Liam",
+                "rating": 4,
+                "comment": "The fit is great and the fabric feels soft. Ideal for hot days, and the round neck makes it look clean and simple."
+            },
+            {
+                "reviewer": "Chloe",
+                "rating": 3,
+                "comment": "Nice design, but the material could be a bit thicker. Still comfortable, but slightly see-through in bright light."
+            }
+        ]
+    }
+]
