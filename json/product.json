@@ -5,6 +5,8 @@
         "category2":"SHIRTS",
         "name":"PRINTED ELBOW SLEEVE T-SHIRT",
         "price": 990,
+        "sale": true,
+        "new_price": [534, 40],
         "description":"T-shirt made from 100% cotton. Features a round neckline and elbow-length sleeves. Contrast text and print detail.",
         "detail":[
             "100% cotton"
@@ -61,6 +63,7 @@
         "category2":"SHIRTS",
         "name":"RIBBED SLEEVELESS T-SHIRT",
         "price": 490,
+        "sale":false,
         "description":"Cotton blend T-shirt. Round neck and sleeveless.",
         "detail":[
             "95% cotton", 
