@@ -1276,6 +1276,298 @@
           "comment": "It's an okay midi skirt. The high waist is standard, and the wrap design is alright. The button-up front is a bit fiddly, and the mock pockets aren't functional for carrying things around Taipei."
         }
       ]
+    },
+    {
+      "id":"7969/022/", 
+      "category1":"WOMAN",
+      "category2":"BLOUSE",
+      "name":"WIDE SLEEVE STRIPED BLOUSE",
+      "price": 1190,
+      "sale":true,
+      "new_price":[714,65],
+      "description":"Flowing blouse with a lapel collar and wide long sleeves. Finished hem with side slits. Button-up front.",
+      "detail":[
+        "100% polyester"
+      ],
+      "class":[
+          {
+              "color":"BLUE",
+              "class_id":"400",
+              "color_num":"#E7E6D8",
+              "stock":[65, 120, 57, 48],
+              "img":[
+                  "/image/blouse/id-7969/022/400/1.jpg",
+                  "/image/blouse/id-7969/022/400/2.jpg",
+                  "/image/blouse/id-7969/022/400/3.jpg",
+                  "/image/blouse/id-7969/022/400/4.jpg",
+                  "/image/blouse/id-7969/022/400/5.jpg",
+                  "/image/blouse/id-7969/022/400/6.jpg"
+              ]
+          },
+          {
+            "color":"BEIGE",
+            "class_id":"450",
+            "color_num":"#E9E6D2",
+            "stock":[35, 55, 87, 28],
+            "img":[
+                "/image/blouse/id-7969/022/450/1.jpg",
+                "/image/blouse/id-7969/022/450/2.jpg",
+                "/image/blouse/id-7969/022/450/3.jpg",
+                "/image/blouse/id-7969/022/450/4.jpg",
+                "/image/blouse/id-7969/022/450/5.jpg",
+                "/image/blouse/id-7969/022/450/6.jpg"
+            ]
+        }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Olivia",
+          "rating": 4,
+          "comment": "This striped blouse is quite stylish for Taipei! The wide long sleeves give it a flowy and fashionable look. The lapel collar is a nice touch, and the side slits are practical for the warmer weather in Da'an."
+        },
+        {
+          "reviewer": "William",
+          "rating": 5,
+          "comment": "I absolutely love this blouse! The wide sleeves are so chic and comfortable for the Taiwan climate. The button-up front is classic, and the striped pattern is very versatile for wearing around the city, especially at the sale price!"
+        },
+        {
+          "reviewer": "Sophia",
+          "rating": 4,
+          "comment": "A pretty solid striped blouse. The wide sleeves are definitely a statement, and the lapel collar adds a bit of sophistication. The side slits are good for breathability in Taipei's humidity. A good buy on sale."
+        },
+        {
+          "reviewer": "James",
+          "rating": 5,
+          "comment": "This blouse is fantastic for the Taipei scene! The wide sleeves are very on-trend, and the button-up front makes it easy to style. The striped pattern is classic, and the sale price is a great bonus for a stylish top."
+        },
+        {
+          "reviewer": "Emma",
+          "rating": 3,
+          "comment": "It's an okay blouse. The wide sleeves are alright, but can feel a bit overwhelming in the crowded areas of Taipei. The lapel collar is standard, and the polyester fabric isn't the most breathable for the summer heat. The sale price makes it more appealing."
+        }
+      ]
+    },
+    {
+      "id":"3564/053/", 
+      "category1":"WOMAN",
+      "category2":"BLOUSE",
+      "name":"EMBROIDERED BLOUSE",
+      "price": 1290,
+      "sale":false,
+      "description":"Long sleeve blouse with a round neck and v-neck. Featuring contrast embroidery and a button-up fastening on the front.",
+      "detail":[
+        "59% viscose","41% polyester","100% polyester"
+      ],
+      "class":[
+          {
+              "color":"Beige-pink",
+              "class_id":"942",
+              "color_num":"#B79789",
+              "stock":[65, 55, 22, 20],
+              "img":[
+                  "/image/blouse/id-3564/053/942/1.jpg",
+                  "/image/blouse/id-3564/053/942/2.jpg",
+                  "/image/blouse/id-3564/053/942/3.jpg",
+                  "/image/blouse/id-3564/053/942/4.jpg",
+                  "/image/blouse/id-3564/053/942/5.jpg",
+                  "/image/blouse/id-3564/053/942/6.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Olivia",
+          "rating": 4,
+          "comment": "This embroidered blouse is quite lovely for Taipei! The round neck with the V-detail is a nice touch, and the contrast embroidery adds a unique charm. The long sleeves are good for evenings in Da'an."
+        },
+        {
+          "reviewer": "William",
+          "rating": 5,
+          "comment": "I absolutely adore this blouse! The embroidery is beautiful and really stands out. The round neck with the V-cut is flattering, and the button-up front is easy to style for different occasions around the city."
+        },
+        {
+          "reviewer": "Sophia",
+          "rating": 4,
+          "comment": "A pretty embroidered blouse. The long sleeves are suitable for the slightly cooler evenings in Taipei. The contrast embroidery is a nice detail, and the button-up front is classic and versatile."
+        },
+        {
+          "reviewer": "James",
+          "rating": 5,
+          "comment": "This blouse is fantastic for adding a touch of elegance to any outfit in Taipei! The embroidery is delicate and eye-catching. The round neck with the V-detail is stylish, and the button-up front is practical for the local climate."
+        },
+        {
+          "reviewer": "Emma",
+          "rating": 3,
+          "comment": "It's an okay blouse. The embroidery is alright, but the viscose blend might feel a bit warm during the day in Taipei. The long sleeves are better for evening. The button-up front is standard."
+        }
+      ]
+    },
+    {
+      "id":"5107/046/", 
+      "category1":"WOMAN",
+      "category2":"BLOUSE",
+      "name":"ROMANTIC EMBROIDERED BLOUSE ZW COLLECTION",
+      "price": 1490,
+      "sale":false,
+      "description":"Blouse made of 100% cotton yarn. Round neck and short sleeves with elasticated cuffs. Matching embroidery and lace inserts. Button fastening at the back.",
+      "detail":[
+        "100% cotton","100% polyester"
+      ],
+      "class":[
+          {
+              "color":"ECRU",
+              "class_id":"712",
+              "color_num":"#F5F3E5",
+              "stock":[15, 105, 65, 40],
+              "img":[
+                  "/image/blouse/id-5107/046/712/1.jpg",
+                  "/image/blouse/id-5107/046/712/2.jpg",
+                  "/image/blouse/id-5107/046/712/3.jpg",
+                  "/image/blouse/id-5107/046/712/4.jpg",
+                  "/image/blouse/id-5107/046/712/5.jpg",
+                  "/image/blouse/id-5107/046/712/6.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Isabelle",
+          "rating": 5,
+          "comment": "This romantic embroidered blouse is absolutely beautiful for the Taipei weather! The 100% cotton is so breathable, and the matching embroidery and lace inserts are such lovely details. The elasticated short sleeves are perfect for staying cool in Da'an."
+        },
+        {
+          "reviewer": "Ethan",
+          "rating": 4,
+          "comment": "A very pretty blouse with a lovely romantic feel. The embroidery and lace are delicate, and the short sleeves are ideal for the Taipei climate. The button fastening at the back is a nice touch."
+        },
+        {
+          "reviewer": "Clara",
+          "rating": 5,
+          "comment": "I adore this blouse! The 100% cotton is so comfortable for the humidity here. The embroidery and lace are exquisite, and the elasticated cuffs on the short sleeves are a charming detail for wearing around the city."
+        },
+        {
+          "reviewer": "Owen",
+          "rating": 4,
+          "comment": "This is a charming blouse perfect for the Taipei spring and summer. The cotton is light and airy, and the embroidery and lace give it a very feminine touch. The short sleeves are practical for the local weather."
+        },
+        {
+          "reviewer": "Hazel",
+          "rating": 3,
+          "comment": "It's a nice blouse. The embroidery and lace are pretty, but the 100% cotton might wrinkle easily in the Taipei humidity. The short sleeves with elasticated cuffs are okay, and the back button fastening is a bit less convenient."
+        }
+      ]
+    },
+    {
+      "id":"5029/052/",
+      "category1":"WOMAN",
+      "category2":"BLOUSE",
+      "name":"LACE RUFFLE BLOUSE",
+      "price": 1390,
+      "sale":false,
+      "description":"Semi-sheer blouse with a ruffled collar, V-neck and long sleeves. Featuring pintucks on the front and finished with ruffles and lace trim.",
+      "detail":[
+        "100% polyester"
+      ],
+      "class":[
+          {
+              "color":"ECRU",
+              "class_id":"712",
+              "color_num":"#F5F3E5",
+              "stock":[45, 85, 55, 20],
+              "img":[
+                  "/image/blouse/id-5029/052/712/1.jpg",
+                  "/image/blouse/id-5029/052/712/2.jpg",
+                  "/image/blouse/id-5029/052/712/3.jpg",
+                  "/image/blouse/id-5029/052/712/4.jpg",
+                  "/image/blouse/id-5029/052/712/5.jpg",
+                  "/image/blouse/id-5029/052/712/6.jpg",
+                  "/image/blouse/id-5029/052/712/7.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Sophia",
+          "rating": 4,
+          "comment": "This lace ruffle blouse is quite elegant for evenings out in Taipei! The ruffled collar and V-neck are very feminine, and the lace trim adds a delicate touch. The semi-sheer fabric is pretty, though you might need a camisole underneath."
+        },
+        {
+          "reviewer": "Finn",
+          "rating": 5,
+          "comment": "I absolutely love this blouse! It's so romantic and stylish. The ruffles and lace are beautifully done, and the pintucks add a nice texture. Perfect for dressing up for a special occasion in Da'an."
+        },
+        {
+          "reviewer": "Aurora",
+          "rating": 4,
+          "comment": "A very pretty and detailed blouse. The ruffled collar and V-neck are lovely, and the long sleeves make it suitable for slightly cooler weather in Taipei. The lace trim gives it a sophisticated look."
+        },
+        {
+          "reviewer": "Leo",
+          "rating": 5,
+          "comment": "This blouse is fantastic for adding a touch of romance to any outfit! The ruffles are beautifully done, and the lace trim is exquisite. The semi-sheer fabric is elegant, and it's perfect for a night out in the city."
+        },
+        {
+          "reviewer": "Beatrice",
+          "rating": 3,
+          "comment": "It's a nice blouse, but the 100% polyester might not be the most breathable for the Taipei heat. The ruffles and lace are pretty, but they can be a bit much for everyday wear. The semi-sheer fabric requires careful layering."
+        }
+      ]
+    },
+    {
+      "id":"4786/069/",
+      "category1":"WOMAN",
+      "category2":"BLOUSE",
+      "name":"BOW BLOUSE ZW COLLECTION",
+      "price": 1990,
+      "sale":false,
+      "description":"Blouse made of viscose yarn. Round neck with matching fabric tie. Long puff sleeves with buttoned cuffs. Straight hem. Front button fastening.",
+      "detail":[
+        "100% viscose"
+      ],
+      "class":[
+          {
+              "color":"RED",
+              "class_id":"600",
+              "color_num":"#862019",
+              "stock":[25, 85, 45, 4],
+              "img":[
+                  "/image/blouse/id-4786/069/600/1.jpg",
+                  "/image/blouse/id-4786/069/600/2.jpg",
+                  "/image/blouse/id-4786/069/600/3.jpg",
+                  "/image/blouse/id-4786/069/600/4.jpg",
+                  "/image/blouse/id-4786/069/600/5.jpg",
+                  "/image/blouse/id-4786/069/600/6.jpg",
+                  "/image/blouse/id-4786/069/600/7.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Eleanor",
+          "rating": 5,
+          "comment": "This bow blouse is so elegant for Taipei! The viscose yarn feels lovely and flowy, perfect for the climate here in Da'an. The matching fabric tie at the round neck is a beautiful detail, and the puff sleeves add a touch of sophistication."
+        },
+        {
+          "reviewer": "Henry",
+          "rating": 4,
+          "comment": "A very chic blouse. The round neck with the bow is a classic look, and the long puff sleeves with buttoned cuffs are quite stylish. The viscose material drapes nicely, suitable for evenings in Taipei."
+        },
+        {
+          "reviewer": "Grace",
+          "rating": 5,
+          "comment": "I absolutely adore this bow blouse! It's so feminine and versatile. The viscose is comfortable for the Taiwan weather, and the puff sleeves add a lovely drama. The front button fastening is practical for wearing around the city."
+        },
+        {
+          "reviewer": "Owen",
+          "rating": 4,
+          "comment": "This is a beautiful blouse perfect for adding a touch of elegance to any outfit in Taipei. The bow at the neck is a lovely detail, and the long puff sleeves give it a fashionable silhouette. The viscose feels nice against the skin."
+        },
+        {
+          "reviewer": "Lily",
+          "rating": 3,
+          "comment": "It's a nice blouse, but the 100% viscose might wrinkle easily in the Taipei humidity. The bow at the neck is pretty, and the puff sleeves are alright, though they might feel a bit warm during the day. The front button fastening is standard."
+        }
+      ]
     }
     
 ]
