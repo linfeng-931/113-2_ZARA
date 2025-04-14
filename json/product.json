@@ -166,7 +166,7 @@
             {
                 "color":"OYSTER-WHITE",
                 "class_id":"251",
-                "color_num":"#",
+                "color_num":"#FAF7F2",
                 "stock":[55, 162, 93, 47],
                 "img":[
                     "/image/news/id-3116/909/251/1.jpg",
@@ -283,7 +283,7 @@
             {
                 "color":"TERRACOTTA",
                 "class_id":"658",
-                "color_num":"#",
+                "color_num":"#A53B2A",
                 "stock":[125, 48, 66, 24],
                 "img":[
                     "/image/news/id-0021/019/658/1.jpg",
@@ -337,7 +337,7 @@
             {
                 "color":"DARK-STRAW",
                 "class_id":"748",
-                "color_num":"#",
+                "color_num":"#DECAB2",
                 "stock":[145, 28, 96, 14],
                 "img":[
                     "/image/news/id-1058/160/748/1.jpg",
@@ -392,7 +392,7 @@
             {
                 "color":"BROWN",
                 "class_id":"700",
-                "color_num":"#",
+                "color_num":"#826044",
                 "stock":[125, 78, 46, 78],
                 "img":[
                     "/image/news/id-4043/060/700/1.jpg",
@@ -502,7 +502,7 @@
         ]
     },
     {
-        "id":"8779/175/",
+        "id":"8779/175/", 
         "category1":"WOMAN",
         "category2":"NEWS",
         "name":"CUT-OUT KNIT MAXI DRESS",
@@ -516,7 +516,7 @@
             {
                 "color":"SEA-GREEN",
                 "class_id":"982",
-                "color_num":"#",
+                "color_num":"#B0BAB2",
                 "stock":[55, 182, 88, 96],
                 "img":[
                     "/image/news/id-8779/175/982/1.jpg",
@@ -569,32 +569,209 @@
         ],
         "class":[
             {
-              "reviewer": "Mei",
+                "color":"Ecru",
+                "class_id":"712",
+                "color_num":"#F5F3E5",
+                "stock":[55, 182, 88, 96],
+                "img":[
+                    "/image/news/id-1023/029/712/1.jpg",
+                    "/image/news/id-1023/029/712/2.jpg",
+                    "/image/news/id-1023/029/712/3.jpg",
+                    "/image/news/id-1023/029/712/4.jpg",
+                    "/image/news/id-1023/029/712/5.jpg",
+                    "/image/news/id-1023/029/712/6.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+              "reviewer": "Luna",
               "rating": 5,
-              "comment": "This floral scarf is so lovely! The embroidery is delicate and the cotton-linen blend feels perfect for the weather here in Xinzhuang. The frayed edges give it a nice, relaxed vibe."
+              "comment": "This knit maxi dress is a showstopper! The cut-out detail is so unique and adds a modern edge. The knit fabric is surprisingly comfortable, and the sleeveless design is perfect for the Taiwan heat. I wore it out in Xinzhuang last night and got so many compliments!"
             },
             {
-              "reviewer": "Lin",
+              "reviewer": "Ethan",
               "rating": 4,
-              "comment": "I really like the embroidered floral design. It adds a nice pop of color. The cotton and linen blend is lightweight and comfortable for the Taiwan climate. It's a great accessory for everyday wear in New Taipei City."
+              "comment": "The dress looks great! The lapel collar and v-neck give it a sophisticated touch. The knit material is nice, though I'm a little concerned about how it will hold up in the humid Taiwan weather. The cut-out is a stylish detail."
             },
             {
-              "reviewer": "Chen",
+              "reviewer": "Chloe",
               "rating": 5,
-              "comment": "Absolutely adore this scarf! The embroidery is even more beautiful in person, and the fabric is so soft and breathable, perfect for the humidity here. I've worn it around Xinzhuang and always get compliments."
+              "comment": "Absolutely love this maxi dress! It's perfect for the Taiwan climate - stylish enough for an evening out in Taipei but comfortable enough for a more casual setting in Xinzhuang. The cut-out is tastefully done, and the length is just right."
             },
             {
-              "reviewer": "Huang",
+              "reviewer": "William",
               "rating": 4,
-              "comment": "A very pretty scarf. The floral details are well-done, and the cotton-linen mix is ideal for the warmer months in Taiwan. The frayed edges are a nice casual touch. Good value for the price."
+              "comment": "A very chic knit maxi dress. The lapel collar adds a touch of elegance, and the v-neck is flattering. The sleeveless design is ideal for the warm weather here in Taiwan. The cut-out is a bit daring, but it works well with the overall style."
             },
             {
-              "reviewer": "Chang",
+              "reviewer": "Olivia",
               "rating": 5,
-              "comment": "This scarf is a wonderful addition to my wardrobe! The embroidered flowers are so charming, and the fabric is light and airy, perfect for the Taiwan heat. I bought it in a shop in New Taipei City and have been wearing it constantly."
+              "comment": "This dress is fantastic! The cut-out is perfectly placed and adds a really interesting element. The knit fabric drapes beautifully, and it's surprisingly breathable for the Taiwan summer. I've already worn it a few times since buying it in New Taipei City!"
             }
           ]
 
+    },
+    {
+      "id":"0264/196/", 
+      "category1":"WOMAN",
+      "category2":"WAISTCOAT",
+      "name":"CROSSOVER FLOWING WAISTCOAT TOP",
+      "price": 890,
+      "sale":true,
+      "new_price":[534,60],
+      "description":"Sleeveless V-neck waistcoat top. Adjustable wrap front tie fastening.",
+      "detail":[
+          "100% polyester"
+      ],
+      "class":[
+          {
+              "color":"GREY",
+              "class_id":"802",
+              "color_num":"#A1A2A5",
+              "stock":[75, 75, 40, 24],
+              "img":[
+                  "/image/waistcoat/id-0264/196/802/1.jpg",
+                  "/image/waistcoat/id-0264/196/802/2.jpg",
+                  "/image/waistcoat/id-0264/196/802/3.jpg",
+                  "/image/waistcoat/id-0264/196/802/4.jpg",
+                  "/image/waistcoat/id-0264/196/802/5.jpg"
+              ]
+          },
+          {
+              "color":"BLACK",
+              "class_id":"800",
+              "color_num":"#121315",
+              "stock":[61, 153, 77, 90],
+              "img":[
+                  "/image/waistcoat/id-0264/196/800/1.jpg",
+                  "/image/waistcoat/id-0264/196/800/2.jpg",
+                  "/image/waistcoat/id-0264/196/800/3.jpg",
+                  "/image/waistcoat/id-0264/196/800/4.jpg",
+                  "/image/waistcoat/id-0264/196/800/5.jpg",
+                  "/image/waistcoat/id-0264/196/800/6.jpg"
+              ]
+          },
+          {
+            "color":"BROWN",
+            "class_id":"700",
+            "color_num":"#121315",
+            "stock":[31, 53, 77, 120],
+            "img":[
+                "/image/waistcoat/id-0264/196/700/1.jpg",
+                "/image/waistcoat/id-0264/196/700/2.jpg",
+                "/image/waistcoat/id-0264/196/700/3.jpg",
+                "/image/waistcoat/id-0264/196/700/4.jpg"
+            ]
+        }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Mei",
+          "rating": 5,
+          "comment": "This waistcoat top is so chic and versatile! The wrap front and tie fastening allow for a perfect fit. It's sleeveless, which is great for the Taipei weather. I can dress it up or down."
+        },
+        {
+          "reviewer": "Lin",
+          "rating": 4,
+          "comment": "I really like the flowing style of this waistcoat. The V-neck is flattering, and the adjustable tie is a nice feature. The polyester fabric feels light, perfect for layering in Da'an."
+        },
+        {
+          "reviewer": "Chen",
+          "rating": 5,
+          "comment": "Absolutely love this waistcoat top! It's so stylish and easy to wear. The crossover design is unique, and the fact that it's on sale makes it an even better deal. Perfect for a trendy look in Taipei City."
+        },
+        {
+          "reviewer": "Huang",
+          "rating": 4,
+          "comment": "A nice waistcoat top for the price, especially with the sale! The V-neck is flattering, and the adjustable wrap is convenient. It's a good layering piece for the transitional weather in Taiwan."
+        },
+        {
+          "reviewer": "Chang",
+          "rating": 5,
+          "comment": "This waistcoat top is a great find! It's stylish, comfortable, and the adjustable tie ensures a perfect fit. The flowing design is very on-trend, and it's perfect for the fashion scene in Da'an District."
+        }
+      ]
+    },
+    {
+      "id":"2731/045/", 
+      "category1":"WOMAN",
+      "category2":"SKIRT",
+      "name":"ZW COLLECTION VOLUMINOUS MIDI SKIRT",
+      "price": 1490,
+      "sale":true,
+      "new_price":[894,60],
+      "description":"High-waist midi skirt with elasticated waistband and flared hem.",
+      "detail":[
+          "100% polyester"
+      ],
+      "class":[
+          {
+              "color":"BLACK",
+              "class_id":"800",
+              "color_num":"#0A0A0A",
+              "stock":[75, 125, 80, 34],
+              "img":[
+                  "/image/skirt/id-2731/045/800/1.jpg",
+                  "/image/skirt/id-2731/045/800/2.jpg",
+                  "/image/skirt/id-2731/045/800/3.jpg",
+                  "/image/skirt/id-2731/045/800/4.jpg",
+                  "/image/skirt/id-2731/045/800/5.jpg"
+              ]
+          },
+          {
+              "color":"BLUE",
+              "class_id":"400",
+              "color_num":"#5DADDB",
+              "stock":[21, 53, 77, 40],
+              "img":[
+                  "/image/skirt/id-0264/196/800/1.jpg",
+                  "/image/skirt/id-0264/196/800/2.jpg",
+                  "/image/skirt/id-0264/196/800/3.jpg",
+                  "/image/skirt/id-0264/196/800/4.jpg",
+                  "/image/skirt/id-0264/196/800/5.jpg"
+              ]
+          },
+          {
+            "color":"Burgundy",
+            "class_id":"606",
+            "color_num":"#371E21",
+            "stock":[26, 73, 77, 20],
+            "img":[
+                "/image/skirt/id-2731/045/606/1.jpg",
+                "/image/skirt/id-2731/045/606/2.jpg",
+                "/image/skirt/id-2731/045/606/3.jpg",
+                "/image/skirt/id-2731/045/606/4.jpg"
+            ]
+        }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Mei",
+          "rating": 5,
+          "comment": "This voluminous midi skirt is so fun to wear! The high waist is flattering, and the elasticated waistband makes it super comfortable, perfect for strolling around Da'an Park."
+        },
+        {
+          "reviewer": "Lin",
+          "rating": 4,
+          "comment": "I really like the flared hem of this skirt, it gives it a lovely movement. The high waist is great, and the fact that it's on sale makes it a good buy for the Taipei weather."
+        },
+        {
+          "reviewer": "Chen",
+          "rating": 5,
+          "comment": "Absolutely love this midi skirt! It's so easy to style and the voluminous shape is very on-trend. The elasticated waistband is a lifesaver for comfort. Definitely a great addition to my wardrobe for exploring Taipei."
+        },
+        {
+          "reviewer": "Huang",
+          "rating": 4,
+          "comment": "A nice and flowy midi skirt. The high waist is flattering, and the elasticated band is comfortable for all-day wear in the Taipei humidity. The sale price is a bonus!"
+        },
+        {
+          "reviewer": "Chang",
+          "rating": 5,
+          "comment": "This skirt is fantastic! The voluminous design is so stylish, and the midi length is perfect for various occasions around Taipei. The elasticated waistband makes it incredibly comfortable. Highly recommend, especially at the sale price!"
+        }
+      ]
     }
     
 ]
