@@ -6,7 +6,6 @@ import cover from "../../json/coverImg.json";
 export default function Slides() {
   const [current, setCurrent] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
-  const [slideTrigger, setSlideTrigger] = useState(0);
 
   const nextSlide = () => {
     if (isSliding) return;
@@ -18,7 +17,6 @@ export default function Slides() {
     if (isSliding) return;
     setIsSliding(true);
     setCurrent((prev) => (prev - 1 + cover.length) % cover.length);
-    //setSlideTrigger((prev) => prev + 1);
   };
 
   useEffect(() => {
@@ -47,13 +45,14 @@ export default function Slides() {
   }, [current]);
 
   useEffect(() => {
-    const intervalTime = isSliding == true ? 5000 : 10000;
+    // const intervalTime = isSliding == true ? 10000 : 5000;
     const interval = setInterval(() => {
       nextSlide();
-    }, intervalTime);
+    }, 5000);
+    if (isSliding) setIsSliding(false);
 
     return () => clearInterval(interval);
-  }, [slideTrigger]);
+  }, [isSliding]);
 
   return (
     <main className="h-screen overflow-hidden relative bg-white">
