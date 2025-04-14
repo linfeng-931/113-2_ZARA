@@ -569,7 +569,7 @@
         ],
         "class":[
             {
-                "color":"Ecru",
+                "color":"ECRU",
                 "class_id":"712",
                 "color_num":"#F5F3E5",
                 "stock":[55, 182, 88, 96],
@@ -694,6 +694,168 @@
       ]
     },
     {
+      "id":"2388/586/", 
+      "category1":"WOMAN",
+      "category2":"WAISTCOAT",
+      "name":"ZW COLLECTION SHOULDER PAD WAISTCOAT",
+      "price": 3490,
+      "sale":false,
+      "description":"Waistcoat made of a linen and viscose yarn. Notched lapels and armholes with shoulder pads. Front welt pockets. Contrast lining. Front button fastening.",
+      "detail":[
+          "68% linen","32% viscose","100% viscose"
+      ],
+      "class":[
+          {
+              "color":"CAMEL",
+              "class_id":"707",
+              "color_num":"#B0ACA1",
+              "stock":[25, 45, 80, 74],
+              "img":[
+                  "/image/waistcoat/id-2388/586/707/1.jpg",
+                  "/image/waistcoat/id-2388/586/707/2.jpg",
+                  "/image/waistcoat/id-2388/586/707/3.jpg",
+                  "/image/waistcoat/id-2388/586/707/4.jpg",
+                  "/image/waistcoat/id-2388/586/707/5.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Eleanor",
+          "rating": 5,
+          "comment": "This shoulder pad waistcoat is absolutely fantastic! The linen and viscose blend feels so luxurious, and the shoulder pads give it a really sharp, confident look. Perfect for a stylish day out in Da'an!"
+        },
+        {
+          "reviewer": "Jasper",
+          "rating": 4,
+          "comment": "A very stylish waistcoat. The shoulder pads provide a nice structure, and the notched lapels are a classic touch. The fabric is comfortable enough for the Taipei weather. Overall, a solid purchase."
+        },
+        {
+          "reviewer": "Seraphina",
+          "rating": 5,
+          "comment": "Obsessed with this waistcoat! It adds such a sophisticated edge to any outfit. The shoulder pads are just right, and the contrast lining is a lovely surprise. Definitely a new favorite for my Taipei wardrobe."
+        },
+        {
+          "reviewer": "Atticus",
+          "rating": 4,
+          "comment": "A well-made waistcoat with a nice tailored feel. The linen and viscose blend is suitable for the climate here. The shoulder pads give it a defined silhouette. A good investment piece."
+        },
+        {
+          "reviewer": "Genevieve",
+          "rating": 5,
+          "comment": "This waistcoat is a dream! The shoulder pads are perfectly proportioned, and the fabric feels wonderful against the skin. It's so versatile and adds a touch of elegance to any look I put together here in Taipei. Highly recommend!"
+        }
+      ]
+    },
+    {
+      "id":"2183/530/", 
+      "category1":"WOMAN",
+      "category2":"WAISTCOAT",
+      "name":"WAISTCOAT WITH VENTS",
+      "price": 1290,
+      "sale":false,
+      "description":"V-neck waistcoat with armholes. Mock welt pockets on the front. Hem with front vents. Adjustable tab detail on the back. Front button fastening.",
+      "detail":[
+        "72% polyester","22% viscose","6% elastane","100% acetate"
+      ],
+      "class":[
+          {
+              "color":"GREY",
+              "class_id":"802",
+              "color_num":"#5E605D",
+              "stock":[45, 85, 60, 20],
+              "img":[
+                  "/image/waistcoat/id-2183/530/802/1.jpg",
+                  "/image/waistcoat/id-2183/530/802/2.jpg",
+                  "/image/waistcoat/id-2183/530/802/3.jpg",
+                  "/image/waistcoat/id-2183/530/802/4.jpg",
+                  "/image/waistcoat/id-2183/530/802/5.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Isabelle",
+          "rating": 4,
+          "comment": "This waistcoat is quite stylish. The vents at the hem are a unique feature, and the adjustable back tab really helps to customize the fit. Good for a chic look around Taipei."
+        },
+        {
+          "reviewer": "Sebastian",
+          "rating": 5,
+          "comment": "Absolutely love this waistcoat! The quality is excellent, and the V-neck is very flattering. The mock pockets add a nice detail, and it's perfect for layering in the city."
+        },
+        {
+          "reviewer": "Penelope",
+          "rating": 3,
+          "comment": "It's an okay waistcoat. The fabric feels a bit synthetic, but the design is decent. The front vents are interesting, but I'm not sure they add much. It's alright for casual wear in Taipei."
+        },
+        {
+          "reviewer": "Theodore",
+          "rating": 5,
+          "comment": "This waistcoat is a great find! The fit is perfect, thanks to the adjustable back tab. The V-neck is classic, and the front button fastening is sturdy. Highly recommend for a stylish look in the city."
+        },
+        {
+          "reviewer": "Beatrice",
+          "rating": 4,
+          "comment": "A solid waistcoat. The vents at the hem give it a modern touch, and the mock pockets are a nice detail. It's comfortable enough for a day out in Taipei, though the fabric isn't the most breathable."
+        }
+      ]
+    },
+    {
+      "id":"1529/156/", 
+      "category1":"WOMAN",
+      "category2":"WAISTCOAT",
+      "name":"PIQUÉ WAISTCOAT",
+      "price": 1790,
+      "sale":false,
+      "description":"Sleeveless waistcoat with a high neck. Featuring lapels on the front, adjustable drawstring hem and front press-stud fastening.",
+      "detail":[
+        "55% cotton", "45% polyester"
+      ],
+      "class":[
+          {
+              "color":"SAND",
+              "class_id":"711",
+              "color_num":"#D0C8BF",
+              "stock":[55, 125, 40, 30],
+              "img":[
+                  "/image/waistcoat/id-1529/156/711/1.jpg",
+                  "/image/waistcoat/id-1529/156/711/2.jpg",
+                  "/image/waistcoat/id-1529/156/711/3.jpg",
+                  "/image/waistcoat/id-1529/156/711/4.jpg",
+                  "/image/waistcoat/id-1529/156/711/5.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Oliver",
+          "rating": 4,
+          "comment": "This piqué waistcoat is quite interesting with its high neck and lapels. The adjustable drawstring hem is a practical feature for getting the right fit. Good for adding a unique touch to an outfit in Taipei."
+        },
+        {
+          "reviewer": "Scarlett",
+          "rating": 5,
+          "comment": "I absolutely love the design of this waistcoat! The high neck is very stylish, and the front press-stud fastening is convenient. The piqué fabric feels nice quality for the Taipei weather."
+        },
+        {
+          "reviewer": "Finn",
+          "rating": 3,
+          "comment": "It's an okay waistcoat. The high neck is a bit unusual, and the lapels are just on the front. The drawstring hem is adjustable, which is a plus. Might be better suited for cooler evenings in Taipei."
+        },
+        {
+          "reviewer": "Aurora",
+          "rating": 5,
+          "comment": "This piqué waistcoat is fantastic! The high neck and lapels give it a very fashionable look. The press-stud fastening is easy to use, and the drawstring hem allows for versatile styling around the city."
+        },
+        {
+          "reviewer": "Leo",
+          "rating": 4,
+          "comment": "A pretty solid waistcoat. The high neck is a statement, and the lapels add some structure. The adjustable hem is useful. The piqué material is comfortable enough for wearing in Da'an."
+        }
+      ]
+    },
+    {
       "id":"2731/045/", 
       "category1":"WOMAN",
       "category2":"SKIRT",
@@ -770,6 +932,348 @@
           "reviewer": "Chang",
           "rating": 5,
           "comment": "This skirt is fantastic! The voluminous design is so stylish, and the midi length is perfect for various occasions around Taipei. The elasticated waistband makes it incredibly comfortable. Highly recommend, especially at the sale price!"
+        }
+      ]
+    },
+    {
+      "id":"8228/025/", 
+      "category1":"WOMAN",
+      "category2":"SKIRT",
+      "name":"Z1975 DENIM CROSSOVER MIDI SKIRT",
+      "price": 1290,
+      "sale":false,
+      "description":"High-waist skirt with rear patch pockets. Front vent at the hem. Crossover front fastening with metal buttons.",
+      "detail":[
+          "100% cotton"
+      ],
+      "class":[
+          {
+              "color":"GREY",
+              "class_id":"802",
+              "color_num":"#767676",
+              "stock":[25, 145, 50, 30],
+              "img":[
+                  "/image/skirt/id-8228/025/802/1.jpg",
+                  "/image/skirt/id-8228/025/802/2.jpg",
+                  "/image/skirt/id-8228/025/802/3.jpg",
+                  "/image/skirt/id-8228/025/802/4.jpg",
+                  "/image/skirt/id-8228/025/802/5.jpg",
+                  "/image/skirt/id-8228/025/802/6.jpg"
+              ]
+          },
+          {
+              "color":"MID-BLUE",
+              "class_id":"427",
+              "color_num":"#91A7B8",
+              "stock":[21, 53, 77, 40],
+              "img":[
+                  "/image/skirt/id-8228/025/427/1.jpg",
+                  "/image/skirt/id-8228/025/427/2.jpg",
+                  "/image/skirt/id-8228/025/427/3.jpg",
+                  "/image/skirt/id-8228/025/427/4.jpg",
+                  "/image/skirt/id-8228/025/427/5.jpg",
+                  "/image/skirt/id-8228/025/427/6.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Sophia",
+          "rating": 4,
+          "comment": "This denim crossover midi skirt is quite stylish! The high waist is flattering, and the rear patch pockets are a nice detail. The front vent is practical for moving around the streets of Da'an."
+        },
+        {
+          "reviewer": "Ethan",
+          "rating": 5,
+          "comment": "I absolutely love this denim skirt! The crossover front fastening with the metal buttons gives it a really cool and unique look. The 100% cotton is comfortable for the Taipei weather."
+        },
+        {
+          "reviewer": "Chloe",
+          "rating": 4,
+          "comment": "A pretty solid denim skirt. The high waist fits well, and the midi length is versatile for different occasions in Taipei. The front vent is a nice touch for ease of movement."
+        },
+        {
+          "reviewer": "Noah",
+          "rating": 5,
+          "comment": "This denim skirt is fantastic! The crossover design is very trendy, and the metal button fastening feels secure. The rear pockets are a classic denim detail. Perfect for a casual yet stylish look in the city."
+        },
+        {
+          "reviewer": "Isabella",
+          "rating": 3,
+          "comment": "It's an okay denim skirt. The high waist is as expected, and the rear pockets are standard. The front vent is alright, but the crossover fastening can feel a little bulky at times, especially in the Taipei humidity."
+        }
+      ]
+    },
+    {
+      "id":"2496/576/", 
+      "category1":"WOMAN",
+      "category2":"SKIRT",
+      "name":"Z1975 DENIM CROSSOVER SKIRT",
+      "price": 1490,
+      "sale":false,
+      "description":"High-waist midi skirt with buckles. Front vent at the hem.",
+      "detail":[
+        "97% cotton", "3% elastane"
+      ],
+      "class":[
+          {
+              "color":"BLUE",
+              "class_id":"400",
+              "color_num":"#292A2F",
+              "stock":[15, 105, 40, 10],
+              "img":[
+                  "/image/skirt/id-2496/576/400/1.jpg",
+                  "/image/skirt/id-2496/576/400/2.jpg",
+                  "/image/skirt/id-2496/576/400/3.jpg",
+                  "/image/skirt/id-2496/576/400/4.jpg",
+                  "/image/skirt/id-2496/576/400/5.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Eleanor",
+          "rating": 4,
+          "comment": "This denim crossover skirt is quite stylish with its high waist and buckle details. The front vent is practical for navigating the streets of Da'an. The touch of elastane likely makes it comfortable for the Taipei weather."
+        },
+        {
+          "reviewer": "Jasper",
+          "rating": 5,
+          "comment": "I absolutely love this denim skirt! The high waist is very flattering, and the buckles add a cool, edgy vibe. The front vent is a nice touch for movement around Taipei City."
+        },
+        {
+          "reviewer": "Seraphina",
+          "rating": 4,
+          "comment": "A pretty solid denim skirt. The high waist fits well, and the midi length is versatile for different occasions in Taipei. The buckles are a nice design element, and the front vent is appreciated in the humidity."
+        },
+        {
+          "reviewer": "Atticus",
+          "rating": 5,
+          "comment": "This denim skirt is fantastic! The crossover design is trendy, and the buckles give it a unique look. The front vent makes it easy to move around the city. The bit of stretch from the elastane is a plus for comfort in Da'an."
+        },
+        {
+          "reviewer": "Genevieve",
+          "rating": 3,
+          "comment": "It's an okay denim skirt. The high waist is standard, and the buckles are alright. The front vent is functional, but the overall style isn't particularly outstanding for the Taipei fashion scene."
+        }
+      ]
+    },
+    {
+      "id":"2731/101/", 
+      "category1":"WOMAN",
+      "category2":"SKIRT",
+      "name":"ZW COLLECTION POPLIN MIDI SKIRT",
+      "price": 1790,
+      "sale":true,
+      "new_price":[1094,60],
+      "description":"High-waist midi skirt made of cotton yarn. Pleated waist. Flared hem. Concealed zip fastening.",
+      "detail":[
+        "100% cotton"
+      ],
+      "class":[
+          {
+              "color":"OYSTER-WHITE",
+              "class_id":"251",
+              "color_num":"#E5E5E8",
+              "stock":[15, 105, 40, 10],
+              "img":[
+                  "/image/skirt/id-2731/101/251/1.jpg",
+                  "/image/skirt/id-2731/101/251/2.jpg",
+                  "/image/skirt/id-2731/101/251/3.jpg",
+                  "/image/skirt/id-2731/101/251/4.jpg",
+                  "/image/skirt/id-2731/101/251/5.jpg",
+                  "/image/skirt/id-2731/101/251/6.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Hazel",
+          "rating": 4,
+          "comment": "This poplin midi skirt is lovely! The high waist is very flattering, and the pleated waist adds a nice touch of detail. The flared hem moves beautifully, perfect for a sunny day in Da'an."
+        },
+        {
+          "reviewer": "Henry",
+          "rating": 5,
+          "comment": "I absolutely adore this midi skirt! The 100% cotton feels so comfortable for the Taipei weather, and the flared hem is so elegant. The pleated waist is a stylish feature, especially at the sale price!"
+        },
+        {
+          "reviewer": "Grace",
+          "rating": 4,
+          "comment": "A very charming midi skirt. The high waist fits well, and the cotton poplin is light and airy for the humidity in Taipei. The flared hem is fun, and the concealed zip gives a clean finish."
+        },
+        {
+          "reviewer": "Owen",
+          "rating": 5,
+          "comment": "This poplin skirt is fantastic for the Taiwan climate! The high waist is very on-trend, and the pleated waist adds a lovely texture. The flared hem is perfect for a stroll around Taipei City. The sale price is a great bonus!"
+        },
+        {
+          "reviewer": "Lily",
+          "rating": 3,
+          "comment": "It's a decent midi skirt. The high waist is as expected, and the flared hem is alright. The pleated waist is a simple detail. The cotton poplin is okay for Taipei, but it might wrinkle easily."
+        }
+      ]
+    },
+    {
+      "id":"5427/422/", 
+      "category1":"WOMAN",
+      "category2":"SKIRT",
+      "name":"POPLIN MIDI SKIRT",
+      "price": 1290,
+      "sale":false,
+      "description":"High-waist midi skirt with a smocked elasticated waistband.",
+      "detail":[
+        "100% cotton"
+      ],
+      "class":[
+          {
+              "color":"WHITE",
+              "class_id":"250",
+              "color_num":"#E5E5E8",
+              "stock":[25, 60, 80, 50],
+              "img":[
+                  "/image/skirt/id-5427/422/250/1.jpg",
+                  "/image/skirt/id-5427/422/250/2.jpg",
+                  "/image/skirt/id-5427/422/250/3.jpg",
+                  "/image/skirt/id-5427/422/250/4.jpg",
+                  "/image/skirt/id-5427/422/250/5.jpg",
+                  "/image/skirt/id-5427/422/250/6.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Eleanor",
+          "rating": 4,
+          "comment": "This poplin midi skirt is quite comfortable! The high waist and smocked elasticated waistband make it a breeze to wear around Da'an, especially in the warm weather."
+        },
+        {
+          "reviewer": "Jasper",
+          "rating": 5,
+          "comment": "I absolutely love this midi skirt! The high waist is flattering, and the smocked elasticated waistband is so comfortable for all-day wear in Taipei City. The cotton poplin feels lovely."
+        },
+        {
+          "reviewer": "Seraphina",
+          "rating": 4,
+          "comment": "A nice and easy-to-wear midi skirt. The high waist is good, and the smocked elasticated waistband is very practical for the Taipei humidity. It's a great casual piece."
+        },
+        {
+          "reviewer": "Atticus",
+          "rating": 5,
+          "comment": "This poplin midi skirt is fantastic for the climate here in Da'an! The high waist is stylish, and the smocked elasticated waistband is incredibly comfortable. Perfect for a relaxed day out in Taipei."
+        },
+        {
+          "reviewer": "Genevieve",
+          "rating": 3,
+          "comment": "It's an okay midi skirt. The high waist is standard, and the smocked elasticated waistband is functional. The cotton poplin is alright for Taipei, but the overall design is quite simple."
+        }
+      ]
+    },
+    {
+      "id":"5644/317/", 
+      "category1":"WOMAN",
+      "category2":"SKIRT",
+      "name":"VOLUMINOUS BALLOON SKIRT",
+      "price": 1290,
+      "sale":false,
+      "description":"High-waist midi skirt with an elasticated waistband, lining and a bubble hem.",
+      "detail":[
+        "96% polyester","4% elastane","100% cotton"
+      ],
+      "class":[
+          {
+              "color":"ECRU",
+              "class_id":"712",
+              "color_num":"#F5F3E5",
+              "stock":[45, 120, 80, 40],
+              "img":[
+                  "/image/skirt/id-5644/317/712/1.jpg",
+                  "/image/skirt/id-5644/317/712/2.jpg",
+                  "/image/skirt/id-5644/317/712/3.jpg",
+                  "/image/skirt/id-5644/317/712/4.jpg",
+                  "/image/skirt/id-5644/317/712/5.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Eleanor",
+          "rating": 4,
+          "comment": "This voluminous balloon skirt is quite fun! The high waist and elasticated waistband make it comfortable for the Taipei weather, and the bubble hem is a unique and playful detail for exploring Da'an."
+        },
+        {
+          "reviewer": "Jasper",
+          "rating": 5,
+          "comment": "I absolutely love this midi skirt! The high waist is flattering, and the elasticated waistband is so comfortable for all-day wear in Taipei City. The bubble hem gives it a really stylish and distinctive shape."
+        },
+        {
+          "reviewer": "Seraphina",
+          "rating": 4,
+          "comment": "A nice and interesting midi skirt. The high waist is good, and the elasticated waistband is practical for the Taipei humidity. The bubble hem is a bit different, but it adds a unique flair."
+        },
+        {
+          "reviewer": "Atticus",
+          "rating": 5,
+          "comment": "This voluminous balloon skirt is fantastic for the climate here in Da'an! The high waist is stylish, and the elasticated waistband is incredibly comfortable. The bubble hem is a really eye-catching design for strolling around Taipei."
+        },
+        {
+          "reviewer": "Genevieve",
+          "rating": 3,
+          "comment": "It's an okay midi skirt. The high waist and elasticated waistband are functional for Taipei. The bubble hem is a bit too voluminous for my personal taste, but it's certainly a statement piece for the fashion scene here."
+        }
+      ]
+    },
+    {
+      "id":"4661/408/", 
+      "category1":"WOMAN",
+      "category2":"SKIRT",
+      "name":"BUTTON-UP WRAP MIDI SKIRT",
+      "price": 1990,
+      "sale":false,
+      "description":"High-waist midi wrap skirt with belt loops. Mock side pockets. Self-tie belt. Button-up wrap front.",
+      "detail":[
+        "100% cotton"
+      ],
+      "class":[
+          {
+              "color":"ECRU",
+              "class_id":"711",
+              "color_num":"#F5F3E5",
+              "stock":[25, 66, 87, 40],
+              "img":[
+                  "/image/skirt/id-4661/408/711/1.jpg",
+                  "/image/skirt/id-4661/408/711/2.jpg",
+                  "/image/skirt/id-4661/408/711/3.jpg",
+                  "/image/skirt/id-4661/408/711/4.jpg",
+                  "/image/skirt/id-4661/408/711/5.jpg"
+              ]
+          }
+      ],
+      "reviews": [
+        {
+          "reviewer": "Olivia",
+          "rating": 4,
+          "comment": "This button-up wrap midi skirt is quite stylish for Taipei! The high waist is flattering, and the self-tie belt allows for a customizable fit. The button-up wrap front is a nice detail for wearing around Da'an."
+        },
+        {
+          "reviewer": "William",
+          "rating": 5,
+          "comment": "I absolutely love this midi skirt! The 100% cotton feels so comfortable for the Taiwan weather, and the wrap design is very chic. The button-up front and self-tie belt make it a versatile piece for the city."
+        },
+        {
+          "reviewer": "Sophia",
+          "rating": 4,
+          "comment": "A pretty solid midi skirt. The high waist is good, and the wrap style is always flattering. The button-up front is a nice design element, and the belt loops offer options for styling in Taipei."
+        },
+        {
+          "reviewer": "James",
+          "rating": 5,
+          "comment": "This wrap midi skirt is fantastic for the climate here in Da'an! The high waist is very on-trend, and the button-up front is a stylish feature. The self-tie belt allows for a perfect fit for exploring Taipei."
+        },
+        {
+          "reviewer": "Emma",
+          "rating": 3,
+          "comment": "It's an okay midi skirt. The high waist is standard, and the wrap design is alright. The button-up front is a bit fiddly, and the mock pockets aren't functional for carrying things around Taipei."
         }
       ]
     }
