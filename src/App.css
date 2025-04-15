@@ -38,6 +38,10 @@
   .btn02:hover {
     opacity: 50%;
   }
+
+  .line {
+    background: #fff;
+  }
 }
 
 #root {
@@ -46,4 +50,3 @@
   /* padding: 2rem; */
   text-align: center;
 }
-
