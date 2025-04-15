@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 :root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   --NotoSans: "Noto Sans", sans-serif;
   --NunitoSans: "Nunito Sans", sans-serif;
-  --point_pink: #FA347F;
+  --point_pink: #fa347f;
 }
 
 body {
@@ -17,21 +17,21 @@ body {
 }
 
 /*文字設定*/
-h1{
+h1 {
   font-size: 18px;
 }
-h4{
+h4 {
   font-size: 14px;
   font-weight: bold;
 }
-p{
+p {
   font-size: 14px;
 }
-.hint{
+.hint {
   font-size: 14px;
   opacity: 50%;
 }
-.point{
+.point {
   font-size: 14px;
   color: var(--point_pink);
 }
