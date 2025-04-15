@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Slide from "../compenents/Slide";
 import SlidesNav from "../compenents/SlidesNav";
 import cover from "../../json/coverImg.json";
+import Footer from "../compenents/Footer";
 
 export default function Slides() {
   const [current, setCurrent] = useState(0);
@@ -55,18 +56,24 @@ export default function Slides() {
   }, [isSliding]);
 
   return (
-    <main className="h-screen overflow-hidden relative bg-white">
-      <section className="relative h-full w-full">
-        {cover.map((data, i) => (
-          <Slide
-            key={i}
-            id={data.id}
-            active={i === current}
-            bg={screen.width > 375 ? data.computerCover : data.mobileCover}
-          />
-        ))}
-      </section>
-      <SlidesNav onNext={nextSlide} onPrev={prevSlide} isSliding={isSliding} />
-    </main>
+    <div>
+      <main className="h-screen overflow-hidden relative bg-white">
+        <section className="relative h-full w-full">
+          {cover.map((data, i) => (
+            <Slide
+              key={i}
+              id={data.id}
+              active={i === current}
+              bg={screen.width > 375 ? data.computerCover : data.mobileCover}
+            />
+          ))}
+        </section>
+        <SlidesNav
+          onNext={nextSlide}
+          onPrev={prevSlide}
+          isSliding={isSliding}
+        />
+      </main>
+    </div>
   );
 }
