@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Slide from "../compenents/Slide";
 import SlidesNav from "../compenents/SlidesNav";
 import cover from "../../json/coverImg.json";
+import Header from "../compenents/Header";
 import Footer from "../compenents/Footer";
 
 export default function Slides() {
@@ -57,7 +58,11 @@ export default function Slides() {
 
   return (
     <div>
-      <main className="h-screen overflow-hidden relative bg-white">
+      <main className="h-screen overflow-hidden relative">
+        <div className="absolute z-50 bg-white dark:bg-black">
+          <Header />
+        </div>
+
         <section className="relative h-full w-full">
           {cover.map((data, i) => (
             <Slide

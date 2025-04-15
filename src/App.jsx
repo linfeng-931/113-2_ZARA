@@ -5,6 +5,7 @@ import Slides from "./page/Home";
 function App() {
   return (
     <>
+      <div data-theme="">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Slides />} />
@@ -24,6 +25,7 @@ function App() {
           </Route> */}
         </Routes>
       </BrowserRouter>
+      </div>
     </>
   );
 }

@@ -15,6 +15,1635 @@
             {
                 "color":"BLUE / WHITE",
                 "class_id":"679",
+                "color_num":"#bdced7",
+                "stock":[37, 142, 89, 196],
+                "img":[
+                    "/image/t-shirt/id-0264194/679/1.jpg",
+                    "/image/t-shirt/id-0264194/679/2.jpg",
+                    "/image/t-shirt/id-0264194/679/3.jpg",
+                    "/image/t-shirt/id-0264194/679/4.jpg",
+                    "/image/t-shirt/id-0264194/679/5.jpg",
+                    "/image/t-shirt/id-0264194/679/6.jpg",
+                    "/image/t-shirt/id-0264194/679/7.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Alice",
+                "rating": 5,
+                "comment": "Love this T-shirt! The 100% cotton fabric feels super soft and breathable. The print design is stylish and unique."
+            },
+            {
+                "reviewer": "Brian",
+                "rating": 4,
+                "comment": "Great quality and the elbow-length sleeves are a nice touch. Fits well and feels comfortable all day."
+            },
+            {
+                "reviewer": "Cindy",
+                "rating": 3,
+                "comment": "The shirt is okay. The material is good, but the print started to fade a little after a few washes."
+            },
+            {
+                "reviewer": "Daniel",
+                "rating": 5,
+                "comment": "Perfect casual tee! The round neckline and contrast print give it a clean, modern look. Would buy again."
+            },
+            {
+                "reviewer": "Emma",
+                "rating": 4,
+                "comment": "Soft cotton and great sleeve length. It’s breathable and ideal for warmer weather. Slightly loose fit, which I like."
+            }
+        ]
+
+    },
+    {
+        "id":"4174/151/",
+        "category1":"WOMAN",
+        "category2":"SHIRTS",
+        "name":"RIBBED SLEEVELESS T-SHIRT",
+        "price": 490,
+        "sale":false,
+        "description":"Cotton blend T-shirt. Round neck and sleeveless.",
+        "detail":[
+            "95% cotton", 
+            "5% elastane"
+        ],
+        "class":[
+            {
+                "color":"CORAL",
+                "class_id":"679",
+                "color_num":"#F8B4A6",
+                "stock":[5, 178, 122, 34],
+                "img":[
+                    "/image/t-shirt/id-4174151/679/1.jpg",
+                    "/image/t-shirt/id-4174151/679/2.jpg",
+                    "/image/t-shirt/id-4174151/679/3.jpg",
+                    "/image/t-shirt/id-4174151/679/4.jpg",
+                    "/image/t-shirt/id-4174151/679/5.jpg"
+                ]
+            },
+            {
+                "color":"WINE",
+                "class_id":"660",
+                "color_num":"#3A1B25",
+                "stock":[81, 143, 27, 190],
+                "img":[
+                    "/image/t-shirt/id-4174151/660/1.jpg",
+                    "/image/t-shirt/id-4174151/660/2.jpg",
+                    "/image/t-shirt/id-4174151/660/3.jpg",
+                    "/image/t-shirt/id-4174151/660/4.jpg"
+                ]
+            },
+            {
+                "color":"CHARCOAL",
+                "class_id":"882",
+                "color_num":"#31312D",
+                "stock":[99, 12, 66, 158],
+                "img":[
+                    "/image/t-shirt/id-4174151/882/1.jpg",
+                    "/image/t-shirt/id-4174151/882/2.jpg",
+                    "/image/t-shirt/id-4174151/882/3.jpg",
+                    "/image/t-shirt/id-4174151/882/4.jpg"
+                ]
+            },
+            {
+                "color":"BLACK",
+                "class_id":"880",
+                "color_num":"#0A0A0A",
+                "stock":[41, 117, 135, 199],
+                "img":[
+                    "/image/t-shirt/id-4174151/880/1.jpg",
+                    "/image/t-shirt/id-4174151/880/2.jpg",
+                    "/image/t-shirt/id-4174151/880/3.jpg",
+                    "/image/t-shirt/id-4174151/880/4.jpg",
+                    "/image/t-shirt/id-4174151/880/5.jpg"
+                ]
+            },
+            {
+                "color":"WHITE",
+                "class_id":"250",
+                "color_num":"#F4F6FA",
+                "stock":[150, 48, 173, 3],
+                "img":[
+                    "/image/t-shirt/id-4174151/250/1.jpg",
+                    "/image/t-shirt/id-4174151/250/2.jpg",
+                    "/image/t-shirt/id-4174151/250/3.jpg",
+                    "/image/t-shirt/id-4174151/250/4.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Sophie",
+                "rating": 5,
+                "comment": "Absolutely love this sleeveless tee! The ribbed texture adds a nice detail and it’s perfect for layering or wearing on its own."
+            },
+            {
+                "reviewer": "Liam",
+                "rating": 4,
+                "comment": "The fit is great and the fabric feels soft. Ideal for hot days, and the round neck makes it look clean and simple."
+            },
+            {
+                "reviewer": "Chloe",
+                "rating": 3,
+                "comment": "Nice design, but the material could be a bit thicker. Still comfortable, but slightly see-through in bright light."
+            }
+        ]
+    },
+    {
+        "id":"5584/315/",
+        "category1":"WOMAN",
+        "category2":"SHIRTS",
+        "name":"SHORT SLEEVE VISCOSE T-SHIRT",
+        "price": 450,
+        "sale":false,
+        "description":"T-shirt made with a viscose blend. Round neck and short sleeves.",
+        "detail":[
+            "96% viscose", 
+            "4% elastane"
+        ],
+        "class":[
+            {
+                "color":"YELLOW",
+                "class_id":"300",
+                "color_num":"#fff6be",
+                "stock":[5, 178, 122, 34],
+                "img":[
+                    "/image/t-shirt/id-5584315/300/1.jpg",
+                    "/image/t-shirt/id-5584315/300/2.jpg",
+                    "/image/t-shirt/id-5584315/300/3.jpg",
+                    "/image/t-shirt/id-5584315/300/4.jpg",
+                    "/image/t-shirt/id-5584315/300/5.jpg",
+                    "/image/t-shirt/id-5584315/300/6.jpg"
+                ]
+            },
+            {
+                "color":"WHITE",
+                "class_id":"250",
+                "color_num":"#f5f6f8",
+                "stock":[81, 143, 27, 190],
+                "img":[
+                    "/image/t-shirt/id-5584315/250/1.jpg",
+                    "/image/t-shirt/id-5584315/250/2.jpg",
+                    "/image/t-shirt/id-5584315/250/3.jpg",
+                    "/image/t-shirt/id-5584315/250/4.jpg",
+                    "/image/t-shirt/id-5584315/250/5.jpg",
+                    "/image/t-shirt/id-5584315/250/6.jpg"
+                ]
+            },
+            {
+                "color":"BLACK",
+                "class_id":"800",
+                "color_num":"#0A0A0A",
+                "stock":[99, 12, 66, 158],
+                "img":[
+                    "/image/t-shirt/id-5584315/800/1.jpg",
+                    "/image/t-shirt/id-5584315/800/2.jpg",
+                    "/image/t-shirt/id-5584315/800/3.jpg",
+                    "/image/t-shirt/id-5584315/800/4.jpg",
+                    "/image/t-shirt/id-5584315/800/5.jpg",
+                    "/image/t-shirt/id-5584315/800/6.jpg"
+                ]
+            },
+            {
+                "color":"BROWN",
+                "class_id":"700",
+                "color_num":"#4f393a",
+                "stock":[41, 117, 135, 199],
+                "img":[
+                    "/image/t-shirt/id-5584315/700/1.jpg",
+                    "/image/t-shirt/id-5584315/700/2.jpg",
+                    "/image/t-shirt/id-5584315/700/3.jpg",
+                    "/image/t-shirt/id-5584315/700/4.jpg",
+                    "/image/t-shirt/id-5584315/700/5.jpg",
+                    "/image/t-shirt/id-5584315/700/6.jpg"
+                ]
+            },
+            {
+                "color":"PINK",
+                "class_id":"620",
+                "color_num":"#ffc2ea",
+                "stock":[150, 48, 173, 3],
+                "img":[
+                    "/image/t-shirt/id-5584315/620/1.jpg",
+                    "/image/t-shirt/id-5584315/620/2.jpg",
+                    "/image/t-shirt/id-5584315/620/3.jpg",
+                    "/image/t-shirt/id-5584315/620/4.jpg",
+                    "/image/t-shirt/id-5584315/620/5.jpg",
+                    "/image/t-shirt/id-5584315/620/6.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Emily",
+                "rating": 5,
+                "comment": "Super soft and breathable! This T-shirt feels amazing on the skin and drapes beautifully. Great for both casual and dressed-up looks."
+            },
+            {
+                "reviewer": "Jack",
+                "rating": 4,
+                "comment": "Really like the lightweight feel of the fabric. The fit is relaxed without being too loose. Perfect for summer wear."
+            }
+        ]
+    },
+    {
+        "id":"2298/203/",
+        "category1":"WOMAN",
+        "category2":"SHIRTS",
+        "name":"T-SHIRT WITH PERFORATED EMBROIDERY",
+        "price": 890,
+        "sale": false,
+        "description":"T-shirt with a round neck and short puff sleeves finished with elasticated cuffs. Featuring matching perforated embroidery detail.",
+        "detail":[
+            "94% polyester",
+            "6% elastane"
+        ],
+        "class":[
+            {
+                "color":"OYSTER-WHITE",
+                "class_id":"251",
+                "color_num":"#fdfbf6",
+                "stock":[37, 0, 29, 106],
+                "img":[
+                    "/image/t-shirt/id-2298203/251/1.jpg",
+                    "/image/t-shirt/id-2298203/251/2.jpg",
+                    "/image/t-shirt/id-2298203/251/3.jpg",
+                    "/image/t-shirt/id-2298203/251/4.jpg",
+                    "/image/t-shirt/id-2298203/251/5.jpg",
+                    "/image/t-shirt/id-2298203/251/6.jpg",
+                    "/image/t-shirt/id-2298203/251/7.jpg",
+                    "/image/t-shirt/id-2298203/251/8.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Isabella",
+                "rating": 5,
+                "comment": "Absolutely adorable! The puff sleeves and embroidery give it such a feminine, vintage feel. Got so many compliments!"
+            },
+            {
+                "reviewer": "Noah",
+                "rating": 4,
+                "comment": "Bought this for my sister and she loves it. The detailing is delicate and the elastic cuffs are comfy without being tight."
+            },
+            {
+                "reviewer": "Ava",
+                "rating": 3,
+                "comment": "It’s cute, but the material is a bit thinner than I expected. Works best with a nude or white bra underneath."
+            },
+            {
+                "reviewer": "Lucas",
+                "rating": 5,
+                "comment": "Gave this as a gift and it was a hit! The embroidery is subtle but beautiful, and the puff sleeves really elevate the design."
+            },
+            {
+                "reviewer": "Mia",
+                "rating": 4,
+                "comment": "Love the style! Very romantic and easy to dress up or down. Loses one star because it wrinkles a bit easily."
+            },
+            {
+                "reviewer": "Ethan",
+                "rating": 5,
+                "comment": "This tee is a total win! Great fit, airy fabric, and the embroidered detail makes it stand out without being too much."
+            }
+        ]
+    },
+    {
+        "id":"1165/184/",
+        "category1":"WOMAN",
+        "category2":"SHIRTS",
+        "name":"SEMI-SHEER GATHERED TOP",
+        "price": 990,
+        "sale": false,
+        "description":"Semi-sheer top with a plunging V-neck and long sleeves with gathered cuffs.",
+        "detail":[
+            "97% polyester",
+            "3% elastane"
+        ],
+        "class":[
+            {
+                "color":"BLACK",
+                "class_id":"800",
+                "color_num":"#0A0A0A",
+                "stock":[137, 30, 0, 203],
+                "img":[
+                    "/image/t-shirt/id-1165184/800/1.jpg",
+                    "/image/t-shirt/id-1165184/800/2.jpg",
+                    "/image/t-shirt/id-1165184/800/3.jpg",
+                    "/image/t-shirt/id-1165184/800/4.jpg",
+                    "/image/t-shirt/id-1165184/800/5.jpg",
+                    "/image/t-shirt/id-1165184/800/6.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Grace",
+                "rating": 5,
+                "comment": "Stunning top! The plunging neckline is elegant but not too revealing, and the gathered sleeves give it a really stylish flair."
+            },
+            {
+                "reviewer": "Olivia",
+                "rating": 4,
+                "comment": "Love the semi-sheer look—super chic with a bralette underneath. Loses one star because it wrinkles a little easily."
+            },
+            {
+                "reviewer": "Benjamin",
+                "rating": 4,
+                "comment": "Got this for my girlfriend and she looked amazing in it. The fabric is light and flowy, perfect for a night out."
+            },
+            {
+                "reviewer": "Zoe",
+                "rating": 3,
+                "comment": "The style is cute and trendy, but the fabric is more sheer than expected. Still works with a good inner layer though."
+            }
+        ]
+    },
+    {
+        "id":"3039/150/",
+        "category1":"WOMAN",
+        "category2":"SHIRTS",
+        "name":"SLEEVELESS TOP",
+        "price": 990,
+        "sale": false,
+        "description":"Sleeveless T-shirt made from a yarn containing 6% wool. Round neck.",
+        "detail":[
+            "40% polyamide",
+            "29% acrylic",
+            "24% polyester",
+            "6% wool",
+            "1% elastane"
+        ],
+        "class":[
+            {
+                "color":"MID-MINK",
+                "class_id":"757",
+                "color_num":"#8c8479",
+                "stock":[200, 45, 132, 17],
+                "img":[
+                    "/image/t-shirt/id-3039150/757/1.jpg",
+                    "/image/t-shirt/id-3039150/757/2.jpg",
+                    "/image/t-shirt/id-3039150/757/3.jpg",
+                    "/image/t-shirt/id-3039150/757/4.jpg",
+                    "/image/t-shirt/id-3039150/757/5.jpg"
+                ]
+            },
+            {
+                "color":"MID-ECRU",
+                "class_id":"715",
+                "color_num":"#faf6e3",
+                "stock":[56, 3, 178, 94],
+                "img":[
+                    "/image/t-shirt/id-3039150/715/1.jpg",
+                    "/image/t-shirt/id-3039150/715/2.jpg",
+                    "/image/t-shirt/id-3039150/715/3.jpg",
+                    "/image/t-shirt/id-3039150/715/4.jpg",
+                    "/image/t-shirt/id-3039150/715/5.jpg"
+                ]
+            },
+            {
+                "color":"LIGHT-SAND",
+                "class_id":"752",
+                "color_num":"#fef5e3",
+                "stock":[34, 120, 87, 199],
+                "img":[
+                    "/image/t-shirt/id-3039150/752/1.jpg",
+                    "/image/t-shirt/id-3039150/752/2.jpg",
+                    "/image/t-shirt/id-3039150/752/3.jpg",
+                    "/image/t-shirt/id-3039150/752/4.jpg",
+                    "/image/t-shirt/id-3039150/752/5.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Lily",
+                "rating": 5,
+                "comment": "Really love the touch of wool—gives it a cozy texture without being too warm. Perfect for layering or wearing on its own!"
+            },
+            {
+                "reviewer": "Henry",
+                "rating": 4,
+                "comment": "The fit is clean and flattering. The wool blend adds a nice feel, but it might be slightly itchy for sensitive skin."
+            },
+            {
+                "reviewer": "Ella",
+                "rating": 3,
+                "comment": "Nice design, but I expected it to be a bit softer. The cut is great though, and it pairs well with jackets."
+            },
+            {
+                "reviewer": "James",
+                "rating": 5,
+                "comment": "Excellent quality and surprisingly versatile. Works with both casual and more polished looks. Love the wool blend!"
+            },
+            {
+                "reviewer": "Sofia",
+                "rating": 4,
+                "comment": "Super stylish and simple. The round neck is flattering and the material feels premium. Slightly warm for hot days."
+            }
+        ]
+    },
+    {
+        "id":"1165/197/",
+        "category1":"WOMAN",
+        "category2":"SHIRTS",
+        "name":"BROOCH CLASP T-SHIRT",
+        "price": 790,
+        "sale": false,
+        "description":"Cotton T-shirt. Round neck and short sleeves. Featuring a metal clasp detail on the front.",
+        "detail":[
+            "100% cotton"
+        ],
+        "class":[
+            {
+                "color":"WHITE",
+                "class_id":"250",
+                "color_num":"#f7f6f0",
+                "stock":[73, 144, 38, 191] ,
+                "img":[
+                    "/image/t-shirt/id-1165197/250/1.jpg",
+                    "/image/t-shirt/id-1165197/250/2.jpg",
+                    "/image/t-shirt/id-1165197/250/3.jpg",
+                    "/image/t-shirt/id-1165197/250/4.jpg",
+                    "/image/t-shirt/id-1165197/250/5.jpg"
+                ]
+            },
+            {
+                "color":"PINK",
+                "class_id":"620",
+                "color_num":"#ffefed",
+                "stock":[60, 0, 122, 85] ,
+                "img":[
+                    "/image/t-shirt/id-1165197/620/1.jpg",
+                    "/image/t-shirt/id-1165197/620/2.jpg",
+                    "/image/t-shirt/id-1165197/620/3.jpg",
+                    "/image/t-shirt/id-1165197/620/4.jpg",
+                    "/image/t-shirt/id-1165197/620/5.jpg",
+                    "/image/t-shirt/id-1165197/620/6.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Amelia",
+                "rating": 5,
+                "comment": "The clasp detail is such a chic touch! It turns a basic tee into something stylish and unique. Love pairing it with high-waisted jeans."
+            },
+            {
+                "reviewer": "Leo",
+                "rating": 4,
+                "comment": "Really cool design. The T-shirt itself is soft and comfy, and the clasp adds a bit of edge. Just wish it came in more colors."
+            },
+            {
+                "reviewer": "Harper",
+                "rating": 3,
+                "comment": "Interesting look, but the metal clasp feels a bit heavy on the chest. Not ideal for long wear, but great for a statement outfit."
+            },
+            {
+                "reviewer": "Daniel",
+                "rating": 5,
+                "comment": "Super stylish! Got compliments the first time I wore it. The fit is relaxed but flattering, and the clasp elevates the whole vibe."
+            },
+            {
+                "reviewer": "Layla",
+                "rating": 4,
+                "comment": "Nice quality cotton, and the metal detail gives it a designer feel. Would give it 5 stars if the clasp was slightly lighter."
+            }
+        ]
+    },
+    {
+        "id":"1165/190/",
+        "category1":"WOMAN",
+        "category2":"SHIRTS",
+        "name":"DRAWSTRING GATHERED T-SHIRT",
+        "price": 990,
+        "sale": false,
+        "description":"Cotton blend T-shirt featuring a round neck, sleeveless design and adjustable drawstring gathered detail at the side.",
+        "detail":[
+            "97% cotton",
+            "3% elastane"
+        ],
+        "class":[
+            {
+                "color":"CHOLOCLATE",
+                "class_id":"717",
+                "color_num":"#7b584f",
+                "stock":[13, 58, 134, 197],
+                "img":[
+                    "/image/t-shirt/id-1165190/717/1.jpg",
+                    "/image/t-shirt/id-1165190/717/2.jpg",
+                    "/image/t-shirt/id-1165190/717/3.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Natalie",
+                "rating": 5,
+                "comment": "Love the drawstring detail—it lets me adjust the fit and adds a stylish twist. Super comfy and perfect for summer!"
+            },
+            {
+                "reviewer": "Oliver",
+                "rating": 4,
+                "comment": "Got this for my partner and she loves it. The side gathering adds a flattering shape, and the fabric feels light and breathable."
+            },
+            {
+                "reviewer": "Emily",
+                "rating": 3,
+                "comment": "Cute top, but the drawstring can feel a bit bulky when tied tight. Still a fun piece to style with jeans or a skirt."
+            }
+        ]
+    },
+    {
+        "id":"2183/052/",
+        "category1":"WOMAN",
+        "category2":"TROUSERS",
+        "name":"ZW COLLECTION PRINTED PYJAMA TROUSERS",
+        "price": 1790,
+        "sale": false,
+        "description":"Mid-waist trousers with an elastic waistband adjustable with drawstrings. Side pockets concealed in the seam. Straight leg.",
+        "detail":[
+            "100% viscose"
+        ],
+        "class":[
+            {
+                "color":"MULTICOLOURED",
+                "class_id":"330",
+                "color_num":"#ed4f26",
+                "stock":[91, 162, 48, 7],
+                "img":[
+                    "/image/trousers/id-2183052/330/1.jpg",
+                    "/image/trousers/id-2183052/330/2.jpg",
+                    "/image/trousers/id-2183052/330/3.jpg",
+                    "/image/trousers/id-2183052/330/4.jpg",
+                    "/image/trousers/id-2183052/330/5.jpg",
+                    "/image/trousers/id-2183052/330/6.jpg",
+                    "/image/trousers/id-2183052/330/7.jpg",
+                    "/image/trousers/id-2183052/330/8.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Sophia",
+                "rating": 5,
+                "comment": "These are my new favorite lounge pants! The print is gorgeous, and the fit is relaxed but still flattering. Super comfy for all-day wear."
+            },
+            {
+                "reviewer": "Mason",
+                "rating": 4,
+                "comment": "Really comfortable and well-made. The drawstring waistband is great for adjusting the fit. Would love more patterns!"
+            },
+            {
+                "reviewer": "Chloe",
+                "rating": 4,
+                "comment": "Soft material and the hidden pockets are a nice touch. Slightly long on me, but easy to hem or just wear casually around the house."
+            },
+            {
+                "reviewer": "Elijah",
+                "rating": 3,
+                "comment": "Nice design and fabric, but the waistband felt a bit tight even with the drawstring loosened. Might size up next time."
+            }
+        ]
+    },
+    {
+        "id":"4174/195/",
+        "category1":"WOMAN",
+        "category2":"TROUSERS",
+        "name":"WASHED PAREO TROUSERS",
+        "price": 1190,
+        "sale": false,
+        "description":"Mid-waist trousers with an elasticated back waistband adjustable with ties. Front overlay detail in the same pareo-style fabric.",
+        "detail":[
+            "100% cotton"
+        ],
+        "class":[
+            {
+                "color":"SAND",
+                "class_id":"711",
+                "color_num":"#fff3e3",
+                "stock":[60, 0, 122, 85],
+                "img":[
+                    "/image/trousers/id-4174195/711/1.jpg",
+                    "/image/trousers/id-4174195/711/2.jpg",
+                    "/image/trousers/id-4174195/711/3.jpg",
+                    "/image/trousers/id-4174195/711/4.jpg",
+                    "/image/trousers/id-4174195/711/5.jpg",
+                    "/image/trousers/id-4174195/711/6.jpg"
+                ]
+            },
+            {
+                "color":"GREY GREEN",
+                "class_id":"916",
+                "color_num":"#c2c6b7",
+                "stock":[29, 111, 76, 180],
+                "img":[
+                    "/image/trousers/id-4174195/916/1.jpg",
+                    "/image/trousers/id-4174195/916/2.jpg",
+                    "/image/trousers/id-4174195/916/3.jpg",
+                    "/image/trousers/id-4174195/916/4.jpg",
+                    "/image/trousers/id-4174195/916/5.jpg",
+                    "/image/trousers/id-4174195/916/6.jpg",
+                    "/image/trousers/id-4174195/916/7.jpg"
+                ]
+            },
+            {
+                "color":"BLUE / GREY",
+                "class_id":"485",
+                "color_num":"#a4a4a8",
+                "stock":[149, 18, 67, 203],
+                "img":[
+                    "/image/trousers/id-4174195/485/1.jpg",
+                    "/image/trousers/id-4174195/485/2.jpg",
+                    "/image/trousers/id-4174195/485/3.jpg",
+                    "/image/trousers/id-4174195/485/4.jpg",
+                    "/image/trousers/id-4174195/485/5.jpg",
+                    "/image/trousers/id-4174195/485/6.jpg",
+                    "/image/trousers/id-4174195/485/7.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Aria",
+                "rating": 5,
+                "comment": "These trousers are such a vibe! The pareo-style front overlay adds a flowy, beachy look. Super comfortable and perfect for warm weather."
+            },
+            {
+                "reviewer": "Jackson",
+                "rating": 4,
+                "comment": "Really like the relaxed fit and the soft fabric. The adjustable waistband is a nice touch, though the front overlay can shift a bit when walking."
+            }
+        ]
+    },
+    {
+        "id":"0779/053/",
+        "category1":"WOMAN",
+        "category2":"TROUSERS",
+        "name":"WIDE-LEG TROUSERS WITH DARTS",
+        "price": 1490,
+        "sale": false,
+        "description":"High-waist trousers with front darts. Front pockets and false double welt pockets at the back. Wide leg. Front zip, interior button and hook fastening.",
+        "detail":[
+            "85% modal",
+            "15% polyester"
+        ],
+        "class":[
+            {
+                "color":"LIGHT KHAKI",
+                "class_id":"506",
+                "color_num":"#bdc16b",
+                "stock":[91, 162, 48, 7],
+                "img":[
+                    "/image/trousers/id-0779053/506/1.jpg",
+                    "/image/trousers/id-0779053/506/2.jpg",
+                    "/image/trousers/id-0779053/506/3.jpg",
+                    "/image/trousers/id-0779053/506/4.jpg",
+                    "/image/trousers/id-0779053/506/5.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Claire",
+                "rating": 5,
+                "comment": "So flattering and classy! The high waist and darts give a beautiful shape, and the wide-leg cut is super elegant. Perfect for work or dinner."
+            },
+            {
+                "reviewer": "Aiden",
+                "rating": 4,
+                "comment": "Great quality fabric and sharp tailoring. The fit is polished, though I had to get them hemmed since they run long on me."
+            },
+            {
+                "reviewer": "Samantha",
+                "rating": 5,
+                "comment": "Absolutely love these trousers! They drape perfectly and feel high-end. The zip and hook closure keeps the front smooth and clean."
+            },
+            {
+                "reviewer": "Nathan",
+                "rating": 3,
+                "comment": "Nice design and cut, but the waistband feels a bit stiff. Still looks good, just not the comfiest for all-day wear."
+            },
+            {
+                "reviewer": "Victoria",
+                "rating": 4,
+                "comment": "The front darts make a huge difference—super flattering! Wish the back pockets were real though. Otherwise, love them!"
+            }
+        ]
+    },
+    {
+        "id":"9929/149/",
+        "category1":"WOMAN",
+        "category2":"TROUSERS",
+        "name":"WIDE FLOWING TROUSERS",
+        "price": 1190,
+        "sale": false,
+        "description":"High-waist trousers with an elastic waistband. Front pockets. Extra-wide leg.",
+        "detail":[
+            "100% polyester"
+        ],
+        "class":[
+            {
+                "color":"TERRACOTTA",
+                "class_id":"658",
+                "color_num":"#963d36",
+                "stock":[91, 162, 48, 7],
+                "img":[
+                    "/image/trousers/id-9929149/658/1.jpg",
+                    "/image/trousers/id-9929149/658/2.jpg",
+                    "/image/trousers/id-9929149/658/3.jpg",
+                    "/image/trousers/id-9929149/658/4.jpg",
+                    "/image/trousers/id-9929149/658/5.jpg",
+                    "/image/trousers/id-9929149/658/6.jpg",
+                    "/image/trousers/id-9929149/658/7.jpg",
+                    "/image/trousers/id-9929149/658/8.jpg",
+                    "/image/trousers/id-9929149/658/9.jpg"
+                ]
+            },
+            {
+                "color":"CAVA",
+                "class_id":"307",
+                "color_num":"#dfd3c2",
+                "stock":[73, 144, 38, 191],
+                "img":[
+                    "/image/trousers/id-9929149/307/1.jpg",
+                    "/image/trousers/id-9929149/307/2.jpg",
+                    "/image/trousers/id-9929149/307/3.jpg",
+                    "/image/trousers/id-9929149/307/4.jpg",
+                    "/image/trousers/id-9929149/307/5.jpg"
+                ]
+            },
+            {
+                "color":"BLACK",
+                "class_id":"800",
+                "color_num":"#242524",
+                "stock":[56, 13, 0, 94],
+                "img":[
+                    "/image/trousers/id-9929149/800/1.jpg",
+                    "/image/trousers/id-9929149/800/2.jpg",
+                    "/image/trousers/id-9929149/800/3.jpg",
+                    "/image/trousers/id-9929149/800/4.jpg",
+                    "/image/trousers/id-9929149/800/5.jpg",
+                    "/image/trousers/id-9929149/800/6.jpg",
+                    "/image/trousers/id-9929149/800/7.jpg",
+                    "/image/trousers/id-9929149/800/8.jpg",
+                    "/image/trousers/id-9929149/800/9.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Hannah",
+                "rating": 5,
+                "comment": "These trousers are insanely comfortable! The extra-wide leg gives such a graceful flow when you walk, and the elastic waistband is a dream."
+            },
+            {
+                "reviewer": "Ethan",
+                "rating": 4,
+                "comment": "Great for casual or semi-formal outfits. The fit is relaxed but stylish. Lost one star only because they wrinkle a bit easily."
+            },
+            {
+                "reviewer": "Zara",
+                "rating": 5,
+                "comment": "Obsessed! Super breathable and perfect for warmer weather. Love pairing them with a cropped top or tucked-in blouse."
+            },
+            {
+                "reviewer": "Logan",
+                "rating": 3,
+                "comment": "Nice fabric and shape, but they run a little too long for me. I had to wear them with platforms or get them tailored."
+            },
+            {
+                "reviewer": "Bella",
+                "rating": 4,
+                "comment": "Very flattering high waist and such a flowy silhouette. Would’ve loved a back pocket too, but still a solid piece."
+            },
+            {
+                "reviewer": "Matthew",
+                "rating": 5,
+                "comment": "Perfect balance of comfort and style. The extra-wide leg makes a bold statement, and they feel amazing on!"
+            }
+        ]
+    },
+    {
+        "id":"8741/131/",
+        "category1":"WOMAN",
+        "category2":"TROUSERS",
+        "name":"EMBROIDERED TROUSERS WITH GUIPURE HEM",
+        "price": 1790,
+        "sale": false,
+        "description":"High-waist trousers with concealed side in-seam pockets. Wide, cropped leg finished with a guipure trim. Front fastening with zip, inside button and hook-and-eye closure.",
+        "detail":[
+            "100% cotton",
+            "80% polyester",
+            "20% cotton"
+        ],
+        "class":[
+            {
+                "color":"ECRU / KHAKI",
+                "class_id":"071",
+                "color_num":"#859685",
+                "stock":[23, 157, 89, 46],
+                "img":[
+                    "/image/trousers/id-8741131/071/1.jpg",
+                    "/image/trousers/id-8741131/071/2.jpg",
+                    "/image/trousers/id-8741131/071/3.jpg",
+                    "/image/trousers/id-8741131/071/4.jpg",
+                    "/image/trousers/id-8741131/071/5.jpg",
+                    "/image/trousers/id-8741131/071/6.jpg",
+                    "/image/trousers/id-8741131/071/7.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Juliette",
+                "rating": 5,
+                "comment": "Absolutely stunning! The guipure hem adds such a delicate, elegant touch. They feel tailored but still super comfortable."
+            },
+            {
+                "reviewer": "Theo",
+                "rating": 4,
+                "comment": "Beautiful embroidery and lovely cropped cut. The fit is great, though I wish the fabric had just a little more stretch."
+            },
+            {
+                "reviewer": "Isla",
+                "rating": 5,
+                "comment": "Perfect for dressier occasions. The hem detail makes them stand out, and the high waist gives a flattering silhouette!"
+            }
+        ]
+    },
+    {
+        "id":"2398/198/",
+        "category1":"WOMAN",
+        "category2":"TROUSERS",
+        "name":"ZW COLLECTION DARTED TROUSERS",
+        "price": 1990,
+        "sale": true,
+        "new_price": [990, 50],
+        "description":"Mid-waist trousers with an elastic waistband adjustable with drawstrings. Side pockets concealed in the seam. Straight leg.",
+        "detail":[
+            "100% polyester"
+        ],
+        "class":[
+            {
+                "color":"ECRU",
+                "class_id":"330",
+                "color_num":"#fefdfb",
+                "stock":[91, 162, 48, 7],
+                "img":[
+                    "/image/trousers/id-2398198/712/1.jpg",
+                    "/image/trousers/id-2398198/712/2.jpg",
+                    "/image/trousers/id-2398198/712/3.jpg",
+                    "/image/trousers/id-2398198/712/4.jpg",
+                    "/image/trousers/id-2398198/712/5.jpg",
+                    "/image/trousers/id-2398198/712/6.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Lena",
+                "rating": 5,
+                "comment": "These trousers are super polished and flattering. The pressed crease gives them a tailored look that's perfect for work or more formal outfits."
+            },
+            {
+                "reviewer": "Ryan",
+                "rating": 4,
+                "comment": "Great fit and structure. The fabric feels high quality and the mid-rise is very comfortable. Slightly snug at the waist, but overall love them."
+            },
+            {
+                "reviewer": "Amelie",
+                "rating": 4,
+                "comment": "Classic cut with a modern vibe. The straight leg is versatile and easy to style. I just wish the material had a bit more stretch."
+            }
+        ]
+    },
+    {
+        "id":"8417/153/",
+        "category1":"WOMAN",
+        "category2":"TROUSERS",
+        "name":"INTERLOCK BELL BOTTOM LEGGINGS",
+        "price": 1190,
+        "sale": false,
+        "description":"Leggings made from a soft, opaque, and compact knit fabric with stretch. High waisted with an elasticated waistband. Flared hems.",
+        "detail":[
+            "50% polyester",
+            "45% cotton",
+            "5% elastane"
+        ],
+        "class":[
+            {
+                "color":"BLACK",
+                "class_id":"800",
+                "color_num":"#000000",
+                "stock":[39, 120, 77, 200],
+                "img":[
+                    "/image/trousers/id-8417153/800/1.jpg",
+                    "/image/trousers/id-8417153/800/2.jpg",
+                    "/image/trousers/id-8417153/800/3.jpg",
+                    "/image/trousers/id-8417153/800/4.jpg",
+                    "/image/trousers/id-8417153/800/5.jpg",
+                    "/image/trousers/id-8417153/800/6.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Madison",
+                "rating": 5,
+                "comment": "Absolutely love these! Super soft and the flared leg gives a fun retro vibe. They hug all the right places without feeling tight."
+            },
+            {
+                "reviewer": "Jayden",
+                "rating": 4,
+                "comment": "Great quality fabric—thick and not see-through at all. The flare adds something different to my usual legging look."
+            },
+            {
+                "reviewer": "Hailey",
+                "rating": 3,
+                "comment": "Stylish and comfy, but they’re a little long for me. I’m 5'3 and they drag unless I wear platform shoes."
+            },
+            {
+                "reviewer": "Caleb",
+                "rating": 5,
+                "comment": "Perfect for both lounging and going out. The high waist is super flattering and the stretch fabric moves with you."
+            }
+        ]
+    },
+    {
+        "id":"2125/095/",
+        "category1":"WOMAN",
+        "category2":"TROUSERS",
+        "name":"DARTED WIDE-LEG TROUSERS",
+        "price": 1790,
+        "sale": false,
+        "description":"High-waist trousers with front darts. Front pockets. Wide-leg design. Front zip fly, inside button and hook fastening.",
+        "detail":[
+            "63% polyester",
+            "32% viscose",
+            "5% elastane"
+        ],
+        "class":[
+            {
+                "color":"MID-GREY",
+                "class_id":"809",
+                "color_num":"#787878",
+                "stock":[40, 10, 98, 102],
+                "img":[
+                    "/image/trousers/id-2125095/809/1.jpg",
+                    "/image/trousers/id-2125095/809/2.jpg",
+                    "/image/trousers/id-2125095/809/3.jpg",
+                    "/image/trousers/id-2125095/809/4.jpg",
+                    "/image/trousers/id-2125095/809/5.jpg",
+                    "/image/trousers/id-2125095/809/6.jpg"
+                ]
+            },
+            {
+                "color":"BLACK",
+                "class_id":"800",
+                "color_num":"#000000",
+                "stock":[55, 184, 92, 16],
+                "img":[
+                    "/image/trousers/id-2125095/800/1.jpg",
+                    "/image/trousers/id-2125095/800/2.jpg",
+                    "/image/trousers/id-2125095/800/3.jpg",
+                    "/image/trousers/id-2125095/800/4.jpg",
+                    "/image/trousers/id-2125095/800/5.jpg",
+                    "/image/trousers/id-2125095/800/6.jpg",
+                    "/image/trousers/id-2125095/800/7.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Sienna",
+                "rating": 5,
+                "comment": "These trousers are beautifully tailored! The darts add just the right amount of structure, and the wide-leg cut is super flattering."
+            },
+            {
+                "reviewer": "Lucas",
+                "rating": 4,
+                "comment": "Great quality and very comfortable. The high waist sits perfectly, though I did need to get them hemmed a bit."
+            },
+            {
+                "reviewer": "Avery",
+                "rating": 5,
+                "comment": "Love the classic, elegant style. They look amazing with both heels and sneakers. Definitely a wardrobe staple!"
+            },
+            {
+                "reviewer": "Mila",
+                "rating": 3,
+                "comment": "Nice fit and fabric, but the waistband felt a bit stiff at first. It softened after a couple of wears though."
+            },
+            {
+                "reviewer": "Noah",
+                "rating": 4,
+                "comment": "Very sharp look, perfect for the office. The wide leg gives it a modern touch without losing the formal feel."
+            }
+        ]
+    },
+    {
+        "id":"5479/043/",
+        "category1":"WOMAN",
+        "category2":"JACKET",
+        "name":"100% LEATHER BOMBER JACKET ZW COLLECTION LIMITED EDITION",
+        "price": 8490,
+        "sale": false,
+        "description":"Bomber jacket made from 100% leather. Lapel collar and long sleeve with cuff. Front pockets. Elasticated hem. Inner lining. Front zip fastening with hidden buttons on the placket.",
+        "detail":[
+            "100% sheep leather",
+            "100% viscose"
+        ],
+        "class":[
+            {
+                "color":"BOTTLE GREEN",
+                "class_id":"501",
+                "color_num":"#4d4c47",
+                "stock":[55, 184, 92, 16],
+                "img":[
+                    "/image/trousers/id-5479043/501/1.jpg",
+                    "/image/trousers/id-5479043/501/2.jpg",
+                    "/image/trousers/id-5479043/501/3.jpg",
+                    "/image/trousers/id-5479043/501/4.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Elena",
+                "rating": 5,
+                "comment": "This jacket is pure luxury! The leather is buttery soft, and the fit is structured yet relaxed. A true statement piece that elevates any outfit."
+            },
+            {
+                "reviewer": "Marcus",
+                "rating": 4,
+                "comment": "Incredible craftsmanship and the hidden buttons are a sleek touch. It’s a bit heavy, but that’s expected with real leather—worth it for the quality."
+            }
+        ]
+    },
+    {
+        "id":"4676/044/",
+        "category1":"WOMAN",
+        "category2":"JACKET",
+        "name":"ZW COLLECTION DENIM OVERSHIRT",
+        "price": 1790,
+        "sale": false,
+        "description":"Overshirt made from cotton yarn. Featuring a lapel collar, long sleeves with cuffs, patch pockets on the chest and a button-up front.",
+        "detail":[
+            "100% cotton"
+        ],
+        "class":[
+            {
+                "color":"INDIGO",
+                "class_id":"405",
+                "color_num":"#599ec7",
+                "stock":[99, 70, 152, 0] ,
+                "img":[
+                    "/image/trousers/id-4676044/405/1.jpg",
+                    "/image/trousers/id-4676044/405/2.jpg",
+                    "/image/trousers/id-4676044/405/3.jpg",
+                    "/image/trousers/id-4676044/405/4.jpg",
+                    "/image/trousers/id-4676044/405/5.jpg",
+                    "/image/trousers/id-4676044/405/6.jpg",
+                    "/image/trousers/id-4676044/405/7.jpg",
+                    "/image/trousers/id-4676044/405/8.jpg",
+                    "/image/trousers/id-4676044/405/9.jpg",
+                    "/image/trousers/id-4676044/405/10.jpg",
+                    "/image/trousers/id-4676044/405/11.jpg",
+                    "/image/trousers/id-4676044/405/12.jpg",
+                    "/image/trousers/id-4676044/405/13.jpg",
+                    "/image/trousers/id-4676044/405/14.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Talia",
+                "rating": 5,
+                "comment": "Love this overshirt! The denim is soft but sturdy, and the relaxed fit makes it perfect for layering over tees or dresses."
+            },
+            {
+                "reviewer": "Owen",
+                "rating": 4,
+                "comment": "Great piece for casual outfits. The chest pockets are super handy and the cut gives a cool, effortless vibe."
+            },
+            {
+                "reviewer": "Maya",
+                "rating": 5,
+                "comment": "Super versatile! I wear it open as a jacket or buttoned up as a top. The quality feels premium and the fit is just right."
+            },
+            {
+                "reviewer": "Jasper",
+                "rating": 3,
+                "comment": "Nice design overall, but the sleeves run a bit long for me. Still wearable and stylish, just wish there were petite sizes."
+            }
+        ]
+    },
+    {
+        "id":"3046/058/",
+        "category1":"WOMAN",
+        "category2":"JACKET",
+        "name":"SHIMMER EFFECT BIKER JACKET",
+        "price": 1990,
+        "sale": true,
+        "new_price": [1190, 40],
+        "description":"Short jacket with a lapel collar and long sleeves with zip cuffs and shoulder tabs. Featuring mock front pockets and a shimmer finish fabric. Hem finished with a buckled belt. Crossover metal zip fastening at the front.",
+        "detail":[
+            "98% polyester",
+            "2% elastane",
+            "100% polyurethane",
+            "100% polyester"
+        ],
+        "class":[
+            {
+                "color":"DARK BROWN",
+                "class_id":"716",
+                "color_num":"#373433",
+                "stock":[186, 47, 9, 131],
+                "img":[
+                    "/image/trousers/id-3046058/716/1.jpg",
+                    "/image/trousers/id-3046058/716/2.jpg",
+                    "/image/trousers/id-3046058/716/3.jpg"
+                ]
+            },
+            {
+                "color":"BLACK",
+                "class_id":"800",
+                "color_num":"#000000",
+                "stock":[186, 47, 9, 131],
+                "img":[
+                    "/image/trousers/id-3046058/800/1.jpg",
+                    "/image/trousers/id-3046058/800/2.jpg",
+                    "/image/trousers/id-3046058/800/3.jpg",
+                    "/image/trousers/id-3046058/800/4.jpg",
+                    "/image/trousers/id-3046058/800/5.jpg",
+                    "/image/trousers/id-3046058/800/6.jpg",
+                    "/image/trousers/id-3046058/800/7.jpg",
+                    "/image/trousers/id-3046058/800/8.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Luna",
+                "rating": 5,
+                "comment": "Absolutely obsessed with this jacket! The shimmer gives it a glam-rock vibe and it instantly upgrades any outfit. Total statement piece!"
+            },
+            {
+                "reviewer": "Max",
+                "rating": 4,
+                "comment": "Very stylish and edgy. The fabric catches the light in such a cool way. Loses a star because the mock pockets aren’t functional."
+            },
+            {
+                "reviewer": "Isabelle",
+                "rating": 5,
+                "comment": "Fits like a dream! The cropped length pairs perfectly with high-waisted jeans. I’ve gotten compliments every time I wear it."
+            },
+            {
+                "reviewer": "Leo",
+                "rating": 3,
+                "comment": "Love the look, but the fabric is a bit stiffer than expected. Still wearable, just not as soft as I’d hoped."
+            },
+            {
+                "reviewer": "Nina",
+                "rating": 4,
+                "comment": "The shimmer is subtle but catches the eye in the best way. Great for nights out. Buckled hem adds a cool detail too."
+            }
+        ]
+    },
+    {
+        "id":"3920/260/",
+        "category1":"WOMAN",
+        "category2":"KNITWEAR",
+        "name":"KNITTED POLO JACKET",
+        "price": 1390,
+        "sale": false,
+        "description":"Short sleeve jacket with a polo collar. Front button fastening.",
+        "detail":[
+            "74% cotton",
+            "26% polyester"
+        ],
+        "class":[
+            {
+                "color":"BLUE",
+                "class_id":"400",
+                "color_num":"#8dd0f2",
+                "stock":[149, 21, 83, 118],
+                "img":[
+                    "/image/knitwear/id-3920260/400/1.jpg",
+                    "/image/knitwear/id-3920260/400/2.jpg",
+                    "/image/knitwear/id-3920260/400/3.jpg",
+                    "/image/knitwear/id-3920260/400/4.jpg",
+                    "/image/knitwear/id-3920260/400/5.jpg",
+                    "/image/knitwear/id-3920260/400/6.jpg",
+                    "/image/knitwear/id-3920260/400/7.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Ava",
+                "rating": 5,
+                "comment": "So cute and versatile! The knit is soft and breathable, and the polo collar adds a polished touch. I love throwing it over a tank or dress."
+            },
+            {
+                "reviewer": "Noah",
+                "rating": 4,
+                "comment": "Really like the retro vibe of this piece. The fit is relaxed but still flattering. Would’ve given 5 stars if it had pockets."
+            },
+            {
+                "reviewer": "Lily",
+                "rating": 5,
+                "comment": "Perfect for spring and summer! The short sleeves make it great for layering, and the buttons give it a timeless look."
+            }
+        ]
+    },
+    {
+        "id":"3920/148/",
+        "category1":"WOMAN",
+        "category2":"KNITWEAR",
+        "name":"SHORT SLEEVE STITCHED KNIT JACKET",
+        "price": 1290,
+        "sale": false,
+        "description":"Round neck, short sleeve jacket. Front patch pockets with flaps. Contrasting topstitching detail. Front button fastening.",
+        "detail":[
+            "65% acrylic",
+            "35% polyamide"
+        ],
+        "class":[
+            {
+                "color":"WHITE",
+                "class_id":"250",
+                "color_num":"#FFFFFF",
+                "stock":[13, 0, 2, 120],
+                "img":[
+                    "/image/knitwear/id-3920148/250/1.jpg",
+                    "/image/knitwear/id-3920148/250/2.jpg",
+                    "/image/knitwear/id-3920148/250/3.jpg",
+                    "/image/knitwear/id-3920148/250/4.jpg",
+                    "/image/knitwear/id-3920148/250/5.jpg",
+                    "/image/knitwear/id-3920148/250/6.jpg",
+                    "/image/knitwear/id-3920148/250/7.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Clara",
+                "rating": 5,
+                "comment": "This jacket is such a stylish layering piece! The contrasting stitching gives it a unique, elevated touch. Looks great with both jeans and skirts."
+            },
+            {
+                "reviewer": "Mason",
+                "rating": 4,
+                "comment": "Love the structure and details. The patch pockets are super handy and the short sleeves make it perfect for spring. I just wish it came in more colors."
+            },
+            {
+                "reviewer": "Grace",
+                "rating": 5,
+                "comment": "Very chic and comfortable. The knit fabric is soft but holds its shape well. I get compliments every time I wear it!"
+            },
+            {
+                "reviewer": "Leo",
+                "rating": 3,
+                "comment": "Nice design and quality, but the fit runs a bit boxy on me. Might look better styled open instead of buttoned up."
+            }
+        ]
+    },
+    {
+        "id":"9598/038/",
+        "category1":"WOMAN",
+        "category2":"KNITWEAR",
+        "name":"KNIT JACKET WITH TIES AND FRAYED TRIMS",
+        "price": 1490,
+        "sale": false,
+        "description":"Round neck, short sleeve jacket. Front patch pockets. Featuring contrasting front ties and frayed trims. Concealed press-stud fastening at the front.",
+        "detail":[
+            "66% polyester",
+            "25% cotton",
+            "9% polyamide"
+        ],
+        "class":[
+            {
+                "color":"ECRU",
+                "class_id":"712",
+                "color_num":"#fef8f2",
+                "stock":[102, 5, 198, 74],    
+                "img":[
+                    "/image/knitwear/id-9598038/712/1.jpg",
+                    "/image/knitwear/id-9598038/712/2.jpg",
+                    "/image/knitwear/id-9598038/712/3.jpg",
+                    "/image/knitwear/id-9598038/712/4.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Zoe",
+                "rating": 5,
+                "comment": "Such a lovely piece! The frayed trims and tie details give it a playful yet elegant vibe. It’s lightweight and perfect for spring."
+            },
+            {
+                "reviewer": "Ella",
+                "rating": 4,
+                "comment": "Really cute design and great quality knit. I love the unique closure with ties, though I do wish the fit was a little more tailored."
+            },
+            {
+                "reviewer": "Nathan",
+                "rating": 5,
+                "comment": "This jacket feels special and different from typical knitwear. The frayed edges add character, and it’s super easy to dress up or down."
+            },
+            {
+                "reviewer": "Mira",
+                "rating": 4,
+                "comment": "The texture and trim details are gorgeous. It’s soft and comfortable, though the press-studs can be a bit fiddly to fasten."
+            },
+            {
+                "reviewer": "James",
+                "rating": 3,
+                "comment": "Nice aesthetic and fabric, but the front ties aren’t very practical for a busy day. More for fashion than function."
+            }
+        ]
+    },
+    {
+        "id":"5755/039/",
+        "category1":"WOMAN",
+        "category2":"KNITWEAR",
+        "name":"KNIT TOP WITH RHINESTONES",
+        "price": 1490,
+        "sale": false,
+        "description":"Knitted top with a round neck and short sleeves. Embellished with jewels.",
+        "detail":[
+            "78% viscose",
+            "22% polyester"
+        ],
+        "class":[
+            {
+                "color":"LIGHT BLUE",
+                "class_id":"406",
+                "color_num":"#ffd9e9",
+                "stock":[23, 157, 89, 46],    
+                "img":[
+                    "/image/knitwear/id-5755039/406/1.jpg",
+                    "/image/knitwear/id-5755039/406/2.jpg",
+                    "/image/knitwear/id-5755039/406/3.jpg",
+                    "/image/knitwear/id-5755039/406/4.jpg",
+                    "/image/knitwear/id-5755039/406/5.jpg",
+                    "/image/knitwear/id-5755039/406/6.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Bella",
+                "rating": 5,
+                "comment": "Absolutely love this top! The rhinestone embellishments are subtle yet sparkly—perfect for adding a touch of glam to everyday outfits."
+            },
+            {
+                "reviewer": "Amelia",
+                "rating": 4,
+                "comment": "Super cute and comfy. The knit fabric feels soft on the skin, and the jewels are well-placed. Just wish it came in more colors!"
+            },
+            {
+                "reviewer": "Harper",
+                "rating": 3,
+                "comment": "Nice sparkle and design, but a few rhinestones came loose after one wash. Hand-wash only for sure!"
+            }
+        ]
+    },
+    {
+        "id":"5755/046/",
+        "category1":"WOMAN",
+        "category2":"KNITWEAR",
+        "name":"CONTRAST KNIT SWEATER",
+        "price": 1790,
+        "sale": false,
+        "description":"Loose-fitting sweater with a round neckline and long sleeves.",
+        "detail":[
+            "76% viscose",
+            "24% polyester"
+        ],
+        "class":[
+            {
+                "color":"ECRU",
+                "class_id":"712",
+                "color_num":"#fef8f2",
+                "stock":[86, 94, 0, 30],    
+                "img":[
+                    "/image/knitwear/id-5755046/712/1.jpg",
+                    "/image/knitwear/id-5755046/712/2.jpg",
+                    "/image/knitwear/id-5755046/712/3.jpg",
+                    "/image/knitwear/id-5755046/712/4.jpg",
+                    "/image/knitwear/id-5755046/712/5.jpg",
+                    "/image/knitwear/id-5755046/712/6.jpg",
+                    "/image/knitwear/id-5755046/712/7.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Lena",
+                "rating": 5,
+                "comment": "This sweater is everything! Lightweight but cozy, and the contrast details give it such a chic edge."
+            },
+            {
+                "reviewer": "Sophie",
+                "rating": 4,
+                "comment": "Really like the design and fit. It’s oversized but still flattering. A little delicate though—handle with care!"
+            },
+            {
+                "reviewer": "Maya",
+                "rating": 5,
+                "comment": "Gorgeous piece! The texture is luxe, and it pairs well with jeans or skirts. Got tons of compliments."
+            },
+            {
+                "reviewer": "Chloe",
+                "rating": 3,
+                "comment": "It’s stylish, but the sleeves were a bit too long for me. Still keeping it because it looks great layered."
+            },
+            {
+                "reviewer": "Isla",
+                "rating": 4,
+                "comment": "Love the sparkle and softness. Wore it to brunch and it felt special without being over the top."
+            },
+            {
+                "reviewer": "Zoe",
+                "rating": 5,
+                "comment": "Perfect sweater for transitional weather. The knit is breathable and the contrast colors are on trend."
+            }
+        ]
+    },
+    {
+        "id":"5802/021/",
+        "category1":"WOMAN",
+        "category2":"KNITWEAR",
+        "name":"POINTELLE KNIT SWEATER",
+        "price": 1490,
+        "sale": false,
+        "description":"Open knit sweater with a boat neck and long sleeves.",
+        "detail":[
+            "77% polyester",
+            "23% cotton"
+        ],
+        "class":[
+            {
+                "color":"RUSSET",
+                "class_id":"670",
+                "color_num":"#a02323",
+                "stock":[89, 140, 23, 45],    
+                "img":[
+                    "/image/knitwear/id-5802021/670/1.jpg",
+                    "/image/knitwear/id-5802021/670/2.jpg",
+                    "/image/knitwear/id-5802021/670/3.jpg",
+                    "/image/knitwear/id-5802021/670/4.jpg",
+                    "/image/knitwear/id-5802021/670/5.jpg",
+                    "/image/knitwear/id-5802021/670/6.jpg",
+                    "/image/knitwear/id-5802021/670/7.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Emma",
+                "rating": 5,
+                "comment": "So elegant and breathable! The pointelle knit adds a delicate, feminine touch that I absolutely adore."
+            },
+            {
+                "reviewer": "Hannah",
+                "rating": 4,
+                "comment": "Very pretty and light. Great for layering over a tank top. Loses a point only because it's a bit sheer."
+            },
+            {
+                "reviewer": "Olivia",
+                "rating": 5,
+                "comment": "Love the boat neck style—it’s flattering and perfect for spring. I got compliments all day wearing it!"
+            },
+            {
+                "reviewer": "Grace",
+                "rating": 3,
+                "comment": "The design is cute, but the knit snags easily. Wish it was a bit more durable, but still a stylish piece."
+            }
+        ]
+    },
+    {
+        "id":"5536/021/",
+        "category1":"WOMAN",
+        "category2":"KNITWEAR",
+        "name":"KNIT SWEATER WITH LOOSE-FIT SLEEVES",
+        "price": 1290,
+        "sale": false,
+        "description":"Knitted jumper made with 13% linen yarn. Features a round neck and wide, elbow-length sleeves.",
+        "detail":[
+            "79% polyester",
+            "13% linen",
+            "8% polyamide"
+        ],
+        "class":[
+            {
+                "color":"BROWN",
+                "class_id":"700",
+                "color_num":"#805c54",
+                "stock":[34, 127, 89, 5],    
+                "img":[
+                    "/image/knitwear/id-5536021/700/1.jpg",
+                    "/image/knitwear/id-5536021/700/2.jpg",
+                    "/image/knitwear/id-5536021/700/3.jpg",
+                    "/image/knitwear/id-5536021/700/4.jpg",
+                    "/image/knitwear/id-5536021/700/5.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Nora",
+                "rating": 5,
+                "comment": "The linen blend makes it feel so breathable and natural—perfect for warmer days. The loose sleeves give it a relaxed, effortless vibe."
+            },
+            {
+                "reviewer": "Ella",
+                "rating": 4,
+                "comment": "Super comfy and stylish. I love how the elbow-length sleeves make it stand out. Loses one star only because it wrinkles a bit easily."
+            },
+            {
+                "reviewer": "Lily",
+                "rating": 5,
+                "comment": "A wardrobe staple! Lightweight but not see-through. The wide sleeves make it feel modern and comfortable."
+            }
+        ]
+    },
+    {
+        "id":"3920/268/",
+        "category1":"WOMAN",
+        "category2":"KNITWEAR",
+        "name":"PETAL JACKET",
+        "price": 2490,
+        "sale": false,
+        "description":"Jacket with textured fabric. Featuring a round neckline and long sleeves. Concealed snap-button fastening at the front.",
+        "detail":[
+            "100% polyester"
+        ],
+        "class":[
+            {
+                "color":"BLUISH",
+                "class_id":"420",
+                "color_num":"#0095ff",
+                "stock":[72, 165, 23, 31],   
+                "img":[
+                    "/image/knitwear/id-3920268/420/1.jpg",
+                    "/image/knitwear/id-3920268/420/2.jpg",
+                    "/image/knitwear/id-3920268/420/3.jpg",
+                    "/image/knitwear/id-3920268/420/4.jpg",
+                    "/image/knitwear/id-3920268/420/5.jpg",
+                    "/image/knitwear/id-3920268/420/6.jpg",
+                    "/image/knitwear/id-3920268/420/7.jpg",
+                    "/image/knitwear/id-3920268/420/8.jpg",
+                    "/image/knitwear/id-3920268/420/9.jpg",
+                    "/image/knitwear/id-3920268/420/10.jpg"
+                ]
+            }
+        ],
+        "reviews": [
+            {
+                "reviewer": "Ava",
+                "rating": 5,
+                "comment": "Such a classy jacket! The textured fabric feels high-end, and the concealed buttons give it a sleek look."
+            },
+            {
+                "reviewer": "Mila",
+                "rating": 4,
+                "comment": "Really elegant and versatile. I wear it to the office and on weekends. One star off because I wish it had pockets."
+            },
+            {
+                "reviewer": "Harper",
+                "rating": 5,
+                "comment": "Perfect for layering. The round neckline is super flattering, and the material has a nice structure without being stiff."
+            },
+            {
+                "reviewer": "Leah",
+                "rating": 3,
+                "comment": "Nice design and great fit, but the snap buttons sometimes come undone too easily when I move around."
+            }
+        ]
+    },
+    {
+        "id":"0264/194/",
+        "category1":"WOMAN",
+        "category2":"SHIRTS",
+        "name":"PRINTED ELBOW SLEEVE T-SHIRT",
+        "price": 990,
+        "sale": true,
+        "new_price": [534, 40],
+        "description":"T-shirt made from 100% cotton. Features a round neckline and elbow-length sleeves. Contrast text and print detail.",
+        "detail":[
+            "100% cotton"
+        ],
+        "class":[
+            {
+                "color":"BLUE / WHITE",
+                "class_id":"679",
                 "color_num":"#",
                 "stock":[37, 142, 89, 196],
                 "img":[
@@ -549,1025 +2178,1025 @@
               "comment": "A very chic knit maxi dress. The lapel collar adds a touch of elegance, and the v-neck is flattering. The sleeveless design is ideal for the warm weather here in Taiwan. The cut-out is a bit daring, but it works well with the overall style."
             },
             {
-              "reviewer": "Olivia",
-              "rating": 5,
-              "comment": "This dress is fantastic! The cut-out is perfectly placed and adds a really interesting element. The knit fabric drapes beautifully, and it's surprisingly breathable for the Taiwan summer. I've already worn it a few times since buying it in New Taipei City!"
-            }
-          ]
-
-    },
-    {
-        "id":"1023/029/",
-        "category1":"WOMAN",
-        "category2":"NEWS",
-        "name":"EMBROIDERED COTTON FLORAL SCARF",
-        "price": 1190,
-        "sale": false,
-        "description":"Yarn-dyed scarf in a cotton and 28% linen blend. Contrast embroidered floral detail. Frayed edges.",
-        "detail":[
-            "72% cotton", "28% linen"
-        ],
-        "class":[
-            {
-                "color":"ECRU",
-                "class_id":"712",
-                "color_num":"#F5F3E5",
-                "stock":[55, 182, 88, 96],
+                  "reviewer": "Olivia",
+                  "rating": 5,
+                  "comment": "This dress is fantastic! The cut-out is perfectly placed and adds a really interesting element. The knit fabric drapes beautifully, and it's surprisingly breathable for the Taiwan summer. I've already worn it a few times since buying it in New Taipei City!"
+                }
+              ]
+    
+        },
+        {
+            "id":"1023/029/",
+            "category1":"WOMAN",
+            "category2":"NEWS",
+            "name":"EMBROIDERED COTTON FLORAL SCARF",
+            "price": 1190,
+            "sale": false,
+            "description":"Yarn-dyed scarf in a cotton and 28% linen blend. Contrast embroidered floral detail. Frayed edges.",
+            "detail":[
+                "72% cotton", "28% linen"
+            ],
+            "class":[
+                {
+                    "color":"ECRU",
+                    "class_id":"712",
+                    "color_num":"#F5F3E5",
+                    "stock":[55, 182, 88, 96],
+                    "img":[
+                        "/image/news/id-1023/029/712/1.jpg",
+                        "/image/news/id-1023/029/712/2.jpg",
+                        "/image/news/id-1023/029/712/3.jpg",
+                        "/image/news/id-1023/029/712/4.jpg",
+                        "/image/news/id-1023/029/712/5.jpg",
+                        "/image/news/id-1023/029/712/6.jpg"
+                    ]
+                }
+            ],
+            "reviews": [
+                {
+                  "reviewer": "Luna",
+                  "rating": 5,
+                  "comment": "This knit maxi dress is a showstopper! The cut-out detail is so unique and adds a modern edge. The knit fabric is surprisingly comfortable, and the sleeveless design is perfect for the Taiwan heat. I wore it out in Xinzhuang last night and got so many compliments!"
+                },
+                {
+                  "reviewer": "Ethan",
+                  "rating": 4,
+                  "comment": "The dress looks great! The lapel collar and v-neck give it a sophisticated touch. The knit material is nice, though I'm a little concerned about how it will hold up in the humid Taiwan weather. The cut-out is a stylish detail."
+                },
+                {
+                  "reviewer": "Chloe",
+                  "rating": 5,
+                  "comment": "Absolutely love this maxi dress! It's perfect for the Taiwan climate - stylish enough for an evening out in Taipei but comfortable enough for a more casual setting in Xinzhuang. The cut-out is tastefully done, and the length is just right."
+                },
+                {
+                  "reviewer": "William",
+                  "rating": 4,
+                  "comment": "A very chic knit maxi dress. The lapel collar adds a touch of elegance, and the v-neck is flattering. The sleeveless design is ideal for the warm weather here in Taiwan. The cut-out is a bit daring, but it works well with the overall style."
+                },
+                {
+                  "reviewer": "Olivia",
+                  "rating": 5,
+                  "comment": "This dress is fantastic! The cut-out is perfectly placed and adds a really interesting element. The knit fabric drapes beautifully, and it's surprisingly breathable for the Taiwan summer. I've already worn it a few times since buying it in New Taipei City!"
+                }
+              ]
+    
+        },
+        {
+          "id":"0264/196/", 
+          "category1":"WOMAN",
+          "category2":"WAISTCOAT",
+          "name":"CROSSOVER FLOWING WAISTCOAT TOP",
+          "price": 890,
+          "sale":true,
+          "new_price":[534,60],
+          "description":"Sleeveless V-neck waistcoat top. Adjustable wrap front tie fastening.",
+          "detail":[
+              "100% polyester"
+          ],
+          "class":[
+              {
+                  "color":"GREY",
+                  "class_id":"802",
+                  "color_num":"#A1A2A5",
+                  "stock":[75, 75, 40, 24],
+                  "img":[
+                      "/image/waistcoat/id-0264/196/802/1.jpg",
+                      "/image/waistcoat/id-0264/196/802/2.jpg",
+                      "/image/waistcoat/id-0264/196/802/3.jpg",
+                      "/image/waistcoat/id-0264/196/802/4.jpg",
+                      "/image/waistcoat/id-0264/196/802/5.jpg"
+                  ]
+              },
+              {
+                  "color":"BLACK",
+                  "class_id":"800",
+                  "color_num":"#121315",
+                  "stock":[61, 153, 77, 90],
+                  "img":[
+                      "/image/waistcoat/id-0264/196/800/1.jpg",
+                      "/image/waistcoat/id-0264/196/800/2.jpg",
+                      "/image/waistcoat/id-0264/196/800/3.jpg",
+                      "/image/waistcoat/id-0264/196/800/4.jpg",
+                      "/image/waistcoat/id-0264/196/800/5.jpg",
+                      "/image/waistcoat/id-0264/196/800/6.jpg"
+                  ]
+              },
+              {
+                "color":"BROWN",
+                "class_id":"700",
+                "color_num":"#121315",
+                "stock":[31, 53, 77, 120],
                 "img":[
-                    "/image/news/id-1023/029/712/1.jpg",
-                    "/image/news/id-1023/029/712/2.jpg",
-                    "/image/news/id-1023/029/712/3.jpg",
-                    "/image/news/id-1023/029/712/4.jpg",
-                    "/image/news/id-1023/029/712/5.jpg",
-                    "/image/news/id-1023/029/712/6.jpg"
+                    "/image/waistcoat/id-0264/196/700/1.jpg",
+                    "/image/waistcoat/id-0264/196/700/2.jpg",
+                    "/image/waistcoat/id-0264/196/700/3.jpg",
+                    "/image/waistcoat/id-0264/196/700/4.jpg"
                 ]
             }
-        ],
-        "reviews": [
+          ],
+          "reviews": [
             {
-              "reviewer": "Luna",
+              "reviewer": "Mei",
               "rating": 5,
-              "comment": "This knit maxi dress is a showstopper! The cut-out detail is so unique and adds a modern edge. The knit fabric is surprisingly comfortable, and the sleeveless design is perfect for the Taiwan heat. I wore it out in Xinzhuang last night and got so many compliments!"
+              "comment": "This waistcoat top is so chic and versatile! The wrap front and tie fastening allow for a perfect fit. It's sleeveless, which is great for the Taipei weather. I can dress it up or down."
+            },
+            {
+              "reviewer": "Lin",
+              "rating": 4,
+              "comment": "I really like the flowing style of this waistcoat. The V-neck is flattering, and the adjustable tie is a nice feature. The polyester fabric feels light, perfect for layering in Da'an."
+            },
+            {
+              "reviewer": "Chen",
+              "rating": 5,
+              "comment": "Absolutely love this waistcoat top! It's so stylish and easy to wear. The crossover design is unique, and the fact that it's on sale makes it an even better deal. Perfect for a trendy look in Taipei City."
+            },
+            {
+              "reviewer": "Huang",
+              "rating": 4,
+              "comment": "A nice waistcoat top for the price, especially with the sale! The V-neck is flattering, and the adjustable wrap is convenient. It's a good layering piece for the transitional weather in Taiwan."
+            },
+            {
+              "reviewer": "Chang",
+              "rating": 5,
+              "comment": "This waistcoat top is a great find! It's stylish, comfortable, and the adjustable tie ensures a perfect fit. The flowing design is very on-trend, and it's perfect for the fashion scene in Da'an District."
+            }
+          ]
+        },
+        {
+          "id":"2388/586/", 
+          "category1":"WOMAN",
+          "category2":"WAISTCOAT",
+          "name":"ZW COLLECTION SHOULDER PAD WAISTCOAT",
+          "price": 3490,
+          "sale":false,
+          "description":"Waistcoat made of a linen and viscose yarn. Notched lapels and armholes with shoulder pads. Front welt pockets. Contrast lining. Front button fastening.",
+          "detail":[
+              "68% linen","32% viscose","100% viscose"
+          ],
+          "class":[
+              {
+                  "color":"CAMEL",
+                  "class_id":"707",
+                  "color_num":"#B0ACA1",
+                  "stock":[25, 45, 80, 74],
+                  "img":[
+                      "/image/waistcoat/id-2388/586/707/1.jpg",
+                      "/image/waistcoat/id-2388/586/707/2.jpg",
+                      "/image/waistcoat/id-2388/586/707/3.jpg",
+                      "/image/waistcoat/id-2388/586/707/4.jpg",
+                      "/image/waistcoat/id-2388/586/707/5.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Eleanor",
+              "rating": 5,
+              "comment": "This shoulder pad waistcoat is absolutely fantastic! The linen and viscose blend feels so luxurious, and the shoulder pads give it a really sharp, confident look. Perfect for a stylish day out in Da'an!"
+            },
+            {
+              "reviewer": "Jasper",
+              "rating": 4,
+              "comment": "A very stylish waistcoat. The shoulder pads provide a nice structure, and the notched lapels are a classic touch. The fabric is comfortable enough for the Taipei weather. Overall, a solid purchase."
+            },
+            {
+              "reviewer": "Seraphina",
+              "rating": 5,
+              "comment": "Obsessed with this waistcoat! It adds such a sophisticated edge to any outfit. The shoulder pads are just right, and the contrast lining is a lovely surprise. Definitely a new favorite for my Taipei wardrobe."
+            },
+            {
+              "reviewer": "Atticus",
+              "rating": 4,
+              "comment": "A well-made waistcoat with a nice tailored feel. The linen and viscose blend is suitable for the climate here. The shoulder pads give it a defined silhouette. A good investment piece."
+            },
+            {
+              "reviewer": "Genevieve",
+              "rating": 5,
+              "comment": "This waistcoat is a dream! The shoulder pads are perfectly proportioned, and the fabric feels wonderful against the skin. It's so versatile and adds a touch of elegance to any look I put together here in Taipei. Highly recommend!"
+            }
+          ]
+        },
+        {
+          "id":"2183/530/", 
+          "category1":"WOMAN",
+          "category2":"WAISTCOAT",
+          "name":"WAISTCOAT WITH VENTS",
+          "price": 1290,
+          "sale":false,
+          "description":"V-neck waistcoat with armholes. Mock welt pockets on the front. Hem with front vents. Adjustable tab detail on the back. Front button fastening.",
+          "detail":[
+            "72% polyester","22% viscose","6% elastane","100% acetate"
+          ],
+          "class":[
+              {
+                  "color":"GREY",
+                  "class_id":"802",
+                  "color_num":"#5E605D",
+                  "stock":[45, 85, 60, 20],
+                  "img":[
+                      "/image/waistcoat/id-2183/530/802/1.jpg",
+                      "/image/waistcoat/id-2183/530/802/2.jpg",
+                      "/image/waistcoat/id-2183/530/802/3.jpg",
+                      "/image/waistcoat/id-2183/530/802/4.jpg",
+                      "/image/waistcoat/id-2183/530/802/5.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Isabelle",
+              "rating": 4,
+              "comment": "This waistcoat is quite stylish. The vents at the hem are a unique feature, and the adjustable back tab really helps to customize the fit. Good for a chic look around Taipei."
+            },
+            {
+              "reviewer": "Sebastian",
+              "rating": 5,
+              "comment": "Absolutely love this waistcoat! The quality is excellent, and the V-neck is very flattering. The mock pockets add a nice detail, and it's perfect for layering in the city."
+            },
+            {
+              "reviewer": "Penelope",
+              "rating": 3,
+              "comment": "It's an okay waistcoat. The fabric feels a bit synthetic, but the design is decent. The front vents are interesting, but I'm not sure they add much. It's alright for casual wear in Taipei."
+            },
+            {
+              "reviewer": "Theodore",
+              "rating": 5,
+              "comment": "This waistcoat is a great find! The fit is perfect, thanks to the adjustable back tab. The V-neck is classic, and the front button fastening is sturdy. Highly recommend for a stylish look in the city."
+            },
+            {
+              "reviewer": "Beatrice",
+              "rating": 4,
+              "comment": "A solid waistcoat. The vents at the hem give it a modern touch, and the mock pockets are a nice detail. It's comfortable enough for a day out in Taipei, though the fabric isn't the most breathable."
+            }
+          ]
+        },
+        {
+          "id":"1529/156/", 
+          "category1":"WOMAN",
+          "category2":"WAISTCOAT",
+          "name":"PIQUÉ WAISTCOAT",
+          "price": 1790,
+          "sale":false,
+          "description":"Sleeveless waistcoat with a high neck. Featuring lapels on the front, adjustable drawstring hem and front press-stud fastening.",
+          "detail":[
+            "55% cotton", "45% polyester"
+          ],
+          "class":[
+              {
+                  "color":"SAND",
+                  "class_id":"711",
+                  "color_num":"#D0C8BF",
+                  "stock":[55, 125, 40, 30],
+                  "img":[
+                      "/image/waistcoat/id-1529/156/711/1.jpg",
+                      "/image/waistcoat/id-1529/156/711/2.jpg",
+                      "/image/waistcoat/id-1529/156/711/3.jpg",
+                      "/image/waistcoat/id-1529/156/711/4.jpg",
+                      "/image/waistcoat/id-1529/156/711/5.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Oliver",
+              "rating": 4,
+              "comment": "This piqué waistcoat is quite interesting with its high neck and lapels. The adjustable drawstring hem is a practical feature for getting the right fit. Good for adding a unique touch to an outfit in Taipei."
+            },
+            {
+              "reviewer": "Scarlett",
+              "rating": 5,
+              "comment": "I absolutely love the design of this waistcoat! The high neck is very stylish, and the front press-stud fastening is convenient. The piqué fabric feels nice quality for the Taipei weather."
+            },
+            {
+              "reviewer": "Finn",
+              "rating": 3,
+              "comment": "It's an okay waistcoat. The high neck is a bit unusual, and the lapels are just on the front. The drawstring hem is adjustable, which is a plus. Might be better suited for cooler evenings in Taipei."
+            },
+            {
+              "reviewer": "Aurora",
+              "rating": 5,
+              "comment": "This piqué waistcoat is fantastic! The high neck and lapels give it a very fashionable look. The press-stud fastening is easy to use, and the drawstring hem allows for versatile styling around the city."
+            },
+            {
+              "reviewer": "Leo",
+              "rating": 4,
+              "comment": "A pretty solid waistcoat. The high neck is a statement, and the lapels add some structure. The adjustable hem is useful. The piqué material is comfortable enough for wearing in Da'an."
+            }
+          ]
+        },
+        {
+          "id":"2731/045/", 
+          "category1":"WOMAN",
+          "category2":"SKIRT",
+          "name":"ZW COLLECTION VOLUMINOUS MIDI SKIRT",
+          "price": 1490,
+          "sale":true,
+          "new_price":[894,60],
+          "description":"High-waist midi skirt with elasticated waistband and flared hem.",
+          "detail":[
+              "100% polyester"
+          ],
+          "class":[
+              {
+                  "color":"BLACK",
+                  "class_id":"800",
+                  "color_num":"#0A0A0A",
+                  "stock":[75, 125, 80, 34],
+                  "img":[
+                      "/image/skirt/id-2731/045/800/1.jpg",
+                      "/image/skirt/id-2731/045/800/2.jpg",
+                      "/image/skirt/id-2731/045/800/3.jpg",
+                      "/image/skirt/id-2731/045/800/4.jpg",
+                      "/image/skirt/id-2731/045/800/5.jpg"
+                  ]
+              },
+              {
+                  "color":"BLUE",
+                  "class_id":"400",
+                  "color_num":"#5DADDB",
+                  "stock":[21, 53, 77, 40],
+                  "img":[
+                      "/image/skirt/id-0264/196/800/1.jpg",
+                      "/image/skirt/id-0264/196/800/2.jpg",
+                      "/image/skirt/id-0264/196/800/3.jpg",
+                      "/image/skirt/id-0264/196/800/4.jpg",
+                      "/image/skirt/id-0264/196/800/5.jpg"
+                  ]
+              },
+              {
+                "color":"Burgundy",
+                "class_id":"606",
+                "color_num":"#371E21",
+                "stock":[26, 73, 77, 20],
+                "img":[
+                    "/image/skirt/id-2731/045/606/1.jpg",
+                    "/image/skirt/id-2731/045/606/2.jpg",
+                    "/image/skirt/id-2731/045/606/3.jpg",
+                    "/image/skirt/id-2731/045/606/4.jpg"
+                ]
+            }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Mei",
+              "rating": 5,
+              "comment": "This voluminous midi skirt is so fun to wear! The high waist is flattering, and the elasticated waistband makes it super comfortable, perfect for strolling around Da'an Park."
+            },
+            {
+              "reviewer": "Lin",
+              "rating": 4,
+              "comment": "I really like the flared hem of this skirt, it gives it a lovely movement. The high waist is great, and the fact that it's on sale makes it a good buy for the Taipei weather."
+            },
+            {
+              "reviewer": "Chen",
+              "rating": 5,
+              "comment": "Absolutely love this midi skirt! It's so easy to style and the voluminous shape is very on-trend. The elasticated waistband is a lifesaver for comfort. Definitely a great addition to my wardrobe for exploring Taipei."
+            },
+            {
+              "reviewer": "Huang",
+              "rating": 4,
+              "comment": "A nice and flowy midi skirt. The high waist is flattering, and the elasticated band is comfortable for all-day wear in the Taipei humidity. The sale price is a bonus!"
+            },
+            {
+              "reviewer": "Chang",
+              "rating": 5,
+              "comment": "This skirt is fantastic! The voluminous design is so stylish, and the midi length is perfect for various occasions around Taipei. The elasticated waistband makes it incredibly comfortable. Highly recommend, especially at the sale price!"
+            }
+          ]
+        },
+        {
+          "id":"8228/025/", 
+          "category1":"WOMAN",
+          "category2":"SKIRT",
+          "name":"Z1975 DENIM CROSSOVER MIDI SKIRT",
+          "price": 1290,
+          "sale":false,
+          "description":"High-waist skirt with rear patch pockets. Front vent at the hem. Crossover front fastening with metal buttons.",
+          "detail":[
+              "100% cotton"
+          ],
+          "class":[
+              {
+                  "color":"GREY",
+                  "class_id":"802",
+                  "color_num":"#767676",
+                  "stock":[25, 145, 50, 30],
+                  "img":[
+                      "/image/skirt/id-8228/025/802/1.jpg",
+                      "/image/skirt/id-8228/025/802/2.jpg",
+                      "/image/skirt/id-8228/025/802/3.jpg",
+                      "/image/skirt/id-8228/025/802/4.jpg",
+                      "/image/skirt/id-8228/025/802/5.jpg",
+                      "/image/skirt/id-8228/025/802/6.jpg"
+                  ]
+              },
+              {
+                  "color":"MID-BLUE",
+                  "class_id":"427",
+                  "color_num":"#91A7B8",
+                  "stock":[21, 53, 77, 40],
+                  "img":[
+                      "/image/skirt/id-8228/025/427/1.jpg",
+                      "/image/skirt/id-8228/025/427/2.jpg",
+                      "/image/skirt/id-8228/025/427/3.jpg",
+                      "/image/skirt/id-8228/025/427/4.jpg",
+                      "/image/skirt/id-8228/025/427/5.jpg",
+                      "/image/skirt/id-8228/025/427/6.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Sophia",
+              "rating": 4,
+              "comment": "This denim crossover midi skirt is quite stylish! The high waist is flattering, and the rear patch pockets are a nice detail. The front vent is practical for moving around the streets of Da'an."
+            },
+            {
+              "reviewer": "Ethan",
+              "rating": 5,
+              "comment": "I absolutely love this denim skirt! The crossover front fastening with the metal buttons gives it a really cool and unique look. The 100% cotton is comfortable for the Taipei weather."
+            },
+            {
+              "reviewer": "Chloe",
+              "rating": 4,
+              "comment": "A pretty solid denim skirt. The high waist fits well, and the midi length is versatile for different occasions in Taipei. The front vent is a nice touch for ease of movement."
+            },
+            {
+              "reviewer": "Noah",
+              "rating": 5,
+              "comment": "This denim skirt is fantastic! The crossover design is very trendy, and the metal button fastening feels secure. The rear pockets are a classic denim detail. Perfect for a casual yet stylish look in the city."
+            },
+            {
+              "reviewer": "Isabella",
+              "rating": 3,
+              "comment": "It's an okay denim skirt. The high waist is as expected, and the rear pockets are standard. The front vent is alright, but the crossover fastening can feel a little bulky at times, especially in the Taipei humidity."
+            }
+          ]
+        },
+        {
+          "id":"2496/576/", 
+          "category1":"WOMAN",
+          "category2":"SKIRT",
+          "name":"Z1975 DENIM CROSSOVER SKIRT",
+          "price": 1490,
+          "sale":false,
+          "description":"High-waist midi skirt with buckles. Front vent at the hem.",
+          "detail":[
+            "97% cotton", "3% elastane"
+          ],
+          "class":[
+              {
+                  "color":"BLUE",
+                  "class_id":"400",
+                  "color_num":"#292A2F",
+                  "stock":[15, 105, 40, 10],
+                  "img":[
+                      "/image/skirt/id-2496/576/400/1.jpg",
+                      "/image/skirt/id-2496/576/400/2.jpg",
+                      "/image/skirt/id-2496/576/400/3.jpg",
+                      "/image/skirt/id-2496/576/400/4.jpg",
+                      "/image/skirt/id-2496/576/400/5.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Eleanor",
+              "rating": 4,
+              "comment": "This denim crossover skirt is quite stylish with its high waist and buckle details. The front vent is practical for navigating the streets of Da'an. The touch of elastane likely makes it comfortable for the Taipei weather."
+            },
+            {
+              "reviewer": "Jasper",
+              "rating": 5,
+              "comment": "I absolutely love this denim skirt! The high waist is very flattering, and the buckles add a cool, edgy vibe. The front vent is a nice touch for movement around Taipei City."
+            },
+            {
+              "reviewer": "Seraphina",
+              "rating": 4,
+              "comment": "A pretty solid denim skirt. The high waist fits well, and the midi length is versatile for different occasions in Taipei. The buckles are a nice design element, and the front vent is appreciated in the humidity."
+            },
+            {
+              "reviewer": "Atticus",
+              "rating": 5,
+              "comment": "This denim skirt is fantastic! The crossover design is trendy, and the buckles give it a unique look. The front vent makes it easy to move around the city. The bit of stretch from the elastane is a plus for comfort in Da'an."
+            },
+            {
+              "reviewer": "Genevieve",
+              "rating": 3,
+              "comment": "It's an okay denim skirt. The high waist is standard, and the buckles are alright. The front vent is functional, but the overall style isn't particularly outstanding for the Taipei fashion scene."
+            }
+          ]
+        },
+        {
+          "id":"2731/101/", 
+          "category1":"WOMAN",
+          "category2":"SKIRT",
+          "name":"ZW COLLECTION POPLIN MIDI SKIRT",
+          "price": 1790,
+          "sale":true,
+          "new_price":[1094,60],
+          "description":"High-waist midi skirt made of cotton yarn. Pleated waist. Flared hem. Concealed zip fastening.",
+          "detail":[
+            "100% cotton"
+          ],
+          "class":[
+              {
+                  "color":"OYSTER-WHITE",
+                  "class_id":"251",
+                  "color_num":"#E5E5E8",
+                  "stock":[15, 105, 40, 10],
+                  "img":[
+                      "/image/skirt/id-2731/101/251/1.jpg",
+                      "/image/skirt/id-2731/101/251/2.jpg",
+                      "/image/skirt/id-2731/101/251/3.jpg",
+                      "/image/skirt/id-2731/101/251/4.jpg",
+                      "/image/skirt/id-2731/101/251/5.jpg",
+                      "/image/skirt/id-2731/101/251/6.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Hazel",
+              "rating": 4,
+              "comment": "This poplin midi skirt is lovely! The high waist is very flattering, and the pleated waist adds a nice touch of detail. The flared hem moves beautifully, perfect for a sunny day in Da'an."
+            },
+            {
+              "reviewer": "Henry",
+              "rating": 5,
+              "comment": "I absolutely adore this midi skirt! The 100% cotton feels so comfortable for the Taipei weather, and the flared hem is so elegant. The pleated waist is a stylish feature, especially at the sale price!"
+            },
+            {
+              "reviewer": "Grace",
+              "rating": 4,
+              "comment": "A very charming midi skirt. The high waist fits well, and the cotton poplin is light and airy for the humidity in Taipei. The flared hem is fun, and the concealed zip gives a clean finish."
+            },
+            {
+              "reviewer": "Owen",
+              "rating": 5,
+              "comment": "This poplin skirt is fantastic for the Taiwan climate! The high waist is very on-trend, and the pleated waist adds a lovely texture. The flared hem is perfect for a stroll around Taipei City. The sale price is a great bonus!"
+            },
+            {
+              "reviewer": "Lily",
+              "rating": 3,
+              "comment": "It's a decent midi skirt. The high waist is as expected, and the flared hem is alright. The pleated waist is a simple detail. The cotton poplin is okay for Taipei, but it might wrinkle easily."
+            }
+          ]
+        },
+        {
+          "id":"5427/422/", 
+          "category1":"WOMAN",
+          "category2":"SKIRT",
+          "name":"POPLIN MIDI SKIRT",
+          "price": 1290,
+          "sale":false,
+          "description":"High-waist midi skirt with a smocked elasticated waistband.",
+          "detail":[
+            "100% cotton"
+          ],
+          "class":[
+              {
+                  "color":"WHITE",
+                  "class_id":"250",
+                  "color_num":"#E5E5E8",
+                  "stock":[25, 60, 80, 50],
+                  "img":[
+                      "/image/skirt/id-5427/422/250/1.jpg",
+                      "/image/skirt/id-5427/422/250/2.jpg",
+                      "/image/skirt/id-5427/422/250/3.jpg",
+                      "/image/skirt/id-5427/422/250/4.jpg",
+                      "/image/skirt/id-5427/422/250/5.jpg",
+                      "/image/skirt/id-5427/422/250/6.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Eleanor",
+              "rating": 4,
+              "comment": "This poplin midi skirt is quite comfortable! The high waist and smocked elasticated waistband make it a breeze to wear around Da'an, especially in the warm weather."
+            },
+            {
+              "reviewer": "Jasper",
+              "rating": 5,
+              "comment": "I absolutely love this midi skirt! The high waist is flattering, and the smocked elasticated waistband is so comfortable for all-day wear in Taipei City. The cotton poplin feels lovely."
+            },
+            {
+              "reviewer": "Seraphina",
+              "rating": 4,
+              "comment": "A nice and easy-to-wear midi skirt. The high waist is good, and the smocked elasticated waistband is very practical for the Taipei humidity. It's a great casual piece."
+            },
+            {
+              "reviewer": "Atticus",
+              "rating": 5,
+              "comment": "This poplin midi skirt is fantastic for the climate here in Da'an! The high waist is stylish, and the smocked elasticated waistband is incredibly comfortable. Perfect for a relaxed day out in Taipei."
+            },
+            {
+              "reviewer": "Genevieve",
+              "rating": 3,
+              "comment": "It's an okay midi skirt. The high waist is standard, and the smocked elasticated waistband is functional. The cotton poplin is alright for Taipei, but the overall design is quite simple."
+            }
+          ]
+        },
+        {
+          "id":"5644/317/", 
+          "category1":"WOMAN",
+          "category2":"SKIRT",
+          "name":"VOLUMINOUS BALLOON SKIRT",
+          "price": 1290,
+          "sale":false,
+          "description":"High-waist midi skirt with an elasticated waistband, lining and a bubble hem.",
+          "detail":[
+            "96% polyester","4% elastane","100% cotton"
+          ],
+          "class":[
+              {
+                  "color":"ECRU",
+                  "class_id":"712",
+                  "color_num":"#F5F3E5",
+                  "stock":[45, 120, 80, 40],
+                  "img":[
+                      "/image/skirt/id-5644/317/712/1.jpg",
+                      "/image/skirt/id-5644/317/712/2.jpg",
+                      "/image/skirt/id-5644/317/712/3.jpg",
+                      "/image/skirt/id-5644/317/712/4.jpg",
+                      "/image/skirt/id-5644/317/712/5.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Eleanor",
+              "rating": 4,
+              "comment": "This voluminous balloon skirt is quite fun! The high waist and elasticated waistband make it comfortable for the Taipei weather, and the bubble hem is a unique and playful detail for exploring Da'an."
+            },
+            {
+              "reviewer": "Jasper",
+              "rating": 5,
+              "comment": "I absolutely love this midi skirt! The high waist is flattering, and the elasticated waistband is so comfortable for all-day wear in Taipei City. The bubble hem gives it a really stylish and distinctive shape."
+            },
+            {
+              "reviewer": "Seraphina",
+              "rating": 4,
+              "comment": "A nice and interesting midi skirt. The high waist is good, and the elasticated waistband is practical for the Taipei humidity. The bubble hem is a bit different, but it adds a unique flair."
+            },
+            {
+              "reviewer": "Atticus",
+              "rating": 5,
+              "comment": "This voluminous balloon skirt is fantastic for the climate here in Da'an! The high waist is stylish, and the elasticated waistband is incredibly comfortable. The bubble hem is a really eye-catching design for strolling around Taipei."
+            },
+            {
+              "reviewer": "Genevieve",
+              "rating": 3,
+              "comment": "It's an okay midi skirt. The high waist and elasticated waistband are functional for Taipei. The bubble hem is a bit too voluminous for my personal taste, but it's certainly a statement piece for the fashion scene here."
+            }
+          ]
+        },
+        {
+          "id":"4661/408/", 
+          "category1":"WOMAN",
+          "category2":"SKIRT",
+          "name":"BUTTON-UP WRAP MIDI SKIRT",
+          "price": 1990,
+          "sale":false,
+          "description":"High-waist midi wrap skirt with belt loops. Mock side pockets. Self-tie belt. Button-up wrap front.",
+          "detail":[
+            "100% cotton"
+          ],
+          "class":[
+              {
+                  "color":"ECRU",
+                  "class_id":"711",
+                  "color_num":"#F5F3E5",
+                  "stock":[25, 66, 87, 40],
+                  "img":[
+                      "/image/skirt/id-4661/408/711/1.jpg",
+                      "/image/skirt/id-4661/408/711/2.jpg",
+                      "/image/skirt/id-4661/408/711/3.jpg",
+                      "/image/skirt/id-4661/408/711/4.jpg",
+                      "/image/skirt/id-4661/408/711/5.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Olivia",
+              "rating": 4,
+              "comment": "This button-up wrap midi skirt is quite stylish for Taipei! The high waist is flattering, and the self-tie belt allows for a customizable fit. The button-up wrap front is a nice detail for wearing around Da'an."
+            },
+            {
+              "reviewer": "William",
+              "rating": 5,
+              "comment": "I absolutely love this midi skirt! The 100% cotton feels so comfortable for the Taiwan weather, and the wrap design is very chic. The button-up front and self-tie belt make it a versatile piece for the city."
+            },
+            {
+              "reviewer": "Sophia",
+              "rating": 4,
+              "comment": "A pretty solid midi skirt. The high waist is good, and the wrap style is always flattering. The button-up front is a nice design element, and the belt loops offer options for styling in Taipei."
+            },
+            {
+              "reviewer": "James",
+              "rating": 5,
+              "comment": "This wrap midi skirt is fantastic for the climate here in Da'an! The high waist is very on-trend, and the button-up front is a stylish feature. The self-tie belt allows for a perfect fit for exploring Taipei."
+            },
+            {
+              "reviewer": "Emma",
+              "rating": 3,
+              "comment": "It's an okay midi skirt. The high waist is standard, and the wrap design is alright. The button-up front is a bit fiddly, and the mock pockets aren't functional for carrying things around Taipei."
+            }
+          ]
+        },
+        {
+          "id":"7969/022/", 
+          "category1":"WOMAN",
+          "category2":"BLOUSE",
+          "name":"WIDE SLEEVE STRIPED BLOUSE",
+          "price": 1190,
+          "sale":true,
+          "new_price":[714,65],
+          "description":"Flowing blouse with a lapel collar and wide long sleeves. Finished hem with side slits. Button-up front.",
+          "detail":[
+            "100% polyester"
+          ],
+          "class":[
+              {
+                  "color":"BLUE",
+                  "class_id":"400",
+                  "color_num":"#E7E6D8",
+                  "stock":[65, 120, 57, 48],
+                  "img":[
+                      "/image/blouse/id-7969/022/400/1.jpg",
+                      "/image/blouse/id-7969/022/400/2.jpg",
+                      "/image/blouse/id-7969/022/400/3.jpg",
+                      "/image/blouse/id-7969/022/400/4.jpg",
+                      "/image/blouse/id-7969/022/400/5.jpg",
+                      "/image/blouse/id-7969/022/400/6.jpg"
+                  ]
+              },
+              {
+                "color":"BEIGE",
+                "class_id":"450",
+                "color_num":"#E9E6D2",
+                "stock":[35, 55, 87, 28],
+                "img":[
+                    "/image/blouse/id-7969/022/450/1.jpg",
+                    "/image/blouse/id-7969/022/450/2.jpg",
+                    "/image/blouse/id-7969/022/450/3.jpg",
+                    "/image/blouse/id-7969/022/450/4.jpg",
+                    "/image/blouse/id-7969/022/450/5.jpg",
+                    "/image/blouse/id-7969/022/450/6.jpg"
+                ]
+            }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Olivia",
+              "rating": 4,
+              "comment": "This striped blouse is quite stylish for Taipei! The wide long sleeves give it a flowy and fashionable look. The lapel collar is a nice touch, and the side slits are practical for the warmer weather in Da'an."
+            },
+            {
+              "reviewer": "William",
+              "rating": 5,
+              "comment": "I absolutely love this blouse! The wide sleeves are so chic and comfortable for the Taiwan climate. The button-up front is classic, and the striped pattern is very versatile for wearing around the city, especially at the sale price!"
+            },
+            {
+              "reviewer": "Sophia",
+              "rating": 4,
+              "comment": "A pretty solid striped blouse. The wide sleeves are definitely a statement, and the lapel collar adds a bit of sophistication. The side slits are good for breathability in Taipei's humidity. A good buy on sale."
+            },
+            {
+              "reviewer": "James",
+              "rating": 5,
+              "comment": "This blouse is fantastic for the Taipei scene! The wide sleeves are very on-trend, and the button-up front makes it easy to style. The striped pattern is classic, and the sale price is a great bonus for a stylish top."
+            },
+            {
+              "reviewer": "Emma",
+              "rating": 3,
+              "comment": "It's an okay blouse. The wide sleeves are alright, but can feel a bit overwhelming in the crowded areas of Taipei. The lapel collar is standard, and the polyester fabric isn't the most breathable for the summer heat. The sale price makes it more appealing."
+            }
+          ]
+        },
+        {
+          "id":"3564/053/", 
+          "category1":"WOMAN",
+          "category2":"BLOUSE",
+          "name":"EMBROIDERED BLOUSE",
+          "price": 1290,
+          "sale":false,
+          "description":"Long sleeve blouse with a round neck and v-neck. Featuring contrast embroidery and a button-up fastening on the front.",
+          "detail":[
+            "59% viscose","41% polyester","100% polyester"
+          ],
+          "class":[
+              {
+                  "color":"Beige-pink",
+                  "class_id":"942",
+                  "color_num":"#B79789",
+                  "stock":[65, 55, 22, 20],
+                  "img":[
+                      "/image/blouse/id-3564/053/942/1.jpg",
+                      "/image/blouse/id-3564/053/942/2.jpg",
+                      "/image/blouse/id-3564/053/942/3.jpg",
+                      "/image/blouse/id-3564/053/942/4.jpg",
+                      "/image/blouse/id-3564/053/942/5.jpg",
+                      "/image/blouse/id-3564/053/942/6.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Olivia",
+              "rating": 4,
+              "comment": "This embroidered blouse is quite lovely for Taipei! The round neck with the V-detail is a nice touch, and the contrast embroidery adds a unique charm. The long sleeves are good for evenings in Da'an."
+            },
+            {
+              "reviewer": "William",
+              "rating": 5,
+              "comment": "I absolutely adore this blouse! The embroidery is beautiful and really stands out. The round neck with the V-cut is flattering, and the button-up front is easy to style for different occasions around the city."
+            },
+            {
+              "reviewer": "Sophia",
+              "rating": 4,
+              "comment": "A pretty embroidered blouse. The long sleeves are suitable for the slightly cooler evenings in Taipei. The contrast embroidery is a nice detail, and the button-up front is classic and versatile."
+            },
+            {
+              "reviewer": "James",
+              "rating": 5,
+              "comment": "This blouse is fantastic for adding a touch of elegance to any outfit in Taipei! The embroidery is delicate and eye-catching. The round neck with the V-detail is stylish, and the button-up front is practical for the local climate."
+            },
+            {
+              "reviewer": "Emma",
+              "rating": 3,
+              "comment": "It's an okay blouse. The embroidery is alright, but the viscose blend might feel a bit warm during the day in Taipei. The long sleeves are better for evening. The button-up front is standard."
+            }
+          ]
+        },
+        {
+          "id":"5107/046/", 
+          "category1":"WOMAN",
+          "category2":"BLOUSE",
+          "name":"ROMANTIC EMBROIDERED BLOUSE ZW COLLECTION",
+          "price": 1490,
+          "sale":false,
+          "description":"Blouse made of 100% cotton yarn. Round neck and short sleeves with elasticated cuffs. Matching embroidery and lace inserts. Button fastening at the back.",
+          "detail":[
+            "100% cotton","100% polyester"
+          ],
+          "class":[
+              {
+                  "color":"ECRU",
+                  "class_id":"712",
+                  "color_num":"#F5F3E5",
+                  "stock":[15, 105, 65, 40],
+                  "img":[
+                      "/image/blouse/id-5107/046/712/1.jpg",
+                      "/image/blouse/id-5107/046/712/2.jpg",
+                      "/image/blouse/id-5107/046/712/3.jpg",
+                      "/image/blouse/id-5107/046/712/4.jpg",
+                      "/image/blouse/id-5107/046/712/5.jpg",
+                      "/image/blouse/id-5107/046/712/6.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Isabelle",
+              "rating": 5,
+              "comment": "This romantic embroidered blouse is absolutely beautiful for the Taipei weather! The 100% cotton is so breathable, and the matching embroidery and lace inserts are such lovely details. The elasticated short sleeves are perfect for staying cool in Da'an."
             },
             {
               "reviewer": "Ethan",
               "rating": 4,
-              "comment": "The dress looks great! The lapel collar and v-neck give it a sophisticated touch. The knit material is nice, though I'm a little concerned about how it will hold up in the humid Taiwan weather. The cut-out is a stylish detail."
+              "comment": "A very pretty blouse with a lovely romantic feel. The embroidery and lace are delicate, and the short sleeves are ideal for the Taipei climate. The button fastening at the back is a nice touch."
             },
             {
-              "reviewer": "Chloe",
+              "reviewer": "Clara",
               "rating": 5,
-              "comment": "Absolutely love this maxi dress! It's perfect for the Taiwan climate - stylish enough for an evening out in Taipei but comfortable enough for a more casual setting in Xinzhuang. The cut-out is tastefully done, and the length is just right."
+              "comment": "I adore this blouse! The 100% cotton is so comfortable for the humidity here. The embroidery and lace are exquisite, and the elasticated cuffs on the short sleeves are a charming detail for wearing around the city."
             },
             {
-              "reviewer": "William",
+              "reviewer": "Owen",
               "rating": 4,
-              "comment": "A very chic knit maxi dress. The lapel collar adds a touch of elegance, and the v-neck is flattering. The sleeveless design is ideal for the warm weather here in Taiwan. The cut-out is a bit daring, but it works well with the overall style."
+              "comment": "This is a charming blouse perfect for the Taipei spring and summer. The cotton is light and airy, and the embroidery and lace give it a very feminine touch. The short sleeves are practical for the local weather."
             },
             {
-              "reviewer": "Olivia",
-              "rating": 5,
-              "comment": "This dress is fantastic! The cut-out is perfectly placed and adds a really interesting element. The knit fabric drapes beautifully, and it's surprisingly breathable for the Taiwan summer. I've already worn it a few times since buying it in New Taipei City!"
+              "reviewer": "Hazel",
+              "rating": 3,
+              "comment": "It's a nice blouse. The embroidery and lace are pretty, but the 100% cotton might wrinkle easily in the Taipei humidity. The short sleeves with elasticated cuffs are okay, and the back button fastening is a bit less convenient."
             }
           ]
-
-    },
-    {
-      "id":"0264/196/", 
-      "category1":"WOMAN",
-      "category2":"WAISTCOAT",
-      "name":"CROSSOVER FLOWING WAISTCOAT TOP",
-      "price": 890,
-      "sale":true,
-      "new_price":[534,60],
-      "description":"Sleeveless V-neck waistcoat top. Adjustable wrap front tie fastening.",
-      "detail":[
-          "100% polyester"
-      ],
-      "class":[
-          {
-              "color":"GREY",
-              "class_id":"802",
-              "color_num":"#A1A2A5",
-              "stock":[75, 75, 40, 24],
-              "img":[
-                  "/image/waistcoat/id-0264/196/802/1.jpg",
-                  "/image/waistcoat/id-0264/196/802/2.jpg",
-                  "/image/waistcoat/id-0264/196/802/3.jpg",
-                  "/image/waistcoat/id-0264/196/802/4.jpg",
-                  "/image/waistcoat/id-0264/196/802/5.jpg"
-              ]
-          },
-          {
-              "color":"BLACK",
-              "class_id":"800",
-              "color_num":"#121315",
-              "stock":[61, 153, 77, 90],
-              "img":[
-                  "/image/waistcoat/id-0264/196/800/1.jpg",
-                  "/image/waistcoat/id-0264/196/800/2.jpg",
-                  "/image/waistcoat/id-0264/196/800/3.jpg",
-                  "/image/waistcoat/id-0264/196/800/4.jpg",
-                  "/image/waistcoat/id-0264/196/800/5.jpg",
-                  "/image/waistcoat/id-0264/196/800/6.jpg"
-              ]
-          },
-          {
-            "color":"BROWN",
-            "class_id":"700",
-            "color_num":"#121315",
-            "stock":[31, 53, 77, 120],
-            "img":[
-                "/image/waistcoat/id-0264/196/700/1.jpg",
-                "/image/waistcoat/id-0264/196/700/2.jpg",
-                "/image/waistcoat/id-0264/196/700/3.jpg",
-                "/image/waistcoat/id-0264/196/700/4.jpg"
-            ]
+        },
+        {
+          "id":"5029/052/",
+          "category1":"WOMAN",
+          "category2":"BLOUSE",
+          "name":"LACE RUFFLE BLOUSE",
+          "price": 1390,
+          "sale":false,
+          "description":"Semi-sheer blouse with a ruffled collar, V-neck and long sleeves. Featuring pintucks on the front and finished with ruffles and lace trim.",
+          "detail":[
+            "100% polyester"
+          ],
+          "class":[
+              {
+                  "color":"ECRU",
+                  "class_id":"712",
+                  "color_num":"#F5F3E5",
+                  "stock":[45, 85, 55, 20],
+                  "img":[
+                      "/image/blouse/id-5029/052/712/1.jpg",
+                      "/image/blouse/id-5029/052/712/2.jpg",
+                      "/image/blouse/id-5029/052/712/3.jpg",
+                      "/image/blouse/id-5029/052/712/4.jpg",
+                      "/image/blouse/id-5029/052/712/5.jpg",
+                      "/image/blouse/id-5029/052/712/6.jpg",
+                      "/image/blouse/id-5029/052/712/7.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Sophia",
+              "rating": 4,
+              "comment": "This lace ruffle blouse is quite elegant for evenings out in Taipei! The ruffled collar and V-neck are very feminine, and the lace trim adds a delicate touch. The semi-sheer fabric is pretty, though you might need a camisole underneath."
+            },
+            {
+              "reviewer": "Finn",
+              "rating": 5,
+              "comment": "I absolutely love this blouse! It's so romantic and stylish. The ruffles and lace are beautifully done, and the pintucks add a nice texture. Perfect for dressing up for a special occasion in Da'an."
+            },
+            {
+              "reviewer": "Aurora",
+              "rating": 4,
+              "comment": "A very pretty and detailed blouse. The ruffled collar and V-neck are lovely, and the long sleeves make it suitable for slightly cooler weather in Taipei. The lace trim gives it a sophisticated look."
+            },
+            {
+              "reviewer": "Leo",
+              "rating": 5,
+              "comment": "This blouse is fantastic for adding a touch of romance to any outfit! The ruffles are beautifully done, and the lace trim is exquisite. The semi-sheer fabric is elegant, and it's perfect for a night out in the city."
+            },
+            {
+              "reviewer": "Beatrice",
+              "rating": 3,
+              "comment": "It's a nice blouse, but the 100% polyester might not be the most breathable for the Taipei heat. The ruffles and lace are pretty, but they can be a bit much for everyday wear. The semi-sheer fabric requires careful layering."
+            }
+          ]
+        },
+        {
+          "id":"4786/069/",
+          "category1":"WOMAN",
+          "category2":"BLOUSE",
+          "name":"BOW BLOUSE ZW COLLECTION",
+          "price": 1990,
+          "sale":false,
+          "description":"Blouse made of viscose yarn. Round neck with matching fabric tie. Long puff sleeves with buttoned cuffs. Straight hem. Front button fastening.",
+          "detail":[
+            "100% viscose"
+          ],
+          "class":[
+              {
+                  "color":"RED",
+                  "class_id":"600",
+                  "color_num":"#862019",
+                  "stock":[25, 85, 45, 4],
+                  "img":[
+                      "/image/blouse/id-4786/069/600/1.jpg",
+                      "/image/blouse/id-4786/069/600/2.jpg",
+                      "/image/blouse/id-4786/069/600/3.jpg",
+                      "/image/blouse/id-4786/069/600/4.jpg",
+                      "/image/blouse/id-4786/069/600/5.jpg",
+                      "/image/blouse/id-4786/069/600/6.jpg",
+                      "/image/blouse/id-4786/069/600/7.jpg"
+                  ]
+              }
+          ],
+          "reviews": [
+            {
+              "reviewer": "Eleanor",
+              "rating": 5,
+              "comment": "This bow blouse is so elegant for Taipei! The viscose yarn feels lovely and flowy, perfect for the climate here in Da'an. The matching fabric tie at the round neck is a beautiful detail, and the puff sleeves add a touch of sophistication."
+            },
+            {
+              "reviewer": "Henry",
+              "rating": 4,
+              "comment": "A very chic blouse. The round neck with the bow is a classic look, and the long puff sleeves with buttoned cuffs are quite stylish. The viscose material drapes nicely, suitable for evenings in Taipei."
+            },
+            {
+              "reviewer": "Grace",
+              "rating": 5,
+              "comment": "I absolutely adore this bow blouse! It's so feminine and versatile. The viscose is comfortable for the Taiwan weather, and the puff sleeves add a lovely drama. The front button fastening is practical for wearing around the city."
+            },
+            {
+              "reviewer": "Owen",
+              "rating": 4,
+              "comment": "This is a beautiful blouse perfect for adding a touch of elegance to any outfit in Taipei. The bow at the neck is a lovely detail, and the long puff sleeves give it a fashionable silhouette. The viscose feels nice against the skin."
+            },
+            {
+              "reviewer": "Lily",
+              "rating": 3,
+              "comment": "It's a nice blouse, but the 100% viscose might wrinkle easily in the Taipei humidity. The bow at the neck is pretty, and the puff sleeves are alright, though they might feel a bit warm during the day. The front button fastening is standard."
+            }
+          ]
         }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Mei",
-          "rating": 5,
-          "comment": "This waistcoat top is so chic and versatile! The wrap front and tie fastening allow for a perfect fit. It's sleeveless, which is great for the Taipei weather. I can dress it up or down."
-        },
-        {
-          "reviewer": "Lin",
-          "rating": 4,
-          "comment": "I really like the flowing style of this waistcoat. The V-neck is flattering, and the adjustable tie is a nice feature. The polyester fabric feels light, perfect for layering in Da'an."
-        },
-        {
-          "reviewer": "Chen",
-          "rating": 5,
-          "comment": "Absolutely love this waistcoat top! It's so stylish and easy to wear. The crossover design is unique, and the fact that it's on sale makes it an even better deal. Perfect for a trendy look in Taipei City."
-        },
-        {
-          "reviewer": "Huang",
-          "rating": 4,
-          "comment": "A nice waistcoat top for the price, especially with the sale! The V-neck is flattering, and the adjustable wrap is convenient. It's a good layering piece for the transitional weather in Taiwan."
-        },
-        {
-          "reviewer": "Chang",
-          "rating": 5,
-          "comment": "This waistcoat top is a great find! It's stylish, comfortable, and the adjustable tie ensures a perfect fit. The flowing design is very on-trend, and it's perfect for the fashion scene in Da'an District."
-        }
-      ]
-    },
-    {
-      "id":"2388/586/", 
-      "category1":"WOMAN",
-      "category2":"WAISTCOAT",
-      "name":"ZW COLLECTION SHOULDER PAD WAISTCOAT",
-      "price": 3490,
-      "sale":false,
-      "description":"Waistcoat made of a linen and viscose yarn. Notched lapels and armholes with shoulder pads. Front welt pockets. Contrast lining. Front button fastening.",
-      "detail":[
-          "68% linen","32% viscose","100% viscose"
-      ],
-      "class":[
-          {
-              "color":"CAMEL",
-              "class_id":"707",
-              "color_num":"#B0ACA1",
-              "stock":[25, 45, 80, 74],
-              "img":[
-                  "/image/waistcoat/id-2388/586/707/1.jpg",
-                  "/image/waistcoat/id-2388/586/707/2.jpg",
-                  "/image/waistcoat/id-2388/586/707/3.jpg",
-                  "/image/waistcoat/id-2388/586/707/4.jpg",
-                  "/image/waistcoat/id-2388/586/707/5.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Eleanor",
-          "rating": 5,
-          "comment": "This shoulder pad waistcoat is absolutely fantastic! The linen and viscose blend feels so luxurious, and the shoulder pads give it a really sharp, confident look. Perfect for a stylish day out in Da'an!"
-        },
-        {
-          "reviewer": "Jasper",
-          "rating": 4,
-          "comment": "A very stylish waistcoat. The shoulder pads provide a nice structure, and the notched lapels are a classic touch. The fabric is comfortable enough for the Taipei weather. Overall, a solid purchase."
-        },
-        {
-          "reviewer": "Seraphina",
-          "rating": 5,
-          "comment": "Obsessed with this waistcoat! It adds such a sophisticated edge to any outfit. The shoulder pads are just right, and the contrast lining is a lovely surprise. Definitely a new favorite for my Taipei wardrobe."
-        },
-        {
-          "reviewer": "Atticus",
-          "rating": 4,
-          "comment": "A well-made waistcoat with a nice tailored feel. The linen and viscose blend is suitable for the climate here. The shoulder pads give it a defined silhouette. A good investment piece."
-        },
-        {
-          "reviewer": "Genevieve",
-          "rating": 5,
-          "comment": "This waistcoat is a dream! The shoulder pads are perfectly proportioned, and the fabric feels wonderful against the skin. It's so versatile and adds a touch of elegance to any look I put together here in Taipei. Highly recommend!"
-        }
-      ]
-    },
-    {
-      "id":"2183/530/", 
-      "category1":"WOMAN",
-      "category2":"WAISTCOAT",
-      "name":"WAISTCOAT WITH VENTS",
-      "price": 1290,
-      "sale":false,
-      "description":"V-neck waistcoat with armholes. Mock welt pockets on the front. Hem with front vents. Adjustable tab detail on the back. Front button fastening.",
-      "detail":[
-        "72% polyester","22% viscose","6% elastane","100% acetate"
-      ],
-      "class":[
-          {
-              "color":"GREY",
-              "class_id":"802",
-              "color_num":"#5E605D",
-              "stock":[45, 85, 60, 20],
-              "img":[
-                  "/image/waistcoat/id-2183/530/802/1.jpg",
-                  "/image/waistcoat/id-2183/530/802/2.jpg",
-                  "/image/waistcoat/id-2183/530/802/3.jpg",
-                  "/image/waistcoat/id-2183/530/802/4.jpg",
-                  "/image/waistcoat/id-2183/530/802/5.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Isabelle",
-          "rating": 4,
-          "comment": "This waistcoat is quite stylish. The vents at the hem are a unique feature, and the adjustable back tab really helps to customize the fit. Good for a chic look around Taipei."
-        },
-        {
-          "reviewer": "Sebastian",
-          "rating": 5,
-          "comment": "Absolutely love this waistcoat! The quality is excellent, and the V-neck is very flattering. The mock pockets add a nice detail, and it's perfect for layering in the city."
-        },
-        {
-          "reviewer": "Penelope",
-          "rating": 3,
-          "comment": "It's an okay waistcoat. The fabric feels a bit synthetic, but the design is decent. The front vents are interesting, but I'm not sure they add much. It's alright for casual wear in Taipei."
-        },
-        {
-          "reviewer": "Theodore",
-          "rating": 5,
-          "comment": "This waistcoat is a great find! The fit is perfect, thanks to the adjustable back tab. The V-neck is classic, and the front button fastening is sturdy. Highly recommend for a stylish look in the city."
-        },
-        {
-          "reviewer": "Beatrice",
-          "rating": 4,
-          "comment": "A solid waistcoat. The vents at the hem give it a modern touch, and the mock pockets are a nice detail. It's comfortable enough for a day out in Taipei, though the fabric isn't the most breathable."
-        }
-      ]
-    },
-    {
-      "id":"1529/156/", 
-      "category1":"WOMAN",
-      "category2":"WAISTCOAT",
-      "name":"PIQUÉ WAISTCOAT",
-      "price": 1790,
-      "sale":false,
-      "description":"Sleeveless waistcoat with a high neck. Featuring lapels on the front, adjustable drawstring hem and front press-stud fastening.",
-      "detail":[
-        "55% cotton", "45% polyester"
-      ],
-      "class":[
-          {
-              "color":"SAND",
-              "class_id":"711",
-              "color_num":"#D0C8BF",
-              "stock":[55, 125, 40, 30],
-              "img":[
-                  "/image/waistcoat/id-1529/156/711/1.jpg",
-                  "/image/waistcoat/id-1529/156/711/2.jpg",
-                  "/image/waistcoat/id-1529/156/711/3.jpg",
-                  "/image/waistcoat/id-1529/156/711/4.jpg",
-                  "/image/waistcoat/id-1529/156/711/5.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Oliver",
-          "rating": 4,
-          "comment": "This piqué waistcoat is quite interesting with its high neck and lapels. The adjustable drawstring hem is a practical feature for getting the right fit. Good for adding a unique touch to an outfit in Taipei."
-        },
-        {
-          "reviewer": "Scarlett",
-          "rating": 5,
-          "comment": "I absolutely love the design of this waistcoat! The high neck is very stylish, and the front press-stud fastening is convenient. The piqué fabric feels nice quality for the Taipei weather."
-        },
-        {
-          "reviewer": "Finn",
-          "rating": 3,
-          "comment": "It's an okay waistcoat. The high neck is a bit unusual, and the lapels are just on the front. The drawstring hem is adjustable, which is a plus. Might be better suited for cooler evenings in Taipei."
-        },
-        {
-          "reviewer": "Aurora",
-          "rating": 5,
-          "comment": "This piqué waistcoat is fantastic! The high neck and lapels give it a very fashionable look. The press-stud fastening is easy to use, and the drawstring hem allows for versatile styling around the city."
-        },
-        {
-          "reviewer": "Leo",
-          "rating": 4,
-          "comment": "A pretty solid waistcoat. The high neck is a statement, and the lapels add some structure. The adjustable hem is useful. The piqué material is comfortable enough for wearing in Da'an."
-        }
-      ]
-    },
-    {
-      "id":"2731/045/", 
-      "category1":"WOMAN",
-      "category2":"SKIRT",
-      "name":"ZW COLLECTION VOLUMINOUS MIDI SKIRT",
-      "price": 1490,
-      "sale":true,
-      "new_price":[894,60],
-      "description":"High-waist midi skirt with elasticated waistband and flared hem.",
-      "detail":[
-          "100% polyester"
-      ],
-      "class":[
-          {
-              "color":"BLACK",
-              "class_id":"800",
-              "color_num":"#0A0A0A",
-              "stock":[75, 125, 80, 34],
-              "img":[
-                  "/image/skirt/id-2731/045/800/1.jpg",
-                  "/image/skirt/id-2731/045/800/2.jpg",
-                  "/image/skirt/id-2731/045/800/3.jpg",
-                  "/image/skirt/id-2731/045/800/4.jpg",
-                  "/image/skirt/id-2731/045/800/5.jpg"
-              ]
-          },
-          {
-              "color":"BLUE",
-              "class_id":"400",
-              "color_num":"#5DADDB",
-              "stock":[21, 53, 77, 40],
-              "img":[
-                  "/image/skirt/id-0264/196/800/1.jpg",
-                  "/image/skirt/id-0264/196/800/2.jpg",
-                  "/image/skirt/id-0264/196/800/3.jpg",
-                  "/image/skirt/id-0264/196/800/4.jpg",
-                  "/image/skirt/id-0264/196/800/5.jpg"
-              ]
-          },
-          {
-            "color":"Burgundy",
-            "class_id":"606",
-            "color_num":"#371E21",
-            "stock":[26, 73, 77, 20],
-            "img":[
-                "/image/skirt/id-2731/045/606/1.jpg",
-                "/image/skirt/id-2731/045/606/2.jpg",
-                "/image/skirt/id-2731/045/606/3.jpg",
-                "/image/skirt/id-2731/045/606/4.jpg"
-            ]
-        }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Mei",
-          "rating": 5,
-          "comment": "This voluminous midi skirt is so fun to wear! The high waist is flattering, and the elasticated waistband makes it super comfortable, perfect for strolling around Da'an Park."
-        },
-        {
-          "reviewer": "Lin",
-          "rating": 4,
-          "comment": "I really like the flared hem of this skirt, it gives it a lovely movement. The high waist is great, and the fact that it's on sale makes it a good buy for the Taipei weather."
-        },
-        {
-          "reviewer": "Chen",
-          "rating": 5,
-          "comment": "Absolutely love this midi skirt! It's so easy to style and the voluminous shape is very on-trend. The elasticated waistband is a lifesaver for comfort. Definitely a great addition to my wardrobe for exploring Taipei."
-        },
-        {
-          "reviewer": "Huang",
-          "rating": 4,
-          "comment": "A nice and flowy midi skirt. The high waist is flattering, and the elasticated band is comfortable for all-day wear in the Taipei humidity. The sale price is a bonus!"
-        },
-        {
-          "reviewer": "Chang",
-          "rating": 5,
-          "comment": "This skirt is fantastic! The voluminous design is so stylish, and the midi length is perfect for various occasions around Taipei. The elasticated waistband makes it incredibly comfortable. Highly recommend, especially at the sale price!"
-        }
-      ]
-    },
-    {
-      "id":"8228/025/", 
-      "category1":"WOMAN",
-      "category2":"SKIRT",
-      "name":"Z1975 DENIM CROSSOVER MIDI SKIRT",
-      "price": 1290,
-      "sale":false,
-      "description":"High-waist skirt with rear patch pockets. Front vent at the hem. Crossover front fastening with metal buttons.",
-      "detail":[
-          "100% cotton"
-      ],
-      "class":[
-          {
-              "color":"GREY",
-              "class_id":"802",
-              "color_num":"#767676",
-              "stock":[25, 145, 50, 30],
-              "img":[
-                  "/image/skirt/id-8228/025/802/1.jpg",
-                  "/image/skirt/id-8228/025/802/2.jpg",
-                  "/image/skirt/id-8228/025/802/3.jpg",
-                  "/image/skirt/id-8228/025/802/4.jpg",
-                  "/image/skirt/id-8228/025/802/5.jpg",
-                  "/image/skirt/id-8228/025/802/6.jpg"
-              ]
-          },
-          {
-              "color":"MID-BLUE",
-              "class_id":"427",
-              "color_num":"#91A7B8",
-              "stock":[21, 53, 77, 40],
-              "img":[
-                  "/image/skirt/id-8228/025/427/1.jpg",
-                  "/image/skirt/id-8228/025/427/2.jpg",
-                  "/image/skirt/id-8228/025/427/3.jpg",
-                  "/image/skirt/id-8228/025/427/4.jpg",
-                  "/image/skirt/id-8228/025/427/5.jpg",
-                  "/image/skirt/id-8228/025/427/6.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Sophia",
-          "rating": 4,
-          "comment": "This denim crossover midi skirt is quite stylish! The high waist is flattering, and the rear patch pockets are a nice detail. The front vent is practical for moving around the streets of Da'an."
-        },
-        {
-          "reviewer": "Ethan",
-          "rating": 5,
-          "comment": "I absolutely love this denim skirt! The crossover front fastening with the metal buttons gives it a really cool and unique look. The 100% cotton is comfortable for the Taipei weather."
-        },
-        {
-          "reviewer": "Chloe",
-          "rating": 4,
-          "comment": "A pretty solid denim skirt. The high waist fits well, and the midi length is versatile for different occasions in Taipei. The front vent is a nice touch for ease of movement."
-        },
-        {
-          "reviewer": "Noah",
-          "rating": 5,
-          "comment": "This denim skirt is fantastic! The crossover design is very trendy, and the metal button fastening feels secure. The rear pockets are a classic denim detail. Perfect for a casual yet stylish look in the city."
-        },
-        {
-          "reviewer": "Isabella",
-          "rating": 3,
-          "comment": "It's an okay denim skirt. The high waist is as expected, and the rear pockets are standard. The front vent is alright, but the crossover fastening can feel a little bulky at times, especially in the Taipei humidity."
-        }
-      ]
-    },
-    {
-      "id":"2496/576/", 
-      "category1":"WOMAN",
-      "category2":"SKIRT",
-      "name":"Z1975 DENIM CROSSOVER SKIRT",
-      "price": 1490,
-      "sale":false,
-      "description":"High-waist midi skirt with buckles. Front vent at the hem.",
-      "detail":[
-        "97% cotton", "3% elastane"
-      ],
-      "class":[
-          {
-              "color":"BLUE",
-              "class_id":"400",
-              "color_num":"#292A2F",
-              "stock":[15, 105, 40, 10],
-              "img":[
-                  "/image/skirt/id-2496/576/400/1.jpg",
-                  "/image/skirt/id-2496/576/400/2.jpg",
-                  "/image/skirt/id-2496/576/400/3.jpg",
-                  "/image/skirt/id-2496/576/400/4.jpg",
-                  "/image/skirt/id-2496/576/400/5.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Eleanor",
-          "rating": 4,
-          "comment": "This denim crossover skirt is quite stylish with its high waist and buckle details. The front vent is practical for navigating the streets of Da'an. The touch of elastane likely makes it comfortable for the Taipei weather."
-        },
-        {
-          "reviewer": "Jasper",
-          "rating": 5,
-          "comment": "I absolutely love this denim skirt! The high waist is very flattering, and the buckles add a cool, edgy vibe. The front vent is a nice touch for movement around Taipei City."
-        },
-        {
-          "reviewer": "Seraphina",
-          "rating": 4,
-          "comment": "A pretty solid denim skirt. The high waist fits well, and the midi length is versatile for different occasions in Taipei. The buckles are a nice design element, and the front vent is appreciated in the humidity."
-        },
-        {
-          "reviewer": "Atticus",
-          "rating": 5,
-          "comment": "This denim skirt is fantastic! The crossover design is trendy, and the buckles give it a unique look. The front vent makes it easy to move around the city. The bit of stretch from the elastane is a plus for comfort in Da'an."
-        },
-        {
-          "reviewer": "Genevieve",
-          "rating": 3,
-          "comment": "It's an okay denim skirt. The high waist is standard, and the buckles are alright. The front vent is functional, but the overall style isn't particularly outstanding for the Taipei fashion scene."
-        }
-      ]
-    },
-    {
-      "id":"2731/101/", 
-      "category1":"WOMAN",
-      "category2":"SKIRT",
-      "name":"ZW COLLECTION POPLIN MIDI SKIRT",
-      "price": 1790,
-      "sale":true,
-      "new_price":[1094,60],
-      "description":"High-waist midi skirt made of cotton yarn. Pleated waist. Flared hem. Concealed zip fastening.",
-      "detail":[
-        "100% cotton"
-      ],
-      "class":[
-          {
-              "color":"OYSTER-WHITE",
-              "class_id":"251",
-              "color_num":"#E5E5E8",
-              "stock":[15, 105, 40, 10],
-              "img":[
-                  "/image/skirt/id-2731/101/251/1.jpg",
-                  "/image/skirt/id-2731/101/251/2.jpg",
-                  "/image/skirt/id-2731/101/251/3.jpg",
-                  "/image/skirt/id-2731/101/251/4.jpg",
-                  "/image/skirt/id-2731/101/251/5.jpg",
-                  "/image/skirt/id-2731/101/251/6.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Hazel",
-          "rating": 4,
-          "comment": "This poplin midi skirt is lovely! The high waist is very flattering, and the pleated waist adds a nice touch of detail. The flared hem moves beautifully, perfect for a sunny day in Da'an."
-        },
-        {
-          "reviewer": "Henry",
-          "rating": 5,
-          "comment": "I absolutely adore this midi skirt! The 100% cotton feels so comfortable for the Taipei weather, and the flared hem is so elegant. The pleated waist is a stylish feature, especially at the sale price!"
-        },
-        {
-          "reviewer": "Grace",
-          "rating": 4,
-          "comment": "A very charming midi skirt. The high waist fits well, and the cotton poplin is light and airy for the humidity in Taipei. The flared hem is fun, and the concealed zip gives a clean finish."
-        },
-        {
-          "reviewer": "Owen",
-          "rating": 5,
-          "comment": "This poplin skirt is fantastic for the Taiwan climate! The high waist is very on-trend, and the pleated waist adds a lovely texture. The flared hem is perfect for a stroll around Taipei City. The sale price is a great bonus!"
-        },
-        {
-          "reviewer": "Lily",
-          "rating": 3,
-          "comment": "It's a decent midi skirt. The high waist is as expected, and the flared hem is alright. The pleated waist is a simple detail. The cotton poplin is okay for Taipei, but it might wrinkle easily."
-        }
-      ]
-    },
-    {
-      "id":"5427/422/", 
-      "category1":"WOMAN",
-      "category2":"SKIRT",
-      "name":"POPLIN MIDI SKIRT",
-      "price": 1290,
-      "sale":false,
-      "description":"High-waist midi skirt with a smocked elasticated waistband.",
-      "detail":[
-        "100% cotton"
-      ],
-      "class":[
-          {
-              "color":"WHITE",
-              "class_id":"250",
-              "color_num":"#E5E5E8",
-              "stock":[25, 60, 80, 50],
-              "img":[
-                  "/image/skirt/id-5427/422/250/1.jpg",
-                  "/image/skirt/id-5427/422/250/2.jpg",
-                  "/image/skirt/id-5427/422/250/3.jpg",
-                  "/image/skirt/id-5427/422/250/4.jpg",
-                  "/image/skirt/id-5427/422/250/5.jpg",
-                  "/image/skirt/id-5427/422/250/6.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Eleanor",
-          "rating": 4,
-          "comment": "This poplin midi skirt is quite comfortable! The high waist and smocked elasticated waistband make it a breeze to wear around Da'an, especially in the warm weather."
-        },
-        {
-          "reviewer": "Jasper",
-          "rating": 5,
-          "comment": "I absolutely love this midi skirt! The high waist is flattering, and the smocked elasticated waistband is so comfortable for all-day wear in Taipei City. The cotton poplin feels lovely."
-        },
-        {
-          "reviewer": "Seraphina",
-          "rating": 4,
-          "comment": "A nice and easy-to-wear midi skirt. The high waist is good, and the smocked elasticated waistband is very practical for the Taipei humidity. It's a great casual piece."
-        },
-        {
-          "reviewer": "Atticus",
-          "rating": 5,
-          "comment": "This poplin midi skirt is fantastic for the climate here in Da'an! The high waist is stylish, and the smocked elasticated waistband is incredibly comfortable. Perfect for a relaxed day out in Taipei."
-        },
-        {
-          "reviewer": "Genevieve",
-          "rating": 3,
-          "comment": "It's an okay midi skirt. The high waist is standard, and the smocked elasticated waistband is functional. The cotton poplin is alright for Taipei, but the overall design is quite simple."
-        }
-      ]
-    },
-    {
-      "id":"5644/317/", 
-      "category1":"WOMAN",
-      "category2":"SKIRT",
-      "name":"VOLUMINOUS BALLOON SKIRT",
-      "price": 1290,
-      "sale":false,
-      "description":"High-waist midi skirt with an elasticated waistband, lining and a bubble hem.",
-      "detail":[
-        "96% polyester","4% elastane","100% cotton"
-      ],
-      "class":[
-          {
-              "color":"ECRU",
-              "class_id":"712",
-              "color_num":"#F5F3E5",
-              "stock":[45, 120, 80, 40],
-              "img":[
-                  "/image/skirt/id-5644/317/712/1.jpg",
-                  "/image/skirt/id-5644/317/712/2.jpg",
-                  "/image/skirt/id-5644/317/712/3.jpg",
-                  "/image/skirt/id-5644/317/712/4.jpg",
-                  "/image/skirt/id-5644/317/712/5.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Eleanor",
-          "rating": 4,
-          "comment": "This voluminous balloon skirt is quite fun! The high waist and elasticated waistband make it comfortable for the Taipei weather, and the bubble hem is a unique and playful detail for exploring Da'an."
-        },
-        {
-          "reviewer": "Jasper",
-          "rating": 5,
-          "comment": "I absolutely love this midi skirt! The high waist is flattering, and the elasticated waistband is so comfortable for all-day wear in Taipei City. The bubble hem gives it a really stylish and distinctive shape."
-        },
-        {
-          "reviewer": "Seraphina",
-          "rating": 4,
-          "comment": "A nice and interesting midi skirt. The high waist is good, and the elasticated waistband is practical for the Taipei humidity. The bubble hem is a bit different, but it adds a unique flair."
-        },
-        {
-          "reviewer": "Atticus",
-          "rating": 5,
-          "comment": "This voluminous balloon skirt is fantastic for the climate here in Da'an! The high waist is stylish, and the elasticated waistband is incredibly comfortable. The bubble hem is a really eye-catching design for strolling around Taipei."
-        },
-        {
-          "reviewer": "Genevieve",
-          "rating": 3,
-          "comment": "It's an okay midi skirt. The high waist and elasticated waistband are functional for Taipei. The bubble hem is a bit too voluminous for my personal taste, but it's certainly a statement piece for the fashion scene here."
-        }
-      ]
-    },
-    {
-      "id":"4661/408/", 
-      "category1":"WOMAN",
-      "category2":"SKIRT",
-      "name":"BUTTON-UP WRAP MIDI SKIRT",
-      "price": 1990,
-      "sale":false,
-      "description":"High-waist midi wrap skirt with belt loops. Mock side pockets. Self-tie belt. Button-up wrap front.",
-      "detail":[
-        "100% cotton"
-      ],
-      "class":[
-          {
-              "color":"ECRU",
-              "class_id":"711",
-              "color_num":"#F5F3E5",
-              "stock":[25, 66, 87, 40],
-              "img":[
-                  "/image/skirt/id-4661/408/711/1.jpg",
-                  "/image/skirt/id-4661/408/711/2.jpg",
-                  "/image/skirt/id-4661/408/711/3.jpg",
-                  "/image/skirt/id-4661/408/711/4.jpg",
-                  "/image/skirt/id-4661/408/711/5.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Olivia",
-          "rating": 4,
-          "comment": "This button-up wrap midi skirt is quite stylish for Taipei! The high waist is flattering, and the self-tie belt allows for a customizable fit. The button-up wrap front is a nice detail for wearing around Da'an."
-        },
-        {
-          "reviewer": "William",
-          "rating": 5,
-          "comment": "I absolutely love this midi skirt! The 100% cotton feels so comfortable for the Taiwan weather, and the wrap design is very chic. The button-up front and self-tie belt make it a versatile piece for the city."
-        },
-        {
-          "reviewer": "Sophia",
-          "rating": 4,
-          "comment": "A pretty solid midi skirt. The high waist is good, and the wrap style is always flattering. The button-up front is a nice design element, and the belt loops offer options for styling in Taipei."
-        },
-        {
-          "reviewer": "James",
-          "rating": 5,
-          "comment": "This wrap midi skirt is fantastic for the climate here in Da'an! The high waist is very on-trend, and the button-up front is a stylish feature. The self-tie belt allows for a perfect fit for exploring Taipei."
-        },
-        {
-          "reviewer": "Emma",
-          "rating": 3,
-          "comment": "It's an okay midi skirt. The high waist is standard, and the wrap design is alright. The button-up front is a bit fiddly, and the mock pockets aren't functional for carrying things around Taipei."
-        }
-      ]
-    },
-    {
-      "id":"7969/022/", 
-      "category1":"WOMAN",
-      "category2":"BLOUSE",
-      "name":"WIDE SLEEVE STRIPED BLOUSE",
-      "price": 1190,
-      "sale":true,
-      "new_price":[714,65],
-      "description":"Flowing blouse with a lapel collar and wide long sleeves. Finished hem with side slits. Button-up front.",
-      "detail":[
-        "100% polyester"
-      ],
-      "class":[
-          {
-              "color":"BLUE",
-              "class_id":"400",
-              "color_num":"#E7E6D8",
-              "stock":[65, 120, 57, 48],
-              "img":[
-                  "/image/blouse/id-7969/022/400/1.jpg",
-                  "/image/blouse/id-7969/022/400/2.jpg",
-                  "/image/blouse/id-7969/022/400/3.jpg",
-                  "/image/blouse/id-7969/022/400/4.jpg",
-                  "/image/blouse/id-7969/022/400/5.jpg",
-                  "/image/blouse/id-7969/022/400/6.jpg"
-              ]
-          },
-          {
-            "color":"BEIGE",
-            "class_id":"450",
-            "color_num":"#E9E6D2",
-            "stock":[35, 55, 87, 28],
-            "img":[
-                "/image/blouse/id-7969/022/450/1.jpg",
-                "/image/blouse/id-7969/022/450/2.jpg",
-                "/image/blouse/id-7969/022/450/3.jpg",
-                "/image/blouse/id-7969/022/450/4.jpg",
-                "/image/blouse/id-7969/022/450/5.jpg",
-                "/image/blouse/id-7969/022/450/6.jpg"
-            ]
-        }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Olivia",
-          "rating": 4,
-          "comment": "This striped blouse is quite stylish for Taipei! The wide long sleeves give it a flowy and fashionable look. The lapel collar is a nice touch, and the side slits are practical for the warmer weather in Da'an."
-        },
-        {
-          "reviewer": "William",
-          "rating": 5,
-          "comment": "I absolutely love this blouse! The wide sleeves are so chic and comfortable for the Taiwan climate. The button-up front is classic, and the striped pattern is very versatile for wearing around the city, especially at the sale price!"
-        },
-        {
-          "reviewer": "Sophia",
-          "rating": 4,
-          "comment": "A pretty solid striped blouse. The wide sleeves are definitely a statement, and the lapel collar adds a bit of sophistication. The side slits are good for breathability in Taipei's humidity. A good buy on sale."
-        },
-        {
-          "reviewer": "James",
-          "rating": 5,
-          "comment": "This blouse is fantastic for the Taipei scene! The wide sleeves are very on-trend, and the button-up front makes it easy to style. The striped pattern is classic, and the sale price is a great bonus for a stylish top."
-        },
-        {
-          "reviewer": "Emma",
-          "rating": 3,
-          "comment": "It's an okay blouse. The wide sleeves are alright, but can feel a bit overwhelming in the crowded areas of Taipei. The lapel collar is standard, and the polyester fabric isn't the most breathable for the summer heat. The sale price makes it more appealing."
-        }
-      ]
-    },
-    {
-      "id":"3564/053/", 
-      "category1":"WOMAN",
-      "category2":"BLOUSE",
-      "name":"EMBROIDERED BLOUSE",
-      "price": 1290,
-      "sale":false,
-      "description":"Long sleeve blouse with a round neck and v-neck. Featuring contrast embroidery and a button-up fastening on the front.",
-      "detail":[
-        "59% viscose","41% polyester","100% polyester"
-      ],
-      "class":[
-          {
-              "color":"Beige-pink",
-              "class_id":"942",
-              "color_num":"#B79789",
-              "stock":[65, 55, 22, 20],
-              "img":[
-                  "/image/blouse/id-3564/053/942/1.jpg",
-                  "/image/blouse/id-3564/053/942/2.jpg",
-                  "/image/blouse/id-3564/053/942/3.jpg",
-                  "/image/blouse/id-3564/053/942/4.jpg",
-                  "/image/blouse/id-3564/053/942/5.jpg",
-                  "/image/blouse/id-3564/053/942/6.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Olivia",
-          "rating": 4,
-          "comment": "This embroidered blouse is quite lovely for Taipei! The round neck with the V-detail is a nice touch, and the contrast embroidery adds a unique charm. The long sleeves are good for evenings in Da'an."
-        },
-        {
-          "reviewer": "William",
-          "rating": 5,
-          "comment": "I absolutely adore this blouse! The embroidery is beautiful and really stands out. The round neck with the V-cut is flattering, and the button-up front is easy to style for different occasions around the city."
-        },
-        {
-          "reviewer": "Sophia",
-          "rating": 4,
-          "comment": "A pretty embroidered blouse. The long sleeves are suitable for the slightly cooler evenings in Taipei. The contrast embroidery is a nice detail, and the button-up front is classic and versatile."
-        },
-        {
-          "reviewer": "James",
-          "rating": 5,
-          "comment": "This blouse is fantastic for adding a touch of elegance to any outfit in Taipei! The embroidery is delicate and eye-catching. The round neck with the V-detail is stylish, and the button-up front is practical for the local climate."
-        },
-        {
-          "reviewer": "Emma",
-          "rating": 3,
-          "comment": "It's an okay blouse. The embroidery is alright, but the viscose blend might feel a bit warm during the day in Taipei. The long sleeves are better for evening. The button-up front is standard."
-        }
-      ]
-    },
-    {
-      "id":"5107/046/", 
-      "category1":"WOMAN",
-      "category2":"BLOUSE",
-      "name":"ROMANTIC EMBROIDERED BLOUSE ZW COLLECTION",
-      "price": 1490,
-      "sale":false,
-      "description":"Blouse made of 100% cotton yarn. Round neck and short sleeves with elasticated cuffs. Matching embroidery and lace inserts. Button fastening at the back.",
-      "detail":[
-        "100% cotton","100% polyester"
-      ],
-      "class":[
-          {
-              "color":"ECRU",
-              "class_id":"712",
-              "color_num":"#F5F3E5",
-              "stock":[15, 105, 65, 40],
-              "img":[
-                  "/image/blouse/id-5107/046/712/1.jpg",
-                  "/image/blouse/id-5107/046/712/2.jpg",
-                  "/image/blouse/id-5107/046/712/3.jpg",
-                  "/image/blouse/id-5107/046/712/4.jpg",
-                  "/image/blouse/id-5107/046/712/5.jpg",
-                  "/image/blouse/id-5107/046/712/6.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Isabelle",
-          "rating": 5,
-          "comment": "This romantic embroidered blouse is absolutely beautiful for the Taipei weather! The 100% cotton is so breathable, and the matching embroidery and lace inserts are such lovely details. The elasticated short sleeves are perfect for staying cool in Da'an."
-        },
-        {
-          "reviewer": "Ethan",
-          "rating": 4,
-          "comment": "A very pretty blouse with a lovely romantic feel. The embroidery and lace are delicate, and the short sleeves are ideal for the Taipei climate. The button fastening at the back is a nice touch."
-        },
-        {
-          "reviewer": "Clara",
-          "rating": 5,
-          "comment": "I adore this blouse! The 100% cotton is so comfortable for the humidity here. The embroidery and lace are exquisite, and the elasticated cuffs on the short sleeves are a charming detail for wearing around the city."
-        },
-        {
-          "reviewer": "Owen",
-          "rating": 4,
-          "comment": "This is a charming blouse perfect for the Taipei spring and summer. The cotton is light and airy, and the embroidery and lace give it a very feminine touch. The short sleeves are practical for the local weather."
-        },
-        {
-          "reviewer": "Hazel",
-          "rating": 3,
-          "comment": "It's a nice blouse. The embroidery and lace are pretty, but the 100% cotton might wrinkle easily in the Taipei humidity. The short sleeves with elasticated cuffs are okay, and the back button fastening is a bit less convenient."
-        }
-      ]
-    },
-    {
-      "id":"5029/052/",
-      "category1":"WOMAN",
-      "category2":"BLOUSE",
-      "name":"LACE RUFFLE BLOUSE",
-      "price": 1390,
-      "sale":false,
-      "description":"Semi-sheer blouse with a ruffled collar, V-neck and long sleeves. Featuring pintucks on the front and finished with ruffles and lace trim.",
-      "detail":[
-        "100% polyester"
-      ],
-      "class":[
-          {
-              "color":"ECRU",
-              "class_id":"712",
-              "color_num":"#F5F3E5",
-              "stock":[45, 85, 55, 20],
-              "img":[
-                  "/image/blouse/id-5029/052/712/1.jpg",
-                  "/image/blouse/id-5029/052/712/2.jpg",
-                  "/image/blouse/id-5029/052/712/3.jpg",
-                  "/image/blouse/id-5029/052/712/4.jpg",
-                  "/image/blouse/id-5029/052/712/5.jpg",
-                  "/image/blouse/id-5029/052/712/6.jpg",
-                  "/image/blouse/id-5029/052/712/7.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Sophia",
-          "rating": 4,
-          "comment": "This lace ruffle blouse is quite elegant for evenings out in Taipei! The ruffled collar and V-neck are very feminine, and the lace trim adds a delicate touch. The semi-sheer fabric is pretty, though you might need a camisole underneath."
-        },
-        {
-          "reviewer": "Finn",
-          "rating": 5,
-          "comment": "I absolutely love this blouse! It's so romantic and stylish. The ruffles and lace are beautifully done, and the pintucks add a nice texture. Perfect for dressing up for a special occasion in Da'an."
-        },
-        {
-          "reviewer": "Aurora",
-          "rating": 4,
-          "comment": "A very pretty and detailed blouse. The ruffled collar and V-neck are lovely, and the long sleeves make it suitable for slightly cooler weather in Taipei. The lace trim gives it a sophisticated look."
-        },
-        {
-          "reviewer": "Leo",
-          "rating": 5,
-          "comment": "This blouse is fantastic for adding a touch of romance to any outfit! The ruffles are beautifully done, and the lace trim is exquisite. The semi-sheer fabric is elegant, and it's perfect for a night out in the city."
-        },
-        {
-          "reviewer": "Beatrice",
-          "rating": 3,
-          "comment": "It's a nice blouse, but the 100% polyester might not be the most breathable for the Taipei heat. The ruffles and lace are pretty, but they can be a bit much for everyday wear. The semi-sheer fabric requires careful layering."
-        }
-      ]
-    },
-    {
-      "id":"4786/069/",
-      "category1":"WOMAN",
-      "category2":"BLOUSE",
-      "name":"BOW BLOUSE ZW COLLECTION",
-      "price": 1990,
-      "sale":false,
-      "description":"Blouse made of viscose yarn. Round neck with matching fabric tie. Long puff sleeves with buttoned cuffs. Straight hem. Front button fastening.",
-      "detail":[
-        "100% viscose"
-      ],
-      "class":[
-          {
-              "color":"RED",
-              "class_id":"600",
-              "color_num":"#862019",
-              "stock":[25, 85, 45, 4],
-              "img":[
-                  "/image/blouse/id-4786/069/600/1.jpg",
-                  "/image/blouse/id-4786/069/600/2.jpg",
-                  "/image/blouse/id-4786/069/600/3.jpg",
-                  "/image/blouse/id-4786/069/600/4.jpg",
-                  "/image/blouse/id-4786/069/600/5.jpg",
-                  "/image/blouse/id-4786/069/600/6.jpg",
-                  "/image/blouse/id-4786/069/600/7.jpg"
-              ]
-          }
-      ],
-      "reviews": [
-        {
-          "reviewer": "Eleanor",
-          "rating": 5,
-          "comment": "This bow blouse is so elegant for Taipei! The viscose yarn feels lovely and flowy, perfect for the climate here in Da'an. The matching fabric tie at the round neck is a beautiful detail, and the puff sleeves add a touch of sophistication."
-        },
-        {
-          "reviewer": "Henry",
-          "rating": 4,
-          "comment": "A very chic blouse. The round neck with the bow is a classic look, and the long puff sleeves with buttoned cuffs are quite stylish. The viscose material drapes nicely, suitable for evenings in Taipei."
-        },
-        {
-          "reviewer": "Grace",
-          "rating": 5,
-          "comment": "I absolutely adore this bow blouse! It's so feminine and versatile. The viscose is comfortable for the Taiwan weather, and the puff sleeves add a lovely drama. The front button fastening is practical for wearing around the city."
-        },
-        {
-          "reviewer": "Owen",
-          "rating": 4,
-          "comment": "This is a beautiful blouse perfect for adding a touch of elegance to any outfit in Taipei. The bow at the neck is a lovely detail, and the long puff sleeves give it a fashionable silhouette. The viscose feels nice against the skin."
-        },
-        {
-          "reviewer": "Lily",
-          "rating": 3,
-          "comment": "It's a nice blouse, but the 100% viscose might wrinkle easily in the Taipei humidity. The bow at the neck is pretty, and the puff sleeves are alright, though they might feel a bit warm during the day. The front button fastening is standard."
-        }
-      ]
-    }
-    
-]
+        
+    ]
