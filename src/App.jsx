@@ -10,8 +10,8 @@ function App() {
       <div data-theme="">
         <BrowserRouter>
           <Routes>
-            {/*<Route path="/" element={<Slides />} />*/}
-            <Route path="/" element={<Product />} />
+            <Route path="/" element={<Slides />} />
+            {/*<Route path="/" element={<Product />} />*/}
 
             <Route path="products">
               <Route path="category/:categoryName" element={<Category />} />
