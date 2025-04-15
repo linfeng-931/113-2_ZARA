@@ -1,6 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router";
 import Slides from "./page/Home";
+import Product from "./page/Product";
+import Category from "./page/Category";
+import ShoppingCart from "./page/ShoppingCart";
 
 function App() {
   return (
@@ -8,7 +11,7 @@ function App() {
       <div data-theme="">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Slides />} />
+          <Route path="/" element={<Slides />}/>
 
           {/* <Route path="products">
             <Route path="category/:categoryName" element={<Category />} />

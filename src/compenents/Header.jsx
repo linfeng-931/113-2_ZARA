@@ -1,6 +1,7 @@
-import { ShoppingCart, CircleUserRound, CircleHelp, Moon, Sun} from "lucide-react";
+import { CircleUserRound, CircleHelp} from "lucide-react";
 import Menu from "./Menu";
 import SetColorMode from "./SetColorMode";
+import Cart from "./Cart";
 
 function Header(){
     return(
@@ -27,7 +28,7 @@ function Header(){
                         <p>Login</p>
                     </div>
                     <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap hover:opacity-50 cursor-pointer">
-                        <ShoppingCart />
+                        <Cart/>
                         <p>Cart</p>
                     </div>
                     <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap hover:opacity-50 cursor-pointer">
