@@ -42,6 +42,11 @@
   .line {
     background: #fff;
   }
+
+  .sale {
+    background: #fff;
+    color: #000;
+  }
 }
 
 #root {

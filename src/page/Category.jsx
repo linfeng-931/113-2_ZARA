@@ -15,7 +15,7 @@ const Category = () => {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Breadcrumb product={_products} />
       <ProductList product={_products} />
       <Footer />
