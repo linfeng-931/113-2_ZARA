@@ -5,7 +5,7 @@ import SetColorMode from "./SetColorMode";
 function Header(){
     return(
         <>
-            <div className="header-container flex w-screen h-28 items-center justify-between">
+            <div className="header-container flex w-screen h-28 items-center justify-between z-100">
                 <div className="left flex gap-17 pl-15 items-center">
                     <HamMenu/>
                     <img className="h-11 invisible md:visible dark:hidden" src="/public/image/logo2-1.png"></img>
