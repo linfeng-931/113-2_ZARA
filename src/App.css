@@ -48,6 +48,10 @@
   .btn02:hover {
     opacity: 50%;
   }
+
+  .line {
+    background: #fff;
+  }
 }
 
 #root {
