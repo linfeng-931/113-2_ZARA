@@ -79,7 +79,7 @@ export default function Slides() {
           isSliding={isSliding}
         />
       </main>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }
