@@ -1,9 +1,9 @@
 import { useDispatch } from "react-redux";
 import { addCartItems } from "../redux/cartSlice";
-import { ShoppingCart } from "lucide-react";
+import { Plus } from "lucide-react";
 import { useState } from "react";
 
-function AddToBasket({product, qty}){
+function AddToBasket({product, detail, size_stock, qty}){
     const [showToast, setShowToast] = useState(false);
     const dispatch = useDispatch();
     
@@ -11,10 +11,12 @@ function AddToBasket({product, qty}){
         setShowToast(true);
         dispatch(addCartItems({
             id: product.id,
-            title: product.title,
-            cover: product.cover,
+            id2:detail.class_id,
+            color:detail.color,
+            title: product.name,
+            cover: detail.img[0],
             price: product.price,
-            countInStock: product.stock,
+            countInStock: size_stock,
             qty,
         }))
 
@@ -26,9 +28,13 @@ function AddToBasket({product, qty}){
 
     return(
         <>
-            <button className="flex w-full md:w-55 justify-center gap-3" onClick={addToCart}>
-               <ShoppingCart size = {24}/>
-               <span>ADD TO BASKET</span> 
+            <button 
+                className="flex h-12 w-full justify-center items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                        hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white" 
+                onClick={addToCart}
+            >
+               <p>ADD TO BASKET</p> 
+               <Plus/>
             </button>
             {showToast &&(
                 <div className="toast mb-20">

@@ -16,8 +16,9 @@ function ImageScroller({ images, isActiveImg, setisActiveImg }) {
 
     return (
         <>
+            
             <img
-                className='w-full mb-3 h-120 rounded-[10px] object-cover object-center'
+                className='w-full h-[88.5%] mb-3 rounded-[10px] object-cover object-center'
                 src={images[isActiveImg]}
             />
 
