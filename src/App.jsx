@@ -15,8 +15,8 @@ function App() {
 
             <Route path="products">
               <Route path="category/:categoryName" element={<Category />} />
-              {/*<Route path="id/:productId" element={<Product />} />
-            <Route path="shopping-cart" element={<ShoppingCart />} /> */}
+              <Route path="id/:part1/:part2/" element={<Product />} />
+            {/*<Route path="shopping-cart" element={<ShoppingCart />} /> */}
             </Route>
 
             {/* 以下為有閒情再做的東西 */}

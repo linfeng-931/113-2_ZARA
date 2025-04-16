@@ -14,7 +14,7 @@ function Header(){
                         src="/public/image/logo2-1.png"
                     ></img>
                     <img 
-                        className="h-0 md:h-11 light:hidden z-9999" 
+                        className="h-0 md:h-11 hidden dark:block z-9999" 
                         src="/public/image/logo2-2.PNG"
                     ></img>
                 </div>

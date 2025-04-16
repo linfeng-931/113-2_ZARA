@@ -63,7 +63,7 @@ function Navbar(){
             {/*class*/}
             <div className="flex gap-10">
                 {classContent.map((c, index) => (
-                    <NavLink
+                    <Link
                         key = {c}
                         onClick={() => Setlist(index)}
                         className={
@@ -77,7 +77,7 @@ function Navbar(){
                             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-black dark:bg-white">
                             </span>
                         </p>
-                    </NavLink>
+                    </Link>
                 ))}
             </div>
 

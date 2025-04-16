@@ -18,9 +18,12 @@ function Cart(){
             >
                 <div className="indicater flex justify-center">
                     <ShoppingCart />
-                    <span className="indicater-item absolute bg-black rounded-xl pr-2 pl-2 mt-[-.6rem] mr-[-2rem]">
+                    <p 
+                        className={`indicater-item absolute bg-black dark:bg-white text-white dark:text-black rounded-xl pr-2 pl-2 mt-[-.6rem] mr-[-2rem]
+                        ${count === 0 ? "hidden":""}
+                    `}>
                         {count}
-                    </span>
+                    </p>
                 </div>
             </nav>
             <BasketModal
