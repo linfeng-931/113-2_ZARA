@@ -8,10 +8,10 @@ function Navbar() {
   const sectionTitles = ["", "TOPS", "BOTTOMS", "JACKETS", ""];
   const navBarContent = [
     [
-      [{ to: "/products/category/NEW", label: "The New" }],
+      [{ to: "/products/category/NEW", label: "New" }],
 
       [
-        { to: "/products/category/SHIRTS", label: "T-Shirt" },
+        { to: "/products/category/SHIRTS", label: "Shirt" },
         { to: "/products/category/BLOUSE", label: "Blouse" },
         { to: "/products/category/KNITWEAR", label: "Knitwear" },
       ],

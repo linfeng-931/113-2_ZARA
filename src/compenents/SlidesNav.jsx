@@ -1,7 +1,7 @@
 export default function SlidesNav({ onNext, onPrev, isSliding }) {
   return (
     <nav
-      className={`fixed right-[-2rem] md:right-0.5 bottom-1/2 -translate-y-1/2 rotate-90 z-30 bg-none text-xl ${
+      className={`fixed right-[-3rem] md:right-0.5 bottom-1/2 md:-translate-y-1/2 rotate-90 z-30 bg-none text-xl ${
         isSliding ? "pointer-events-none" : ""
       }`}
     >

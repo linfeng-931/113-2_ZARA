@@ -23,12 +23,12 @@ const ProductItem = ({ product }) => {
     <div className="col-span-4 grid grid-cols-4">
       <section className="col-span-3 mb-8 text-sm flex flex-col gap-2 text-left ">
         <Link to={`/products/id/${product.id}`}>
-        <img
-          className="w-full max-h-120 object-cover object-center"
-          src={headImg}
-          alt=""
-        />
-       <p className="name">{product.name}</p>
+          <img
+            className="w-full max-h-120 object-cover object-center"
+            src={headImg}
+            alt=""
+          />
+          <p className="name mt-2">{product.name}</p>
         </Link>
         <div className="price-area flex flex-col lg:flex-row gap-2 lg:items-center">
           <p
