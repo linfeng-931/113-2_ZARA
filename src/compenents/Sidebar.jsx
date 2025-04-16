@@ -3,7 +3,7 @@ import { RiArrowLeftSLine } from "react-icons/ri";
 import { Transition } from "@headlessui/react";
 import { useState } from "react";
 
-const Sidebar = ({ filter, setFilter }) => {
+const Sidebar = ({ filter, setFilter, reset, setReset }) => {
   const [isOpen, setIsOpen] = useState({
     mobileSideBar: screen.width > 375 ? true : false,
     size: false,
@@ -11,7 +11,17 @@ const Sidebar = ({ filter, setFilter }) => {
     price: false,
   });
 
+  const handleReset = () => {
+    setFilter({
+      size: [],
+      color: [],
+      price: [],
+    }),
+      setReset(true);
+  };
+
   const toggleSection = (section) => {
+    if (screen.width > 375 && section == "mobileSideBar") return;
     setIsOpen((prev) => ({
       ...prev,
       [section]: !prev[section],
@@ -20,10 +30,18 @@ const Sidebar = ({ filter, setFilter }) => {
 
   const toggleFilter = (type, value) => {
     setFilter((prev) => {
-      const current = prev[type];
-      const updated = current.includes(value)
+      const current = prev[type] || [];
+
+      let updated;
+
+      if (type === "price") {
+        updated = current[0] === value ? [] : [value]; // 如果相同就取消，否則設為唯一值
+        return { ...prev, [type]: updated };
+      }
+      updated = current.includes(value)
         ? current.filter((item) => item !== value)
         : [...current, value];
+
       return { ...prev, [type]: updated };
     });
   };
@@ -33,13 +51,13 @@ const Sidebar = ({ filter, setFilter }) => {
       <div onClick={() => toggleSection("mobileSideBar")}>
         <div>
           <div className="flex gap-4 items-center cursor-pointer w-full mb-2">
-            <span
+            <button
               className={`${
                 isOpen.mobileSideBar ? "rotate-[-90deg]" : "rotate-180"
               }`}
             >
               <RiArrowLeftSLine />
-            </span>{" "}
+            </button>{" "}
             <p className="text-right font-bold">篩選條件</p>
           </div>
 
@@ -77,7 +95,9 @@ const Sidebar = ({ filter, setFilter }) => {
                 <button
                   onClick={() => toggleFilter("size", "S")}
                   className={`cursor-pointer ${
-                    filter.size.includes("S") ? "opacity-100" : "opacity-50"
+                    filter.size.includes("S")
+                      ? "opacity-100 font-bold"
+                      : "opacity-50"
                   } hover:opacity-100 hover:font-bold`}
                 >
                   S
@@ -85,7 +105,9 @@ const Sidebar = ({ filter, setFilter }) => {
                 <button
                   onClick={() => toggleFilter("size", "M")}
                   className={`cursor-pointer ${
-                    filter.size.includes("M") ? "opacity-100" : "opacity-50"
+                    filter.size.includes("M")
+                      ? "opacity-100 font-bold"
+                      : "opacity-50"
                   } hover:opacity-100 hover:font-bold`}
                 >
                   M
@@ -93,7 +115,9 @@ const Sidebar = ({ filter, setFilter }) => {
                 <button
                   onClick={() => toggleFilter("size", "L")}
                   className={`cursor-pointer ${
-                    filter.size.includes("L") ? "opacity-100" : "opacity-50"
+                    filter.size.includes("L")
+                      ? "opacity-100 font-bold"
+                      : "opacity-50"
                   } hover:opacity-100 hover:font-bold`}
                 >
                   L
@@ -101,7 +125,9 @@ const Sidebar = ({ filter, setFilter }) => {
                 <button
                   onClick={() => toggleFilter("size", "XL")}
                   className={`cursor-pointer ${
-                    filter.size.includes("XL") ? "opacity-100" : "opacity-50"
+                    filter.size.includes("XL")
+                      ? "opacity-100 font-bold"
+                      : "opacity-50"
                   } hover:opacity-100 hover:font-bold`}
                 >
                   XL
@@ -272,10 +298,13 @@ const Sidebar = ({ filter, setFilter }) => {
               </div>
             </Transition>
           </div>
-          <div className="mt-6 flex items-center justify-end gap-2 text-gray-400 text-xs cursor-pointer hover:text-black transition">
+          <button
+            onClick={handleReset}
+            className="mt-6 flex items-center justify-end gap-2 text-gray-400 text-xs cursor-pointer hover:text-black transition"
+          >
             <span>RESET ALL</span>
             <RiResetLeftFill className="text-sm" />
-          </div>
+          </button>
         </div>
       </Transition>
     </div>

@@ -24,6 +24,8 @@ const Category = () => {
     price: [],
   });
 
+  const [reset, setReset] = useState(false);
+
   const colorGroups = {
     RED: ["RED", "WINE", "BURGUNDY", "RUSSET", "TERRACOTTA"],
     BLUE: ["BLUE", "INDIGO", "BLUISH"],
@@ -85,7 +87,12 @@ const Category = () => {
       <Breadcrumb product={_products} />
       <div className="grid grid-rows-[repeat(2,minmax(0,auto))] grid-cols-9 gap-4 lg:gap-0 lg:grid-rows-1 lg:grid-cols-24 ">
         <ProductList product={filteredProducts} />
-        <Sidebar filter={filter} setFilter={setFilter} />
+        <Sidebar
+          filter={filter}
+          setFilter={setFilter}
+          reset={reset}
+          setReset={setReset}
+        />
       </div>
       <Footer />
     </div>
