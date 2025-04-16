@@ -19,16 +19,16 @@ function SetColorMode(){
             <div onClick={toggleColor} className="cursor-pointer">
                 {
                     lightMode ? (
-                        <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap
+                        <div className="member fixed bottom-0 left-4 md:static md:flex md:flex-col md:items-center md:gap-1.5 md:whitespace-nowrap
                         hover:opacity-50 cursor-pointer">
-                            <Sun color = "currentColor"/>
-                            <p>日間模式</p>
+                            <div className="flex bg-white h-10 w-10 rounded-full hover:opacity-50 shadow-md md:shadow-none md:h-auto md:w-auto justify-center items-center"><Sun color = "currentColor"/></div>
+                            <p className="invisible md:visible">Light Mode</p>
                         </div>
                     ):(
-                        <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap
+                        <div className="member fixed bottom-0 left-4 md:static md:flex md:flex-col md:items-center md:gap-1.5 md:whitespace-nowrap
                         hover:opacity-50 cursor-pointer">
-                            <Moon color="currentColor"/>
-                            <p>夜間模式</p>
+                            <div className="flex bg-black h-10 w-10 rounded-full hover:opacity-50 shadow-md md:shadow-none md:h-auto md:w-auto justify-center items-center"><Moon color = "currentColor"/></div>
+                            <p className="invisible md:visible">Dark Mode</p>
                         </div>
                     )
                 }

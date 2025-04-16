@@ -1631,6 +1631,12 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+tailwind-scrollbar-hide@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/tailwind-scrollbar-hide/-/tailwind-scrollbar-hide-2.0.0.tgz"
+  integrity sha512-lqiIutHliEiODwBRHy4G2+Tcayo2U7+3+4frBmoMETD72qtah+XhOk5XcPzC1nJvXhXUdfl2ajlMhUc2qC6CIg==
+
+tailwindcss@4.1.3, tailwindcss@^4.1.3:
 tabbable@^6.0.0:
   version "6.2.0"
   resolved "https://registry.npmjs.org/tabbable/-/tabbable-6.2.0.tgz"

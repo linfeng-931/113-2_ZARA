@@ -1,4 +1,14 @@
 @import "tailwindcss";
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;
 }
@@ -55,3 +65,5 @@
   /* padding: 2rem; */
   text-align: center;
 }
+
+

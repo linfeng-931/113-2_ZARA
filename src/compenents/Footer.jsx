@@ -11,7 +11,7 @@ const Footer = () => {
           ZARA 是最重要的國際化時裝公司之一。 屬於
           Inditex，世界上最大的經銷集團之一。
           我們通過自有商店網路將設計、製造、配送和銷售整合在一起，形成了獨特的商業模式，而客戶是這一模式的中心。
-          更多資訊請參訪 Inditex 集團的首頁： www.inditex.comss
+          更多資訊請參訪 Inditex 集團的首頁： www.inditex.comss
         </p>
       </aside>
       <section className="w-full flex  flex-col lg:flex-row lg:justify-evenly gap-8 lg:col-span-16 lg:col-start-8 text-left">
