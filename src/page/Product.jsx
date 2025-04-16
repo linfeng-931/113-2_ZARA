@@ -134,7 +134,10 @@ function Product(){
                         <p className='mb-1 hint'>TOTAL PRICE : {product.price*qty}</p>
                         <div className="flex justify-between items-center selector h-12 w-full border-[1px] mb-5">
                           <div 
-                              className="h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer"
+                              className={`h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
+                                ${qty === 1? "opacity-50 pointer-events-none":""}
+                                ${qty <= 0 ? setQty(1): ""}
+                                `}
                               onClick={()=>setQty(qty-1)}
                           >
                               <Minus className="text-white dark:text-black"/>
@@ -143,11 +146,22 @@ function Product(){
                             type="text" 
                             value={qty} 
                             placeholder="0"
-                            className="text-center input w-[55%]"
-                            onChange={(e) => setQty(e.target.value)}
+                            className="text-center input border-none h-[33px] w-[55%]"
+                            onChange={(e) => {
+                              if(e.target.value > product.class[pIndex].stock[Size]){
+                                setQty(product.class[pIndex].stock[Size]);
+                              }
+                              else if(e.target.value < 1){
+                                setQty(1);
+                              }
+                              else setQty(e.target.value)
+                            }}
                           />
                           <div 
-                              className="h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer"
+                              className={`h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
+                                ${qty === product.class[pIndex].stock[Size]-1 ? "opacity-50 pointer-events-none":""}
+                                ${qty >= product.class[pIndex].stock[Size] ? setQty(product.class[pIndex].stock[Size]-1): ""}
+                                `}
                               onClick={()=>setQty(qty+1)}
                           >
                               <Plus className="text-white dark:text-black"/>

@@ -22,18 +22,18 @@ function BasketModal(){
                     {cartItems.length === 0?(
                         <></>
                         ):(
-                            <div className="hidden md:block grid grid-cols-7 gap-15 items-center justify-center mb-15">
+                            <div className="hidden lg:grid grid-cols-7 gap-15 items-center justify-center mb-15">
                                 <p className="hint">PRODUCT</p>
-                                <div class="col-span-5 grid grid-cols-subgrid">
-                                    <p class="hint col-start-2">COLOR</p>
-                                    <p className="hint">SIZE</p>
-                                    <p className="hint">QUANTITY</p>
-                                    <p className="hint">PRICE</p>
-                                </div>  
+                                <p></p>
+                                <p className="hint">COLOR</p>
+                                <p className="hint">SIZE</p>
+                                <p className="hint">QUANTITY</p>
+                                <p className="hint">PRICE</p>
+                                <p></p>
                             </div>
                     )}
                 </div>
-                <div className="hidden md:block">
+                <div className="hidden lg:block">
                     {cartItems.length === 0?(
                         <p className="text-center">Cart is empty</p>
                         ):(
@@ -92,7 +92,7 @@ function BasketModal(){
                                                     type="text" 
                                                     value={item.qty} 
                                                     placeholder="0"
-                                                    className="text-center input w-[55%]"
+                                                    className="text-center input border-none h-[33px] w-[55%]"
                                                 />
                                                 <div 
                                                     className={`h-[40px] w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
@@ -154,7 +154,7 @@ function BasketModal(){
                 
                 </div>
 
-                <div className="sm md:hidden">
+                <div className="m lg:hidden">
                     {cartItems.length === 0?(
                         <p className="text-center">Cart is empty</p>
                         ):(
@@ -169,6 +169,7 @@ function BasketModal(){
                                     <div className="content">
 
                                         <p className="text-left mb-2">{item.title}</p>
+                                        <p className="hidden md:block hint text-left mb-7">{item.color}</p>
 
                                         <select
                                             defaultValue={size_list[item.size]}
@@ -185,17 +186,18 @@ function BasketModal(){
                                                     size: e.target.value,
                                                     }))
                                             }
-                                            className="select mb-2 select-bordered w-full h-[40px] cursor-pointer hover:opacity-50 duration-150"
+                                            className="select mb-2 md:mb-4 select-bordered w-full h-[40px] cursor-pointer hover:opacity-50 duration-150"
                                         >
                                                 {size_list.map((x) => (
                                                     <option key={x} value={x}>{x}</option>
                                                 ))}
                                         </select>
 
-                                        <div className="flex justify-between mb-2 items-center selector h-[40px] w-full border-[1px]">     
+                                        <div className="flex justify-between mb-2 md:mb-4 items-center selector h-[40px] w-full border-[1px]">     
                                                     <div 
                                                         className={`h-[40px] w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
                                                             ${item.qty === 1 ? "opacity-50 pointer-events-none":""}
+                                                            ${item.qty <= 0 ? (item.qty = 1): ""}
                                                             `}
                                                         onClick={() => {
                                                             if (item.qty > 1) {
@@ -212,11 +214,12 @@ function BasketModal(){
                                                         type="text" 
                                                         value={item.qty} 
                                                         placeholder="0"
-                                                        className="text-center input w-[55%]"
+                                                        className="text-center input border-none h-[33px] w-[55%]"
                                                     />
                                                     <div 
                                                         className={`h-[40px] w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
-                                                            ${item.qty === item.countInStock ? "opacity-50 pointer-events-none":""}
+                                                            ${item.qty === item.countInStock-1 ? "opacity-50 pointer-events-none":""}
+                                                            ${item.qty >= item.countInStock ? (item.qty = item.countInStock-1): ""}
                                                             `}
                                                             onClick={() => {
                                                                 if (item.qty < item.countInStock) {
