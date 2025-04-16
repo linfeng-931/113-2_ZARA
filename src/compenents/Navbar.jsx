@@ -8,7 +8,7 @@ function Navbar() {
   const sectionTitles = ["", "TOPS", "BOTTOMS", "JACKETS", ""];
   const navBarContent = [
     [
-      [{ to: "/products/category/NEWS", label: "The New" }],
+      [{ to: "/products/category/NEW", label: "The New" }],
 
       [
         { to: "/products/category/SHIRTS", label: "T-Shirt" },
