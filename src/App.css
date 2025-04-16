@@ -19,6 +19,7 @@
   color-scheme: dark;
   --color-base-100: oklch(0% 0 0);
 }
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 [data-theme="light"] {
