@@ -37,11 +37,11 @@ function AddToBasket({product, detail, size_stock, qty}){
                <Plus/>
             </button>
             {showToast &&(
-                <div className="toast mb-20">
+                <div className="toast mb-20 z-9999">
                     <div className="alert">
-                        <span>
+                        <p>
                             {qty} {qty > 1? "pieces" : "piece"} of {product.name}{qty > 1? "have":"has"} been added to your cart.
-                        </span>
+                        </p>
                     </div>
                 </div>
             )}

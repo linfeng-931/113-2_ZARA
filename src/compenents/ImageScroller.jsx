@@ -26,11 +26,11 @@ function ImageScroller({ images, isActiveImg, setisActiveImg }) {
                 <button
                     onClick={handlePrev}
                     disabled={startIndex === 0}
-                    className={`cursor-pointer hover:opacity-50 absolute left-0 z-10 p-1 rounded-full shadow-md transition-opacity ${
-                        startIndex === 0 ? "opacity-30 cursor-not-allowed" : "bg-white bg-opacity-80 hover:bg-opacity-100"
+                    className={`cursor-pointer hover:opacity-50 absolute bg-white dark:bg-zinc-600 left-0 z-10 p-1 rounded-full shadow-md transition-opacity ${
+                        startIndex === 0 ? "opacity-30 cursor-not-allowed" : "bg-opacity-80 hover:bg-opacity-100"
                     }`}
                 >
-                    <ChevronLeft />
+                    <ChevronLeft className='text-black dark:text-white'/>
                 </button>
 
                 <div className="w-full flex justify-center gap-2 px-10">
@@ -56,8 +56,8 @@ function ImageScroller({ images, isActiveImg, setisActiveImg }) {
                 <button
                     onClick={handleNext}
                     disabled={startIndex === maxStartIndex}
-                    className={`cursor-pointer hover:opacity-50 absolute right-0 z-10 p-1 rounded-full shadow-md transition-opacity ${
-                        startIndex === maxStartIndex ? "opacity-30 cursor-not-allowed" : "bg-white bg-opacity-80 hover:bg-opacity-100"
+                    className={`cursor-pointer hover:opacity-50 absolute right-0 z-10 p-1 bg-white dark:bg-zinc-600 rounded-full shadow-md transition-opacity ${
+                        startIndex === maxStartIndex ? "opacity-30 cursor-not-allowed" : "bg-opacity-80 hover:bg-opacity-100"
                     }`}
                 >
                     <ChevronRight />
