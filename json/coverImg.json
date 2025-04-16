@@ -1,26 +1,26 @@
 [
-    {
-        "mobileCover":"/image/cover/mobile/1.svg",
-        "computerCover":"/image/cover/computer/1.svg",
-        "id":"3116/909/",
-        "category":"NEWS"
-    },
-    {
-        "mobileCover":"/image/cover/mobile/2.svg",
-        "computerCover":"/image/cover/computer/2.svg",
-        "id":"2731/075/",
-        "category":"NEWS"
-    },
-    {
-        "mobileCover":"/image/cover/mobile/3.svg",
-        "computerCover":"/image/cover/computer/3.svg",
-        "id":"0264/196/",
-        "category":"WAISTCOAT"
-    },
-    {
-        "mobileCover":"/image/cover/mobile/4.svg",
-        "computerCover":"/image/cover/computer/4.svg",
-        "id":"2731/045/",
-        "category":"SHIRTS"
-    }
+  {
+    "mobileCover": "/image/cover/mobile/1.svg",
+    "computerCover": "/image/cover/computer/1.svg",
+    "id": "3116/909/",
+    "category": "NEWS"
+  },
+  {
+    "mobileCover": "/image/cover/mobile/2.svg",
+    "computerCover": "/image/cover/computer/2.svg",
+    "id": "2731/075/",
+    "category": "NEWS"
+  },
+  {
+    "mobileCover": "/image/cover/mobile/3.svg",
+    "computerCover": "/image/cover/computer/3.svg",
+    "id": "0264/196/",
+    "category": "WAISTCOAT"
+  },
+  {
+    "mobileCover": "/image/cover/mobile/4.svg",
+    "computerCover": "/image/cover/computer/4.svg",
+    "id": "2731/045/",
+    "category": "SKIRT"
+  }
 ]
