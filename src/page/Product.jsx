@@ -182,13 +182,13 @@ function Product(){
                     <div className="line mb-15 mt-10 w-full h-[1px] bg-black dark:bg-white opacity-20"></div>
                     <div className="size-chart w-72 md:w-full">
                         <p className='hint mb-4'>SIZE CHART</p>
-                        <img className="w-full hidden md:block dark:hidden" src="../../public/image/size1-1.svg"/>
+                        <img className="w-full hidden md:block dark:hidden" src="/image/size1-1.svg"/>
                         <div className="w-full hidden dark:block">
-                          <img className='w-full hidden md:block' src='../../public/image/size1-2.svg'/>
+                          <img className='w-full hidden md:block' src='/image/size1-2.svg'/>
                         </div>
-                        <img className='w-full md:hidden dark:hidden' src='../../public/image/size2-1.svg'/>
+                        <img className='w-full md:hidden dark:hidden' src='/image/size2-1.svg'/>
                         <div className='w-full md:hidden'>
-                          <img className='w-full hidden md:hidden dark:block' src='../../public/image/size2-2.svg'/>
+                          <img className='w-full hidden md:hidden dark:block' src='/image/size2-2.svg'/>
                         </div>
                     </div>
                   </div> 
