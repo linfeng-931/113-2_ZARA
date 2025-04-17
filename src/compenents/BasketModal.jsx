@@ -170,13 +170,15 @@ function BasketModal() {
               </div>
 
               {/* Checkout Button */}
-              <div
-                className="flex h-12 w-60 justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+              <Link to="/">
+                <div
+                  className="flex h-12 w-60 justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
                                 hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
-              >
-                <p>Checkout</p>
-                <ArrowRight className="h-4" />
-              </div>
+                >
+                  <p>Checkout</p>
+                  <ArrowRight className="h-4" />
+                </div>
+              </Link>
             </div>
           )}
         </div>
