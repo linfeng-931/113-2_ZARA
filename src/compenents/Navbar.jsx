@@ -112,7 +112,12 @@ function Navbar() {
                   } hover:opacity-100 hover:[text-shadow:0px_0px_30px_white]`
                 }
               >
-                <p className="hover:font-bold tracking-widest">{label}</p>
+                <p 
+                  className={`flex items-center hover:font-bold tracking-widest
+                    ${label === "Sale" ? "text-[#fa347f]" : ""}
+                    `}
+                >{label}{label === "Sale" && <Flame className="h-4"/>}
+                </p>
               </NavLink>
             ))}
           </div>

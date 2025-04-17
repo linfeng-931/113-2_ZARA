@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router";
 import Slides from "./page/Home";
 import Category from "./page/Category";
 import Product from "./page/Product";
+import ShoppingCartPage from "./page/ShoppingCartPage"
 
 function App() {
   return (
@@ -11,12 +12,11 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Slides />} />
-            {/*<Route path="/" element={<Product />} />*/}
 
             <Route path="products">
               <Route path="category/:categoryName" element={<Category />} />
               <Route path="id/:part1/:part2/" element={<Product />} />
-            {/*<Route path="shopping-cart" element={<ShoppingCart />} /> */}
+              <Route path="shopping-cart" element={<ShoppingCartPage />} /> 
             </Route>
 
             {/* 以下為有閒情再做的東西 */}

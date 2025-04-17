@@ -16,11 +16,11 @@ function ImageScroller({ images, isActiveImg, setisActiveImg }) {
 
     return (
         <>
-            
             <img
-                className='w-full h-[88.5%] mb-3 rounded-[10px] object-cover object-center'
+                className='h-80 w-72 md:w-full md:h-[60%] lg:h-[88.5%] mb-3 rounded-[10px] object-cover object-center'
                 src={images[isActiveImg]}
             />
+            
 
             <div className="relative flex items-center">
                 <button
@@ -33,7 +33,7 @@ function ImageScroller({ images, isActiveImg, setisActiveImg }) {
                     <ChevronLeft className='text-black dark:text-white'/>
                 </button>
 
-                <div className="w-full flex justify-center gap-2 px-10">
+                <div className="w-full flex md:justify-center gap-4 md:gap-2 md:px-10">
                     {images.slice(startIndex, startIndex + visibleCount).map((img,index)=>{
                         const actualIndex = startIndex + index;
                         return(
@@ -56,7 +56,7 @@ function ImageScroller({ images, isActiveImg, setisActiveImg }) {
                 <button
                     onClick={handleNext}
                     disabled={startIndex === maxStartIndex}
-                    className={`cursor-pointer hover:opacity-50 absolute right-0 z-10 p-1 bg-white dark:bg-zinc-600 rounded-full shadow-md transition-opacity ${
+                    className={`right-10 md:right-0 cursor-pointer hover:opacity-50 absolute right-0 z-10 p-1 bg-white dark:bg-zinc-600 rounded-full shadow-md transition-opacity ${
                         startIndex === maxStartIndex ? "opacity-30 cursor-not-allowed" : "bg-opacity-80 hover:bg-opacity-100"
                     }`}
                 >

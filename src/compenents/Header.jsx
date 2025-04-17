@@ -2,22 +2,29 @@ import { CircleUserRound, CircleHelp } from "lucide-react";
 import Menu from "./Menu";
 import SetColorMode from "./SetColorMode";
 import Cart from "./Cart";
+import { Link } from "react-router";
 
 function Header() {
   return (
     <>
       <div className="header-container flex w-[100%] h-[100px] items-center justify-between z-100 ">
-        <div className="left flex gap-20 pl-7 md:pl-15 items-center">
+        <div className="left flex pl-7 md:pl-15 items-center">
           <Menu />
-          <img
-            className="h-0 md:h-11 dark:hidden z-9999"
-            src="/public/image/logo2-1.png"
-          ></img>
-          <img
-            className="h-0 md:h-11 hidden dark:block z-9999"
-            src="/public/image/logo2-2.PNG"
-          ></img>
+
+          <Link to="/" className="dark:hidden z-9999">
+            <img
+              className="hidden w-45 md:block"
+              src="/public/image/logo2-1.png"
+            />
+          </Link>
+          <Link to="/" className="z-9999 hidden md:block">
+            <img
+              className="hidden w-45 dark:block"
+              src="/public/image/logo2-2.PNG"
+            />
+          </Link>
         </div>
+
         <div className="right flex pr-7 gap-5 md:pr-15 md:gap-8 items-center">
           <SetColorMode />
 

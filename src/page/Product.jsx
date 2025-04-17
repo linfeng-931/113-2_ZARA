@@ -48,7 +48,7 @@ function Product() {
       </div>
 
       <div className="w-full flex flex-col items-center">
-        <div className="product-container w-[75%] grid gap-25 overflow-hidden md:grid-cols-9 lg:grid-cols-9">
+        <div className="product-container w-[90%] md:w-[75%] grid gap-25 overflow-hidden lg:grid-cols-9">
           {/*image*/}
           <div className="left lg:col-span-4">
             <ImageScroller
@@ -59,7 +59,7 @@ function Product() {
           </div>
 
           {/*content*/}
-          <div className="right grid text-left lg:col-span-5 ">
+          <div className="right grid md:mt-[-20rem] lg:mt-0 text-left lg:col-span-5 ">
             <div className="product-content">
               <div className="mb-8">
                 <p>
@@ -74,7 +74,24 @@ function Product() {
                   {product.class[pIndex].color} | {product.id}
                   {product.class[pIndex].class_id}
                 </p>
-                <h1 className="font-bold">${product.price}</h1>
+                <div className="price-area flex flex-col lg:flex-row gap-2 lg:items-center">
+                  <h1
+                    className={`original ${
+                      product.sale ? "line-through opacity-50" : "font-bold"
+                    }`}
+                  >
+                    $ {product.price}
+                  </h1>
+
+                  {product.sale && (
+                    <h1 className="sale text-white bg-black px-4 py-0.5 text-left lg:ml-2">
+                      {product.new_price[1]}%{" "}
+                      <span className="font-bold ml-4">
+                        $ {product.new_price[0]}
+                      </span>
+                    </h1>
+                  )}
+                </div>
               </div>
 
               <div className="flex gap-2">
@@ -124,7 +141,7 @@ function Product() {
 
             {/*add to cart*/}
             <div className="md:flex mt-1 w-full flex-wrap justify-between items-end">
-              <div className="left qty-container w-60">
+              <div className="left qty-container w-72 md:w-full lg:w-60">
                 <p className="mb-1 hint">TOTAL PRICE : {product.price * qty}</p>
                 <div className="flex justify-between items-center selector h-12 w-full border-[1px] mb-5">
                   <div
@@ -148,18 +165,19 @@ function Product() {
                   </div>
                 </div>
               </div>
-              <div className="right w-60 mb-5">
+              <div className="right md:w-full lg:w-60 mb-5">
                 <AddToBasket
                   product={product}
                   detail={product.class[pIndex]}
                   size_stock={product.class[pIndex].stock[Size]}
+                  size={Size}
                   qty={qty}
                 />
               </div>
             </div>
 
             <div className="line mb-15 mt-10 w-full h-[1px] bg-black dark:bg-white opacity-20"></div>
-            <div className="size-chart w-[85%] md:w-full">
+            <div className="size-chart w-72 md:w-full">
               <p className="hint mb-4">SIZE CHART</p>
               <img
                 className="w-full hidden md:block dark:hidden"
@@ -167,17 +185,17 @@ function Product() {
               />
               <div className="w-full hidden dark:block">
                 <img
-                  className="w-full object-contain hidden md:block"
+                  className="w-full hidden md:block"
                   src="/public/image/size1-2.svg"
                 />
               </div>
               <img
-                className="w-full object-contain md:hidden dark:hidden"
+                className="w-full md:hidden dark:hidden"
                 src="/public/image/size2-1.svg"
               />
-              <div className="w-full object-contain md:hidden">
+              <div className="w-full md:hidden">
                 <img
-                  className="w-full object-contain hidden md:hidden dark:block"
+                  className="w-full hidden md:hidden dark:block"
                   src="/public/image/size2-2.svg"
                 />
               </div>
@@ -186,11 +204,8 @@ function Product() {
         </div>
 
         {/*detail*/}
-        <div
-          className="mt-40 detail-container grid grid-cols-3 gap-25 
-        w-[80%]"
-        >
-          <div className="left col-span-1">
+        <div className="mt-40 detail-container md:grid md:grid-cols-3 gap-25 w-[90%]">
+          <div className="left mb-10 md:col-span-1">
             <div className="mb-8 text-start">
               <h1>PRODUCT DETAIL</h1>
               <div className="line w-60 h-[.5px] bg-black dark:bg-white"></div>
@@ -200,7 +215,7 @@ function Product() {
             ))}
           </div>
 
-          <div className="right col-span-2 overflow-hidden h-90 rounded-[10px]">
+          <div className="right md:col-span-2 overflow-hidden h-40 md:h-90 rounded-[10px]">
             <img
               className="w-full h-120 object-cover object-center"
               src={
@@ -211,10 +226,7 @@ function Product() {
         </div>
 
         {/*review*/}
-        <div
-          className="mt-40 review-container 
-        w-[80%]"
-        >
+        <div className="mt-40 review-container w-[90%]">
           <div className="mb-8 text-start">
             <h1>REVIEWS</h1>
             <div className="line w-60 h-[.5px] bg-black dark:bg-white"></div>
@@ -222,23 +234,23 @@ function Product() {
           <div className="mb-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {product.reviews.map((review) => (
               <>
-                <div className="review flex flex-col items-start justify-center h-full w-full rounded-[10px] p-5 pl-8 pr-8 text-left  border-[1px] border-black/30 dark:border-white/60">
-                  <div className="rating  mb-8 flex gap-2">
+                <div className="review h-70 md:60 lg:h-55 w-full rounded-[10px] p-5 pl-8 pr-8 text-left grid border-[1px] border-black/30 dark:border-white/60">
+                  <div className="rating items-end mb-8">
                     {Array(5)
                       .keys()
                       .map((x) =>
                         x === review.rating ? (
-                          <div className="h-5 w-5 mask mask-star-2"></div>
+                          <div className="h-5 w-5 mask mask-star-2 ml-1"></div>
                         ) : (
                           <div
-                            className="h-5 w-5 mask mask-star-2"
+                            className="h-5 w-5 mask mask-star-2 ml-1"
                             aria-current="true"
                           ></div>
                         )
                       )}
                   </div>
                   <div className="review-content">
-                    <p className="my-auto mb-5">{review.comment}</p>
+                    <p className="mb-5">{review.comment}</p>
                     <div className="user flex gap-3 items-center">
                       <CircleUserRound />
                       <p>{review.reviewer}</p>
