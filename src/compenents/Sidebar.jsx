@@ -21,7 +21,6 @@ const Sidebar = ({ filter, setFilter, reset, setReset }) => {
   };
 
   const toggleSection = (section) => {
-    if (screen.width > 375 && section == "mobileSideBar") return;
     setIsOpen((prev) => ({
       ...prev,
       [section]: !prev[section],
