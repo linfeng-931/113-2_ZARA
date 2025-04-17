@@ -30,7 +30,7 @@ const ProductItem = ({ product }) => {
           />
           <p className="name mt-2">{product.name}</p>
         </Link>
-        <div className="price-area flex flex-col lg:flex-row gap-2 lg:items-center">
+        <div className="price-area flex flex-col lg:flex-row lg:gap-1 lg:items-center">
           <p
             className={`original ${
               product.sale ? "line-through opacity-50" : "font-bold"
@@ -40,9 +40,9 @@ const ProductItem = ({ product }) => {
           </p>
 
           {product.sale && (
-            <p className="sale text-white bg-black px-4 py-0.5 text-left lg:ml-2">
+            <p className="sale flex items-center gap-2 lg:gat-0 text-white bg-black px-4 py-0.5 text-left lg:ml-2">
               {product.new_price[1]}%{" "}
-              <span className="font-bold ml-4">$ {product.new_price[0]}</span>
+              <span className="font-bold ">$ {product.new_price[0]}</span>
             </p>
           )}
         </div>

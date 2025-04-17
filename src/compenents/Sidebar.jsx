@@ -245,7 +245,7 @@ const Sidebar = ({ filter, setFilter, reset, setReset }) => {
                   WHITE
                 </button>
                 <button
-                  onClick={() => toggleFilter("color", "")}
+                  onClick={() => toggleFilter("color", "MULTI")}
                   className={`flex items-center mr-2 cursor-pointer ${
                     filter.color.includes("MULTI")
                       ? "opacity-100 font-bold"

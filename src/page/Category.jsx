@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import React, { useState, useMemo } from "react";
-import _ from "lodash";
+import _, { size } from "lodash";
 import Header from "../compenents/Header";
 import Footer from "../compenents/Footer";
 import product from "../../json/product.json";
@@ -28,14 +28,22 @@ const Category = () => {
 
   const colorGroups = {
     RED: ["RED", "WINE", "BURGUNDY", "RUSSET", "TERRACOTTA"],
-    BLUE: ["BLUE", "INDIGO", "BLUISH"],
-    GREEN: ["GREEN", "KHAKI", "SEA-GREEN"],
-    YELLOW: ["YELLOW", "SAND", "MINK"],
-    BROWN: ["BROWN", "CAMEL", "CHOLOCLATE", "DARK-STRAW"],
-    GREY: ["GREY", "CHARCOAL", "ECRU"],
-    PINK: ["PINK", "CORAL"],
+    BLUE: ["BLUE", "INDIGO", "BLUISH", "LIGHT BLUE", "MID-BLUE"],
+    GREEN: ["GREEN", "KHAKI", "SEA-GREEN", "BOTTLE GREEN"],
+    YELLOW: ["YELLOW", "SAND", "MINK", "LIGHT-SAND", "CAVA"],
+    BROWN: [
+      "BROWN",
+      "CAMEL",
+      "CHOLOCLATE",
+      "DARK-STRAW",
+      "MID-MINK",
+      "MID-GREY",
+      "DARK BROWN",
+    ],
+    GREY: ["GREY", "CHARCOAL", "ECRU", "MID-ECRU"],
+    PINK: ["PINK", "CORAL", "BEIGE-PINK"],
     BLACK: ["BLACK"],
-    WHITE: ["WHITE"],
+    WHITE: ["WHITE", "BEIGE"],
     MULTI: ["MULTICOLOURED"],
   };
 
@@ -49,17 +57,29 @@ const Category = () => {
 
   const hasSize = (stock, targetSize) => {
     const index = sizeMap.indexOf(targetSize);
-    return stock[index] > 0;
+    return index !== -1 && stock[index] > 0;
   };
 
   const filteredProducts = useMemo(() => {
     return _products
       .filter((product) => {
-        const matchSize =
-          filter.size.length === 0 ||
-          product.class.some((c) =>
-            filter.size.some((size) => hasSize(c.stock, size))
-          );
+        const matchSize = () => {
+          if (filter.size.length === 0) return true;
+
+          return product.class.some((classItem) => {
+            if (!Array.isArray(classItem.stock)) {
+              console.warn("classItem.stock 格式錯誤：", classItem);
+              return false;
+            }
+
+            return filter.size.some((size) => hasSize(classItem.stock, size));
+          });
+        };
+
+        // console.log(matchSize);
+
+        // Call the matchSize function to get the result
+        const sizeMatches = matchSize();
 
         const matchColor =
           filter.color.length === 0 ||
@@ -69,7 +89,9 @@ const Category = () => {
             return filter.color.includes(group);
           });
 
-        return matchSize && matchColor;
+        console.log(matchColor);
+
+        return sizeMatches && matchColor;
       })
       .sort((a, b) => {
         const priceA = a.sale ? a.new_price[0] : a.price;

@@ -633,7 +633,7 @@
         "cover": "/image/trousers/id-4174195/711/4.jpg"
       },
       {
-        "color": "GREY GREEN",
+        "color": "GREEN",
         "class_id": "916",
         "color_num": "#c2c6b7",
         "stock": [29, 111, 76, 180],
@@ -649,7 +649,7 @@
         "cover": "/image/trousers/id-4174195/916/5.jpg"
       },
       {
-        "color": "BLUE / GREY",
+        "color": "GREY",
         "class_id": "485",
         "color_num": "#a4a4a8",
         "stock": [149, 18, 67, 203],
@@ -836,7 +836,7 @@
     "detail": ["100% cotton", "80% polyester", "20% cotton"],
     "class": [
       {
-        "color": "ECRU / KHAKI",
+        "color": "KHAKI",
         "class_id": "071",
         "color_num": "#859685",
         "stock": [23, 157, 89, 46],
@@ -1431,7 +1431,7 @@
       {
         "color": "LIGHT BLUE",
         "class_id": "406",
-        "color_num": "#ffd9e9",
+        "color_num": "#D8E5EE",
         "stock": [23, 157, 89, 46],
         "img": [
           "/image/knitwear/id-5755039/406/1.jpg",

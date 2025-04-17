@@ -18,7 +18,7 @@ function Navbar() {
 
       [
         { to: "/products/category/SKIRT", label: "Skirt" },
-        { to: "/products/category/TROUSERS", label: "TROUSERS" },
+        { to: "/products/category/TROUSERS", label: "Trousers" },
       ],
 
       [
@@ -112,11 +112,13 @@ function Navbar() {
                   } hover:opacity-100 hover:[text-shadow:0px_0px_30px_white]`
                 }
               >
-                <p 
+                <p
                   className={`flex items-center hover:font-bold tracking-widest
                     ${label === "Sale" ? "text-[#fa347f]" : ""}
                     `}
-                >{label}{label === "Sale" && <Flame className="h-4"/>}
+                >
+                  {label}
+                  {label === "Sale" && <Flame className="h-4" />}
                 </p>
               </NavLink>
             ))}

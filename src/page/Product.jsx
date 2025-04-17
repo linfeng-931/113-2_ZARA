@@ -12,7 +12,7 @@ import RelatedItem from "../compenents/RelatedItem";
 
 function Product() {
   const { part1, part2 } = useParams();
-  console.log(part1, part2, `${part1}/${part2}/`);
+  // console.log(part1, part2, `${part1}/${part2}/`);
   const product = products.find((x) => x.id == `${part1}/${part2}/`);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -97,6 +97,7 @@ function Product() {
               <div className="flex gap-2">
                 {product.class.map((content, index) => (
                   <div
+                    key={index}
                     style={{ backgroundColor: content.color_num }}
                     className={`color h-[16px] w-[16px] rounded-full border-[1px] duration-150 hover:opacity-50 cursor-pointer
                                   `}
@@ -141,7 +142,7 @@ function Product() {
 
             {/*add to cart*/}
             <div className="md:flex mt-1 w-full flex-wrap justify-between items-end">
-              <div className="left qty-container w-72 md:w-full lg:w-60">
+              <div className="left qty-container w-full lg:w-60">
                 <p className="mb-1 hint">TOTAL PRICE : {product.price * qty}</p>
                 <div className="flex justify-between items-center selector h-12 w-full border-[1px] mb-5">
                   <div
@@ -204,14 +205,16 @@ function Product() {
         </div>
 
         {/*detail*/}
-        <div className="mt-40 detail-container md:grid md:grid-cols-3 gap-25 w-[90%]">
+        <div className="mt-40 detail-container md:grid md:grid-cols-3 gap-25 w-[90%] md:w-[80%]">
           <div className="left mb-10 md:col-span-1">
             <div className="mb-8 text-start">
               <h1>PRODUCT DETAIL</h1>
               <div className="line w-60 h-[.5px] bg-black dark:bg-white"></div>
             </div>
-            {product.detail.map((content) => (
-              <p className="text-start">{content}</p>
+            {product.detail.map((content, index) => (
+              <p className="text-start" key={index}>
+                {content}
+              </p>
             ))}
           </div>
 
@@ -226,25 +229,29 @@ function Product() {
         </div>
 
         {/*review*/}
-        <div className="mt-40 review-container w-[90%]">
+        <div className="mt-40 review-container w-[90%] md:w-[80%]">
           <div className="mb-8 text-start">
             <h1>REVIEWS</h1>
             <div className="line w-60 h-[.5px] bg-black dark:bg-white"></div>
           </div>
           <div className="mb-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {product.reviews.map((review) => (
-              <>
-                <div className="review h-70 md:60 lg:h-55 w-full rounded-[10px] p-5 pl-8 pr-8 text-left grid border-[1px] border-black/30 dark:border-white/60">
+            {product.reviews.map((review, index) => (
+              <div key={index}>
+                <div className="review h-auto md:60  w-full rounded-[10px] p-5 pl-8 pr-8 text-left grid border-[1px] border-black/30 dark:border-white/60">
                   <div className="rating items-end mb-8">
                     {Array(5)
                       .keys()
-                      .map((x) =>
+                      .map((x, index) =>
                         x === review.rating ? (
-                          <div className="h-5 w-5 mask mask-star-2 ml-1"></div>
+                          <div
+                            className="h-5 w-5 mask mask-star-2 ml-1"
+                            key={index}
+                          ></div>
                         ) : (
                           <div
                             className="h-5 w-5 mask mask-star-2 ml-1"
                             aria-current="true"
+                            key={index}
                           ></div>
                         )
                       )}
@@ -257,7 +264,7 @@ function Product() {
                     </div>
                   </div>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </div>
@@ -273,7 +280,7 @@ function Product() {
           </div>
           <div className="grid grid-cols-4  lg:grid-cols-8 gap-x-8 lg:gap-x-4 gap-y-[2.5rem] justify-between">
             {related_products.map((content) => (
-              <RelatedItem product={content} />
+              <RelatedItem product={content} key={content.id} />
             ))}
           </div>
         </div>

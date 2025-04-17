@@ -20,7 +20,7 @@ const RelatedItem = ({ product }) => {
   });
 
   return (
-    <section className="col-span-2  text-sm flex flex-col gap-2 text-left w-[80%] lg:w-[75%] mx-auto">
+    <section className="col-span-2  text-sm flex flex-col gap-2 text-left w-[90%] lg:w-[80%] mx-auto">
       <Link to={`/products/id/${product.id}`}>
         <img
           className="w-full max-h-120 object-cover object-center"
@@ -39,9 +39,9 @@ const RelatedItem = ({ product }) => {
         </p>
 
         {product.sale && (
-          <p className="sale text-white bg-black px-4 py-0.5 text-left lg:ml-2">
+          <p className="sale flex items-center gap-2 lg:gat-0 text-white bg-black px-4 py-0.5 text-left lg:ml-2">
             {product.new_price[1]}%{" "}
-            <span className="font-bold ml-4">$ {product.new_price[0]}</span>
+            <span className="font-bold">$ {product.new_price[0]}</span>
           </p>
         )}
       </div>
