@@ -115,16 +115,16 @@ function Product() {
                 {size_list.map((label, index) => (
                   <div
                     key={index}
-                    className={`circle flex items-center justify-center cursor-pointer border-[1px] h-9 w-9 rounded-full hover:opacity-50 duration-150
+                    className={`circle flex items-center justify-center border-[1px] h-9 w-9 rounded-full hover:opacity-50 duration-150
                                     ${
                                       product.class[pIndex].stock[index] === 0
-                                        ? "opacity-50 cursor-not-allowed"
+                                        ? "opacity-50 cursor-auto"
                                         : "cursor-pointer"
                                     }
                                     ${
                                       product.class[pIndex].stock[index] !==
                                         0 && Size === index
-                                        ? "text-white bg-black dark:text-black dark:bg-white"
+                                        ? "text-white bg-black cursor-pointer dark:text-black dark:bg-white"
                                         : ""
                                     }
                                 `}
