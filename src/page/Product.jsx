@@ -231,7 +231,7 @@ function Product() {
         </div>
 
         {/*detail*/}
-        <div className="mt-40 detail-container md:grid md:grid-cols-3 gap-25 w-[90%]">
+        <div className="mt-40 detail-container md:grid md:grid-cols-3 gap-25 w-[90%] md:w-[80%]">
           <div className="left mb-10 md:col-span-1">
             <div className="mb-8 text-start">
               <h1>PRODUCT DETAIL</h1>

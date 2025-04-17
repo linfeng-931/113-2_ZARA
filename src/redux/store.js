@@ -11,5 +11,10 @@ const store = configureStore({
   devTools: import.meta.env.NODE_ENV !== "production",
 });
 
+store.subscribe(() => {
+  const { cartItems } = store.getState().cart;
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+});
+
 //export store to global
 export default store;
