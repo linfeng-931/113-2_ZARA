@@ -47,7 +47,7 @@ const ProductItem = ({ product }) => {
           )}
         </div>
 
-        <div className="colors flex translate-x-[-6px] mt-1">{colors}</div>
+        <div className="colors flex flex-wrap gap-1 md:gap-0 translate-x-[-6px] mt-1">{colors}</div>
       </section>
       <div className="col-span-1"></div>
     </div>

@@ -25,7 +25,7 @@ function Header() {
           </Link>
         </div>
 
-        <div className="right flex pr-7 gap-5 md:pr-15 md:gap-8 items-center">
+        <div className="right flex pr-7 gap-5 md:pr-15 md:gap-8 items-center z-99">
           <SetColorMode />
 
           <div className="line hidden md:block h-12 w-[1px] bg-black dark:bg-white opacity-50"></div>

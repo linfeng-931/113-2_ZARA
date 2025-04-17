@@ -31,8 +31,11 @@ function AddToBasket({product, detail, size, qty}){
     return(
         <>
             <button 
-                className="flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
-                        hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white" 
+                className={`flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                        hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
+                        ${qty === 0? "pointer-events-none opacity-50":""}
+                        ${typeof qty !== "number"? "pointer-events-none opacity-50":""}
+                        `}
                 onClick={addToCart}
             >
                <p>ADD TO BASKET</p> 
