@@ -142,11 +142,18 @@ function Product() {
 
             {/*add to cart*/}
             <div className="md:flex mt-1 w-full flex-wrap justify-between items-end">
-              <div className="left qty-container w-full lg:w-60">
+              <div className="left qty-container w-72 md:w-full lg:w-60">
                 <p className="mb-1 hint">TOTAL PRICE : {product.price * qty}</p>
                 <div className="flex justify-between items-center selector h-12 w-full border-[1px] mb-5">
                   <div
-                    className="h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer"
+                    className={`h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
+                                ${
+                                  qty === 1
+                                    ? "opacity-50 pointer-events-none"
+                                    : ""
+                                }
+                                ${qty <= 0 ? setQty(1) : ""}
+                                `}
                     onClick={() => setQty(qty - 1)}
                   >
                     <Minus className="text-white dark:text-black" />
@@ -155,11 +162,30 @@ function Product() {
                     type="text"
                     value={qty}
                     placeholder="0"
-                    className="text-center input w-[55%]"
-                    onChange={(e) => setQty(e.target.value)}
+                    className="text-center input border-none h-[33px] w-[55%]"
+                    onChange={(e) => {
+                      if (e.target.value > product.class[pIndex].stock[Size]) {
+                        setQty(product.class[pIndex].stock[Size]);
+                      } else if (e.target.value < 1) {
+                        setQty(1);
+                      } else setQty(e.target.value);
+                    }}
                   />
                   <div
-                    className="h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer"
+                    className={`h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
+                                ${
+                                  qty === product.class[pIndex].stock[Size] - 1
+                                    ? "opacity-50 pointer-events-none"
+                                    : ""
+                                }
+                                ${
+                                  qty >= product.class[pIndex].stock[Size]
+                                    ? setQty(
+                                        product.class[pIndex].stock[Size] - 1
+                                      )
+                                    : ""
+                                }
+                                `}
                     onClick={() => setQty(qty + 1)}
                   >
                     <Plus className="text-white dark:text-black" />
@@ -182,22 +208,22 @@ function Product() {
               <p className="hint mb-4">SIZE CHART</p>
               <img
                 className="w-full hidden md:block dark:hidden"
-                src="/public/image/size1-1.svg"
+                src="/image/size1-1.svg"
               />
               <div className="w-full hidden dark:block">
                 <img
                   className="w-full hidden md:block"
-                  src="/public/image/size1-2.svg"
+                  src="/image/size1-2.svg"
                 />
               </div>
               <img
                 className="w-full md:hidden dark:hidden"
-                src="/public/image/size2-1.svg"
+                src="/image/size2-1.svg"
               />
               <div className="w-full md:hidden">
                 <img
                   className="w-full hidden md:hidden dark:block"
-                  src="/public/image/size2-2.svg"
+                  src="/image/size2-2.svg"
                 />
               </div>
             </div>
@@ -205,16 +231,14 @@ function Product() {
         </div>
 
         {/*detail*/}
-        <div className="mt-40 detail-container md:grid md:grid-cols-3 gap-25 w-[90%] md:w-[80%]">
+        <div className="mt-40 detail-container md:grid md:grid-cols-3 gap-25 w-[90%]">
           <div className="left mb-10 md:col-span-1">
             <div className="mb-8 text-start">
               <h1>PRODUCT DETAIL</h1>
               <div className="line w-60 h-[.5px] bg-black dark:bg-white"></div>
             </div>
-            {product.detail.map((content, index) => (
-              <p className="text-start" key={index}>
-                {content}
-              </p>
+            {product.detail.map((content) => (
+              <p className="text-start">{content}</p>
             ))}
           </div>
 

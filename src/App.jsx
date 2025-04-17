@@ -1,11 +1,20 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router";
+import { BrowserRouter, Routes, Route} from "react-router";
 import Slides from "./page/Home";
 import Category from "./page/Category";
 import Product from "./page/Product";
 import ShoppingCartPage from "./page/ShoppingCartPage"
+import { selectCartItems } from "./redux/cartSlice";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 function App() {
+  const cartItems = useSelector(selectCartItems);
+
+  useEffect(() => {
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }, [cartItems]);
+
   return (
     <>
       <div data-theme="">

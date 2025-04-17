@@ -14,13 +14,13 @@ function Header() {
           <Link to="/" className="dark:hidden z-9999">
             <img
               className="hidden w-45 md:block"
-              src="/public/image/logo2-1.png"
+              src="/image/logo2-1.png"
             />
           </Link>
           <Link to="/" className="z-9999 hidden md:block">
             <img
               className="hidden w-45 dark:block"
-              src="/public/image/logo2-2.PNG"
+              src="/image/logo2-2.PNG"
             />
           </Link>
         </div>
