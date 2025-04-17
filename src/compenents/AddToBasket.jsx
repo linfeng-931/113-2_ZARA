@@ -6,7 +6,8 @@ import { useState } from "react";
 function AddToBasket({product, detail, size, qty}){
     const [showToast, setShowToast] = useState(false);
     const dispatch = useDispatch();
-    
+
+    const price = product.sale ? product.new_price[0] : product.price;
     const addToCart = ()=>{
         setShowToast(true);
         dispatch(addCartItems({
@@ -16,7 +17,7 @@ function AddToBasket({product, detail, size, qty}){
             title: product.name,
             cover: detail.img[0],
             size: size,
-            price: product.price,
+            price: price,
             countInStock: detail.stock[size],
             qty,
         }))
