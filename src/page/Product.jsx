@@ -162,7 +162,7 @@ function Product() {
 
             {/*add to cart*/}
             <div className="md:flex mt-1 w-full flex-wrap justify-between items-end">
-              <div className="left qty-container w-72 md:w-full lg:w-60">
+              <div className="left qty-container w-[100%] lg:w-60">
                 <p className="mb-1 hint">TOTAL PRICE : {product.sale? product.new_price[0] * qty : product.price * qty}</p>
                 <div className="flex justify-between items-center selector h-12 w-full border-[1px] mb-5">
                   <div
@@ -227,7 +227,7 @@ function Product() {
             </div>
 
             <div className="line mb-15 mt-10 w-full h-[1px] bg-black dark:bg-white opacity-20"></div>
-            <div className="size-chart w-72 md:w-full">
+            <div className="size-chart w-[100%]">
               <p className="hint mb-4">SIZE CHART</p>
               <img
                 className="w-full hidden md:block dark:hidden"
