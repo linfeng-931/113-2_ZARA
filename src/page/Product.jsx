@@ -284,7 +284,7 @@ function Product() {
           <div className="mb-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {product.reviews.map((review, index) => (
               <div key={index}>
-                <div className="review h-auto md:60  w-full rounded-[10px] p-5 pl-8 pr-8 text-left grid border-[1px] border-black/30 dark:border-white/60">
+                <div className="review h-[100%] md:60  w-full rounded-[10px] p-5 pl-8 pr-8 text-left grid border-[1px] border-black/30 dark:border-white/60">
                   <div className="rating items-end mb-8">
                     {Array(5)
                       .keys()
