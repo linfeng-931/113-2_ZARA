@@ -10,6 +10,7 @@ import Register from "./page/Register"
 import { selectCartItems } from "./redux/cartSlice";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
+import ForgetPassword from "./page/ForgetPassword";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -35,6 +36,7 @@ function App() {
               <Route path="login" element={<UserAccount />} />
               <Route path="detail" element={<User />} />
               <Route path="register" element={<Register />} />
+              <Route path="forgetpassword" element={<ForgetPassword />} />
             </Route>
 
             {/* 以下為有閒情再做的東西 */}

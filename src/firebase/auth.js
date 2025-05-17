@@ -3,6 +3,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   sendEmailVerification,
+  sendPasswordResetEmail,
 } from "firebase/auth";
 
 export const doCreateUserWithEmailAndPassword = async (email, password) => {
@@ -42,11 +43,11 @@ export const checkemail = () => {
     });
 };
 
-// export const doPasswordReset = (email) => { sendEmailVerification, sendPasswordResetEmail, signInWithPopup, updatePassword
-//     return sendPasswordResetEmail(auth, email);
-// };
+export const doPasswordReset = (email) => {
+  return sendPasswordResetEmail(auth, email);
+};
 
-// export const doPasswordChange = (password) => {
+// export const doPasswordChange = (password) => {, signInWithPopup, updatePassword
 //     return updatePassword(auth.currentUser, password);
 // };
 

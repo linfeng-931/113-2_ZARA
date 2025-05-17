@@ -149,6 +149,10 @@ function Login(){
                             }    
                             </div>
                         </div>
+
+                        <Link to='/user/forgetpassword'>
+                            <p className='w-full underline underline-offset-4 text-right opacity-60 hover:opacity-40 cursor-pointer'>forget password</p>
+                        </Link>
             
                         <div className="h-6">
                             {passwordError && 
