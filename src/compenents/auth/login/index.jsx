@@ -78,7 +78,6 @@ function Login(){
 
     return(
         <>
-            {/* {userLoggedIn && (<Navigate to={'/user/detail'} replace = {true} />)} */}
             <div className="login-container text-left h-full w-full">
                 <form className="login" onSubmit={onSubmit}>
                     {/* email */}

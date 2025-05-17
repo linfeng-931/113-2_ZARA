@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function CreateAccount(){
     return(
         <>
-            <div className="flex flex-col justify-between text-left w-72 h-full">
+            <div className="flex flex-col justify-between text-left w-full h-full">
                 <div className="content">
                     <h1 className="mb-5">Don't have an account?</h1>
                     <p>
