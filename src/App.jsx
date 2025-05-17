@@ -5,7 +5,7 @@ import Category from "./page/Category";
 import Product from "./page/Product";
 import ShoppingCartPage from "./page/ShoppingCartPage";
 import UserAccount from "./page/UserAccount";
-import User from "./page/User";
+import UserDetail from "./page/UserDetail";
 import Register from "./page/Register"
 import { selectCartItems } from "./redux/cartSlice";
 import { useSelector } from "react-redux";
@@ -34,7 +34,7 @@ function App() {
 
             <Route path="user">
               <Route path="login" element={<UserAccount />} />
-              <Route path="detail" element={<User />} />
+              <Route path="detail" element={<UserDetail />} />
               <Route path="register" element={<Register />} />
               <Route path="forgetpassword" element={<ForgetPassword />} />
             </Route>
