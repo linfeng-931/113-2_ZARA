@@ -30,10 +30,13 @@ function Header() {
 
           <div className="line hidden md:block h-12 w-[1px] bg-black dark:bg-white opacity-50"></div>
 
+          <Link to="/user/login">
           <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap hover:opacity-50 cursor-pointer">
             <CircleUserRound />
             <p>Login</p>
           </div>
+          </Link>
+
           <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap hover:opacity-50 cursor-pointer">
             <Cart />
             <p>Cart</p>
