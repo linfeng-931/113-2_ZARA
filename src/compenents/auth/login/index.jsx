@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import { doSignInWithEmail } from '../../../firebase/auth';
-import { useAuth } from '../../../contexts/authContext';
 import { CircleX ,EyeOff, Eye } from 'lucide-react';
 
 function Login(){
-    const {userLoggedIn} = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isSigningIn, setIsSigningIn] = useState(false);
@@ -15,12 +13,38 @@ function Login(){
     const [showPassword, setShowPassword] = useState(false);
 
     const onSubmit = async (e) => {
-        e.preventDefault();
-        if(!isSigningIn) {
-            setIsSigningIn(true);
-            await doSignInWithEmail(email, password);
-        }
-    }
+            e.preventDefault();
+        
+            if (emailError || passwordError) return;
+    
+            if (!isSigningIn) {
+                setIsSigningIn(true);
+                try {
+                    await doSignInWithEmail(email, password);
+                } catch (error) {
+                    console.error('Login error:', error);
+                
+                    switch (error.code) {
+                        case 'auth/user-not-found':
+                            setEmailError('No user found with this email.');
+                            break;
+                        case 'auth/wrong-password':
+                            setPasswordError('Incorrect password.');
+                            break;
+                        case 'auth/invalid-credential':
+                            // 這個通常代表 email 和 password 有問題（但 Firebase 無法明確指出是哪個）
+                            setEmailError('Invalid email or password.');
+                            setPasswordError('');
+                            break;
+                        default:
+                            console.error('Unhandled Firebase error:', error.code);
+                            break;
+                    }
+                } finally {
+                    setIsSigningIn(false);
+                }
+            }
+        };
 
     const handleEmailChange = (e) => {
         const value = e.target.value;
@@ -51,32 +75,11 @@ function Login(){
     const toggleShowPassword = () => {
         setShowPassword(prev => !prev);
     };
-    // const getErrorMessage = (error) => {
-    //     if (!error || !error.code) return "Login failed. Please try again.";
-    
-    //     switch (error.code) {
-    //         case 'auth/user-not-found':
-    //             setErrorMessage("Account does not exist.");
-    //             break;
-    //         case 'auth/wrong-password':
-    //             setErrorMessage("Incorrect password.");
-    //             break;
-    //         case 'auth/invalid-email':
-    //             setErrorMessage("Invalid email address.");
-    //             break;
-    //         case 'auth/too-many-requests':
-    //             setErrorMessage("Too many attempts. Try again later.");
-    //             break;
-    //         default:
-    //             setErrorMessage("Login failed: " + error.message);
-    //             break;
-    //     }
-    // }
 
     return(
         <>
-            {userLoggedIn && (<Navigate to={'/user/detail'} replace = {true} />)}
-            <div className="login-container text-left h-full w-72">
+            {/* {userLoggedIn && (<Navigate to={'/user/detail'} replace = {true} />)} */}
+            <div className="login-container text-left h-full w-full">
                 <form className="login" onSubmit={onSubmit}>
                     {/* email */}
                     <div className='text-left w-full'>
@@ -161,7 +164,7 @@ function Login(){
                     <button
                         type = "submit"
                         disabled = {isSigningIn}
-                        className={`flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                        className={`mt-5 flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
                                     hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
                                     ${isSigningIn ? "opacity-50 pointer-events-none" : ""}
                                 `}

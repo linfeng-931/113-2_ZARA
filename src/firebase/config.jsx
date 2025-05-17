@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDDApLiYFXlqmBzXO0fZ-E_rMhLFJ2fHc8",
@@ -14,7 +15,12 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+//用戶資料連線(id, password, email)
 const auth = getAuth(app);
 const analytics = getAnalytics(app);
 
-export {app, auth, analytics};
+//詳細資料連線(購物紀錄、喜歡、點數、優惠卷)
+const db = getFirestore(app);
+
+export {app, auth, analytics, db};

@@ -2,8 +2,9 @@ import { useDispatch } from "react-redux";
 import { addCartItems } from "../redux/cartSlice";
 import { Plus } from "lucide-react";
 import { useState } from "react";
+import PopUpLogin from "./auth/login/PopUpLogin";
 
-function AddToBasket({product, detail, size, qty}){
+function AddToBasket({userLoggedIn, product, detail, size, qty}){
     const [showToast, setShowToast] = useState(false);
     const dispatch = useDispatch();
 
@@ -27,6 +28,8 @@ function AddToBasket({product, detail, size, qty}){
         },2000);
     };
 
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleOpen = () => setIsOpen(!isOpen);
 
     return(
         <>
@@ -36,11 +39,15 @@ function AddToBasket({product, detail, size, qty}){
                         ${qty === 0? "pointer-events-none opacity-50":""}
                         ${typeof qty !== "number"? "pointer-events-none opacity-50":""}
                         `}
-                onClick={addToCart}
+                onClick={userLoggedIn ? addToCart : toggleOpen}
             >
                <p>ADD TO BASKET</p> 
                <Plus/>
             </button>
+            <PopUpLogin
+                isOpen={isOpen}
+                toggleModal={toggleOpen}
+            />
             {showToast &&(
                 <div className="toast z-9999">
                     <div className="alert w-72 md:w-full">

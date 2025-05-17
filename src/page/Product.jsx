@@ -9,8 +9,11 @@ import { Plus, Minus } from "lucide-react";
 import { CircleUserRound } from "lucide-react";
 // import ProductItem from "../compenents/ProductItem";
 import RelatedItem from "../compenents/RelatedItem";
+import { useAuth } from "../contexts/authContext";
+import PopUpLogin from "../compenents/auth/login/PopUpLogin";
 
 function Product() {
+  const {userLoggedIn} = useAuth();
   const { part1, part2 } = useParams();
   // console.log(part1, part2, `${part1}/${part2}/`);
   const product = products.find((x) => x.id == `${part1}/${part2}/`);
@@ -217,6 +220,7 @@ function Product() {
               </div>
               <div className="right md:w-full lg:w-60 mb-5">
                 <AddToBasket
+                  userLoggedIn = {userLoggedIn}
                   product={product}
                   detail={currentClass}
                   size_stock={currentClass.stock[Size]}
