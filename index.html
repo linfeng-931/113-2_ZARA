@@ -5,9 +5,27 @@
     <link rel="icon" type="image/svg+xml" href="/public/image/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZARA</title>
+    <style>
+      df-messenger {
+        --df-messenger-button-titlebar-color: #565656; /* 聊天視窗上方列 */
+        --df-messenger-chat-bubble-background: #565656; /* bot 訊息氣泡背景 */
+        --df-messenger-chat-bubble-text-color: #ffffff; /* bot 訊息字體顏色 */
+        --df-messenger-user-chat-bubble-background: #e0e0e0; /* 使用者訊息背景 */
+        --df-messenger-user-chat-bubble-text-color: #000000; /* 使用者訊息文字 */
+        --df-messenger-input-box-color: #ffffff; /* 輸入框背景 */
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="智慧客服"
+    chat-icon="/image/chat-bubble.png"
+    agent-id="948475de-12d9-4b37-be83-1c01ce3a7515"
+    language-code="zh-tw"
+  ></df-messenger>
 </html>

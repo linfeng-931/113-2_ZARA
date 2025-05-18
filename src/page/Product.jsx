@@ -143,7 +143,12 @@ function Product() {
             {/*add to cart*/}
             <div className="md:flex mt-1 w-full flex-wrap justify-between items-end">
               <div className="left qty-container w-72 md:w-full lg:w-60">
-                <p className="mb-1 hint">TOTAL PRICE : {product.sale? product.new_price[0] * qty : product.price * qty}</p>
+                <p className="mb-1 hint">
+                  TOTAL PRICE :{" "}
+                  {product.sale
+                    ? product.new_price[0] * qty
+                    : product.price * qty}
+                </p>
                 <div className="flex justify-between items-center selector h-12 w-full border-[1px] mb-5">
                   <div
                     className={`h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
@@ -299,7 +304,7 @@ function Product() {
         w-[80%] mt-40 mx-auto"
         >
           <div className="mb-8 text-start">
-            <h1>RELYTED PRODUCTS</h1>
+            <h1>RELATED PRODUCTS</h1>
             <div className="line w-60 h-[.5px] bg-black dark:bg-white"></div>
           </div>
           <div className="grid grid-cols-4  lg:grid-cols-8 gap-x-8 lg:gap-x-4 gap-y-[2.5rem] justify-between">

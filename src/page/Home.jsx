@@ -3,6 +3,7 @@ import Slide from "../compenents/Slide";
 import SlidesNav from "../compenents/SlidesNav";
 import cover from "../../json/coverImg.json";
 import Header from "../compenents/Header";
+import Footer from "../compenents/Footer";
 
 export default function Slides() {
   const [current, setCurrent] = useState(0);
@@ -79,7 +80,6 @@ export default function Slides() {
           isSliding={isSliding}
         />
       </main>
-      {/* <Footer></Footer> */}
     </div>
   );
 }
