@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 const Footer = () => {
   return (
     <footer className="grid grid-rows-[repeat(2,minmax(0,auto))] grid-cols-1 px-6 gap-8 lg:gap-0 lg:px-0 lg:grid-rows-[repeat(2, minmax(0, auto)] mt-16 lg:grid-cols-24 text-sm justify-center bg-[url(/image/footer.jpg)] text-white py-6 pt-24">
@@ -22,7 +23,7 @@ const Footer = () => {
           <a>寄送</a>
           <a>付款和發票</a>
           <a>我的購買</a>
-          <a>換貨、退貨和退款</a>
+          <Link to={`/questions/how-to`}>換貨、退貨和退款</Link>
           <a>ZARA 體驗</a>
         </nav>
         <nav className="flex flex-col gap-2">

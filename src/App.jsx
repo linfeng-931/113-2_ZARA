@@ -1,16 +1,17 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route} from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router";
 import Slides from "./page/Home";
 import Category from "./page/Category";
 import Product from "./page/Product";
 import ShoppingCartPage from "./page/ShoppingCartPage";
 import UserAccount from "./page/UserAccount";
 import UserDetail from "./page/UserDetail";
-import Register from "./page/Register"
+import Register from "./page/Register";
 import { selectCartItems } from "./redux/cartSlice";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import ForgetPassword from "./page/ForgetPassword";
+import HowTo from "./page/HowTo";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -29,7 +30,7 @@ function App() {
             <Route path="products">
               <Route path="category/:categoryName" element={<Category />} />
               <Route path="id/:part1/:part2/" element={<Product />} />
-              <Route path="shopping-cart" element={<ShoppingCartPage />} /> 
+              <Route path="shopping-cart" element={<ShoppingCartPage />} />
             </Route>
 
             <Route path="user">
@@ -37,6 +38,10 @@ function App() {
               <Route path="detail" element={<UserDetail />} />
               <Route path="register" element={<Register />} />
               <Route path="forgetpassword" element={<ForgetPassword />} />
+            </Route>
+
+            <Route path="questions">
+              <Route path="how-to" element={<HowTo />} />
             </Route>
 
             {/* 以下為有閒情再做的東西 */}

@@ -1,4 +1,6 @@
-export default function HowToReturn() {
+import Header from "../compenents/Header";
+import Footer from "../compenents/Footer";
+export default function HowTo() {
   return (
     <div>
       <Header />
