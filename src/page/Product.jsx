@@ -9,17 +9,20 @@ import { Plus, Minus } from "lucide-react";
 import { CircleUserRound } from "lucide-react";
 // import ProductItem from "../compenents/ProductItem";
 import RelatedItem from "../compenents/RelatedItem";
+import { useAuth } from "../contexts/authContext";
+import PopUpLogin from "../compenents/auth/login/PopUpLogin";
 
 function Product() {
+  const { userLoggedIn } = useAuth();
   const { part1, part2 } = useParams();
   // console.log(part1, part2, `${part1}/${part2}/`);
   const product = products.find((x) => x.id == `${part1}/${part2}/`);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [part1, part2]);
 
   //color
   const [pIndex, setproductClass] = useState(0);
+  const currentClass = product.class[pIndex]
+    ? product.class[pIndex]
+    : product.class[0];
 
   //size
   const [Size, setSize] = useState(0);
@@ -29,7 +32,7 @@ function Product() {
   const [isActiveImg, setisActiveImg] = useState(0);
 
   //qty
-  const [qty, setQty] = useState(product.class[pIndex].stock[Size] > 0 ? 1 : 0);
+  const [qty, setQty] = useState(1);
 
   //relyted
   const related_products = products
@@ -40,6 +43,27 @@ function Product() {
         x.id !== product.id
     )
     .slice(0, 4);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setproductClass(0);
+    setisActiveImg(0);
+    setSize(0);
+    if (currentClass.stock[Size] != 0) setQty(1);
+    else setQty(0);
+  }, [part1, part2]);
+
+  useEffect(() => {
+    if (currentClass.stock[Size] != 0) setQty(1);
+    else setQty(0);
+
+    setisActiveImg(0);
+  }, [pIndex]);
+
+  useEffect(() => {
+    if (currentClass.stock[Size] != 0) setQty(1);
+    else setQty(0);
+  }, [Size]);
 
   return (
     <>
@@ -52,7 +76,7 @@ function Product() {
           {/*image*/}
           <div className="left lg:col-span-4">
             <ImageScroller
-              images={product.class[pIndex].img}
+              images={currentClass.img}
               isActiveImg={isActiveImg}
               setisActiveImg={setisActiveImg}
             />
@@ -71,8 +95,8 @@ function Product() {
               <div className="mb-3">
                 <h1 className="mb-1">{product.name}</h1>
                 <p className="hint mb-4">
-                  {product.class[pIndex].color} | {product.id}
-                  {product.class[pIndex].class_id}
+                  {currentClass.color} | {product.id}
+                  {currentClass.class_id}
                 </p>
                 <div className="price-area flex flex-col lg:flex-row gap-2 lg:items-center">
                   <h1
@@ -117,19 +141,19 @@ function Product() {
                     key={index}
                     className={`circle flex items-center justify-center border-[1px] h-9 w-9 rounded-full hover:opacity-50 duration-150
                                     ${
-                                      product.class[pIndex].stock[index] === 0
-                                        ? "opacity-50 cursor-auto"
+                                      currentClass.stock[index] === 0
+                                        ? "opacity-50 pointer-events-none"
                                         : "cursor-pointer"
                                     }
                                     ${
-                                      product.class[pIndex].stock[index] !==
-                                        0 && Size === index
+                                      currentClass.stock[index] !== 0 &&
+                                      Size === index
                                         ? "text-white bg-black cursor-pointer dark:text-black dark:bg-white"
                                         : ""
                                     }
                                 `}
                     onClick={() => {
-                      if (product.class[pIndex].stock[index] === 0) return;
+                      if (currentClass.stock[index] === 0) return;
                       setSize(index);
                     }}
                   >
@@ -137,12 +161,12 @@ function Product() {
                   </div>
                 ))}
               </div>
-              <p>STOCK:{product.class[pIndex].stock[Size]}</p>
+              <p>STOCK:{currentClass.stock[Size]}</p>
             </div>
 
             {/*add to cart*/}
             <div className="md:flex mt-1 w-full flex-wrap justify-between items-end">
-              <div className="left qty-container w-72 md:w-full lg:w-60">
+              <div className="left qty-container w-[100%] lg:w-60">
                 <p className="mb-1 hint">
                   TOTAL PRICE :{" "}
                   {product.sale
@@ -153,11 +177,11 @@ function Product() {
                   <div
                     className={`h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
                                 ${
-                                  qty === 1
+                                  qty === 0
                                     ? "opacity-50 pointer-events-none"
                                     : ""
                                 }
-                                ${qty <= 0 ? setQty(1) : ""}
+                                ${qty < 0 ? setQty(0) : ""}
                                 `}
                     onClick={() => setQty(qty - 1)}
                   >
@@ -169,25 +193,30 @@ function Product() {
                     placeholder="0"
                     className="text-center input border-none h-[33px] w-[55%]"
                     onChange={(e) => {
-                      if (e.target.value > product.class[pIndex].stock[Size]) {
-                        setQty(product.class[pIndex].stock[Size]);
-                      } else if (e.target.value < 1) {
+                      if (e.target.value > currentClass.stock[Size]) {
+                        setQty(currentClass.stock[Size]);
+                      } else if (
+                        e.target.value < 1 &&
+                        currentClass.stock[Size] != 0
+                      ) {
                         setQty(1);
+                      } else if (currentClass.stock[Size] === 0) {
+                        setQty(0);
                       } else setQty(e.target.value);
                     }}
                   />
                   <div
                     className={`h-12 w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
                                 ${
-                                  qty === product.class[pIndex].stock[Size] - 1
+                                  qty === currentClass.stock[Size] - 1 ||
+                                  currentClass.stock[Size] === 0
                                     ? "opacity-50 pointer-events-none"
                                     : ""
                                 }
                                 ${
-                                  qty >= product.class[pIndex].stock[Size]
-                                    ? setQty(
-                                        product.class[pIndex].stock[Size] - 1
-                                      )
+                                  qty >= currentClass.stock[Size] &&
+                                  currentClass.stock[Size] != 0
+                                    ? setQty(currentClass.stock[Size] - 1)
                                     : ""
                                 }
                                 `}
@@ -199,9 +228,10 @@ function Product() {
               </div>
               <div className="right md:w-full lg:w-60 mb-5">
                 <AddToBasket
+                  userLoggedIn={userLoggedIn}
                   product={product}
-                  detail={product.class[pIndex]}
-                  size_stock={product.class[pIndex].stock[Size]}
+                  detail={currentClass}
+                  size_stock={currentClass.stock[Size]}
                   size={Size}
                   qty={qty}
                 />
@@ -209,7 +239,7 @@ function Product() {
             </div>
 
             <div className="line mb-15 mt-10 w-full h-[1px] bg-black dark:bg-white opacity-20"></div>
-            <div className="size-chart w-72 md:w-full">
+            <div className="size-chart w-[100%]">
               <p className="hint mb-4">SIZE CHART</p>
               <img
                 className="w-full hidden md:block dark:hidden"
@@ -250,9 +280,7 @@ function Product() {
           <div className="right md:col-span-2 overflow-hidden h-40 md:h-90 rounded-[10px]">
             <img
               className="w-full h-120 object-cover object-center"
-              src={
-                product.class[pIndex].img[product.class[pIndex].img.length - 1]
-              }
+              src={currentClass.img[currentClass.img.length - 1]}
             />
           </div>
         </div>
@@ -266,7 +294,7 @@ function Product() {
           <div className="mb-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {product.reviews.map((review, index) => (
               <div key={index}>
-                <div className="review h-auto md:60  w-full rounded-[10px] p-5 pl-8 pr-8 text-left grid border-[1px] border-black/30 dark:border-white/60">
+                <div className="review h-[100%] md:60  w-full rounded-[10px] p-5 pl-8 pr-8 text-left grid border-[1px] border-black/30 dark:border-white/60">
                   <div className="rating items-end mb-8">
                     {Array(5)
                       .keys()
