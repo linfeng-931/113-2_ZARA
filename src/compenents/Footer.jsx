@@ -23,7 +23,7 @@ const Footer = () => {
           <a>寄送</a>
           <a>付款和發票</a>
           <a>我的購買</a>
-          <Link to={`/questions/how-to`}>換貨、退貨和退款</Link>
+          <Link to={`/help-center/how-to`}>換貨、退貨和退款</Link>
           <a>ZARA 體驗</a>
         </nav>
         <nav className="flex flex-col gap-2">

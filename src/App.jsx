@@ -12,6 +12,7 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import ForgetPassword from "./page/ForgetPassword";
 import HowTo from "./page/HowTo";
+import PaymentMethods from "./page/PaymentMethods";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -40,8 +41,9 @@ function App() {
               <Route path="forgetpassword" element={<ForgetPassword />} />
             </Route>
 
-            <Route path="questions">
+            <Route path="help-center">
               <Route path="how-to" element={<HowTo />} />
+              <Route path="paymentmethods" element={<PaymentMethods />} />
             </Route>
 
             {/* 以下為有閒情再做的東西 */}
