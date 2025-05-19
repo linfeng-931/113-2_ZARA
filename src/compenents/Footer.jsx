@@ -21,7 +21,7 @@ const Footer = () => {
           <hr />
           <a>商品和尺寸</a>
           <a>寄送</a>
-          <a>付款和發票</a>
+          <Link to={`/help-center/paymentmethods`}>付款和發票</Link>
           <a>我的購買</a>
           <Link to={`/help-center/how-to`}>換貨、退貨和退款</Link>
           <a>ZARA 體驗</a>
