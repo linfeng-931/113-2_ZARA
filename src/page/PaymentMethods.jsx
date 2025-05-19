@@ -1,6 +1,8 @@
 import Header from "../compenents/Header";
 import Footer from "../compenents/Footer";
 import Payment from "../compenents/Payment";
+import Invoices from "../compenents/Invoices";
+import SecurePurchasing from "../compenents/SecurePurchasing";
 import { useState } from "react";
 
 export default function PaymentMethods() {
