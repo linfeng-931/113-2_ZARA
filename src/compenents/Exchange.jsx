@@ -10,7 +10,7 @@ export default function Exchange() {
       </div>
       <div className="mt-10">
         <h1 className="mb-4 font-semibold">換貨條件</h1>
-        <ol className="list-disc flex flex-col text-left text-sm gap-6">
+        <ol className="list-disc flex flex-col text-left text-sm gap-6 ml-4">
           <li className="leading-8">
             您需於規定期限內辦理換貨： <br />
             <b>實體商店購買</b>： 自購買之日起算<b>30天</b>內有效。

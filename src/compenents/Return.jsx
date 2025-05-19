@@ -13,7 +13,7 @@ export default function Return() {
       </div>
       <div className="mt-10">
         <h1 className="mb-4 font-semibold">退貨條件</h1>
-        <ol className="list-disc flex flex-col text-left text-sm gap-6">
+        <ol className="list-disc flex flex-col text-left text-sm gap-6 ml-4">
           <li className="leading-8">
             您需在規定<b>期限</b>內辦理退貨： <br />
             <b>網上購買</b>： 自您的訂單出貨之日起算<b>30天</b>內有效。
