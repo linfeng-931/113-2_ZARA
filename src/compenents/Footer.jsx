@@ -42,7 +42,7 @@ const Footer = () => {
           <hr />
           <Link to={`/company/company-corp`}>我們是誰</Link>
           <a>商店</a>
-          <a>與我們共事</a>
+          <Link to={`/company/work-with-us`}>與我們共事</Link>
         </nav>
         <nav className="flex flex-col gap-2">
           <h6>方針</h6>

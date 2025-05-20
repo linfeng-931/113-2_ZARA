@@ -18,6 +18,7 @@ import ScrollToTop from "./compenents/ScrollToTop";
 import Size from "./page/Size";
 import Purchases from "./page/Purchases";
 import Company from "./page/Company";
+import WorkWithUs from "./page/WorkWithUs";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -57,6 +58,7 @@ function App() {
 
             <Route path="company">
               <Route path="company-corp" element={<Company />} />
+              <Route path="work-with-us" element={<WorkWithUs />} />
             </Route>
 
             {/* 以下為有閒情再做的東西 */}
