@@ -17,6 +17,7 @@ import DeliveryMethods from "./page/DeliveryMethods";
 import ScrollToTop from "./compenents/ScrollToTop";
 import Size from "./page/Size";
 import Purchases from "./page/Purchases";
+import Company from "./page/Company";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -52,6 +53,10 @@ function App() {
               <Route path="deliverymethods" element={<DeliveryMethods />} />
               <Route path="size" element={<Size />} />
               <Route path="purchases" element={<Purchases />} />
+            </Route>
+
+            <Route path="company">
+              <Route path="company-corp" element={<Company />} />
             </Route>
 
             {/* 以下為有閒情再做的東西 */}

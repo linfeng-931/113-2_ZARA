@@ -37,11 +37,10 @@ const Footer = () => {
           <a>PINTEREST</a>
           <a>YOUTUBE</a>
         </nav>
-        <nav className="flex flex-col gap-2">
+        <nav className="flex flex-col gap-2 cursor-pointer">
           <h6>公司</h6>
           <hr />
-          <a>JOIN LIFE</a>
-          <a>辦事處</a>
+          <Link to={`/company/company-corp`}>我們是誰</Link>
           <a>商店</a>
           <a>與我們共事</a>
         </nav>
