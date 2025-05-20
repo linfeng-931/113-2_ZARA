@@ -15,11 +15,11 @@ const Footer = () => {
           更多資訊請參訪 Inditex 集團的首頁： www.inditex.comss
         </p>
       </aside>
-      <section className="w-full flex  flex-col lg:flex-row lg:justify-evenly gap-8 lg:col-span-16 lg:col-start-8 text-left">
+      <section className="w-full flex  flex-col lg:flex-row lg:justify-evenly gap-8 lg:col-span-16 lg:col-start-8 text-left cursor-pointer">
         <nav className="flex flex-col gap-2">
           <h6>協助</h6>
           <hr />
-          <a>商品和尺寸</a>
+          <Link to={`/help-center/size`}>商品和尺寸</Link>
           <Link to={`/help-center/deliverymethods`}>寄送</Link>
           <Link to={`/help-center/paymentmethods`}>付款和發票</Link>
           <a>我的購買</a>

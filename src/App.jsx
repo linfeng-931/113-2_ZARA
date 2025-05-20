@@ -14,7 +14,8 @@ import ForgetPassword from "./page/ForgetPassword";
 import HowTo from "./page/HowTo";
 import PaymentMethods from "./page/PaymentMethods";
 import DeliveryMethods from "./page/DeliveryMethods";
-
+import ScrollToTop from "./compenents/ScrollToTop";
+import Size from "./page/Size";
 function App() {
   const cartItems = useSelector(selectCartItems);
 
@@ -26,6 +27,7 @@ function App() {
     <>
       <div data-theme="">
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Slides />} />
 
@@ -46,6 +48,7 @@ function App() {
               <Route path="how-to" element={<HowTo />} />
               <Route path="paymentmethods" element={<PaymentMethods />} />
               <Route path="deliverymethods" element={<DeliveryMethods />} />
+              <Route path="size" element={<Size />} />
             </Route>
 
             {/* 以下為有閒情再做的東西 */}

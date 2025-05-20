@@ -27,19 +27,25 @@ export default function PaymentMethods() {
           <p className="mb-6 font-bold">付款和發票</p>
           <button
             onClick={() => setCurrentTab("payment")}
-            className="text-left cursor-pointer"
+            className={`text-left cursor-pointer  ${
+              currentTab == "payment" ? "opacity-100" : "opacity-50"
+            }  hover:opacity-100 `}
           >
             付款方式
           </button>
           <button
             onClick={() => setCurrentTab("secure")}
-            className="text-left cursor-pointer"
+            className={`text-left cursor-pointer  ${
+              currentTab == "secure" ? "opacity-100" : "opacity-50"
+            }  hover:opacity-100 `}
           >
             支付安全
           </button>
           <button
             onClick={() => setCurrentTab("invoices")}
-            className="text-left cursor-pointer"
+            className={`text-left cursor-pointer  ${
+              currentTab == "invoices" ? "opacity-100" : "opacity-50"
+            }  hover:opacity-100 `}
           >
             發票
           </button>

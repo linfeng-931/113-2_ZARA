@@ -27,19 +27,27 @@ export default function DeliveryMethods() {
           <p className="mb-6 font-bold">寄送</p>
           <button
             onClick={() => setCurrentTab("delivery")}
-            className="text-left cursor-pointer"
+            className={`text-left cursor-pointer  ${
+              currentTab == "delivery" ? "opacity-100" : "opacity-50"
+            }  hover:opacity-100 `}
           >
             配送方式、時間和費用
           </button>
           <button
             onClick={() => setCurrentTab("splitorders")}
-            className="text-left cursor-pointer"
+            className={`text-left cursor-pointer  ${
+              currentTab == "splitorders" ? "opacity-100" : "opacity-50"
+            }  hover:opacity-100 `}
           >
             分次配送的訂單
           </button>
           <button
             onClick={() => setCurrentTab("deliveryrestrictions")}
-            className="text-left cursor-pointer"
+            className={`text-left cursor-pointer  ${
+              currentTab == "deliveryrestrictions"
+                ? "opacity-100"
+                : "opacity-50"
+            }  hover:opacity-100 `}
           >
             寄送地址
           </button>

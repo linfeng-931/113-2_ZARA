@@ -30,25 +30,33 @@ export default function HowTo() {
           <p className="mb-6 font-bold">換貨、退貨和退款</p>
           <button
             onClick={() => setCurrentTab("return")}
-            className="text-left cursor-pointer"
+            className={`text-left cursor-pointer  ${
+              currentTab == "return" ? "opacity-100" : "opacity-50"
+            }  hover:opacity-100 `}
           >
             如何退貨
           </button>
           <button
             onClick={() => setCurrentTab("exchange")}
-            className="text-left cursor-pointer"
+            className={`text-left cursor-pointer  ${
+              currentTab == "exchange" ? "opacity-100" : "opacity-50"
+            }  hover:opacity-100 `}
           >
             換貨方式
           </button>
           <button
             onClick={() => setCurrentTab("refund")}
-            className="text-left cursor-pointer"
+            className={`text-left cursor-pointer  ${
+              currentTab == "refund" ? "opacity-100" : "opacity-50"
+            }  hover:opacity-100 `}
           >
             退貨款項
           </button>
           <button
             onClick={() => setCurrentTab("special")}
-            className="text-left cursor-pointer"
+            className={`text-left cursor-pointer  ${
+              currentTab == "special" ? "opacity-100" : "opacity-50"
+            }  hover:opacity-100 `}
           >
             退貨特殊條款
           </button>
