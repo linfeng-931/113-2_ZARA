@@ -15,16 +15,15 @@ const Footer = () => {
           更多資訊請參訪 Inditex 集團的首頁： www.inditex.comss
         </p>
       </aside>
-      <section className="w-full flex  flex-col lg:flex-row lg:justify-evenly gap-8 lg:col-span-16 lg:col-start-8 text-left cursor-pointer">
-        <nav className="flex flex-col gap-2">
+      <section className="w-full flex  flex-col lg:flex-row lg:justify-evenly gap-8 lg:col-span-16 lg:col-start-8 text-left ">
+        <nav className="flex flex-col gap-2 cursor-pointer">
           <h6>協助</h6>
           <hr />
           <Link to={`/help-center/size`}>商品和尺寸</Link>
           <Link to={`/help-center/deliverymethods`}>寄送</Link>
           <Link to={`/help-center/paymentmethods`}>付款和發票</Link>
-          <a>我的購買</a>
+          <Link to={`/help-center/purchases`}>我的購買</Link>
           <Link to={`/help-center/how-to`}>換貨、退貨和退款</Link>
-          <a>ZARA 體驗</a>
         </nav>
         <nav className="flex flex-col gap-2">
           <h6>請跟隨我們</h6>
