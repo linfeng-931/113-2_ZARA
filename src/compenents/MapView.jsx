@@ -35,10 +35,9 @@ const storeList = [
 export default function MapView({ selectedStore }) {
   return (
     <MapContainer
-      center={[25.033964, 121.564468]} // 台北 101 經緯度
+      center={[25.033964, 121.564468]}
       zoom={13}
-      style={{ height: "60vh", width: "80vw" }}
-      className="m-auto mt-10 z-0"
+      className="w-full lg:flex-1 h-[450px] z-0"
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

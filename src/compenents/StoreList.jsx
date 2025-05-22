@@ -6,7 +6,7 @@ export default function StoreList({ onSelect }) {
       openTime: 1100,
       closeTime: 2200,
       open: false,
-      city: "台北",
+      city: "台北市",
       category: ["Woman", "Man", "Kids"],
     },
     {
@@ -15,16 +15,16 @@ export default function StoreList({ onSelect }) {
       openTime: 1100,
       closeTime: 2200,
       open: false,
-      city: "台北",
+      city: "台北市",
       category: ["Woman", "Man", "Kids"],
     },
     {
       name: "台北統領店",
       position: [25.050008152666653, 121.55109994267876],
-      openTime: 1100,
-      closeTime: 2200,
+      openTime: 1030,
+      closeTime: 2230,
       open: false,
-      city: "台北",
+      city: "台北市",
       category: ["Woman", "Man", "Kids"],
     },
     {
@@ -33,7 +33,7 @@ export default function StoreList({ onSelect }) {
       openTime: 1100,
       closeTime: 2200,
       open: false,
-      city: "台北",
+      city: "台北市",
       category: ["Woman", "Man", "Kids"],
     },
     {
@@ -42,7 +42,7 @@ export default function StoreList({ onSelect }) {
       openTime: 1100,
       closeTime: 2200,
       open: false,
-      city: "台北",
+      city: "桃園縣",
       category: ["Woman", "Man", "Kids"],
     },
     {
@@ -51,7 +51,7 @@ export default function StoreList({ onSelect }) {
       openTime: 1100,
       closeTime: 2200,
       open: false,
-      city: "台北",
+      city: "桃園縣",
       category: ["Woman", "Man", "Kids"],
     },
   ];
@@ -75,20 +75,31 @@ export default function StoreList({ onSelect }) {
   });
 
   return (
-    <div className="absolute left-42 top-36 z-100  bg-white text-gray-500 text-left px-8 py-4">
-      <h1 className="font-semibold mb-4">STORE LOCATOR</h1>
+    <div className="lg:w-[300px] w-full   lg:p-4 overflow-y-auto max-h-[650px] ">
+      <h1 className="font-semibold mb-2 text-left">STORE LOCATOR</h1>
 
-      <ul className="w-64  space-y-2 gap-4">
+      <ul className="space-y-3 h-[400px]">
         {stores.map((store, index) => (
-          <li key={index}>
+          <li key={index} className="w-[90%]">
             <button
-              className="w-full text-left hover:bg-gray-200"
+              className="w-full text-left hover:bg-gray-100 text-sm font-semibold cursor-pointer mb-2 flex flex-row justify-between"
               onClick={() => onSelect(store)}
             >
               {store.name}
+              <i className="ri-arrow-drop-right-line block"></i>
             </button>
-            <br />
-            {store.open ? "營業中" : "休息中"}
+            <div className="text-xs text-left mb-2 ">{store.city}</div>
+            <div className="flex gap-2 items-center text-xs">
+              <div
+                className={`w-2 h-2 rounded-full ${
+                  store.open ? "bg-cyan-500" : "bg-pink-500"
+                }`}
+              ></div>
+              {store.open ? "營業中" : "休息中"}
+            </div>
+            <div className="flex gap-1 text-xs ">
+              {store.category.join(" | ")}
+            </div>
           </li>
         ))}
       </ul>
