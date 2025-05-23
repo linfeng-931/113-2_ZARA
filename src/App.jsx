@@ -19,6 +19,7 @@ import Size from "./page/Size";
 import Purchases from "./page/Purchases";
 import Company from "./page/Company";
 import WorkWithUs from "./page/WorkWithUs";
+import Location from "./page/Location";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -59,6 +60,7 @@ function App() {
             <Route path="company">
               <Route path="company-corp" element={<Company />} />
               <Route path="work-with-us" element={<WorkWithUs />} />
+              <Route path="location" element={<Location />} />
             </Route>
 
             {/* 以下為有閒情再做的東西 */}

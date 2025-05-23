@@ -1,18 +1,33 @@
-import { Link } from "react-router";
+import Phrase from "./Phrase";
+import React, { useRef } from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
 
-export default function Slide({ current, bg, active }) {
+export default function Slide({ src, left, direction = 1 }) {
+  const slideRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: slideRef,
+    offset: ["start end", "end start"],
+  });
+
+  // 根據方向決定滾動範圍，direction 為 1 向右，-1 向左
+  const x = useTransform(
+    scrollYProgress,
+    [0, 1],
+    direction === 1 ? ["-100%", "0%"] : ["0%", "-100%"]
+  );
+
   return (
-    <Link to={`/products/category/${current.category}`}>
-      <section
-        className={`absolute inset-0 transition-opacity duration-700 ${
-          active ? "z-20 opacity-100" : "z-0 opacity-0"
-        }`}
+    <div ref={slideRef} className="relative">
+      <motion.div
+        style={{ x, left: left }}
+        className="relative flex whitespace-nowrap"
       >
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-all duration-1000"
-          style={{ backgroundImage: `url(${bg})` }}
-        />
-      </section>
-    </Link>
+        <Phrase src={src} />
+        <Phrase src={src} />
+        <Phrase src={src} />
+        <Phrase src={src} />
+      </motion.div>
+    </div>
   );
 }
