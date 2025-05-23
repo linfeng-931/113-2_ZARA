@@ -2,6 +2,7 @@ import Intro from "../compenents/Intro";
 import Description from "../compenents/Description";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Vertical from "../compenents/Vertical";
+import Header from "../compenents/Header";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -11,7 +12,8 @@ export default function Home() {
     restDelta: 0.001,
   });
   return (
-    <main className="bg-white">
+    <main>
+      <Header />
       <Intro />
       <Description />
       <div className="bg-black min-h-screen">
@@ -23,19 +25,18 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="text-center text-white z-10"
           >
-            <h1 className="text-6xl md:text-8xl font-bold mb-8">視差畫廊</h1>
-            <p className="text-xl md:text-2xl text-gray-300">
-              滾動探索視差動畫效果
-            </p>
+            <div className="text-2xl md:text-4xl font-bold mb-8 tracking-wider">
+              2025 DOTS COLLECTION
+            </div>
           </motion.div>
 
           {/* 背景動畫 */}
           <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20" />
-            {[...Array(50)].map((_, i) => (
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-600 to-black" />
+            {[...Array(8)].map((_, i) => (
               <motion.div
                 key={i}
-                className="absolute w-1 h-1 bg-white rounded-full"
+                className="absolute w-4 h-4 bg-white rounded-full"
                 style={{
                   left: `${Math.random() * 100}%`,
                   top: `${Math.random() * 100}%`,
@@ -55,8 +56,12 @@ export default function Home() {
         </section>
 
         {/* 圖片區域 */}
-        {[1, 2, 3, 4, 5].map((imageId) => (
-          <Vertical key={imageId} id={imageId} />
+        {[
+          { img: "image/cover/computer/new-stuff-1.jpg", text: "THE NEW" },
+          { img: "image/cover/computer/new-stuff-2.jpg", text: "SS25" },
+          { img: "image/cover/computer/new-stuff-3.jpg", text: "COLLECTION" },
+        ].map((src, idx) => (
+          <Vertical key={idx} id={src} />
         ))}
 
         {/* 結尾區域 */}
@@ -64,17 +69,15 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="text-center text-white"
+            transition={{ duration: 3 }}
           >
-            <h2 className="text-4xl md:text-6xl font-bold mb-4">感謝觀看</h2>
-            <p className="text-lg text-gray-400">視差滾動動畫展示完成</p>
+            <img src="/image/dots_logo.png" alt="" />
           </motion.div>
         </section>
 
         {/* 滾動進度條 */}
         <motion.div
-          className="fixed top-0 left-0 right-0 h-2 bg-gradient-to-r from-purple-500 to-blue-500 transform-origin-left z-50"
+          className="fixed top-0 left-0 right-0 h-2 bg-gradient-to-r from-gray-600 to-black transform-origin-left z-50"
           style={{ scaleX }}
         />
       </div>
