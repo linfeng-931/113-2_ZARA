@@ -118,7 +118,7 @@ function Login(){
 
                     {/* password */}
                     <div className='text-left w-full'>
-                            <label htmlFor="input-group-1">Password</label>
+                        <label htmlFor="input-group-1">Password</label>
                             
                         <div className="relative mb-1">
                             <input 
