@@ -22,7 +22,7 @@ export default function Vertical({ id }) {
   return (
     <section
       className={`relative h-screen flex flex-col-reverse gap-2 lg:gap-0 items-center justify-center overflow-hidden ${
-        id.text === "SS25" ? "lg:flex-row-reverse" : "lg:flex-row"
+        id.text === "SS2025" ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
       <motion.div
