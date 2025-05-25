@@ -12,6 +12,7 @@ import {
 } from "../redux/cartSlice";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
+import OrderHistory from "../compenents/auth/detail/OrderHistory";
 
 function UserDetail() {
   const { userLoggedIn } = useAuth();
@@ -149,6 +150,11 @@ function UserDetail() {
           {!loading && profile && isActive == 0 && (
             <div>
               <Profile profile = {profile}/>
+            </div>
+          )}
+          {!loading && profile && isActive == 1 && (
+            <div>
+              <OrderHistory orderhistory = {profile.orderhistory}/>
             </div>
           )}
         </div>

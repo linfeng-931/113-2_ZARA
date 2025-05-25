@@ -1,8 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// 安全解析 localStorage 資料
+function loadCartItems() {
+  try {
+    const data = localStorage.getItem("cartItems");
+    return data ? JSON.parse(data) : [];
+  } catch (e) {
+    console.error("Invalid cartItems in localStorage:", e);
+    return [];
+  }
+}
 //Define Slice
 const initialState = {
-  cartItems: JSON.parse(localStorage.getItem("cartItems")) || [],
+  cartItems: loadCartItems(),
 };
 const cartSlice = createSlice({
   name: "cart",
@@ -28,6 +38,10 @@ const cartSlice = createSlice({
     setCartItems: (state, action) => {
       state.cartItems = action.payload;
     },
+    clearCartItems: (state) => {
+      state.cartItems = [];
+      localStorage.removeItem("cartItems");
+    },
   },
 });
 
@@ -35,7 +49,7 @@ const cartSlice = createSlice({
 export const selectCartItems = (state) => state.cart.cartItems;
 
 //export actions to global
-export const { addCartItems, removeCartItems, setCartItems } =
+export const { addCartItems, removeCartItems, setCartItems, clearCartItems } =
   cartSlice.actions;
 
 //export reducer to global
