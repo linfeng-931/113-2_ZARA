@@ -20,6 +20,7 @@ import Purchases from "./page/Purchases";
 import Company from "./page/Company";
 import WorkWithUs from "./page/WorkWithUs";
 import Location from "./page/Location";
+import CartInit from "./compenents/auth/CartInite";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <>
+      <CartInit/>
       <div data-theme="">
         <BrowserRouter>
           <ScrollToTop />

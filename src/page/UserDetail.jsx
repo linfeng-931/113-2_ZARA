@@ -6,9 +6,18 @@ import { useAuth } from "../contexts/authContext";
 import { doSignOut } from "../firebase/auth";
 import { auth } from "../firebase/config";
 import Profile from "../compenents/auth/detail/Profile";
+import { useSelector } from "react-redux";
+import {
+  selectCartItems
+} from "../redux/cartSlice";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../firebase/config";
 
 function UserDetail() {
   const { userLoggedIn } = useAuth();
+  let cartItems = useSelector(selectCartItems);
+  console.log(cartItems);
+
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [isActive, setisActive] = useState(0);
@@ -34,6 +43,15 @@ function UserDetail() {
 
   const handleSignOut = async () => {
     try {
+      const currentUser = auth.currentUser;
+      if (currentUser && cartItems.length > 0) {
+        const userDocRef = doc(db, "user", currentUser.uid);
+        await setDoc(userDocRef, { cart: cartItems }, { merge: true });
+        console.log("Cart uploaded before sign out.");
+      }
+
+      cartItems = null;
+
       await doSignOut();
       // 可選擇導向登入頁或顯示訊息
     } catch (err) {

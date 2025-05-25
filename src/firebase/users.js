@@ -29,3 +29,15 @@ export const updateUserProfile = async (uid, data) => {
   const userRef = doc(db, "user", uid);
   await updateDoc(userRef, data);
 };
+
+export const getUserCart = async (uid) => {
+  const userRef = doc(db, "user", uid);
+  const docSnap = await getDoc(userRef);
+  console.log(userRef);
+  if (docSnap.exists()) {
+    const data = docSnap.data();
+    return data.cart || []; // 如果沒 cart 欄位就回傳空陣列
+  } else {
+    return [];
+  }
+};

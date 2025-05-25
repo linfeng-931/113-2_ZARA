@@ -33,9 +33,8 @@ function Header() {
 
           <div className="line hidden md:block h-12 w-[1px] bg-black dark:bg-white opacity-50"></div>
 
-          <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap hover:opacity-50 cursor-pointer">
-            <Cart />
-            <p>Cart</p>
+          <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap">
+            <Cart userLoggedIn={userLoggedIn}/>
           </div>
           
           <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap hover:opacity-50 cursor-pointer">
