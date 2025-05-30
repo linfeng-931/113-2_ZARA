@@ -11,6 +11,7 @@ import { CircleUserRound } from "lucide-react";
 import RelatedItem from "../compenents/RelatedItem";
 import { useAuth } from "../contexts/authContext";
 import { getProduct } from "../firebase/product";
+import WriteReview from "../compenents/WriteReview";
 
 function Product() {
   const { userLoggedIn } = useAuth();
@@ -308,7 +309,7 @@ function Product() {
             <div className="line w-60 h-[.5px] bg-black dark:bg-white"></div>
           </div>
           <div className="mb-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {productReview && Object.values(productReview.reviews ?? {}).map((review, index) => (
+            {productReview && Object.keys(productReview.reviews ?? {}).length > 0 ? Object.values(productReview.reviews ?? {}).map((review, index) => (
               <div key={index}>
                 <div className="review h-[100%] md:60  w-full rounded-[10px] p-5 pl-8 pr-8 text-left grid border-[1px] border-black/30 dark:border-white/60">
                   <div className="rating items-end mb-8">
@@ -342,8 +343,12 @@ function Product() {
                   </div>
                 </div>
               </div>
-            ))}
+            )): 
+            <p className="hint text-left">目前暫無評論</p>
+            }
           </div>
+
+          <WriteReview/>
         </div>
 
         {/*relyted products*/}
