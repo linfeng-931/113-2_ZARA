@@ -1,15 +1,19 @@
 import { useDispatch, useSelector } from "react-redux";
 import {
   addCartItems,
+  clearCartItems,
   removeCartItems,
   selectCartItems,
 } from "../redux/cartSlice";
 import { Link } from "react-router";
 import { Minus, X, Plus, ArrowRight } from "lucide-react";
+import { doc, arrayUnion, updateDoc } from "firebase/firestore";
+import { db } from "../firebase/config";
+import { auth } from "../firebase/config";
 
 function BasketModal() {
   const dispatch = useDispatch();
-  const cartItems = useSelector(selectCartItems);
+  let cartItems = useSelector(selectCartItems);
   console.log(cartItems);
   const getTotalPrice = () => {
     return cartItems.length > 0
@@ -17,6 +21,35 @@ function BasketModal() {
       : 0;
   };
   const size_list = ["S", "M", "L", "XL"];
+
+  const handleCheckOut = async () => {
+  try {
+    const currentUser = auth.currentUser;
+
+    if (currentUser && cartItems.length > 0) {
+
+      // 建立訂單物件
+      const order = {
+        items: cartItems,
+        time: new Date().toLocaleString("zh-TW", { hour12: false }),
+      };
+
+      const userDocRef = doc(db, "user", currentUser.uid);
+
+      // 將訂單 push 進 orderhistory 陣列中
+      await updateDoc(userDocRef, {
+        orderhistory: arrayUnion(order),
+      });
+
+      console.log("orderhistory uploaded.");
+    }
+
+    dispatch(clearCartItems());
+  } catch (err) {
+    console.error("Check Out error:", err);
+  }
+};
+
 
   return (
     <>
@@ -174,8 +207,9 @@ function BasketModal() {
                 <div
                   className="flex h-12 w-60 justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
                                 hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
+                  onClick={handleCheckOut}
                 >
-                  <p>Checkout</p>
+                  <p>CHECKOUT NOW</p>
                   <ArrowRight className="h-4" />
                 </div>
               </Link>
@@ -236,17 +270,17 @@ function BasketModal() {
                   <div className="flex justify-between mb-2 md:mb-4 items-center selector h-[40px] w-full border-[1px]">
                     <div
                       className={`h-[40px] w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
-                                                            ${
-                                                              item.qty === 1
-                                                                ? "opacity-50 pointer-events-none"
-                                                                : ""
-                                                            }
-                                                            ${
-                                                              item.qty <= 0
-                                                                ? (item.qty = 1)
-                                                                : ""
-                                                            }
-                                                            `}
+                                ${
+                                  item.qty === 1
+                                    ? "opacity-50 pointer-events-none"
+                                    : ""
+                                }
+                                ${
+                                  item.qty <= 0
+                                    ? (item.qty = 1)
+                                    : ""
+                                }
+                                `}
                       onClick={() => {
                         if (item.qty > 1) {
                           dispatch(
@@ -268,22 +302,22 @@ function BasketModal() {
                     />
                     <div
                       className={`h-[40px] w-12 flex justify-center items-center bg-black dark:bg-white hover:opacity-50 duration-150 cursor-pointer
-                                                            ${
-                                                              item.qty ===
-                                                              item.countInStock -
-                                                                1
-                                                                ? "opacity-50 pointer-events-none"
-                                                                : ""
-                                                            }
-                                                            ${
-                                                              item.qty >=
-                                                              item.countInStock
-                                                                ? (item.qty =
-                                                                    item.countInStock -
-                                                                    1)
-                                                                : ""
-                                                            }
-                                                            `}
+                                ${
+                                  item.qty ===
+                                  item.countInStock -
+                                    1
+                                    ? "opacity-50 pointer-events-none"
+                                    : ""
+                                }
+                                ${
+                                  item.qty >=
+                                  item.countInStock
+                                    ? (item.qty =
+                                        item.countInStock -
+                                        1)
+                                    : ""
+                                }
+                                `}
                       onClick={() => {
                         if (item.qty < item.countInStock) {
                           dispatch(
@@ -335,15 +369,14 @@ function BasketModal() {
               </div>
 
               {/* Checkout Button */}
-              <Link to="/">
-                <div
-                  className="flex h-12 w-60 justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
-                                        hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
-                >
-                  <p>CHECKOUT NOW</p>
-                  <ArrowRight className="h-4" />
-                </div>
-              </Link>
+              <div
+                className="flex h-12 w-60 justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                                      hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
+                onClick={handleCheckOut}
+              >
+                <p>CHECKOUT NOW</p>
+                <ArrowRight className="h-4" />
+              </div>
             </div>
           )}
         </div>

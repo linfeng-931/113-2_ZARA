@@ -10,13 +10,30 @@ import { CircleUserRound } from "lucide-react";
 // import ProductItem from "../compenents/ProductItem";
 import RelatedItem from "../compenents/RelatedItem";
 import { useAuth } from "../contexts/authContext";
-import PopUpLogin from "../compenents/auth/login/PopUpLogin";
+import { getProduct } from "../firebase/product";
+import WriteReview from "../compenents/WriteReview";
 
 function Product() {
   const { userLoggedIn } = useAuth();
   const { part1, part2 } = useParams();
   // console.log(part1, part2, `${part1}/${part2}/`);
   const product = products.find((x) => x.id == `${part1}/${part2}/`);
+  
+  const [productReview, setProductReview] = useState(null);
+  useEffect(() => {
+  const fetchProductReview = async () => {
+    try {
+      const reviewData = await getProduct(part1 + part2);
+      setProductReview(reviewData);
+    } catch (err) {
+      console.error("Failed to fetch product review:", err);
+      setProductReview({ reviews: {} }); // fallback 避免 undefined
+    }
+  };
+
+  fetchProductReview();
+}, [part1, part2]);
+  console.log(productReview);
 
   //color
   const [pIndex, setproductClass] = useState(0);
@@ -292,7 +309,7 @@ function Product() {
             <div className="line w-60 h-[.5px] bg-black dark:bg-white"></div>
           </div>
           <div className="mb-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {product.reviews.map((review, index) => (
+            {productReview && Object.keys(productReview.reviews ?? {}).length > 0 ? Object.values(productReview.reviews ?? {}).map((review, index) => (
               <div key={index}>
                 <div className="review h-[100%] md:60  w-full rounded-[10px] p-5 pl-8 pr-8 text-left grid border-[1px] border-black/30 dark:border-white/60">
                   <div className="rating items-end mb-8">
@@ -301,12 +318,12 @@ function Product() {
                       .map((x, index) =>
                         x === review.rating ? (
                           <div
-                            className="h-5 w-5 mask mask-star-2 ml-1"
+                            className="h-4 w-4 mask mask-star-2 ml-1"
                             key={index}
                           ></div>
                         ) : (
                           <div
-                            className="h-5 w-5 mask mask-star-2 ml-1"
+                            className="h-4 w-4 mask mask-star-2 ml-1"
                             aria-current="true"
                             key={index}
                           ></div>
@@ -314,16 +331,24 @@ function Product() {
                       )}
                   </div>
                   <div className="review-content">
+                    <p className="hint mb-3">size : {size_list[review.size]} / color : {review.color}</p>
                     <p className="mb-5">{review.comment}</p>
                     <div className="user flex gap-3 items-center">
                       <CircleUserRound />
-                      <p>{review.reviewer}</p>
+                      <div>
+                        <p>{review.reviewer}</p>
+                        <p className="hint">{new Date(review.time.seconds * 1000 + review.time.nanoseconds / 1_000_000).toLocaleDateString()}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            ))}
+            )): 
+            <p className="hint text-left">目前暫無評論</p>
+            }
           </div>
+
+          <WriteReview/>
         </div>
 
         {/*relyted products*/}

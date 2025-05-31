@@ -38,3 +38,7 @@ p {
   font-size: 14px;
   color: var(--point_pink);
 }
+
+button{
+  font-size: 14px;
+}

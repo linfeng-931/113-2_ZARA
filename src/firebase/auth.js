@@ -4,6 +4,8 @@ import {
   signInWithEmailAndPassword,
   sendEmailVerification,
   sendPasswordResetEmail,
+  //signInWithPopup,
+  updatePassword,
 } from "firebase/auth";
 import { createUserProfile } from "./users";
 
@@ -36,9 +38,9 @@ export const doPasswordReset = (email) => {
   return sendPasswordResetEmail(auth, email);
 };
 
-// export const doPasswordChange = (password) => {, signInWithPopup, updatePassword
-//     return updatePassword(auth.currentUser, password);
-// };
+export const doPasswordChange = (user, password) => {
+  return updatePassword(user, password);
+};
 
 // export const doSendEmailVerification = () => {
 //     return sendEmailVerification(auth.currentUser,{

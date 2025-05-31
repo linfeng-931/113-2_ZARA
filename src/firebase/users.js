@@ -8,6 +8,7 @@ export const createUserProfile = async (user) => {
     uid: user.uid,
     avatar: "",
     point: 0,
+    name: "user",
     createdAt: new Date().toISOString(),
   });
 };
@@ -15,7 +16,7 @@ export const createUserProfile = async (user) => {
 export const getUserProfile = async (uid) => {
   if (!uid) throw new Error("UID is required to fetch profile");
 
-  const userRef = doc(db, "users", uid);
+  const userRef = doc(db, "user", uid);
   const docSnap = await getDoc(userRef);
   if (docSnap.exists()) {
     return docSnap.data();
@@ -25,6 +26,18 @@ export const getUserProfile = async (uid) => {
 };
 
 export const updateUserProfile = async (uid, data) => {
-  const userRef = doc(db, "users", uid);
+  const userRef = doc(db, "user", uid);
   await updateDoc(userRef, data);
+};
+
+export const getUserCart = async (uid) => {
+  const userRef = doc(db, "user", uid);
+  const docSnap = await getDoc(userRef);
+  console.log(userRef);
+  if (docSnap.exists()) {
+    const data = docSnap.data();
+    return data.cart || []; // 如果沒 cart 欄位就回傳空陣列
+  } else {
+    return [];
+  }
 };
