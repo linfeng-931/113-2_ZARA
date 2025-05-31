@@ -41,3 +41,40 @@ export const getUserCart = async (uid) => {
     return [];
   }
 };
+
+// 加入最愛收藏
+export const addToFavorites = async (uid, productId) => {
+  const userRef = doc(db, "user", uid);
+  const docSnap = await getDoc(userRef);
+  if (!docSnap.exists()) throw new Error("User not found");
+
+  const currentFavorites = docSnap.data().favorites || [];
+
+  if (!currentFavorites.includes(productId)) {
+    await updateDoc(userRef, {
+      favorites: [...currentFavorites, productId],
+    });
+  }
+};
+
+// 移除最愛收藏
+export const removeFromFavorites = async (uid, productId) => {
+  const userRef = doc(db, "user", uid);
+  const docSnap = await getDoc(userRef);
+  if (!docSnap.exists()) throw new Error("User not found");
+
+  const currentFavorites = docSnap.data().favorites || [];
+
+  await updateDoc(userRef, {
+    favorites: currentFavorites.filter((id) => id !== productId),
+  });
+};
+
+// 取得收藏
+export const getFavorites = async (uid) => {
+  const userRef = doc(db, "user", uid);
+  const docSnap = await getDoc(userRef);
+  if (!docSnap.exists()) throw new Error("User not found");
+
+  return docSnap.data().favorites || [];
+};

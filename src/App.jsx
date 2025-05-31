@@ -21,6 +21,7 @@ import Company from "./page/Company";
 import WorkWithUs from "./page/WorkWithUs";
 import Location from "./page/Location";
 import CartInit from "./compenents/auth/CartInite";
+import MyCollectionPage from "./page/MyCollectionPage";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <>
-      <CartInit/>
+      <CartInit />
       <div data-theme="">
         <BrowserRouter>
           <ScrollToTop />
@@ -42,6 +43,7 @@ function App() {
               <Route path="category/:categoryName" element={<Category />} />
               <Route path="id/:part1/:part2/" element={<Product />} />
               <Route path="shopping-cart" element={<ShoppingCartPage />} />
+              <Route path="my-collection" element={<MyCollectionPage />} />
             </Route>
 
             <Route path="user">

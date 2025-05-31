@@ -17,7 +17,7 @@ export default function Vertical({ id }) {
   const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8]);
 
-  console.log("id.text =>", id?.text);
+  //console.log("id.text =>", id?.text);
 
   return (
     <section
