@@ -22,9 +22,11 @@ export default function PaymentMethods() {
   return (
     <div>
       <Header />
-      <div className="grid grid-rows-1 grid-cols-8  lg:gap-4 lg:grid-rows-1 lg:grid-cols-12 mt-8">
-        <div className="hidden lg:flex lg:flex-col text-left lg:gap-4 lg:col-start-2 lg:col-span-2 text-sm">
-          <p className="mb-6 font-bold">付款和發票</p>
+      <div className="flex flex-col lg:grid lg:grid-rows-1 lg:grid-cols-12 mt-8 lg:gap-4">
+        <div className="flex flex-col text-left gap-4 mb-8 px-[80px] lg:p-0 lg:mb-0 text-sm lg:col-start-2 lg:col-span-2">
+          <div className="mb-2 lg:mb-4 text-lg lg:text-md font-semibold">
+            付款和發票
+          </div>
           <button
             onClick={() => setCurrentTab("payment")}
             className={`text-left cursor-pointer  ${
@@ -52,6 +54,7 @@ export default function PaymentMethods() {
         </div>
         {renderContent()}
       </div>
+
       <Footer />
     </div>
   );

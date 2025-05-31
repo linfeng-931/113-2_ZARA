@@ -15,7 +15,10 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <Intro />
+      <Link to={`/products/category/NEW`}>
+        <Intro />
+      </Link>
+
       <Description />
       <div className="bg-black min-h-screen">
         {/* 標題區域 */}
