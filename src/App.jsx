@@ -27,7 +27,6 @@ import FavoriteInit from "./compenents/auth/FavInit";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
-
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);

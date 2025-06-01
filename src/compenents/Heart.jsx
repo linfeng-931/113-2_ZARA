@@ -1,11 +1,9 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import PopUpLogin from "./auth/login/PopUpLogin";
 import { doc, updateDoc, arrayUnion, arrayRemove } from "firebase/firestore";
 import { useDispatch, useSelector } from "react-redux";
 import { auth, db } from "../firebase/config";
-import { useEffect } from "react";
 
 import {
   addFavoriteItem,
@@ -15,16 +13,14 @@ import {
 
 function Heart({ userLoggedIn, product }) {
   const favoriteItems = useSelector(selectFavoriteItems);
+
   const [showToast, setShowToast] = useState(false);
-  const [hasClicked, setHasClicked] = React.useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => setIsOpen(!isOpen);
   const dispatch = useDispatch();
+  console.log(product);
 
-  useEffect(() => {
-    const isFavorited = favoriteItems.some((item) => item.id === product.id);
-    setHasClicked(isFavorited);
-  }, [favoriteItems, product.id]);
+  const isFavorite = favoriteItems.some((item) => item.id === product.id);
 
   const handleClick = async () => {
     if (!userLoggedIn) {
@@ -37,13 +33,11 @@ function Heart({ userLoggedIn, product }) {
 
     const favItem = {
       id: product.id,
-      title: product.name,
-      cover: product.class[0]["cover"],
+      title: product.class ? product.name : product.title,
+      cover: product.class ? product.class[0]["cover"] : product.cover,
     };
 
-    setHasClicked((prev) => !prev);
-
-    if (!hasClicked) {
+    if (!isFavorite) {
       dispatch(addFavoriteItem(favItem));
       await updateDoc(userDocRef, {
         favItems: arrayUnion(favItem),
@@ -55,7 +49,6 @@ function Heart({ userLoggedIn, product }) {
       });
     }
 
-    setHasClicked(!hasClicked);
     setTimeout(() => {
       setShowToast(false);
     }, 2000);
@@ -75,7 +68,7 @@ function Heart({ userLoggedIn, product }) {
           width="16"
           height="16"
         >
-          {!hasClicked ? (
+          {!isFavorite ? (
             <path
               fill="#636e7b"
               fillRule="evenodd"
@@ -93,7 +86,7 @@ function Heart({ userLoggedIn, product }) {
         </svg>
       </motion.div>
       <PopUpLogin isOpen={isOpen} toggleModal={toggleOpen} />
-      {!hasClicked
+      {!isFavorite
         ? showToast && (
             <div className="toast z-9999">
               <div className="alert w-72 md:w-full">
@@ -108,8 +101,7 @@ function Heart({ userLoggedIn, product }) {
             <div className="toast z-9999">
               <div className="alert w-72 md:w-full">
                 <p className="reak-words whitespace-normal">
-                  {product.name.charAt(0).toUpperCase() + product.name.slice(1)}{" "}
-                  been added from your favorite item.
+                  {product.name} been added from your favorite item.
                 </p>
               </div>
             </div>

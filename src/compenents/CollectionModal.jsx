@@ -3,8 +3,10 @@ import Heart from "./Heart";
 import { Link } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { handleClearFavorites } from "./HandleClearFavorites";
+import { useAuth } from "../contexts/authContext";
 
 function CollectionModal() {
+  const { userLoggedIn } = useAuth();
   const dispatch = useDispatch();
   let favItems = useSelector(selectFavoriteItems);
   return (
@@ -31,8 +33,9 @@ function CollectionModal() {
                       />
                     </div>
                   </Link>
-                  <Heart product={item} />
+
                   <p className="text-left">{item.title}</p>
+                  <Heart userLoggedIn={userLoggedIn} product={item} />
                 </div>
               ))}
             </div>

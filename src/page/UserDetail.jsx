@@ -6,13 +6,15 @@ import { useAuth } from "../contexts/authContext";
 import { doSignOut } from "../firebase/auth";
 import { auth } from "../firebase/config";
 import Profile from "../compenents/auth/detail/Profile";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { selectCartItems } from "../redux/cartSlice";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
 import OrderHistory from "../compenents/auth/detail/OrderHistory";
+import { clearFavoriteItems } from "../redux/favSlice";
 
 function UserDetail() {
+  const dispatch = useDispatch();
   const { userLoggedIn } = useAuth();
   let cartItems = useSelector(selectCartItems);
   console.log(cartItems);
@@ -48,7 +50,7 @@ function UserDetail() {
         await setDoc(userDocRef, { cart: cartItems }, { merge: true });
         console.log("Cart uploaded before sign out.");
       }
-
+      dispatch(clearFavoriteItems());
       cartItems = null;
 
       await doSignOut();
