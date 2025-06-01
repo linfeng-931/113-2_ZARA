@@ -24,6 +24,7 @@ import Location from "./page/Location";
 import CartInit from "./compenents/auth/CartInite";
 import MyCollectionPage from "./page/MyCollectionPage";
 import FavoriteInit from "./compenents/auth/FavInit";
+import Purchase from "./page/Purchase";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -52,6 +53,7 @@ function App() {
               <Route path="id/:part1/:part2/" element={<Product />} />
               <Route path="shopping-cart" element={<ShoppingCartPage />} />
               <Route path="my-collection" element={<MyCollectionPage />} />
+              <Route path="purchase" element={<Purchase/>}/>
             </Route>
 
             <Route path="user">

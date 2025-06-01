@@ -1,15 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import {
   addCartItems,
-  clearCartItems,
   removeCartItems,
   selectCartItems,
 } from "../redux/cartSlice";
 import { Link } from "react-router";
 import { Minus, X, Plus, ArrowRight } from "lucide-react";
-import { doc, arrayUnion, updateDoc } from "firebase/firestore";
-import { db } from "../firebase/config";
-import { auth } from "../firebase/config";
 
 function BasketModal() {
   const dispatch = useDispatch();
@@ -21,33 +17,6 @@ function BasketModal() {
       : 0;
   };
   const size_list = ["S", "M", "L", "XL"];
-
-  const handleCheckOut = async () => {
-    try {
-      const currentUser = auth.currentUser;
-
-      if (currentUser && cartItems.length > 0) {
-        // 建立訂單物件
-        const order = {
-          items: cartItems,
-          time: new Date().toLocaleString("zh-TW", { hour12: false }),
-        };
-
-        const userDocRef = doc(db, "user", currentUser.uid);
-
-        // 將訂單 push 進 orderhistory 陣列中
-        await updateDoc(userDocRef, {
-          orderhistory: arrayUnion(order),
-        });
-
-        console.log("orderhistory uploaded.");
-      }
-
-      dispatch(clearCartItems());
-    } catch (err) {
-      console.error("Check Out error:", err);
-    }
-  };
 
   return (
     <>
@@ -201,11 +170,10 @@ function BasketModal() {
               </div>
 
               {/* Checkout Button */}
-              <Link to="/">
+              <Link to="/products/purchase">
                 <div
                   className="flex h-12 w-60 justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
-                                hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
-                  onClick={handleCheckOut}
+                      hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
                 >
                   <p>CHECKOUT NOW</p>
                   <ArrowRight className="h-4" />
@@ -358,14 +326,15 @@ function BasketModal() {
               </div>
 
               {/* Checkout Button */}
-              <div
-                className="flex h-12 w-60 justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
-                                      hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
-                onClick={handleCheckOut}
-              >
-                <p>CHECKOUT NOW</p>
-                <ArrowRight className="h-4" />
-              </div>
+              <Link to="/products/purchase">
+                <div
+                  className="flex h-12 w-60 justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                      hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
+                >
+                  <p>CHECKOUT NOW</p>
+                  <ArrowRight className="h-4" />
+                </div>
+              </Link>
             </div>
           )}
         </div>

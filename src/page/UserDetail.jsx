@@ -12,6 +12,7 @@ import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
 import OrderHistory from "../compenents/auth/detail/OrderHistory";
 import { clearFavoriteItems } from "../redux/favSlice";
+import { NotepadText } from "lucide-react";
 
 function UserDetail() {
   const dispatch = useDispatch();
@@ -119,19 +120,6 @@ function UserDetail() {
 
           <p
             className={`cursor-pointer hover:opacity-100 group transition duration-300 tracking-widest
-            ${isActive == 4 ? "font-bold opacity-100" : "opacity-[60%]"}`}
-            onClick={() => setisActive(4)}
-          >
-            Wishlist
-            <span
-              className={`block max-w-0 group-hover:max-w-full transition-all duration-500 h-[2px] opacity-[50%] bg-black dark:bg-white
-            ${isActive == 4 ? "max-w-full" : ""}
-          `}
-            ></span>
-          </p>
-
-          <p
-            className={`cursor-pointer hover:opacity-100 group transition duration-300 tracking-widest
             ${isActive == 5 ? "font-bold opacity-100" : "opacity-[60%]"}`}
             onClick={() => setisActive(5)}
           >
@@ -164,6 +152,12 @@ function UserDetail() {
           {!loading && profile && isActive == 1 && (
             <div>
               <OrderHistory orderhistory={profile.orderhistory} />
+            </div>
+          )}
+          {!loading && profile && isActive == 2 && (
+            <div className="flex w-full justify-center h-full items-center gap-2 opacity-50">
+              <NotepadText className="h-5 w-5"/>
+              <p>暫無退換貨記錄</p>
             </div>
           )}
         </div>

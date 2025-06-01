@@ -10,7 +10,7 @@ function OrderHistory({orderhistory}){
                 </div>
             ):(
                 orderhistory.map((order, index) => (
-                    <div key={index} className="collapse collapse-plus bg-base-100 border border-base-300">
+                    <div key={index} className="collapse collapse-plus bg-base-100 border border-base-300 mb-3">
                         <input type="radio" name="my-accordion-3"/>
                         <div className="collapse-title flex justify-between items-center">
                             <p>{new Date(order.time).toLocaleDateString()}</p>
