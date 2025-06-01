@@ -8,6 +8,7 @@ import UserAccount from "./page/UserAccount";
 import UserDetail from "./page/UserDetail";
 import Register from "./page/Register";
 import { selectCartItems } from "./redux/cartSlice";
+import { selectFavoriteItems } from "./redux/favSlice";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import ForgetPassword from "./page/ForgetPassword";
@@ -22,6 +23,7 @@ import WorkWithUs from "./page/WorkWithUs";
 import Location from "./page/Location";
 import CartInit from "./compenents/auth/CartInite";
 import MyCollectionPage from "./page/MyCollectionPage";
+import FavoriteInit from "./compenents/auth/FavInit";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -30,8 +32,15 @@ function App() {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
+  const favoriteItems = useSelector(selectFavoriteItems);
+
+  useEffect(() => {
+    localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems));
+  }, [favoriteItems]);
+
   return (
     <>
+      <FavoriteInit />
       <CartInit />
       <div data-theme="">
         <BrowserRouter>
