@@ -1,6 +1,6 @@
 export default function Refund() {
   return (
-    <div className="flex flex-col text-left col-start-2 col-span-6 lg:col-start-4 lg:col-span-8 gap-2 lg:max-w-[80%]">
+    <div className="flex flex-col text-left gap-2 m-auto lg:m-0 col-span-12 lg:col-start-4 lg:col-span-8 max-w-[80%]">
       <div>
         <h1 className="mb-4 font-semibold">退貨款項</h1>
         <img src="/image/howtoreturn.jpg" alt="" className=" mb-4" />

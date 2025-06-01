@@ -1,12 +1,13 @@
-import { CircleUserRound, CircleHelp } from "lucide-react";
+import { CircleUserRound, CircleHelp, Heart } from "lucide-react";
 import Menu from "./Menu";
 import SetColorMode from "./SetColorMode";
 import Cart from "./Cart";
 import { Link } from "react-router";
 import { useAuth } from "../contexts/authContext";
+import MyCollection from "./MyCollection";
 
 function Header() {
-  const {userLoggedIn} = useAuth();
+  const { userLoggedIn } = useAuth();
 
   return (
     <>
@@ -15,16 +16,10 @@ function Header() {
           <Menu />
 
           <Link to="/" className="dark:hidden z-9999">
-            <img
-              className="hidden w-45 md:block"
-              src="/image/logo2-1.png"
-            />
+            <img className="hidden w-45 md:block" src="/image/logo2-1.png" />
           </Link>
           <Link to="/" className="z-9999 hidden md:block">
-            <img
-              className="hidden w-45 dark:block"
-              src="/image/logo2-2.PNG"
-            />
+            <img className="hidden w-45 dark:block" src="/image/logo2-2.PNG" />
           </Link>
         </div>
 
@@ -32,21 +27,23 @@ function Header() {
           <SetColorMode />
 
           <div className="line hidden md:block h-12 w-[1px] bg-black dark:bg-white opacity-50"></div>
-
           <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap">
-            <Cart userLoggedIn={userLoggedIn}/>
+            <MyCollection userLoggedIn={userLoggedIn} />
           </div>
-          
+          <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap">
+            <Cart userLoggedIn={userLoggedIn} />
+          </div>
+
           <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap hover:opacity-50 cursor-pointer">
             <CircleHelp />
             <p>Help</p>
           </div>
 
           <Link to={userLoggedIn ? "/user/detail" : "/user/login"}>
-          <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap hover:opacity-50 cursor-pointer">
-            <CircleUserRound />
-            <p>Login</p>
-          </div>
+            <div className="member flex flex-col items-center gap-1.5 whitespace-nowrap hover:opacity-50 cursor-pointer">
+              <CircleUserRound />
+              <p>Login</p>
+            </div>
           </Link>
         </div>
       </div>

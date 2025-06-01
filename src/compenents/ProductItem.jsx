@@ -1,7 +1,10 @@
 import { Link } from "react-router";
 import { useState } from "react";
+import Heart from "../compenents/Heart";
+import { useAuth } from "../contexts/authContext";
 
 const ProductItem = ({ product }) => {
+  const { userLoggedIn } = useAuth();
   const [headImg, setHeadImg] = useState(product.class[0].cover);
   const handleColorClick = (index) => {
     setHeadImg(product.class[index].cover);
@@ -28,6 +31,15 @@ const ProductItem = ({ product }) => {
             src={headImg}
             alt=""
           />
+        </Link>
+        <div className="flex justify-between">
+          <div className="colors flex flex-wrap gap-1 md:gap-0 translate-x-[-6px] mt-1">
+            {colors}
+          </div>
+          <Heart userLoggedIn={userLoggedIn} product={product} />
+        </div>
+
+        <Link to={`/products/id/${product.id}`}>
           <p className="name mt-2">{product.name}</p>
         </Link>
         <div className="price-area flex flex-col lg:flex-row lg:gap-1 lg:items-center">
@@ -46,8 +58,6 @@ const ProductItem = ({ product }) => {
             </p>
           )}
         </div>
-
-        <div className="colors flex flex-wrap gap-1 md:gap-0 translate-x-[-6px] mt-1">{colors}</div>
       </section>
       <div className="col-span-1"></div>
     </div>

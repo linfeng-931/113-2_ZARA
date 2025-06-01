@@ -1668,6 +1668,197 @@
     ]
   },
   {
+    "id": "1165/359/",
+    "category1": "WOMAN",
+    "category2": "NEW",
+    "name": "ELEGANT LONG DRESS",
+    "price": 1290,
+    "sale": false,
+    "description": "V-neck long dress; thin straps; A-line hem.",
+    "detail": ["100% polyester fiber"],
+    "class": [
+      {
+        "color": "BLACK",
+        "class_id": "084",
+        "color_num": "#000000",
+        "stock": [55, 15, 108, 96],
+        "img": [
+          "/image/news/id-1165359/084/1.jpg",
+          "/image/news/id-1165359/084/2.jpg",
+          "/image/news/id-1165359/084/3.jpg",
+          "/image/news/id-1165359/084/4.jpg",
+          "/image/news/id-1165359/084/5.jpg",
+          "/image/news/id-1165359/084/6.jpg"
+        ],
+        "cover": "/image/news/id-1165359/084/5.jpg"
+      }
+    ],
+    "reviews": [
+      {
+        "reviewer": "Luna",
+        "rating": 5,
+        "comment": "This knit maxi dress is a showstopper! The cut-out detail is so unique and adds a modern edge. The knit fabric is surprisingly comfortable, and the sleeveless design is perfect for the Taiwan heat. I wore it out in Xinzhuang last night and got so many compliments!"
+      },
+      {
+        "reviewer": "Ethan",
+        "rating": 4,
+        "comment": "The dress looks great! The lapel collar and v-neck give it a sophisticated touch. The knit material is nice, though I'm a little concerned about how it will hold up in the humid Taiwan weather. The cut-out is a stylish detail."
+      },
+      {
+        "reviewer": "Chloe",
+        "rating": 5,
+        "comment": "Absolutely love this maxi dress! It's perfect for the Taiwan climate - stylish enough for an evening out in Taipei but comfortable enough for a more casual setting in Xinzhuang. The cut-out is tastefully done, and the length is just right."
+      },
+      {
+        "reviewer": "William",
+        "rating": 4,
+        "comment": "A very chic knit maxi dress. The lapel collar adds a touch of elegance, and the v-neck is flattering. The sleeveless design is ideal for the warm weather here in Taiwan. The cut-out is a bit daring, but it works well with the overall style."
+      },
+      {
+        "reviewer": "Olivia",
+        "rating": 5,
+        "comment": "This dress is fantastic! The cut-out is perfectly placed and adds a really interesting element. The knit fabric drapes beautifully, and it's surprisingly breathable for the Taiwan summer. I've already worn it a few times since buying it in New Taipei City!"
+      }
+    ]
+  },
+  {
+    "id": "3559/564/",
+    "category1": "WOMAN",
+    "category2": "NEW",
+    "name": "ZW COLLECTION DOTTED CHOKER TOP",
+    "price": 1990,
+    "sale": false,
+    "description": "Viscose fiber knitted top; adjustable tie-around neck; backless design; asymmetric hem.",
+    "detail": ["100% polyester", "100% viscose"],
+    "class": [
+      {
+        "color": "BLACK",
+        "class_id": "093",
+        "color_num": "#000000",
+        "stock": [45, 48, 80, 24],
+        "img": [
+          "/image/news/id-3559564/093/1.jpg",
+          "/image/news/id-3559564/093/2.jpg",
+          "/image/news/id-3559564/093/3.jpg",
+          "/image/news/id-3559564/093/4.jpg",
+          "/image/news/id-3559564/093/5.jpg"
+        ],
+        "cover": "/image/news/id-3559564/093/4.jpg"
+      }
+    ]
+  },
+  {
+    "id": "5029/075/",
+    "category1": "WOMAN",
+    "category2": "NEW",
+    "name": "BELTED CONTRAST JUMPSUIT",
+    "price": 1990,
+    "sale": false,
+    "description": "Round neck sleeveless jumpsuit with button detailing on the shoulders. Featuring pleats on the front, front pockets, folded cuffs, and an invisible side zip closure. Includes a belt.",
+    "detail": ["95% Cotton", "5% Elastane", "100% Polyester"],
+    "class": [
+      {
+        "color": "BLACK",
+        "class_id": "064",
+        "color_num": "#000000",
+        "stock": [61, 25, 57, 90],
+        "img": [
+          "/image/news/id-5029075/064/1.jpg",
+          "/image/news/id-5029075/064/2.jpg",
+          "/image/news/id-5029075/064/3.jpg",
+          "/image/news/id-5029075/064/4.jpg",
+          "/image/news/id-5029075/064/5.jpg",
+          "/image/news/id-5029075/064/6.jpg"
+        ],
+        "cover": "/image/news/id-5029075/064/5.jpg"
+      }
+    ],
+    "reviews": [
+      {
+        "reviewer": "Sophia",
+        "rating": 5,
+        "comment": "This **jumpsuit** is perfect for hot days! The material is so light and comfortable. The **belt** is a cute and practical detail."
+      },
+      {
+        "reviewer": "Chloe",
+        "rating": 4,
+        "comment": "I really like the fit and the length of this **jumpsuit**. The **cotton blend** feels high quality. My only slight issue is that I wish it had more stretch."
+      },
+      {
+        "reviewer": "Bella",
+        "rating": 5,
+        "comment": "Such a lovely **jumpsuit**! The **button detailing on the shoulders** adds a unique touch and the **invisible side zip** makes it look very neat. The **cotton blend** is a dream to wear."
+      },
+      {
+        "reviewer": "Luna",
+        "rating": 4,
+        "comment": "Great summer **jumpsuit**. The **belt** is a nice feature and allows for some adjustment. Just need to be mindful of creases."
+      },
+      {
+        "reviewer": "Hazel",
+        "rating": 5,
+        "comment": "This is my new favorite **jumpsuit**! It's stylish, comfortable, and the **cotton blend** feels really nice against the skin. The **pleats on the front** are a fun element."
+      }
+    ]
+  },
+  {
+    "id": "1608/052/",
+    "category1": "WOMAN",
+    "category2": "NEW",
+    "name": "DOTTED HALTER TOP",
+    "price": 1490,
+    "sale": false,
+    "description": "Cropped racerback top with an inner lining design; featuring self-covered buttons at the back.",
+    "detail": [
+      "74% Lyocell (Recycled Cellulose Fiber)",
+      "26% Polyamide",
+      "100% Polyester"
+    ],
+    "class": [
+      {
+        "color": "BLACK",
+        "class_id": "070",
+        "color_num": "#000000",
+        "stock": [55, 182, 88, 96],
+        "img": [
+          "/image/news/id-1608052/070/1.jpg",
+          "/image/news/id-1608052/070/2.jpg",
+          "/image/news/id-1608052/070/3.jpg",
+          "/image/news/id-1608052/070/4.jpg",
+          "/image/news/id-1608052/070/5.jpg"
+        ],
+        "cover": "/image/news/id-1608052/070/4.jpg"
+      }
+    ],
+    "reviews": [
+      {
+        "reviewer": "Luna",
+        "rating": 5,
+        "comment": "This **dotted halter top** is a showstopper! The **racerback design** is so unique and adds a modern edge. The fabric is surprisingly comfortable, and the **halter neck** is perfect for the Taiwan heat. I wore it out in Xinzhuang last night and got so many compliments!"
+      },
+      {
+        "reviewer": "Ethan",
+        "rating": 4,
+        "comment": "The top looks great! The **halter neck** and **cropped fit** give it a sophisticated touch. The material feels nice, though I'm a little concerned about how it will hold up in the humid Taiwan weather. The **self-covered buttons at the back** are a stylish detail."
+      },
+      {
+        "reviewer": "Chloe",
+        "rating": 5,
+        "comment": "Absolutely love this **halter top**! It's perfect for the Taiwan climate - stylish enough for an evening out in Taipei but comfortable enough for a more casual setting in Xinzhuang. The **cropped fit** is tastefully done, and the **inner lining** is just right."
+      },
+      {
+        "reviewer": "William",
+        "rating": 4,
+        "comment": "A very chic **dotted halter top**. The **halter neck** adds a touch of elegance, and the **racerback design** is flattering. The **cropped fit** is ideal for the warm weather here in Taiwan. The **dotted pattern** is a bit daring, but it works well with the overall style."
+      },
+      {
+        "reviewer": "Olivia",
+        "rating": 5,
+        "comment": "This top is fantastic! The **dotted pattern** is perfectly placed and adds a really interesting element. The fabric drapes beautifully, and it's surprisingly breathable for the Taiwan summer. I've already worn it a few times since buying it in New Taipei City!"
+      }
+    ]
+  },
+  {
     "id": "3116/909/",
     "category1": "WOMAN",
     "category2": "NEW",

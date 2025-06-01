@@ -8,6 +8,7 @@ import UserAccount from "./page/UserAccount";
 import UserDetail from "./page/UserDetail";
 import Register from "./page/Register";
 import { selectCartItems } from "./redux/cartSlice";
+import { selectFavoriteItems } from "./redux/favSlice";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import ForgetPassword from "./page/ForgetPassword";
@@ -21,17 +22,25 @@ import Company from "./page/Company";
 import WorkWithUs from "./page/WorkWithUs";
 import Location from "./page/Location";
 import CartInit from "./compenents/auth/CartInite";
+import MyCollectionPage from "./page/MyCollectionPage";
+import FavoriteInit from "./compenents/auth/FavInit";
 
 function App() {
   const cartItems = useSelector(selectCartItems);
-
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
+  const favoriteItems = useSelector(selectFavoriteItems);
+
+  useEffect(() => {
+    localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems));
+  }, [favoriteItems]);
+
   return (
     <>
-      <CartInit/>
+      <FavoriteInit />
+      <CartInit />
       <div data-theme="">
         <BrowserRouter>
           <ScrollToTop />
@@ -42,6 +51,7 @@ function App() {
               <Route path="category/:categoryName" element={<Category />} />
               <Route path="id/:part1/:part2/" element={<Product />} />
               <Route path="shopping-cart" element={<ShoppingCartPage />} />
+              <Route path="my-collection" element={<MyCollectionPage />} />
             </Route>
 
             <Route path="user">

@@ -3,6 +3,7 @@ import Description from "../compenents/Description";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Vertical from "../compenents/Vertical";
 import Header from "../compenents/Header";
+import { Link } from "react-router";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -14,7 +15,10 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <Intro />
+      <Link to={`/products/category/NEW`}>
+        <Intro />
+      </Link>
+
       <Description />
       <div className="bg-black min-h-screen">
         {/* 標題區域 */}
@@ -27,6 +31,10 @@ export default function Home() {
           >
             <div className="text-2xl md:text-4xl font-bold mb-8 tracking-wider">
               2025 DOTS COLLECTION
+              <br />
+              <span className="text-lg opacity-50 font-normal">
+                CLICK THE PICTURE TO LEARN MORE
+              </span>
             </div>
           </motion.div>
 
@@ -58,10 +66,12 @@ export default function Home() {
         {/* 圖片區域 */}
         {[
           { img: "image/cover/computer/new-stuff-1.jpg", text: "THE NEW" },
-          { img: "image/cover/computer/new-stuff-2.jpg", text: "SS25" },
+          { img: "image/cover/computer/new-stuff-2.jpg", text: "SS2025" },
           { img: "image/cover/computer/new-stuff-3.jpg", text: "COLLECTION" },
         ].map((src, idx) => (
-          <Vertical key={idx} id={src} />
+          <Link to={`/products/category/NEW`}>
+            <Vertical key={idx} id={src} />
+          </Link>
         ))}
 
         {/* 結尾區域 */}

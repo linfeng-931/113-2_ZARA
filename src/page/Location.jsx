@@ -45,7 +45,7 @@ export default function Location() {
         {show === "地圖" && <MapView selectedStore={selectedStore} />}
       </div>
       {/* 電腦版 */}
-      <div className="hidden lg:flex lg:flex-row lg:gap-4 px-8">
+      <div className="hidden lg:flex lg:flex-row lg:gap-8 px-8 max-w-[90%] m-auto mt-10">
         <StoreList onSelect={setSelectedStore} />
         <MapView selectedStore={selectedStore} />
       </div>
