@@ -1,5 +1,5 @@
 import { db } from "./config";
-import { doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
+import { doc, getDoc, updateDoc, setDoc, arrayUnion } from "firebase/firestore";
 
 export const getProduct = async (id) => {
   if (!id) throw new Error("ID is required to fetch product");
@@ -17,4 +17,15 @@ export const getProduct = async (id) => {
   } else {
     throw new Error("Product not found");
   }
+};
+
+export const addReview = async (productId, newReview) => {
+  const productRef = doc(db, "products", productId);
+
+  // 再執行 arrayUnion 新增 review
+  await updateDoc(productRef, {
+    reviews: arrayUnion(newReview),
+  });
+
+  console.log("新增 review 成功");
 };

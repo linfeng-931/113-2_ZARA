@@ -18,21 +18,21 @@ function Product() {
   const { part1, part2 } = useParams();
   // console.log(part1, part2, `${part1}/${part2}/`);
   const product = products.find((x) => x.id == `${part1}/${part2}/`);
-  
+
   const [productReview, setProductReview] = useState(null);
-  useEffect(() => {
   const fetchProductReview = async () => {
     try {
       const reviewData = await getProduct(part1 + part2);
       setProductReview(reviewData);
     } catch (err) {
       console.error("Failed to fetch product review:", err);
-      setProductReview({ reviews: {} }); // fallback 避免 undefined
+      setProductReview({ reviews: [] }); // fallback 避免 undefined
     }
   };
 
-  fetchProductReview();
-}, [part1, part2]);
+  useEffect(() => {
+    fetchProductReview();
+  }, [part1, part2]);
   console.log(productReview);
 
   //color
@@ -309,26 +309,22 @@ function Product() {
             <div className="line w-60 h-[.5px] bg-black dark:bg-white"></div>
           </div>
           <div className="mb-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {productReview && Object.keys(productReview.reviews ?? {}).length > 0 ? Object.values(productReview.reviews ?? {}).map((review, index) => (
+            {productReview && [...productReview.reviews.values()].length > 0 ? [...productReview.reviews.values()].map((review, index) => (
               <div key={index}>
                 <div className="review h-[100%] md:60  w-full rounded-[10px] p-5 pl-8 pr-8 text-left grid border-[1px] border-black/30 dark:border-white/60">
                   <div className="rating items-end mb-8">
-                    {Array(5)
-                      .keys()
-                      .map((x, index) =>
-                        x === review.rating ? (
-                          <div
-                            className="h-4 w-4 mask mask-star-2 ml-1"
-                            key={index}
-                          ></div>
-                        ) : (
-                          <div
-                            className="h-4 w-4 mask mask-star-2 ml-1"
-                            aria-current="true"
-                            key={index}
-                          ></div>
-                        )
-                      )}
+                    {[...Array(5)].map((_, i) => {
+                      const starIndex = i + 1;
+                      return (
+                        <div
+                          key={i}
+                          className={`h-4 w-4 mask mask-star-2 ml-1 ${
+                            starIndex <= review.rating ? "opacity-100" : ""
+                          }`}
+                          aria-hidden="true"
+                        ></div>
+                      );
+                    })}
                   </div>
                   <div className="review-content">
                     <p className="hint mb-3">size : {size_list[review.size]} / color : {review.color}</p>
@@ -348,7 +344,7 @@ function Product() {
             }
           </div>
 
-          <WriteReview/>
+          <WriteReview productId = {part1+part2} product = {product} onReviewAdded={fetchProductReview}/>
         </div>
 
         {/*relyted products*/}
