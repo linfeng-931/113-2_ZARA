@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Asterisk } from "lucide-react";
 
-function SetDelivery(){
+function SetDelivery({setisActive, setDetail}){
     const county = ["台北市", "基隆市", "新北市", "桃園市", "新竹縣", "新竹市", "苗栗縣", "台中市", "彰化縣", "南投縣", "雲林縣", "嘉義縣", "嘉義市", "臺南市", "高雄市", "屏東縣", "宜蘭縣", "花蓮縣", "台東縣", "澎湖縣", "金門縣", "連江縣"];
+    const [selectedCounty, setSelectedCounty] = useState("台北市");
     const [address, setAddress] = useState("");
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
@@ -62,6 +63,31 @@ function SetDelivery(){
     const cityList = Object.keys(store);
     const storeList = store[selectedCity] || [];
 
+    const toggle = () => {
+        let final_address = '';
+        let time = '';
+        if(method === 1){
+            final_address = selectedCounty+" "+address.toString();
+        }
+        if(method === 0) final_address = selectedCity+" "+selectedStore;
+
+        if(deliveryTime == -1) time = deliveryDate3;
+        else if(deliveryTime == 0) time = deliveryDate;
+        else time = deliveryDate2;
+        
+        setDetail(prev => ({
+            ...prev,
+            name: name,
+            delivery_method: method,
+            phone: phone,
+            address: final_address,
+            time: time, 
+        })
+        )
+        console.log(final_address);
+        setisActive(1);
+    };
+
     return(
         <>
         <div className="text-left w-150">
@@ -93,7 +119,7 @@ function SetDelivery(){
                     className={`flex h-12 w-[32%] justify-around items-center duration-150   
                                     ${method == 0 ? "bg-black dark:bg-white text-white dark:text-black":"cursor-pointer border-[1px] hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-white"}
                             `}
-                    onClick={() => setMethod(0)}
+                    onClick={() => {setMethod(0); setDeliverTime(-1);}}
                 >
                     <p>門市取貨</p>
                 </div>
@@ -109,7 +135,7 @@ function SetDelivery(){
                     className={`flex h-12 w-[32%] justify-around items-center duration-150   
                                     ${method == 2 ? "bg-black dark:bg-white text-white dark:text-black":"cursor-pointer border-[1px] hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-white"}
                             `}
-                    onClick={() => setMethod(2)}
+                    onClick={() => {setMethod(2); setDeliverTime(-1);}}
                 >
                     <p>便利店取貨</p>
                 </div>
@@ -166,9 +192,17 @@ function SetDelivery(){
                 <div className="">
                     <p>住家地址</p>
                     <div className="flex gap-2 w-full mb-8">
-                        <select defaultValue="Pick a color" className="select w-30">
-                            {county.map((x, i) => (
-                                <option key={x} value={i}>
+                        <select 
+                            defaultValue="Pick a color" 
+                            className="select w-30"
+                            value={selectedCounty}
+                            onChange={(e) => {
+                                const County = e.target.value;
+                                setSelectedCounty(County);
+                            }}
+                        >
+                            {county.map((x) => (
+                                <option key={x} value={x}>
                                 {x}
                                 </option>
                             ))}
@@ -214,10 +248,11 @@ function SetDelivery(){
             }
             {/*便利店*/}
             <div
-            className="flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                className="flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
                 hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
+                onClick={toggle}
             >
-            <p>NEXT</p>
+                <p>NEXT</p>
             </div>
         </div>
         

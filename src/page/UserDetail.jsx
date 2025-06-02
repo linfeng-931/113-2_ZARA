@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, Link } from "react";
+import { useNavigate } from "react-router";
 import Header from "../compenents/Header";
 import Footer from "../compenents/Footer";
 import { getUserProfile } from "../firebase/users";
@@ -12,10 +13,11 @@ import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
 import OrderHistory from "../compenents/auth/detail/OrderHistory";
 import { clearFavoriteItems } from "../redux/favSlice";
-import { NotepadText } from "lucide-react";
+import {  NotepadText } from "lucide-react";
 
 function UserDetail() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { userLoggedIn } = useAuth();
   let cartItems = useSelector(selectCartItems);
   console.log(cartItems);
@@ -55,7 +57,7 @@ function UserDetail() {
       cartItems = null;
 
       await doSignOut();
-      // 可選擇導向登入頁或顯示訊息
+      navigate("/");
     } catch (err) {
       console.error("Sign out error:", err);
     }
@@ -108,9 +110,9 @@ function UserDetail() {
           <p
             className={`cursor-pointer hover:opacity-100 group transition duration-300 tracking-widest
             ${isActive == 3 ? "font-bold opacity-100" : "opacity-[60%]"}`}
-            onClick={() => setisActive(3)}
+            onClick={() => setisActive(5)}
           >
-            Payment Methods
+            Notifications
             <span
               className={`block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] opacity-[50%] bg-black dark:bg-white
             ${isActive == 3 ? "max-w-full" : ""}
@@ -118,27 +120,16 @@ function UserDetail() {
             ></span>
           </p>
 
-          <p
-            className={`cursor-pointer hover:opacity-100 group transition duration-300 tracking-widest
-            ${isActive == 5 ? "font-bold opacity-100" : "opacity-[60%]"}`}
-            onClick={() => setisActive(5)}
-          >
-            Notifications
-            <span
-              className={`block max-w-0 group-hover:max-w-full transition-all duration-500 h-[2px] opacity-[50%] bg-black dark:bg-white
-            ${isActive == 5 ? "max-w-full" : ""}
-          `}
-            ></span>
-          </p>
-
           {userLoggedIn && (
-            <button
-              onClick={handleSignOut}
-              className="mt-5 flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
-                        hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
-            >
-              LOG OUT
-            </button>
+          
+           <button
+             onClick={handleSignOut}
+             className="mt-5 flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                       hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
+           >
+             LOG OUT
+           </button>
+           
           )}
         </div>
 
