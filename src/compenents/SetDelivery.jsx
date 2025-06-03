@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Asterisk } from "lucide-react";
+import { Asterisk, CircleX } from "lucide-react";
 
 function SetDelivery({setisActive, setDetail}){
     const county = ["台北市", "基隆市", "新北市", "桃園市", "新竹縣", "新竹市", "苗栗縣", "台中市", "彰化縣", "南投縣", "雲林縣", "嘉義縣", "嘉義市", "臺南市", "高雄市", "屏東縣", "宜蘭縣", "花蓮縣", "台東縣", "澎湖縣", "金門縣", "連江縣"];
@@ -88,6 +88,80 @@ function SetDelivery({setisActive, setDetail}){
         setisActive(1);
     };
 
+    {/*防呆與資料控制*/}
+
+    const [NameError, setNameError] = useState('');
+    const [PhoneError, setPhoneError] = useState('');
+    const [AddressError, setAddressError] = useState('');
+    const [ZipCodeError, setZipCodeError] = useState('');
+
+    const handleNameChange = (e) => {
+        const value = e.target.value;
+        setName(value);
+    
+        if (!value) {
+            setNameError("Please enter your name.");
+        } else {
+            setNameError('');
+        }
+    };
+
+    const handlePhoneChange = (e) => {
+        const value = e.target.value;
+        setPhone(value);
+    
+        if (!value) {
+            setPhoneError("Please enter your phone number.");
+        } else if (!/^09/.test(value)) {
+            setPhoneError("Invalid phone number format. Use 09XXXXXXXX.");
+        } else if (value.length !== 10) {
+            setPhoneError("Invalid phone number. It must be 10 digits.");
+        }else {
+            setPhoneError('');
+        }
+    };
+
+    const handleAddressChange = (e) => {
+        const value = e.target.value;
+        setAddress(value);
+    
+        if (!value) {
+            setAddressError("Please enter address.");
+        } else {
+            setAddressError('');
+        }
+    };
+
+    const handleZipCodeChange = (e) => {
+        const value = e.target.value;
+        setZipCode(value);
+    
+        if (!value) {
+            setZipCodeError("Please enter zip code.");
+        } else if(value.length != 3){
+            setZipCodeError("Invalid zip code. It must be 3 digits.")
+        }else {
+            setZipCodeError('');
+        }
+    };
+
+    const isDisabled_1 = 
+        !name || 
+        !phone || 
+        !selectedStore || 
+        NameError !== '' || 
+        PhoneError !== '';
+
+    const isDisabled_2 = 
+        !name || 
+        !phone || 
+        !address || 
+        !zipcode || 
+        NameError !== '' || 
+        PhoneError !== '' ||
+        AddressError !== ''||
+        ZipCodeError !== '';
+
     return(
         <>
         <div className="text-left w-150">
@@ -97,19 +171,45 @@ function SetDelivery({setisActive, setDetail}){
             <input 
                 type="text" 
                 placeholder="請輸入真實姓名" 
-                className="input w-full mb-8"
-                onChange={(e) => setName(e.target.value)}
+                className={`
+                    ${NameError ? "bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-red-950 focus:border-red-500 block w-full p-2.5 dark:text-red-200 dark:placeholder-red-500 dark:border-red-500" : 
+                        "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                `}
+                onChange={handleNameChange}
             />
-            <p>手機號碼</p>
-            <label className="input  w-full mb-20">
-                +886
+            <div className="h-6 mb-3">
+                {NameError && 
+                    <div className="flex gap-2 items-center text-red-500 ">
+                        <CircleX className='h-4 w-4'/>
+                        <p>{NameError}</p>
+                    </div>
+                }
+            </div>
+
+            <div className="relative mb-1">
+                <p>手機號碼</p>
+                <div className="absolute inset-y-10.5 start-0 flex items-center ps-3.5 pointer-events-none">
+                    <p>+886</p>
+                </div>
                 <input 
                     type="text" 
-                    className="grow" 
+                    className={`
+                    ${PhoneError ? "bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-red-950 focus:border-red-500 block w-full ps-15 p-2.5 dark:text-red-200 dark:placeholder-red-500 dark:border-red-500" : 
+                                    "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-15 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                `}
+                    maxLength={10}
                     placeholder="09XX-XXX-XXX" 
-                    onChange={(e) => setPhone(e.target.value)}
+                    onChange={handlePhoneChange}
                 />
-            </label>
+            </div>
+            <div className="h-6 mb-3">
+                {PhoneError && 
+                    <div className="flex gap-2 items-center text-red-500 ">
+                        <CircleX className='h-4 w-4'/>
+                        <p>{PhoneError}</p>
+                    </div>
+                }
+            </div>
 
             <h1>配送方式</h1>
             <div className="divider mt-0"></div>
@@ -119,7 +219,7 @@ function SetDelivery({setisActive, setDetail}){
                     className={`flex h-12 w-[32%] justify-around items-center duration-150   
                                     ${method == 0 ? "bg-black dark:bg-white text-white dark:text-black":"cursor-pointer border-[1px] hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-white"}
                             `}
-                    onClick={() => {setMethod(0); setDeliverTime(-1);}}
+                    onClick={() => {setMethod(0); setDeliverTime(0);}}
                 >
                     <p>門市取貨</p>
                 </div>
@@ -135,7 +235,7 @@ function SetDelivery({setisActive, setDetail}){
                     className={`flex h-12 w-[32%] justify-around items-center duration-150   
                                     ${method == 2 ? "bg-black dark:bg-white text-white dark:text-black":"cursor-pointer border-[1px] hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-white"}
                             `}
-                    onClick={() => {setMethod(2); setDeliverTime(-1);}}
+                    onClick={() => {setMethod(2); setDeliverTime(0);}}
                 >
                     <p>便利店取貨</p>
                 </div>
@@ -191,7 +291,7 @@ function SetDelivery({setisActive, setDetail}){
             {method == 1 &&
                 <div className="">
                     <p>住家地址</p>
-                    <div className="flex gap-2 w-full mb-8">
+                    <div className="flex gap-2 w-full">
                         <select 
                             defaultValue="Pick a color" 
                             className="select w-30"
@@ -210,19 +310,43 @@ function SetDelivery({setisActive, setDetail}){
                         <input 
                             type="text" 
                             placeholder="請輸入住家地址" 
-                            className="input w-full"
-                            onChange={(e) => setAddress(e.target.value)}
+                            value = {address}
+                            className={`
+                                ${AddressError ? "mb-1 bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-red-950 focus:border-red-500 block w-full p-2.5 dark:text-red-200 dark:placeholder-red-500 dark:border-red-500" : 
+                                    "mb-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                            `}
+                            onChange={handleAddressChange}
                         />
+                    </div>
+                    <div className="h-6 mb-3 ml-28">
+                        {AddressError && 
+                            <div className="flex gap-2 items-center text-red-500 ">
+                                <CircleX className='h-4 w-4'/>
+                                <p>{AddressError}</p>
+                            </div>
+                        }
                     </div>
 
                     <p>郵遞區號</p>
                     <input 
                         type="text" 
                         placeholder="請輸入郵遞區號三碼" 
-                        className="input w-40 mb-8"
+                        value = {zipcode}
+                        className={`
+                            ${ZipCodeError ? "w-40 mb-1 bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-red-950 focus:border-red-500 block p-2.5 dark:text-red-200 dark:placeholder-red-500 dark:border-red-500" : 
+                                "w-40 mb-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                        `}
                         maxLength={3}
-                        onChange={(e) => setZipCode(e.target.value)}
+                        onChange={handleZipCodeChange}
                     />
+                    <div className="h-6 mb-3">
+                        {ZipCodeError && 
+                            <div className="flex gap-2 items-center text-red-500 ">
+                                <CircleX className='h-4 w-4'/>
+                                <p>{ZipCodeError}</p>
+                            </div>
+                        }
+                    </div>
                     
                     <div className="flex items-center gap-1">
                         <input 
@@ -247,13 +371,32 @@ function SetDelivery({setisActive, setDetail}){
                 </div>
             }
             {/*便利店*/}
-            <div
-                className="flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
-                hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
-                onClick={toggle}
-            >
-                <p>NEXT</p>
-            </div>
+            
+            
+            {method == 0 &&
+                <div
+                    disabled = {isDisabled_1}
+                    className={`flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                                    hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
+                                    ${isDisabled_1 ? "opacity-50 pointer-events-none" : ""}
+                                `}
+                    onClick={toggle}
+                >
+                    <p>NEXT</p>
+                </div>
+            }
+            {method == 1 &&
+                <div
+                    disabled = {isDisabled_2}
+                    className={`flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                                    hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
+                                    ${isDisabled_2 ? "opacity-50 pointer-events-none" : ""}
+                                `}
+                    onClick={toggle}
+                >
+                    <p>NEXT</p>
+                </div>
+            }
         </div>
         
         </>

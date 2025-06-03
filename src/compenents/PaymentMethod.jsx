@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, CircleX } from "lucide-react";
 import { useState } from "react";
 
 function PaymentMethod({setisActive, setDetail}){
@@ -13,41 +13,108 @@ function PaymentMethod({setisActive, setDetail}){
         focus: '',
     });
 
-  const handleInputChange = (evt) => {
-    const { name, value } = evt.target;
-
-    if (name === "number") {
-        // 移除非數字
-        let rawValue = value.replace(/\D/g, "");
-        // 限制長度最多 16 個數字
-        rawValue = rawValue.slice(0, 16);
-        // 每 4 位數加空格
-        const formattedValue = rawValue.replace(/(.{4})/g, "$1 ").trim();
-        setState((prev) => ({ ...prev, [name]: formattedValue }));
-    } else {
-        setState((prev) => ({ ...prev, [name]: value }));
-    }
-};
-
-  const handleInputFocus = (evt) => {
-    setState((prev) => ({ ...prev, focus: evt.target.name }));
-  }
-
+    const [expiryError, setExpiryError] = useState('');
     const toggle = () => {
         const rawNumber = state.number.replace(/\s/g, "");
+
+        // 解析月份與年份（"1 月" => 1，"2025 年" => 2025）
+        const selectedMonth = parseInt(state.month);
+        const selectedYear = parseInt(state.year);
+
+        const now = new Date();
+        const currentMonth = now.getMonth() + 1; // getMonth() 從 0 開始
+        const currentYear = now.getFullYear();
+
+        // 檢查是否過期
+        if (
+            selectedYear < currentYear ||
+            (selectedYear === currentYear && selectedMonth < currentMonth)
+        ) {
+            setExpiryError("Card has expired.");
+            return; // 中止流程
+        } else {
+            setExpiryError('');
+        }
+
+        // 只有通過驗證才執行下一步
         setDetail(prev => ({
             ...prev,
             payment_method: method,
             card: {
-            ...state,
-            number: rawNumber,
+                ...state,
+                number: rawNumber,
             }
         }));
         setisActive(2);
     };
+
     const toggle2 = () => {
         setisActive(0);
     };
+
+    {/*防呆與資料控制*/}
+    
+    const [numberError, setNumberError] = useState('');
+    const [NameError, setNameError] = useState('');
+    const [cvv2Error, setCvv2Error] = useState('');
+
+    const handleNumberChange = (e) => {
+        let value = e.target.value;
+
+        // 先移除非數字（只留數字）
+        let rawValue = value.replace(/\D/g, "");
+
+        // 限制長度為最多 16 位
+        rawValue = rawValue.slice(0, 16);
+
+        // 每 4 位加空格
+        const formattedValue = rawValue.replace(/(.{4})/g, "$1 ").trim();
+
+        // 設定格式化後的值
+        setState((prev) => ({ ...prev, number: formattedValue }));
+
+        // 錯誤訊息處理
+        if (!rawValue) {
+            setNumberError("Please enter your card number.");
+        } else if (rawValue.length !== 16) {
+            setNumberError("Invalid card number format. It must be 16 digits.");
+        } else {
+            setNumberError('');
+        }
+    };
+
+    const handleNameChange = (e) => {
+        const value = e.target.value;
+        setState((prev) => ({ ...prev, name: value }));
+    
+        if (!value) {
+            setNameError("Please enter your name.");
+        } else {
+            setNameError('');
+        }
+    };
+
+    const handleCvv2Change = (e) => {
+        const value = e.target.value;
+        setState((prev) => ({ ...prev, cvc: value }));
+    
+        if (!value) {
+            setCvv2Error("Please enter ccv2.");
+        } else if (value.length < 3) {
+            setCvv2Error("Invalid cvv2 format. It must be 3 or 4 digits.");
+        }else {
+            setCvv2Error('');
+        }
+    };
+
+    const isDisabled = 
+        !state.number || 
+        !state.name || 
+        !state.cvc || 
+        cvv2Error !== '' || 
+        NameError !== '' ||
+        numberError !== ''
+    ;
 
     return(
         <>
@@ -82,19 +149,30 @@ function PaymentMethod({setisActive, setDetail}){
                 {method == 0 &&
                 <div>
                     
-                    <div className="mb-8">
+                    <div className="mb-1">
                         <p>信用卡卡號</p>
                         <input
                             type="text"
                             name="number"
                             placeholder="Card Number"
                             value={state.number}
-                            className="input w-full"
-                            onChange={handleInputChange}
-                            onFocus={handleInputFocus}
+                            className={`
+                            ${numberError ? "w-full mb-1 bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-red-950 focus:border-red-500 block p-2.5 dark:text-red-200 dark:placeholder-red-500 dark:border-red-500" : 
+                                "w-full mb-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                            `}
+                            onChange={handleNumberChange}
                         />
                     </div>
-                    <div className="mb-8">
+                    <div className="h-6 mb-3">
+                        {numberError && 
+                            <div className="flex gap-2 items-center text-red-500 ">
+                                <CircleX className='h-4 w-4'/>
+                                <p>{numberError}</p>
+                            </div>
+                        }
+                    </div>
+
+                    <div className="mb-1">
                         <p>期限</p>
                         <div className="flex w-full gap-5">
                         <select 
@@ -119,26 +197,67 @@ function PaymentMethod({setisActive, setDetail}){
                         </select>
                         </div>
                     </div>
-                    <div className="mb-8">
+                    <div className="h-6 mb-3">
+                        {expiryError && 
+                            <div className="flex gap-2 items-center text-red-500 ">
+                                <CircleX className='h-4 w-4'/>
+                                <p>{expiryError}</p>
+                            </div>
+                        }
+                    </div>
+
+                    <div className="h-6 mb-3">
+                        {cvv2Error && 
+                            <div className="flex gap-2 items-center text-red-500 ">
+                                <CircleX className='h-4 w-4'/>
+                                <p>{cvv2Error}</p>
+                            </div>
+                        }
+                    </div>
+
+                    <div className="mb-1">
                         <p>持卡人</p>
                         <input
                             type="text"
                             placeholder="請輸入持卡人姓名"
                             value={state.name}
-                            className="input w-full"
-                            onChange={(e)=>setState((prev) => ({ ...prev, name: e.target.value }))}
+                            className={`
+                                ${NameError ? "bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-red-950 focus:border-red-500 block w-full p-2.5 dark:text-red-200 dark:placeholder-red-500 dark:border-red-500" : 
+                                    "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                            `}
+                            onChange={handleNameChange}
                         />
                     </div>
-                    <div className="mb-20">
+                    <div className="h-6 mb-3">
+                        {NameError && 
+                            <div className="flex gap-2 items-center text-red-500 ">
+                                <CircleX className='h-4 w-4'/>
+                                <p>{NameError}</p>
+                            </div>
+                        }
+                    </div>
+
+                    <div className="mb-1">
                         <p>CVV2</p>
                         <input
                             type="text"
                             placeholder="卡片背後三或四碼"
                             value={state.cvc}
-                            className="input w-40"
+                            className={`
+                                ${cvv2Error ? "w-40 bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-red-950 focus:border-red-500 block p-2.5 dark:text-red-200 dark:placeholder-red-500 dark:border-red-500" : 
+                                    "w-40 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                            `}
                             maxLength={4}
-                            onChange={(e)=>setState((prev) => ({ ...prev, cvc: e.target.value }))}
+                            onChange={handleCvv2Change}
                         />
+                    </div>
+                    <div className="h-6 mb-23">
+                        {cvv2Error && 
+                            <div className="flex gap-2 items-center text-red-500 ">
+                                <CircleX className='h-4 w-4'/>
+                                <p>{cvv2Error}</p>
+                            </div>
+                        }
                     </div>
                 </div>
                 }
@@ -151,14 +270,31 @@ function PaymentMethod({setisActive, setDetail}){
                         <ArrowLeft className="h-4 w-4"/>
                         <p>PREVIOUS STEP</p>
                     </div>
-                    <div
-                        className="flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
-                        hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
-                        onClick={toggle}
-                    >
-                        <p>NEXT STEP</p>
-                        <ArrowRight className="h-4 w-4"/>
-                    </div>
+
+                    {method == 0 &&
+                        <div
+                            disabled = {isDisabled}
+                            className={`flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                                    hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
+                                    ${isDisabled ? "opacity-50 pointer-events-none" : ""}
+                                `}
+                            onClick={toggle}
+                        >
+                            <p>NEXT STEP</p>
+                            <ArrowRight className="h-4 w-4"/>
+                        </div>
+                    }
+                    {method == 1 &&
+                        <div
+                            className={`flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                                    hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
+                                `}
+                            onClick={toggle}
+                        >
+                            <p>NEXT STEP</p>
+                            <ArrowRight className="h-4 w-4"/>
+                        </div>
+                    }
                 </div>
             </div>
         </>
