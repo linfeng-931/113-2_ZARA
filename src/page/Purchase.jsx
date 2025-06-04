@@ -65,8 +65,8 @@ function Purchase(){
     return(
         <>
         <Header/>
-        <div className="mt-20 flex md:flex-col w-full justify-center items-center">
-            <ul className="steps steps-vertical lg:steps-horizontal w-[60%] mb-20">
+        <div className="mt-20 flex md:flex-col w-full lg:justify-center items-center">
+            <ul className="steps steps-vertical md:steps-horizontal w-[60%] mb-20">
                 <li className={`step ${isActive >= 0 ? "step-neutral":""}`}><p>Shipping Method</p></li>
                 <li className={`step ${isActive >= 1 ? "step-neutral":""}`}><p className={` ${isActive >= 1 ? "":"opacity-50"}`}>Payment Method</p></li>
                 <li className={`step ${isActive >= 2 ? "step-neutral":""}`}><p className={` ${isActive >= 2 ? "":"opacity-50"}`}>Review Order</p></li>

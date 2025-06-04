@@ -12,16 +12,16 @@ function UserAccount(){
         <>
             {userLoggedIn && (<Navigate to={'/user/detail'} replace = {true} />)}
             <Header/>
-            <div className="w-full mt-20 mb-90 md:mb-50 flex flex-col items-center">
-                <div className="w-[85%] lg:w-[50%] text-left">
+            <div className="w-full h-150 lg:h-auto mt-20 mb-90 md:mb-50 flex flex-col items-center">
+                <div className="w-full lg:w-[50%] flex flex-col items-center lg:items-start text-left">
                     <h1>LOGIN</h1>
                     <div className="line w-60 h-[.5px] bg-black dark:bg-white mb-15"></div>
-                    <div className="md:flex gap-15 h-69 justify-between">
-                        <div className="md:w-[45%] mt-10 mb-10 md:mt-0">
+                    <div className="flex flex-col lg:flex-row gap-15 h-69 items-center justify-between">
+                        <div className="w-90 lg:w-[45%] mt-10 lg:mb-10 md:mt-0">
                             <Login/>
                         </div>
-                        <div className="divider md:divider-horizontal"></div>
-                        <div className="h-50 md:h-full md:w-[45%] mt-10 mb-10 md:mt-0">
+                        <div className="divider lg:divider-horizontal"></div>
+                        <div className="lg:h-full lg:w-[45%] w-90 mt-10 mb-10 md:mt-0">
                             <CreateAccount/>
                         </div>
                     </div>

@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { addReview } from "../firebase/product";
 import { Timestamp } from "firebase/firestore";
+import { useAuth } from "../contexts/authContext";
+import { Link} from "react-router";
+import { getUserProfile } from "../firebase/users";
+import { auth } from "../firebase/config";
+import { useEffect } from "react";
 
 function WriteReview({productId, product, onReviewAdded}){
+    const {userLoggedIn} = useAuth();
+    const [user_profile, setProfile] = useState(null);
+
     console.log(productId);
     const [content, setContent] = useState("");
     const [rating, setRating] = useState(0);
@@ -18,7 +26,7 @@ function WriteReview({productId, product, onReviewAdded}){
         
         const date = new Date();
         await addReview(productId, {
-            reviewer: "Name",
+            reviewer: user_profile.name,
             rating: rating,
             comment: content,
             size: rsize,
@@ -34,79 +42,113 @@ function WriteReview({productId, product, onReviewAdded}){
         console.log("Review updated successfully");
     };
 
+    useEffect(() => {
+        const fetchProfile = async () => {
+          const currentUser = auth.currentUser;
+    
+          if (userLoggedIn && currentUser && currentUser.uid) {
+            try {
+              const userData = await getUserProfile(currentUser.uid);
+              setProfile(userData);
+            } catch (error) {
+              console.error("Failed to fetch profile:", error);
+            } finally {
+              console.log("final");
+            }
+          }
+        };
+        fetchProfile();
+      }, [userLoggedIn]);
+
     return(
         <>
             <div className="w-full text-left mt-20">
                 <p className="font-bold">留言撰寫</p>
-                <form onSubmit={handleSubmit}>
-                    <div className="flex justify-between items-center">
-                        <div className="rating rating-sm mb-3">
-                            {[1, 2, 3, 4, 5].map((value) => (
-                            <input
-                                key={value}
-                                type="radio"
-                                name="rating"
-                                className="mask mask-star-2 mr-1"
-                                aria-label={`${value} star`}
-                                onChange={() => setRating(value)}
-                                checked={rating === value}
-                                value={value}
-                            />
-                            ))}
-                        </div>
-                        
-                        <div className="flex gap-10">
-                            <div className="flex w-50 items-center">
-                                <p className="hint w-20">size : </p>
+                {userLoggedIn &&
+                    <form onSubmit={handleSubmit}>
+                        <div className="flex justify-between items-center">
+                            <div className="rating rating-sm mb-3">
+                                {[1, 2, 3, 4, 5].map((value) => (
+                                <input
+                                    key={value}
+                                    type="radio"
+                                    name="rating"
+                                    className="mask mask-star-2 mr-1"
+                                    aria-label={`${value} star`}
+                                    onChange={() => setRating(value)}
+                                    checked={rating === value}
+                                    value={value}
+                                />
+                                ))}
+                            </div>
+                            
+                            <div className="flex gap-10">
+                                <div className="flex w-50 items-center">
+                                    <p className="hint w-20">size : </p>
 
-                                <select
-                                value={rsize}
-                                className="select mb-2 md:mb-4 select-bordered w-full h-[40px] cursor-pointer hover:opacity-50 duration-150"
-                                onChange={(e)=>setrSize(e.target.value)}
-                                >
-                                {size_list.map((x, i) => (
-                                    <option key={x} value={i}>
-                                    {x}
-                                    </option>
-                                ))}
-                                </select>
-                            </div>
-                            <div className="flex w-50 items-center">
-                                <p className="hint w-20">color : </p>
-                                
-                                <select
-                                className="select mb-2 md:mb-4 select-bordered w-full h-[40px] cursor-pointer hover:opacity-50 duration-150"
-                                onChange={(e) => setrColor(e.target.value)}
-                                value={rcolor} 
-                                >
-                                {color.map((x) => (
-                                    <option key={x} value={x}>
-                                    {x}
-                                    </option>
-                                ))}
-                                </select>
+                                    <select
+                                    value={rsize}
+                                    className="select mb-2 md:mb-4 select-bordered w-full h-[40px] cursor-pointer hover:opacity-50 duration-150"
+                                    onChange={(e)=>setrSize(e.target.value)}
+                                    >
+                                    {size_list.map((x, i) => (
+                                        <option key={x} value={i}>
+                                        {x}
+                                        </option>
+                                    ))}
+                                    </select>
+                                </div>
+                                <div className="flex w-50 items-center">
+                                    <p className="hint w-20">color : </p>
+                                    
+                                    <select
+                                    className="select mb-2 md:mb-4 select-bordered w-full h-[40px] cursor-pointer hover:opacity-50 duration-150"
+                                    onChange={(e) => setrColor(e.target.value)}
+                                    value={rcolor} 
+                                    >
+                                    {color.map((x) => (
+                                        <option key={x} value={x}>
+                                        {x}
+                                        </option>
+                                    ))}
+                                    </select>
+                                </div>
                             </div>
                         </div>
+                        <textarea 
+                            className="textarea w-full h-50 mb-8" 
+                            placeholder="請輸入文字" 
+                            onChange={(e) => setContent(e.target.value)}
+                            value={content}
+                            // disabled
+                        ></textarea>
+                        <div className="w-full flex justify-center">
+                            <button 
+                                className={`flex h-12 w-[40%] justify-center items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                                        hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
+                                        ${!content ? "pointer-events-none opacity-50":""}
+                                        `}
+                                type="submit" disabled={!content}
+                            >
+                            <p>SUBMIT</p> 
+                            </button>
+                        </div>
+                    </form>
+                }
+                {!userLoggedIn &&
+                    <div className="w-full flex flex-col items-center mt-10">
+                        <p className="hint mb-5">如欲撰寫留言，請先登入。</p>
+                        <Link to = "/user/login">
+                            <div
+                                className={`flex h-12 w-90 justify-center items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                                        hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
+                                        `}
+                            >
+                            <p>LOGIN</p> 
+                            </div>
+                        </Link>
                     </div>
-                    <textarea 
-                        className="textarea w-full h-50 mb-8" 
-                        placeholder="請輸入文字" 
-                        onChange={(e) => setContent(e.target.value)}
-                        value={content}
-                        // disabled
-                    ></textarea>
-                    <div className="w-full flex justify-center">
-                        <button 
-                            className={`flex h-12 w-[40%] justify-center items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
-                                    hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
-                                    ${!content ? "pointer-events-none opacity-50":""}
-                                    `}
-                            type="submit" disabled={!content}
-                        >
-                        <p>SUBMIT</p> 
-                        </button>
-                    </div>
-                </form>
+                }
             </div>
         </>
     )

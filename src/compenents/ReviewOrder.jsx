@@ -15,7 +15,7 @@ function ReviewOrder({items, detail}){
              
             <h1>付款資訊</h1>
             <div className="divider mt-0"></div>
-            <div className="flex gap-5"><p className="font-bold">付款方式</p><p>{payment_method[detail.payment_method]}</p></div>
+            <div className="flex gap-5"><p className="font-bold">付款方式</p><p className={`${detail.payment_method == 1 ? "mb-10":""}`}>{payment_method[detail.payment_method]}</p></div>
             {detail.payment_method == 0 &&
                 <div className="flex gap-5"><p className="font-bold mb-15">信用卡卡號</p><p>{detail.card.number}</p></div>
             }
@@ -32,7 +32,7 @@ function ReviewOrder({items, detail}){
             </div>
 
             {items.map((item, index) => (
-                <div key={index} className="hidden lg:grid grid-cols-6 items-center mb-15">
+                <div key={index} className="grid grid-cols-6 items-center mb-15">
                     <div className="flex gap-4 items-center">
                         <img
                             src={item.cover}

@@ -5,15 +5,17 @@ function ShoppingCartPage(){
 
     return(
         <>
-            <div className="header relative mb-10">
-                <Header/>
+            <div className="min-h-screen flex flex-col">
+                <div className="header relative mb-10">
+                    <Header/>
+                </div>
+                <div className="w-full flex flex-1 flex-col items-center">
+                    <div className="w-[80%]">
+                        <BasketModal/>
+                    </div>     
+                </div>
+                <Footer/>
             </div>
-            <div className="w-full flex flex-col items-center">
-                <div className="w-[80%]">
-                    <BasketModal/>
-                </div>     
-            </div>
-            <Footer/>
         </>
     )
 }

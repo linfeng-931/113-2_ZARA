@@ -65,9 +65,10 @@ function UserDetail() {
 
   return (
     <>
+      <div className="min-h-screen flex flex-col">
       <Header />
-      <div className="container flex w-full justify-center gap-15 mt-20 mb-40">
-        <div className="selector text-left flex flex-col gap-5 w-50">
+      <div className="flex flex-col flex-1 lg:flex-row w-full justify-center items-center lg:items-start gap-15 mt-20 mb-40">
+        <div className="selector text-left flex lg:flex-col gap-5 w-130 justify-around lg:w-50">
           <p
             className={`cursor-pointer hover:opacity-100 group transition duration-300 tracking-widest
             ${isActive == 0 ? "font-bold opacity-100" : "opacity-[60%]"}`}
@@ -110,7 +111,7 @@ function UserDetail() {
           <p
             className={`cursor-pointer hover:opacity-100 group transition duration-300 tracking-widest
             ${isActive == 3 ? "font-bold opacity-100" : "opacity-[60%]"}`}
-            onClick={() => setisActive(5)}
+            onClick={() => setisActive(3)}
           >
             Notifications
             <span
@@ -124,8 +125,9 @@ function UserDetail() {
           
            <button
              onClick={handleSignOut}
-             className="mt-5 flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
-                       hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
+             className={`mt-5 flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                       hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
+                       hidden lg:block`}
            >
              LOG OUT
            </button>
@@ -151,9 +153,25 @@ function UserDetail() {
               <p>暫無退換貨記錄</p>
             </div>
           )}
+          {!loading && profile && isActive == 3 && (
+            <div className="flex w-full justify-center h-full items-center gap-2 opacity-50">
+              <NotepadText className="h-5 w-5"/>
+              <p>暫無通知</p>
+            </div>
+          )}
         </div>
+
+        <button
+          onClick={handleSignOut}
+          className={`mt-5 flex h-12 w-80 justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                    hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
+                    lg:hidden`}
+        >
+          LOG OUT
+        </button>
       </div>
       <Footer />
+      </div>
     </>
   );
 }

@@ -27,8 +27,9 @@ function PaymentMethod({setisActive, setDetail}){
 
         // 檢查是否過期
         if (
-            selectedYear < currentYear ||
-            (selectedYear === currentYear && selectedMonth < currentMonth)
+            method == 0 &&
+            (selectedYear < currentYear ||
+            (selectedYear === currentYear && selectedMonth < currentMonth))
         ) {
             setExpiryError("Card has expired.");
             return; // 中止流程

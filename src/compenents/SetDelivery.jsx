@@ -232,12 +232,11 @@ function SetDelivery({setisActive, setDetail}){
                     <p>寄送到府</p>
                 </div>
                 <div
-                    className={`flex h-12 w-[32%] justify-around items-center duration-150   
-                                    ${method == 2 ? "bg-black dark:bg-white text-white dark:text-black":"cursor-pointer border-[1px] hover:text-white hover:dark:text-black hover:bg-black hover:dark:bg-white"}
+                    className={`flex h-12 w-[32%] justify-around items-center duration-150 border-[1px] opacity-40
                             `}
-                    onClick={() => {setMethod(2); setDeliverTime(0);}}
                 >
                     <p>便利店取貨</p>
+                    <p className="hint">暫不開放</p>
                 </div>
                 
             </div>

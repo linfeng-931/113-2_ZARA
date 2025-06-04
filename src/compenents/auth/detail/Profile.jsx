@@ -43,7 +43,7 @@ function Profile({profile}){
     return(
         <>
             {page == 0 &&
-            <div className="w-full rounded-md shadow-md p-10">
+            <div className="w-full rounded-md shadow-md dark:bg-zinc-800 p-10">
                 <div className="flex gap-5 items-center">
                     {user_profile.avatar ? 
                         <img

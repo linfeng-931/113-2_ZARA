@@ -104,19 +104,20 @@ const Category = () => {
   }, [_products, filter]);
 
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <Breadcrumb product={_products} />
-      <div className="grid grid-rows-[repeat(2,minmax(0,auto))] grid-cols-9 gap-4 lg:gap-0 lg:grid-rows-1 lg:grid-cols-24 ">
-        <ProductList product={filteredProducts} />
-        <Sidebar
-          filter={filter}
-          setFilter={setFilter}
-          reset={reset}
-          setReset={setReset}
-        />
+      <div className="flex-1">
+        <Breadcrumb product={_products} />
+        <div className="grid grid-rows-[repeat(2,minmax(0,auto))] grid-cols-9 gap-4 lg:gap-0 lg:grid-rows-1 lg:grid-cols-24 ">
+          <ProductList product={filteredProducts} />
+          <Sidebar
+            filter={filter}
+            setFilter={setFilter}
+            reset={reset}
+            setReset={setReset}
+          />
+        </div>
       </div>
-
       <Footer />
     </div>
   );

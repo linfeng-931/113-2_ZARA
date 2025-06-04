@@ -12,7 +12,7 @@ function CreateAccount(){
                 </div>
                 <Link to="/user/register">
                     <button
-                        className="bottom-0 flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                        className="mt-8 lg:mt-0 bottom-0 flex h-12 w-full justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
                                     hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
                     >
                             Register

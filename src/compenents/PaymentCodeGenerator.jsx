@@ -29,7 +29,7 @@ function PaymentCodeGenerator() {
   };
 
   return (
-    <div className="flex flex-col mb-20  mt-18 w-full items-center">
+    <div className="flex flex-col mb-20  mt-10 w-full items-center">
       <div className="flex items-center gap-5 mb-8">
         <div className="flex">
             <p>Your Payment Code：</p>

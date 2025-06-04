@@ -22,7 +22,18 @@ export const getProduct = async (id) => {
 export const addReview = async (productId, newReview) => {
   const productRef = doc(db, "products", productId);
 
-  // 再執行 arrayUnion 新增 review
+  const productSnap = await getDoc(productRef);
+
+  // 如果文件不存在，先建立它（可根據需要初始化其它欄位）
+  if (!productSnap.exists()) {
+    await setDoc(productRef, {
+      reviews: [newReview], // 初始化 reviews 陣列
+    });
+    console.log("文件不存在，已建立並新增 review");
+    return;
+  }
+
+  // 文件存在，執行 arrayUnion 新增 review
   await updateDoc(productRef, {
     reviews: arrayUnion(newReview),
   });
