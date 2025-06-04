@@ -31,12 +31,15 @@ function Purchase(){
     });
     console.log(detail);
 
+    const [issubmiting, setisSubmiting] = useState(false);
+
     const handleUpdateActive = (newValue) => {
       setisActive(newValue); // 回傳後更新
     };
 
     const handleCheckOut = async () => {
     try {
+      setisSubmiting(true);
       const currentUser = auth.currentUser;
 
       if (currentUser && cartItems.length > 0) {
@@ -57,6 +60,7 @@ function Purchase(){
       }
 
       dispatch(clearCartItems());
+      setisSubmiting(false);
     } catch (err) {
       console.error("Check Out error:", err);
     }
@@ -83,23 +87,28 @@ function Purchase(){
             }
 
             {isActive == 2 &&
-            <div className="flex gap-30 w-150">
-                <div
-                    className="flex h-12 w-[50%] justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
-                    hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
-                    onClick={()=>setisActive(1)}
-                >
-                    <ArrowLeft className="h-4 w-4"/>
-                    <p>PREVIOUS STEP</p>
-                </div>
-                <div
-                  className="flex h-12 w-[50%] justify-around items-center gap-3 bg-[#FA347F] text-white dark:text-black cursor-pointer duration-150
-                                  hover:bg-inherit hover:border-[1px] border-[#FA347F] hover:text-[#FA347F]"
-                  onClick={handleCheckOut}
+            <div className="text-right">  
+              <div className="flex gap-30 w-150">
+                  <div
+                      className="flex h-12 w-[50%] justify-around items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
+                      hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white"
+                      onClick={()=>setisActive(1)}
                   >
-                  <p>COMPLETE PURCHASE</p>
-                  <CircleDollarSign className="h-4 w-4"/>
-                </div>
+                      <ArrowLeft className="h-4 w-4"/>
+                      <p>PREVIOUS STEP</p>
+                  </div>
+                  <div
+                    className="flex h-12 w-[50%] justify-around items-center gap-3 bg-[#FA347F] text-white dark:text-black cursor-pointer duration-150
+                                    hover:bg-inherit hover:border-[1px] border-[#FA347F] hover:text-[#FA347F]"
+                    onClick={handleCheckOut}
+                    >
+                    <p>COMPLETE PURCHASE</p>
+                    <CircleDollarSign className="h-4 w-4"/>
+                  </div>    
+              </div>
+              {issubmiting && 
+                <span className="loading loading-dots loading-sm mt-2"></span>
+              }
             </div>
             }
 

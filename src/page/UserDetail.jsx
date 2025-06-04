@@ -136,7 +136,9 @@ function UserDetail() {
         </div>
 
         <div className="w-130">
-          {loading && <p>Loading...</p>}
+          {loading && 
+            <span className="loading loading-dots loading-sm"></span>
+          }
           {!loading && profile && isActive == 0 && (
             <div>
               <Profile profile={profile} />

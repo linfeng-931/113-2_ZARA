@@ -22,8 +22,9 @@ function ReviewOrder({items, detail}){
 
             <h1>商品內容</h1>
             <div className="divider mt-0"></div>
-            <div className="hidden lg:grid grid-cols-6 items-center mb-8">
+            <div className="hidden lg:grid grid-cols-7 items-center mb-8">
               <p className="hint">PRODUCT</p>
+              <p></p>
               <p></p>
               <p className="hint text-center">COLOR</p>
               <p className="hint text-center">SIZE</p>
@@ -32,7 +33,7 @@ function ReviewOrder({items, detail}){
             </div>
 
             {items.map((item, index) => (
-                <div key={index} className="grid grid-cols-6 items-center mb-15">
+                <div key={index} className="grid grid-cols-7 items-center mb-15">
                     <div className="flex gap-4 items-center">
                         <img
                             src={item.cover}
@@ -40,6 +41,7 @@ function ReviewOrder({items, detail}){
                         />
                         <p>{item.title}</p>
                     </div>
+                    <p></p>
                     <p></p>
                     <p className="text-center">{item.color}</p>
                     <p className="text-center">{sizeList[item.size]}</p>

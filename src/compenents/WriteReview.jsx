@@ -10,7 +10,7 @@ import { useEffect } from "react";
 function WriteReview({productId, product, onReviewAdded}){
     const {userLoggedIn} = useAuth();
     const [user_profile, setProfile] = useState(null);
-
+    const [issubmiting, setisSubmiting] = useState(false);
     console.log(productId);
     const [content, setContent] = useState("");
     const [rating, setRating] = useState(0);
@@ -39,6 +39,7 @@ function WriteReview({productId, product, onReviewAdded}){
         setRating(0);
         setrSize(0);
         setrColor(color[0]);
+        setisSubmiting(false);
         console.log("Review updated successfully");
     };
 
@@ -66,6 +67,11 @@ function WriteReview({productId, product, onReviewAdded}){
                 <p className="font-bold">留言撰寫</p>
                 {userLoggedIn &&
                     <form onSubmit={handleSubmit}>
+                        {issubmiting &&
+                            <div className="left-[49.5%] mt-35 absolute">
+                                <span className="loading loading-dots loading-sm"></span>
+                            </div>
+                        }
                         <div className="flex justify-between items-center">
                             <div className="rating rating-sm mb-3">
                                 {[1, 2, 3, 4, 5].map((value) => (
@@ -126,9 +132,10 @@ function WriteReview({productId, product, onReviewAdded}){
                             <button 
                                 className={`flex h-12 w-[40%] justify-center items-center gap-3 bg-black dark:bg-white text-white dark:text-black cursor-pointer duration-150
                                         hover:bg-inherit hover:border-[1px] hover:text-black hover:dark:text-white
-                                        ${!content ? "pointer-events-none opacity-50":""}
+                                        ${!content || rating == 0 ? "pointer-events-none opacity-50":""}
                                         `}
-                                type="submit" disabled={!content}
+                                type="submit" disabled={!content || rating==0}
+                                onClick={()=>setisSubmiting(true)}
                             >
                             <p>SUBMIT</p> 
                             </button>
