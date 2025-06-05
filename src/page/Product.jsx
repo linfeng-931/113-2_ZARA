@@ -10,7 +10,7 @@ import { CircleUserRound } from "lucide-react";
 // import ProductItem from "../compenents/ProductItem";
 import RelatedItem from "../compenents/RelatedItem";
 import { useAuth } from "../contexts/authContext";
-import { getProduct } from "../firebase/product";
+import { useProduct } from "../firebase/product";
 import WriteReview from "../compenents/WriteReview";
 
 function Product() {
@@ -20,9 +20,10 @@ function Product() {
   const product = products.find((x) => x.id == `${part1}/${part2}/`);
 
   const [productReview, setProductReview] = useState(null);
+  const { data: reviewData, isLoading, error } = useProduct(part1+part2);
+
   const fetchProductReview = async () => {
     try {
-      const reviewData = await getProduct(part1 + part2);
       setProductReview(reviewData);
     } catch (err) {
       console.error("Failed to fetch product review:", err);
@@ -81,6 +82,17 @@ function Product() {
     if (currentClass.stock[Size] != 0) setQty(1);
     else setQty(0);
   }, [Size]);
+
+  useEffect(() => {
+    if (reviewData) {
+      setProductReview({
+        ...reviewData,
+        reviews: Array.isArray(reviewData.reviews) ? reviewData.reviews : [],
+      });
+    } else {
+      setProductReview({ reviews: [] });
+    }
+  }, [reviewData]);
 
   return (
     <>

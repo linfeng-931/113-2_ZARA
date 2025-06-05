@@ -16,6 +16,7 @@ function WriteReview({ productId, product, onReviewAdded }) {
   const color = product?.class?.map((item) => item.color) || [];
   const [rsize, setrSize] = useState(0);
   const [rcolor, setrColor] = useState(color[0]);
+  const [loading, setloading] = useState(false);
 
   const addReviewMutation = useAddReview();
 
@@ -41,31 +42,32 @@ function WriteReview({ productId, product, onReviewAdded }) {
 
     const date = new Date();
 
-    addReviewMutation.mutate(
-      {
+    await addReviewMutation.mutateAsync(
+    {
         productId,
         newReview: {
-          reviewer: user_profile.name,
-          rating,
-          comment: content,
-          size: rsize,
-          color: rcolor,
-          time: Timestamp.fromDate(date),
+        reviewer: user_profile.name,
+        rating,
+        comment: content,
+        size: rsize,
+        color: rcolor,
+        time: Timestamp.fromDate(date),
         },
-      },
-      {
+    },
+    await {
         onSuccess: () => {
-          onReviewAdded();
-          setContent("");
-          setRating(0);
-          setrSize(0);
-          setrColor(color[0]);
+        onReviewAdded();
+        setContent("");
+        setRating(0);
+        setrSize(0);
+        setrColor(color[0]);
         },
         onError: (error) => {
-          console.error("Failed to add review:", error);
+        console.error("Failed to add review:", error);
         },
-      }
+    }
     );
+    setloading(false);
   };
 
   return (
@@ -74,11 +76,11 @@ function WriteReview({ productId, product, onReviewAdded }) {
         <p className="font-bold">留言撰寫</p>
         {userLoggedIn && (
           <form onSubmit={handleSubmit}>
-            {addReviewMutation.isLoading && (
+            {loading &&
               <div className="left-[49.5%] mt-35 absolute">
                 <span className="loading loading-dots loading-sm"></span>
               </div>
-            )}
+            }
             <div className="flex justify-between items-center">
               <div className="rating rating-sm mb-3">
                 {[1, 2, 3, 4, 5].map((value) => (
@@ -146,6 +148,7 @@ function WriteReview({ productId, product, onReviewAdded }) {
                         `}
                 type="submit"
                 disabled={!content || rating == 0 || addReviewMutation.isLoading}
+                onClick = {()=>setloading(true)}
               >
                 <p>SUBMIT</p>
               </button>

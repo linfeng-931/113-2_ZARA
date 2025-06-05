@@ -40,19 +40,20 @@ const postReview = async ({ productId, newReview }) => {
 };
 
 // React Query Hook: 取得商品
-export const useProduct = (id) => {
-  return useQuery(["product", id], () => fetchProduct(id), {
-    enabled: !!id, // id 存在才執行
+export function useProduct(productId) {
+  return useQuery({
+    queryKey: ["product", productId],
+    queryFn: () => fetchProduct(productId),
   });
-};
+}
 
 // React Query Hook: 新增評論
 export const useAddReview = () => {
   const queryClient = useQueryClient();
 
-  return useMutation(postReview, {
+  return useMutation({
+    mutationFn: postReview,
     onSuccess: (_, variables) => {
-      // 新增評論成功後，重新抓取該商品資料
       queryClient.invalidateQueries(["product", variables.productId]);
     },
   });
