@@ -25,6 +25,9 @@ import CartInit from "./compenents/auth/CartInite";
 import MyCollectionPage from "./page/MyCollectionPage";
 import FavoriteInit from "./compenents/auth/FavInit";
 import Purchase from "./page/Purchase";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function App() {
   const cartItems = useSelector(selectCartItems);
@@ -40,6 +43,7 @@ function App() {
 
   return (
     <>
+     <QueryClientProvider client={queryClient}>
       <FavoriteInit />
       <CartInit />
       <div data-theme="">
@@ -87,6 +91,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
+      </QueryClientProvider>
     </>
   );
 }
