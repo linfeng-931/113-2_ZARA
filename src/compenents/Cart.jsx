@@ -17,9 +17,9 @@ function Cart({userLoggedIn}){
                 <nav
                     className="inline-block hover:opacity-50 cursor-pointer"
                 >
-                    <div className="indicater flex justify-center ">
+                    <div className="indicater flex justify-center">
                         <Link to="/products/shopping-cart">
-                            <ShoppingCart />
+                            <ShoppingCart className="mb-1"/>
                         </Link>
                         <p 
                             className={`indicater-item absolute bg-black dark:bg-white text-white dark:text-black rounded-xl pr-2 pl-2 mt-[-.6rem] mr-[-2rem]
