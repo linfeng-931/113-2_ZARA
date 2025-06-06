@@ -81,7 +81,18 @@ export default function Home() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 3 }}
           >
-            <img src="/image/dots_logo.png" alt="" />
+            <div className="flex flex-col  items-center">
+              <img
+                src="/image/dots_logo.png"
+                className="max-w-[560px] lg:max-w-5xl"
+              />
+              <Link
+                to={`/products/category/NEW`}
+                className="bg-white w-[40%] max-w-[480px] px-8 py-4 cursor-pointer text-xl font-semibold rounded-4xl relative top-[-3rem] hover:bg-black hover:text-white hover:border-2 hover:border-white"
+              >
+                <div>Learn More</div>
+              </Link>
+            </div>
           </motion.div>
         </section>
 
