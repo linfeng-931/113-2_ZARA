@@ -6,6 +6,8 @@ import {
 } from "../redux/cartSlice";
 import { Link } from "react-router";
 import { Minus, X, Plus, ArrowRight } from "lucide-react";
+import { auth } from "../firebase/config";
+import { clearUserCart, removeItems } from "../firebase/users";
 
 function BasketModal() {
   const dispatch = useDispatch();
@@ -17,6 +19,18 @@ function BasketModal() {
       : 0;
   };
   const size_list = ["S", "M", "L", "XL"];
+  const ClearCart = async () => {
+    await clearUserCart(auth.currentUser.uid);
+    cartItems.forEach((item) => {
+      dispatch(removeCartItems(item.id));
+    });
+  };
+
+  const RemoveItem = async (item) => {
+    await removeItems(auth.currentUser.uid, item.id);
+    dispatch(removeCartItems(item.id));
+  };
+  console.log(auth.currentUser.uid);
 
   return (
     <>
@@ -142,7 +156,7 @@ function BasketModal() {
 
                 <div
                   className="w-full flex justify-center hover:opacity-50 duration-[.2s]"
-                  onClick={() => dispatch(removeCartItems(item.id))}
+                  onClick={() => RemoveItem(item)}
                 >
                   <X className="h-4" />
                 </div>
@@ -156,9 +170,7 @@ function BasketModal() {
             <div className="visible flex flex-col gap-5 items-center">
               <div
                 className="w-full text-right"
-                onClick={() =>
-                  cartItems.map((item) => dispatch(removeCartItems(item.id)))
-                }
+                onClick={ ClearCart }
               >
                 <p className="font-black hover:opacity-50 duration-150 cursor-pointer">
                   清空購物車
@@ -312,8 +324,8 @@ function BasketModal() {
             <div className="visible flex flex-col gap-5 items-center">
               <div
                 className="w-full text-right"
-                onClick={() =>
-                  cartItems.map((item) => dispatch(removeCartItems(item.id)))
+                onClick={
+                  ClearCart
                 }
               >
                 <p className="font-black hover:opacity-50 duration-150 cursor-pointer">

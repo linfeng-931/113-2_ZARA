@@ -42,6 +42,28 @@ export const getUserCart = async (uid) => {
   }
 };
 
+export const clearUserCart = async (uid) => {
+  const userRef = doc(db, "user", uid);
+  const docSnap = await getDoc(userRef);
+  if (!docSnap.exists()) throw new Error("User not found");
+
+  await updateDoc(userRef, {
+    cart: [],
+  });
+};
+
+export const removeItems = async (uid, productId) => {
+  const userRef = doc(db, "user", uid);
+  const docSnap = await getDoc(userRef);
+  if (!docSnap.exists()) throw new Error("User not found");
+
+  const currentItems = docSnap.data().cart || [];
+
+  await updateDoc(userRef, {
+    cart: currentItems.filter((id) => id !== productId),
+  });
+};
+
 // 加入最愛收藏
 export const addToFavorites = async (uid, productId) => {
   const userRef = doc(db, "user", uid);

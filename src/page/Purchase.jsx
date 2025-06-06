@@ -15,6 +15,7 @@ import SetDelivery from "../compenents/SetDelivery";
 import PaymentMethod from "../compenents/PaymentMethod";
 import ReviewOrder from "../compenents/ReviewOrder";
 import OrderCompelete from "../compenents/OrderCompelete";
+import { clearUserCart } from "../firebase/users";
 
 function Purchase(){
     const dispatch = useDispatch();
@@ -60,6 +61,7 @@ function Purchase(){
       }
 
       dispatch(clearCartItems());
+      await clearUserCart(auth.currentUser.uid);
       setisSubmiting(false);
     } catch (err) {
       console.error("Check Out error:", err);
