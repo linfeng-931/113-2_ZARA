@@ -8,6 +8,7 @@ function Registering(){
     const {userLoggedIn} = useAuth();
 
     const [email, setEmail] = useState('');
+    const [agreed, setAgreed] = useState(false);
     const [password, setPassword] = useState('');
     const [confirmPassword, setconfirmPassword] = useState('');
     //onst [isRegistering, setIsRegistering] = useState(true);
@@ -80,7 +81,8 @@ function Registering(){
         emailError !== '' || 
         passwordError !== '' || 
         confirmpasswordError !=='' ||
-        password !== confirmPassword;
+        password !== confirmPassword ||
+        !agreed;
 
     const toggleShowPassword = () => {
         setShowPassword(prev => !prev);
@@ -94,6 +96,8 @@ function Registering(){
                     className="register" 
                     onSubmit={onSubmit}
                 >
+                    <h1>Register</h1>
+                    <div className="divider mt-0 mb-10"></div>
                     {/* email */}
                     <div className='text-left w-80 md:w-90 lg:w-130'>
                         <div className="flex">
@@ -219,7 +223,7 @@ function Registering(){
                             }    
                             </div>
                         </div>
-                        <div className="h-6">
+                        <div className="h-6 mb-10">
                             {confirmpasswordError && 
                                 <div className="flex gap-2 items-center text-red-500 ">
                                     <CircleX className='h-4 w-4'/>
@@ -227,6 +231,26 @@ function Registering(){
                                 </div>
                             }
                         </div>
+                    </div>
+                    <div className="flex items-center space-x-2 mb-1">
+                        <input type="checkbox" id="privacy" className="border-gray-400" />
+                        <label for="newsletter">
+                            <p>我願意收到Zara電子報</p>
+                        </label>
+                    </div>
+                    <div 
+                        className="flex items-center space-x-2 mb-3"
+                    >
+                        <input type="checkbox" id="privacy" className="border-gray-400" onClick={() => setAgreed(!agreed)} />
+                        <label for="agreement">
+                            <div className="flex gap-1">
+                                <p>我已閱讀並同意</p>
+                                <p className="underline text-blue-600 cursor-pointer hover:opacity-50 duration-[.1s]">
+                                    隱私條款
+                                </p>
+                                <Asterisk className='h-3 w-3 text-[#FA347F]'/>
+                            </div>
+                        </label>
                     </div>
 
                     {errorMessage && (
