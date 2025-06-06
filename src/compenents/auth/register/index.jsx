@@ -25,7 +25,8 @@ function Registering(){
             // Firebase Auth 應該會更新 userLoggedIn 狀態
             // 你也可以在這邊做其他動作
         } catch (error) {
-            setErrorMessage(error.message);
+            if(error.code === "auth/email-already-in-use") setErrorMessage("This email has already been used.");
+            else setErrorMessage(error.message);
         }
     }
 
@@ -253,9 +254,13 @@ function Registering(){
                         </label>
                     </div>
 
-                    {errorMessage && (
-                        <span className='text-red-600 font-bold'>{errorMessage}</span>
-                    )}
+                    <p 
+                    className={`text-red-500 text-left 
+                        ${errorMessage ? "": "opacity-0"}
+                        `}
+                    >
+                        {errorMessage}
+                    </p>
                     
                     <button
                         type = "submit"
